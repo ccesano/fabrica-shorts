@@ -1,0 +1,89 @@
+name: Fabricar
+# Cada guion nuevo o modificado en videos/<slug>/guion.json se convierte en video y queda esperando revisión (issue).
+on:
+  push:
+    branches: [main]
+    paths: ["videos/*/guion.json"]
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Carpeta dentro de videos/ (ej. 2026-10-25-mundial-86)"
+        required: true
+      motor:
+        description: "Motor de voz"
+        default: chatterbox
+        type: choice
+        options: [chatterbox, kokoro]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: fabricar
+  cancel-in-progress: false
+
+jobs:
+  fabricar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: ¿Qué videos hay que fabricar?
+        id: cuales
+        run: |
+          if [ -n "${{ inputs.slug }}" ]; then s="${{ inputs.slug }}"
+          else s=$(git diff --name-only HEAD^ HEAD -- 'videos/*/guion.json' | cut -d/ -f2 | sort -u | tr '\n' ' '); fi
+          echo "slugs=$s" >> "$GITHUB_OUTPUT"; echo "Videos: $s"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Caché de entornos (Python, HyperFrames)
+        uses: actions/cache@v4
+        with:
+          path: |
+            .venv
+            .venv-voz
+            ~/.local/share/uv
+            ~/.npm
+          key: entornos-v1-${{ runner.os }}-${{ hashFiles('setup.sh') }}
+
+      - name: Caché de instrumentos y modelos
+        uses: actions/cache@v4
+        with:
+          path: |
+            vendor
+            modelos
+            ~/.cache/huggingface
+          key: pesados-v1-${{ hashFiles('setup.sh') }}
+
+      - name: Caché de voces ya generadas
+        uses: actions/cache@v4
+        with:
+          path: .cache/voz
+          key: voz-${{ github.sha }}
+          restore-keys: voz-
+
+      - name: Instalar
+        run: bash setup.sh
+        env:
+          VOZ_CLAVE: ${{ secrets.VOZ_CLAVE }}
+
+      - name: Fabricar
+        run: |
+          for s in ${{ steps.cuales.outputs.slugs }}; do
+            .venv/bin/python fabrica/make_short.py "videos/$s/guion.json" --motor "${{ inputs.motor || 'chatterbox' }}"
+          done
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
+
+      - name: Subir para revisión
+        run: |
+          for s in ${{ steps.cuales.outputs.slugs }}; do bash .github/scripts/revision.sh "$s"; done
+        env:
+          GH_TOKEN: ${{ github.token }}

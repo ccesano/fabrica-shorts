@@ -1,0 +1,88 @@
+/* Fábrica de Shorts: estilos propios sobre el collage de papel.
+   Paleta por escena con variables: --bg (fondo), --ink (tinta), --acc (acento), --acc2 (acento 2), --deep (fondo de los golpes). */
+@font-face { font-family: "League Gothic"; src: url("assets/fonts/league-gothic-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+2013-2026, U+20AC; }
+@font-face { font-family: "League Gothic"; src: url("assets/fonts/league-gothic-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: "Oswald"; font-weight: 600; src: url("assets/fonts/oswald-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+2013-2026; }
+@font-face { font-family: "Oswald"; font-weight: 600; src: url("assets/fonts/oswald-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-024F; }
+@font-face { font-family: "Anton"; src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+2013-2026; }
+@font-face { font-family: "Anton"; src: url("assets/fonts/anton-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-024F; }
+
+/* ── Golpe: fondo liso con textura de papel, tipografía gigante ── */
+.cg-stage.solid { background: var(--deep); }
+.cg-stage.solid .cg-bg-crumple { opacity: 0.55; }
+.cg-stage.solid .cg-bg-grid { display: none; }
+.cg-kin { position: absolute; white-space: nowrap; transform-origin: 0% 60%; font-family: "League Gothic"; line-height: 0.86; color: #F6F3EC; letter-spacing: 0.005em; }
+.cg-kin.acc { color: var(--acc); }
+.cg-kin.ink { color: var(--ink); }
+.cg-kin.anton { font-family: "Anton"; line-height: 0.95; }
+.cg-kin.box { padding: 6px 26px 0; background: var(--acc); color: var(--deep); }
+.kick { position: absolute; font-family: "Oswald"; font-weight: 600; font-size: 54px; letter-spacing: 0.08em; color: var(--acc); text-transform: uppercase; white-space: nowrap; }
+.cg-stage.solid .cg-label .cg-paper { background: var(--acc); }
+.tape { position: absolute; height: 46px; background: rgba(246, 243, 236, 0.82); transform-origin: 0 50%; }
+
+/* ── Cifra ── */
+.cg-count { position: absolute; transform-origin: 50% 60%; white-space: nowrap; }
+.cg-count .cg-num { font-family: "League Gothic"; line-height: 0.85; color: var(--ink); }
+.cg-stage.solid .cg-count .cg-num { color: var(--acc); }
+
+/* ── Cita ── */
+.quote { position: absolute; left: 70px; width: 940px; font-family: "Newsreader"; font-style: normal; font-weight: 600; line-height: 1.12; color: var(--ink); font-variation-settings: "opsz" 48; }
+.quote .cg-fade { position: relative; display: inline-block; margin-right: 0.24em; }
+.quote .em { color: var(--acc2); }
+.cg-stage.solid .quote { color: #F6F3EC; }
+.cg-stage.solid .quote .em { color: var(--acc); }
+.qmark { position: absolute; font-family: "Gloock"; font-size: 420px; line-height: 1; color: var(--acc); opacity: 0.9; }
+.author { position: absolute; font-family: "Oswald"; font-weight: 600; font-size: 46px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--acc); white-space: nowrap; }
+
+/* ── Objetos de papel genéricos (colores de la paleta) ── */
+.o-ticket { display: flex; width: 560px; height: 280px; background: #FFFDF7; border-radius: 14px; }
+.o-ticket .m { flex: 1; position: relative; }
+.o-ticket .band { height: 60px; padding: 0 24px; border-radius: 14px 0 0 0; background: var(--acc2); color: #F6F3EC; font-family: "Archivo Black"; font-size: 22px; line-height: 60px; letter-spacing: .14em; white-space: nowrap; overflow: hidden; }
+.o-ticket .name { padding: 16px 24px 4px; font-family: "Gloock"; font-size: 46px; line-height: 1; color: #1E1B18; white-space: nowrap; }
+.o-ticket .fields { display: flex; gap: 22px; padding: 10px 24px 0; }
+.o-ticket .k { display: block; font-family: "Newsreader"; font-size: 15px; font-weight: 700; letter-spacing: .18em; color: #5A534C; }
+.o-ticket .v { display: block; font-family: "Newsreader"; font-size: 28px; font-weight: 700; color: #1E1B18; white-space: nowrap; }
+.o-ticket .stub { position: relative; width: 112px; border-left: 3px dashed rgba(30,27,24,.3); display: flex; align-items: center; justify-content: center; }
+.o-ticket .stub span { transform: rotate(-90deg); font-family: "Archivo Black"; font-size: 24px; color: var(--acc2); letter-spacing: .1em; white-space: nowrap; }
+.o-ticket .stub::before, .o-ticket .stub::after { content: ""; position: absolute; left: -17px; width: 30px; height: 30px; border-radius: 50%; background: var(--bg); }
+.o-ticket .stub::before { top: -15px; } .o-ticket .stub::after { bottom: -15px; }
+
+.o-clip { width: 580px; padding: 28px 32px 34px; background: #F1ECDD; clip-path: polygon(0 2%, 8% 0, 22% 1.5%, 40% 0, 61% 1%, 80% 0, 100% 1.6%, 99% 30%, 100% 62%, 98.5% 100%, 70% 98.6%, 45% 100%, 20% 98.4%, 0 100%, 1.2% 66%, 0 33%); }
+.o-clip .kick2 { font-family: "Archivo Black"; font-size: 18px; letter-spacing: .2em; color: #8A3B26; }
+.o-clip .head { font-family: "Gloock"; font-size: 54px; line-height: 1.02; color: #1E1B18; margin: 10px 0 18px; }
+.o-clip .ln { height: 14px; margin: 0 0 13px; background: rgba(30,27,24,.22); border-radius: 3px; }
+.o-clip .ln.s { width: 72%; }
+
+.o-sheet { width: 480px; padding: 30px 30px 18px; background: #FFFDF7; border-top: 18px solid var(--ink); }
+.o-sheet .kick2 { font-family: "Archivo Black"; font-size: 18px; letter-spacing: .22em; color: #8A3B26; }
+.o-sheet .t { font-family: "Gloock"; font-size: 44px; line-height: 1.02; color: #1E1B18; margin: 6px 0 14px; }
+.o-sheet .row { display: flex; align-items: center; height: 66px; border-top: 2px solid rgba(30,27,24,.14); font-family: "Newsreader"; font-size: 32px; font-weight: 600; color: #1E1B18; white-space: nowrap; }
+.o-sheet .n { width: 58px; font-family: "Archivo Black"; font-size: 24px; color: #8A3B26; }
+
+.o-score { width: 820px; padding: 24px 34px; background: #23302A; border: 16px solid #8B6B47; border-radius: 10px; }
+.o-score .row { display: flex; align-items: center; justify-content: space-between; height: 150px; border-bottom: 3px dashed rgba(240,236,224,.35); }
+.o-score .row:last-child { border-bottom: 0; }
+.o-score .tm { font-family: "Archivo Black"; font-size: 44px; color: #F0ECE0; letter-spacing: .03em; white-space: nowrap; }
+.o-score .sc { font-family: "Gloock"; font-size: 136px; line-height: 1; color: #F3C33B; }
+
+.o-cal { width: 380px; background: #FFFDF7; border-radius: 12px; overflow: hidden; text-align: center; }
+.o-cal .mo { height: 90px; background: var(--acc2); color: #F6F3EC; font-family: "Archivo Black"; font-size: 40px; line-height: 92px; letter-spacing: .12em; }
+.o-cal .d { font-family: "League Gothic"; font-size: 250px; line-height: 0.95; color: #1E1B18; padding-top: 10px; }
+.o-cal .y { font-family: "Oswald"; font-weight: 600; font-size: 52px; color: #8A3B26; padding-bottom: 22px; letter-spacing: .1em; }
+
+.o-post { width: 760px; padding: 22px; background: #FFFDF7; }
+.o-post .pic { position: relative; width: 100%; height: 340px; overflow: hidden; background: var(--acc2); }
+.o-post .pic .st { position: absolute; left: -10%; width: 120%; height: 34px; }
+.o-post .pic .sun { position: absolute; right: 90px; top: 50px; width: 120px; height: 120px; border-radius: 50%; background: var(--acc); }
+.o-post .pic .hill { position: absolute; left: -10%; width: 70%; height: 260px; bottom: -150px; border-radius: 50%; background: rgba(0,0,0,.25); }
+.o-post .say { font-family: "Newsreader"; font-style: italic; font-weight: 600; font-size: 30px; color: #5A534C; margin-top: 18px; white-space: nowrap; }
+.o-post .say b { font-family: "Gloock"; font-style: normal; font-weight: 400; font-size: 50px; color: var(--acc2); margin-left: 8px; }
+
+.o-photo { padding: 18px 18px 64px; background: #FFFDF7; }
+.o-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.o-photo .cap2 { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; font-family: "Newsreader"; font-style: italic; font-weight: 600; font-size: 30px; color: #3E3833; }
+
+/* Subtítulos quemados: un poco más chicos que el original, franja inferior segura para Shorts. */
+.cap-wrap { top: 1470px; }
+.cap { font-size: 56px; -webkit-text-stroke: 11px #111111; }
+.cap .hl { color: var(--cap-acc, #F3C33B); }

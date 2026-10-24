@@ -1,0 +1,101 @@
+name: Publicar
+# Se dispara cuando Carlos comenta /publicar o /descartar en un issue de revisión.
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  decidir:
+    if: >-
+      github.event.issue.pull_request == null &&
+      contains(github.event.issue.labels.*.name, 'revision') &&
+      github.event.comment.author_association == 'OWNER' &&
+      (startsWith(github.event.comment.body, '/publicar') || startsWith(github.event.comment.body, '/descartar'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Leer el pedido
+        id: pedido
+        env:
+          CUERPO: ${{ github.event.issue.body }}
+          COMENTARIO: ${{ github.event.comment.body }}
+        run: |
+          slug=$(printf '%s' "$CUERPO" | grep -oP '<!-- slug: \K[^ ]+' | head -1)
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import os, re
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          c = os.environ["COMENTARIO"].strip().split("\n")[0]
+          print("accion=" + ("descartar" if c.startswith("/descartar") else "publicar"))
+          m = re.search(r"(\d{4}-\d{2}-\d{2})[ T](\d{1,2}:\d{2})", c)
+          if m:
+              t = datetime.fromisoformat(f"{m.group(1)}T{m.group(2).zfill(5)}").replace(tzinfo=ZoneInfo("America/Argentina/Buenos_Aires"))
+              print("cuando=" + t.astimezone(ZoneInfo("UTC")).strftime("%Y-%m-%dT%H:%M:%S.000Z"))
+          redes = [r for r in ("youtube", "instagram", "tiktok") if r in c.lower()]
+          print("solo=" + ",".join(redes))
+          PY
+
+      - name: Descartar
+        if: steps.pedido.outputs.accion == 'descartar'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue edit ${{ github.event.issue.number }} --remove-label revision --add-label descartado
+          gh issue close ${{ github.event.issue.number }} --comment "🗑️ Descartado."
+
+      - name: Conseguir una URL pública del video
+        if: steps.pedido.outputs.accion == 'publicar'
+        id: url
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: |
+          s=${{ steps.pedido.outputs.slug }}; tag=video-$s
+          gh release download "$tag" -p "$s.mp4" -p publicacion.json -D pub --clobber
+          if [ "${{ github.event.repository.private }}" = "false" ]; then
+            echo "url=https://github.com/${{ github.repository }}/releases/download/$tag/$s.mp4" >> "$GITHUB_OUTPUT"
+          elif [ -n "$CLOUDINARY_URL" ]; then
+            # CLOUDINARY_URL = cloudinary://API_KEY:API_SECRET@CLOUD_NAME
+            key=$(echo "$CLOUDINARY_URL" | sed -E 's#cloudinary://([^:]+):.*#\1#')
+            sec=$(echo "$CLOUDINARY_URL" | sed -E 's#cloudinary://[^:]+:([^@]+)@.*#\1#')
+            cloud=$(echo "$CLOUDINARY_URL" | sed -E 's#.*@##')
+            ts=$(date +%s); pid="shorts/$s"
+            sig=$(printf 'overwrite=true&public_id=%s&timestamp=%s%s' "$pid" "$ts" "$sec" | sha1sum | cut -d' ' -f1)
+            url=$(curl -sS "https://api.cloudinary.com/v1_1/$cloud/video/upload" -F file=@"pub/$s.mp4" -F api_key="$key" \
+                  -F timestamp="$ts" -F public_id="$pid" -F overwrite=true -F signature="$sig" | jq -r .secure_url)
+            [ "$url" != "null" ] || { echo "Cloudinary no devolvió URL"; exit 1; }
+            echo "url=$url" >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::El repo es privado y no hay CLOUDINARY_URL: Buffer necesita una URL pública del video."; exit 1
+          fi
+
+      - name: Publicar con Buffer
+        if: steps.pedido.outputs.accion == 'publicar'
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+        run: |
+          args=()
+          [ -n "${{ steps.pedido.outputs.cuando }}" ] && args+=(--cuando "${{ steps.pedido.outputs.cuando }}")
+          [ -n "${{ steps.pedido.outputs.solo }}" ] && args+=(--solo "${{ steps.pedido.outputs.solo }}")
+          python3 fabrica/publicar.py "${{ steps.url.outputs.url }}" pub/publicacion.json "${args[@]}" | tee resultado.txt
+
+      - name: Avisar en el issue
+        if: always() && steps.pedido.outputs.accion == 'publicar'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=${{ github.event.issue.number }}
+          if [ "${{ job.status }}" = "success" ]; then
+            msg="✅ Enviado a Buffer${{ steps.pedido.outputs.cuando && ' (programado)' || '' }}:"$'\n```\n'"$(cat resultado.txt)"$'\n```'
+            gh issue comment $n --body "$msg"
+            gh issue edit $n --remove-label revision --add-label publicado
+            gh issue close $n
+          else
+            gh issue comment $n --body "❌ No se pudo publicar. Detalle: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi

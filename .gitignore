@@ -1,0 +1,18 @@
+# entornos y descargas (setup.sh los recrea)
+.venv
+.venv-voz
+vendor
+modelos
+node_modules/
+.cache/
+__pycache__/
+*.pyc
+
+# todo lo que genera la fábrica
+videos/*/salida/
+
+# la muestra de voz NUNCA va al repo sin cifrar
+voces/*.wav
+voces/*.mp3
+voces/*.m4a
+!voces/*.gpg
