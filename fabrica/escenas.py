@@ -316,6 +316,8 @@ def foto(E, esc):
         E.tira("label", et, PUSH + 0.05, f"left: 50px; top: {E.r.choice([240, 260])}px; width: 980px", cabe(et, "news", 980, 92, 58, 68))
         top = 390
     alto = (1200 if not palabras else 1090 - 130 * len(palabras)) - top
+    if esc["foto"].get("recorte"):   # una figura recortada puede quedar detrás de las palabras: más grande
+        alto = 1230 - top
     spec = dict({k: v for k, v in esc["foto"].items() if k != "en"}, tipo="foto")
     spec["caja"] = (900, alto)
     t = E.cuando(esc["foto"].get("en", ""), PUSH + 0.2) if esc["foto"].get("en") else PUSH + 0.2
@@ -381,7 +383,7 @@ def jugada(E, esc):
     arco = "M740,1170 Q 560,170 310,560" if izq else "M340,1170 Q 520,170 770,560"
     from objetos import pelota
     bola = pelota(80, u2).html.replace('<svg viewBox="0 0 300 300" width="80" height="80"', '<svg x="-40" y="-40" viewBox="0 0 300 300" width="80" height="80"')
-    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_chip}" data-dur="1.15" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
+    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_chip}" data-dur="1.0" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
                    f'<defs><mask id="{u2}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{arco}" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></mask></defs>'
                    f'<path class="cg-route" d="{arco}" fill="none" stroke="var(--acc)" stroke-width="9" stroke-dasharray="4 18" stroke-linecap="round" mask="url(#{u2}-m)"/>'
                    f'<g class="cg-plane">{bola}</g></svg>')
@@ -391,8 +393,8 @@ def jugada(E, esc):
         E.tira("word", txt, E.cuando(item_en(p), t_chip), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
     sello = esc.get("sello", "¡GOL!")
     if sello:
-        E.sello(sello.upper(), round(t_chip + 1.2, 3), "left: 110px; top: 780px" if izq else "left: 600px; top: 780px", E.r.choice([-9, 8]))
-        E.fx("golpe", t_chip + 1.15, 0.45)
+        E.sello(sello.upper(), round(t_chip + 1.0, 3), "left: 110px; top: 780px" if izq else "left: 600px; top: 780px", E.r.choice([-9, 8]))
+        E.fx("golpe", t_chip + 0.95, 0.45)
 
 
 TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "jugada": jugada, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
