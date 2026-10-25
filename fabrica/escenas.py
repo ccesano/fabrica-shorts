@@ -320,7 +320,7 @@ def foto(E, esc):
         alto = 1230 - top
     spec = dict({k: v for k, v in esc["foto"].items() if k != "en"}, tipo="foto")
     spec["caja"] = (900, alto)
-    t = E.cuando(esc["foto"].get("en", ""), PUSH + 0.2) if esc["foto"].get("en") else PUSH + 0.2
+    t = E.cuando(esc["foto"].get("en", ""), PUSH) if esc["foto"].get("en") else PUSH
     E.objeto(spec, t, 540, top, E.r.choice([-3, -2, 2, 3]), max_h=alto + 120, max_w=980)
     ys = [1110, 1250] if len(palabras) == 2 else [1190]
     for i, p in enumerate(palabras):
