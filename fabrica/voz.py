@@ -54,6 +54,19 @@ def rioplatense(texto, modo="y"):
     return t
 
 
+# Cómo se dicen los nombres (solo cambia lo que lee la voz; los subtítulos quedan con la ortografía original).
+# El guion puede sumar o pisar entradas con "voz": {"pronunciar": {"Nombre": "Cómo se dice"}}.
+PRONUNCIAR = {
+    "Newell's": "Ñuls", "Newell’s": "Ñuls", "Newells": "Ñuls", "NEWELL'S": "ÑULS",
+}
+
+
+def pronunciar(texto, extra=None):
+    for k, v in {**PRONUNCIAR, **(extra or {})}.items():
+        texto = re.sub(r"(?<![\wÁÉÍÓÚáéíóúñÑ])" + re.escape(k) + r"(?![\wÁÉÍÓÚáéíóúñÑ])", v, texto)
+    return texto
+
+
 def _norm_txt(s):
     try:
         from num2words import num2words
@@ -170,7 +183,8 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
         motor = "kokoro"
     lineas = guion["lineas"]
     modo_rio = cfg.get("rioplatense", "sch")
-    hablado = [rioplatense(ln["say"], modo_rio) if motor == "chatterbox" else ln["say"] for ln in lineas]
+    hablado = [pronunciar(ln["say"], cfg.get("pronunciar")) for ln in lineas]
+    hablado = [rioplatense(h, modo_rio) if motor == "chatterbox" else h for h in hablado]
     archivos = [None] * len(lineas)
     mejor = {}  # línea → (puntaje, archivo) del mejor intento
     pendientes = list(range(len(lineas)))
@@ -197,10 +211,11 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
             if motor == "grabada" or not (MODELOS / "sherpa-onnx-whisper-base").exists():
                 continue
             oido = transcribir(str(archivos[i]))
-            p = parecido(lineas[i]["say"], oido)
+            esperado = [lineas[i]["say"], pronunciar(lineas[i]["say"], cfg.get("pronunciar"))]
+            p = max(parecido(e, oido) for e in esperado)
             if p < umbral:  # Whisper a veces corta después de una pausa: escuchar por mitades
                 oido = transcribir(str(archivos[i]), 0, 0.6) + " " + transcribir(str(archivos[i]), 0.4, 1)
-                p = max(p, parecido(lineas[i]["say"], oido))
+                p = max([p] + [parecido(e, oido) for e in esperado])
             if p > mejor.get(i, (-1, None))[0]:
                 mejor[i] = (p, archivos[i])
             if p < umbral:

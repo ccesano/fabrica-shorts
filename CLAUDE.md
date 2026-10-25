@@ -51,6 +51,9 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 - El `say` se escribe con ortografía normal: la fábrica cambia sola **solo la ll por "sch"** antes de pasarlo a la voz
   clonada ("lluvia" → "schuvia"); la y queda como y. Es lo que eligió Carlos tras escuchar las pruebas, con la muestra
   de voz original (`voces/muestra.wav.gpg`). Otras opciones: `"voz": {"rioplatense": "sch+y"}`, `"ll"`, `"y"` o `false`.
+- Pronunciación de nombres: `fabrica/voz.py` tiene un diccionario `PRONUNCIAR` (ej. "Newell's" → "Ñuls") que se aplica
+  solo a lo que lee la voz; el `say` y los subtítulos quedan con la ortografía original. Para un video puntual:
+  `"voz": {"pronunciar": {"Nombre": "Cómo se dice"}}`. Si Carlos corrige cómo se dice un nombre, sumarlo al diccionario.
 - `emocion` por línea (0 = calmo, 1 = muy intenso): varía la entonación de la voz clonada. Usar 0.4–0.6 de base y
   0.75–0.9 en el clímax.
 - `pausa` (s) después de cada línea: 0.4–0.6 normal, 1–1.4 antes y después de una frase textual.
