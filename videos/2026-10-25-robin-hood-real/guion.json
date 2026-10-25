@@ -1,0 +1,351 @@
+{
+ "titulo": "El verdadero Robin Hood",
+ "paleta": "bosque",
+ "musica": {
+  "animo": "misterio"
+ },
+ "ambiente": "ninguno",
+ "subtitulos": true,
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/Robin_Hood",
+  "https://www.visit-nottinghamshire.co.uk/ideas-and-inspiration/robin-hood/the-real-robin-hood"
+ ],
+ "lineas": [
+  {
+   "say": "Robin Hood, el ladrón más famoso del mundo, empezó siendo otra cosa: un apodo para bandidos.",
+   "sub": "Robin Hood, el ladrón más famoso del mundo, empezó siendo otra cosa: un apodo para bandidos.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "la historia real",
+    "palabras": [
+     {
+      "texto": "ROBIN HOOD",
+      "en": "Robin Hood"
+     },
+     {
+      "texto": "ANTES FUE",
+      "en": "empezó"
+     },
+     {
+      "texto": "*UN APODO*",
+      "en": "apodo"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Para el que no lo conoce: según la leyenda, Robin Hood era un arquero que vivía escondido en el bosque de Sherwood, en Inglaterra.",
+   "sub": "Para el que no lo conoce: según la leyenda, Robin Hood era un arquero que vivía escondido en el bosque de Sherwood, en Inglaterra.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "La leyenda",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_Merry_Adventures_of_Robin_Hood%2C_5.png",
+     "pagina": "https://commons.wikimedia.org/wiki/File:The_Merry_Adventures_of_Robin_Hood,_5.png",
+     "licencia": "dominio público",
+     "credito": "Howard Pyle, «The Merry Adventures of Robin Hood» (1883) / Wikimedia Commons",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Howard Pyle, 1883"
+    },
+    "palabras": [
+     {
+      "texto": "ARQUERO",
+      "en": "arquero"
+     },
+     {
+      "texto": "BOSQUE DE SHERWOOD",
+      "en": "Sherwood"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Con su banda, Little John, el fraile Tuck y Lady Marian, le robaba a los ricos para dárselo a los pobres.",
+   "sub": "Con su banda, Little John, el fraile Tuck y Lady Marian, le robaba a los ricos para dárselo a los pobres.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "Su banda",
+    "items": [
+     {
+      "texto": "Little John",
+      "en": "Little John"
+     },
+     {
+      "texto": "Fraile Tuck",
+      "en": "Tuck"
+     },
+     {
+      "texto": "Lady Marian",
+      "en": "Marian"
+     }
+    ],
+    "remate": {
+     "texto": "ROBAR AL RICO, DAR AL POBRE",
+     "en": "pobres"
+    }
+   }
+  },
+  {
+   "say": "Y su gran enemigo era el sheriff de Nottingham, que lo perseguía sin poder atraparlo.",
+   "sub": "Y su gran enemigo era el sheriff de Nottingham, que lo perseguía sin poder atraparlo.",
+   "emocion": 0.55,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Su enemigo",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "SE BUSCA",
+     "titular": "Robin Hood, por orden del sheriff de Nottingham"
+    },
+    "palabras": [
+     {
+      "texto": "EL SHERIFF",
+      "en": "sheriff"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Esa es la leyenda. Pero, ¿de dónde salió?",
+   "sub": "Esa es la leyenda. Pero, ¿de dónde salió?",
+   "emocion": 0.6,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "¿DE DÓNDE",
+      "en": "dónde"
+     },
+     {
+      "texto": "*SALIÓ?*",
+      "en": "salió"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Las historias más viejas que se conservan son baladas de hace casi seiscientos años. Y ahí Robin era distinto: no era un noble, era un hombre del pueblo.",
+   "sub": "Las historias más viejas que se conservan son baladas de hace casi 600 años. Y ahí Robin era distinto: no era un noble, era un hombre del pueblo.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Las primeras baladas",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Here_begynneth_a_gest_of_Robyn_Hode.png",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Here_begynneth_a_gest_of_Robyn_Hode.png",
+     "licencia": "dominio público",
+     "credito": "«A Gest of Robyn Hode», impreso del siglo XVI / Wikimedia Commons",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "«A Gest of Robyn Hode»"
+    },
+    "palabras": [
+     {
+      "texto": "HOMBRE DEL PUEBLO",
+      "en": "hombre del pueblo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En esas baladas no estaba Lady Marian. Y ninguna decía que le robaba a los ricos para dárselo a los pobres.",
+   "sub": "En esas baladas no estaba Lady Marian. Y ninguna decía que le robaba a los ricos para dárselo a los pobres.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "en las primeras baladas",
+    "palabras": [
+     {
+      "texto": "SIN MARIAN",
+      "en": "Marian"
+     },
+     {
+      "texto": "SIN «ROBAR",
+      "en": "ricos"
+     },
+     {
+      "texto": "*AL RICO»*",
+      "en": "pobres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Entonces, ¿hubo un Robin Hood real? La primera pista es de hace ochocientos años, en York: un tal Robert Hod, fugitivo de la justicia, que le debía plata a una iglesia.",
+   "sub": "Entonces, ¿hubo un Robin Hood real? La primera pista es de hace 800 años, en York: un tal Robert Hod, fugitivo de la justicia, que le debía plata a una iglesia.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "etiqueta": "York, Inglaterra",
+    "numero": 800,
+    "sufijo": " AÑOS",
+    "en": "ochocientos",
+    "palabra": "ROBERT HOD, FUGITIVO",
+    "palabra_en": "Robert Hod"
+   }
+  },
+  {
+   "say": "Y en mil doscientos sesenta y dos, un escribano le cambió el apellido a un forajido, William, el hijo del herrero: lo anotó como Robehod.",
+   "sub": "Y en 1262, un escribano le cambió el apellido a un forajido, William, el hijo del herrero: lo anotó como «Robehod».",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Registro judicial, 1262",
+    "objeto": {
+     "tipo": "planilla",
+     "volanta": "Berkshire · 1262",
+     "titulo": "Forajidos",
+     "filas": [
+      [
+       "1",
+       "William, hijo del herrero"
+      ],
+      [
+       "→",
+       "ROBEHOD"
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "ROBEHOD",
+      "en": "Robehod"
+     }
+    ]
+   }
+  },
+  {
+   "say": "O sea que antes de ser leyenda, Robin Hood ya era un apodo. Quería decir bandido.",
+   "sub": "O sea que antes de ser leyenda, Robin Hood ya era un apodo. Quería decir bandido.",
+   "emocion": 0.75,
+   "pausa": 0.7,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "ROBIN HOOD",
+      "en": "Robin Hood"
+     },
+     {
+      "texto": "*= BANDIDO*",
+      "en": "bandido"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Lo demás se fue sumando con los siglos. Lo de robar al rico apareció escrito en mil quinientos noventa y dos. Y una obra de teatro lo convirtió en conde en mil quinientos noventa y ocho.",
+   "sub": "Lo demás se fue sumando con los siglos. Lo de robar al rico apareció escrito en 1592. Y una obra de teatro lo convirtió en conde en 1598.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "Lo que se agregó después",
+    "items": [
+     {
+      "texto": "Robar al rico · 1592",
+      "en": "robar"
+     },
+     {
+      "texto": "Conde de Huntingdon · 1598",
+      "en": "conde"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hoy tiene estatua en Nottingham, aunque las primeras historias lo ubicaban más al norte, en Yorkshire.",
+   "sub": "Hoy tiene estatua en Nottingham, aunque las primeras historias lo ubicaban más al norte, en Yorkshire.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Nottingham, Inglaterra",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Statue_of_Robin_Hood_near_Nottingham_Castle_01.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Statue_of_Robin_Hood_near_Nottingham_Castle_01.jpg",
+     "licencia": "CC BY-SA 4.0",
+     "credito": "Immanuel Giel / Wikimedia Commons",
+     "tratamiento": "color",
+     "recorte": true
+    },
+    "palabras": [
+     {
+      "texto": "NOTTINGHAM",
+      "en": "Nottingham"
+     },
+     {
+      "texto": "¿O YORKSHIRE?",
+      "en": "Yorkshire"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Existió o lo inventó el pueblo? Los historiadores todavía discuten. ¿Vos qué creés? Contalo en los comentarios.",
+   "sub": "¿Existió o lo inventó el pueblo? Los historiadores todavía discuten. ¿Vos qué creés? Contalo en los comentarios.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿EXISTIÓ",
+      "en": "Existió"
+     },
+     {
+      "texto": "*DE VERDAD?*",
+      "en": "inventó"
+     }
+    ],
+    "cta": "¿Vos qué creés? Contalo en los comentarios."
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "El verdadero Robin Hood: lo que nadie te contó de la leyenda #shorts",
+  "descripcion": "Quién fue Robin Hood según la leyenda, y qué hay de real: Robert Hod, el fugitivo de York, el apodo «Robehod» y todo lo que se le agregó con los siglos.",
+  "hashtags": [
+   "robinhood",
+   "historia",
+   "leyendas",
+   "curiosidades",
+   "shorts"
+  ],
+  "categoria_youtube": "27"
+ },
+ "voz": {
+  "rioplatense": "sch",
+  "pronunciar": {
+   "Robin Hood": "Róbin Jud",
+   "Robert Hod": "Róbert Jod",
+   "Robehod": "Róbjod",
+   "York": "Iork",
+   "Yorkshire": "Iórkshir",
+   "Nottingham": "Nótingam",
+   "Lady": "Léidi",
+   "Little John": "Lítel Yon",
+   "Sherwood": "Shérwud",
+   "sheriff": "shérif",
+   "Tuck": "Tak",
+   "Huntingdon": "Jántington"
+  }
+ },
+ "largo": true
+}
