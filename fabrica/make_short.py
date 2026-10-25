@@ -89,7 +89,7 @@ def hoja(video, escenas, out):
     tmp.mkdir(exist_ok=True)
     fs = []
     for i, s in enumerate(escenas):
-        t = s["start"] + s["dur"] - (0.55 if s["pushout"] is not None else 0.3)
+        t = s["start"] + s["dur"] - (0.9 if s["pushout"] is not None else 0.3)
         f = tmp / f"c{i:02d}.jpg"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.2f}", "-i", str(video), "-frames:v", "1", "-vf", "scale=270:480", str(f)], check=True)
         fs.append(f)

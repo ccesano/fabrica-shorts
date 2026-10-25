@@ -378,7 +378,7 @@ def armar(guion, timings, slug):
         s["push"] = i > 0
         s["pushout"] = round(s["dur"] - PUSH, 3) if i + 1 < len(escenas) else None
         s["outdir"] = escenas[i + 1]["trans"] if i + 1 < len(escenas) else None
-        s["exit"] = round(s["dur"] - 0.9, 3) if i + 1 < len(escenas) else None
+        s["exit"] = round(s["dur"] - 0.6, 3) if i + 1 < len(escenas) else None
     return escenas, fin, sfx, subtitulos(lineas, tls), nombre_pal
 
 
