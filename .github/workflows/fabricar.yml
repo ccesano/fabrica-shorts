@@ -72,14 +72,18 @@ jobs:
           restore-keys: voz-
 
       - name: Instalar
-        run: bash setup.sh
+        run: |
+          set -o pipefail
+          bash setup.sh 2>&1 | tee setup.log
         env:
           VOZ_CLAVE: ${{ secrets.VOZ_CLAVE }}
 
       - name: Fabricar
         run: |
+          set -o pipefail
           for s in ${{ steps.cuales.outputs.slugs }}; do
-            .venv/bin/python fabrica/make_short.py "videos/$s/guion.json" --motor "${{ inputs.motor || 'chatterbox' }}"
+            mkdir -p "videos/$s/salida"
+            .venv/bin/python fabrica/make_short.py "videos/$s/guion.json" --motor "${{ inputs.motor || 'chatterbox' }}" 2>&1 | tee "videos/$s/salida/fabricar.log"
           done
         env:
           HF_HUB_DISABLE_PROGRESS_BARS: "1"
@@ -87,5 +91,15 @@ jobs:
       - name: Subir para revisión
         run: |
           for s in ${{ steps.cuales.outputs.slugs }}; do bash .github/scripts/revision.sh "$s"; done
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Avisar si falló
+        if: failure()
+        run: |
+          log=$(for s in ${{ steps.cuales.outputs.slugs }}; do tail -n 40 "videos/$s/salida/fabricar.log" 2>/dev/null; done)
+          [ -n "$log" ] || log=$(tail -n 40 setup.log 2>/dev/null)
+          gh label create falla --color B60205 --force >/dev/null
+          gh issue create --label falla --title "Falló la fabricación: ${{ steps.cuales.outputs.slugs }}" --body "$(printf 'Run: %s\n\n```\n%s\n```' "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" "$log")"
         env:
           GH_TOKEN: ${{ github.token }}

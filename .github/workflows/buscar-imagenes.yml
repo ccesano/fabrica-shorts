@@ -20,13 +20,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Buscar
         run: |
           pip install -q pillow
           for f in $(git diff --name-only HEAD^ HEAD -- 'investigacion/*/consultas.json'); do
-            python3 fabrica/buscar_imagenes.py "$f"
+            python3 fabrica/buscar_imagenes.py "$f" 2>&1 | tee "$(dirname "$f")/log.txt"
           done
       - name: Devolver resultados al repo
+        if: always()
         run: |
           git config user.name "fabrica-shorts"
           git config user.email "actions@users.noreply.github.com"
