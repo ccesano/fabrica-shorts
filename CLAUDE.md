@@ -6,18 +6,31 @@ Canal: público hispanohablante de Latinoamérica, adultos de 50+. Formato 9:16,
 
 ## Cuando Carlos pide un video ("hacé un short sobre X")
 
+El guion **siempre pasa por Carlos antes de fabricarse**. Dos tiempos:
+
+**A. Propuesta (no se pushea nada todavía)**
 1. **Investigar** el tema con búsqueda web. Cada dato del guion tiene que estar verificado; anotar las fuentes en `"fuentes"`.
    Si algo no se puede confirmar, no va.
-2. **Escribir** `videos/<AAAA-MM-DD>-<slug-corto>/guion.json` (formato abajo). Copiá la estructura de
-   `videos/maradona-despedida/guion.json`, que es el ejemplo de referencia.
-3. **Commit + push a `main`** con el mensaje `video: <título>`. El flujo de GitHub *Fabricar* renderiza solo
+2. **Mostrar el guion en el chat** como una tabla, una fila por línea:
+   `# | Voz (say) | En pantalla (tipo de escena + textos + objeto) | Emoción`
+   y arriba, en una línea: paleta · ánimo de la música · ambiente · duración estimada (caracteres / 15 ≈ segundos).
+   Debajo, el título y la descripción de la publicación. Terminar preguntando qué cambiar.
+3. **Iterar** con sus pedidos creativos (gancho, objetos, colores, música, qué frase más emotiva, etc.) hasta que diga
+   que está bien ("dale", "ok", "fabricalo"). Las palabras de Carlos mandan sobre las reglas de abajo, salvo los datos
+   sin verificar.
+
+**B. Fabricación (solo con su OK)**
+4. Escribir `videos/<AAAA-MM-DD>-<slug-corto>/guion.json` (formato abajo; ejemplo de referencia:
+   `videos/maradona-despedida/guion.json`).
+5. **Commit + push a `main`** con el mensaje `video: <título>`. El flujo de GitHub *Fabricar* renderiza solo
    y abre un issue de revisión con el video. **No renderices en la sesión** salvo que Carlos lo pida (gasta tiempo y tokens).
-   Para probar el guion sin render: `.venv/bin/python fabrica/make_short.py videos/<slug>/guion.json --sin-render --motor kokoro`
+   Para validar el JSON sin render: `.venv/bin/python fabrica/make_short.py videos/<slug>/guion.json --sin-render --motor kokoro`
    (requiere `bash setup.sh sin-voz` una vez por sesión).
-4. Responder con el título, una línea sobre el enfoque y el link al commit. Nada más.
+6. Responder con el título y el link al commit; el video llega en ~15 min como issue *Revisar: …*.
 
 Si Carlos pide cambios a un video ya hecho: editar su `guion.json` y volver a pushear (la voz de las líneas que no
-cambiaron se reutiliza).
+cambiaron se reutiliza y el issue se actualiza con la versión nueva).
+Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (uno debajo del otro) y fabricar los aprobados.
 
 ## Reglas del guion
 
@@ -62,6 +75,8 @@ cambiaron se reutiliza).
 | `lista` | nombres, pasos, ejemplos | `items` (≤ 6), `etiqueta`?, `remate`?, `numerada`? |
 | `cita` | frase textual de alguien | `texto` (con `*énfasis*`), `autor` |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
+
+Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
 
 - Una palabra entre `*asteriscos*` sale en color de acento.
 - Cada palabra aparece cuando la voz la dice. Si el texto en pantalla no coincide con lo leído, usar

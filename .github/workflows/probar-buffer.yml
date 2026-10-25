@@ -1,0 +1,19 @@
+name: Probar Buffer
+# Verifica que el secret BUFFER_TOKEN funciona y muestra los canales conectados. Se corre a mano (Actions → Probar Buffer → Run workflow).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  canales:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Canales conectados en Buffer
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+        run: |
+          python3 fabrica/publicar.py --canales | tee canales.txt
+          echo '### Canales de Buffer' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"; cat canales.txt >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"
+          for s in youtube instagram tiktok; do grep -qi "^$s" canales.txt && echo "✅ $s" || echo "❌ falta $s"; done | tee -a "$GITHUB_STEP_SUMMARY"
