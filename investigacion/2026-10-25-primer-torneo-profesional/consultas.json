@@ -1,4 +1,25 @@
-{"max": 8,
- "archivos": ["File:Boca 1931 poster.jpg", "File:Boca river 1931.jpg"],
- "busquedas": ["Boca Juniors 1931", "Estudiantes de La Plata 1931", "Zozaya", "Peucelle", "Varallo", "huelga futbolistas 1931", "José Félix Uriburu", "River Plate 1931", "Racing Independiente 1931"],
- "categorias": ["El Gráfico, 1931", "Alberto Zozaya", "Carlos Peucelle", "Francisco Varallo", "Alejandro Scopelli"]}
+{
+ "max": 10,
+ "archivos": [
+  "File:Boca 1931 poster.jpg",
+  "File:Boca river 1931.jpg"
+ ],
+ "busquedas": [
+  "Boca Juniors 1931",
+  "Estudiantes de La Plata 1931",
+  "Zozaya",
+  "Peucelle",
+  "Varallo",
+  "huelga futbolistas 1931",
+  "José Félix Uriburu",
+  "River Plate 1931",
+  "Racing Independiente 1931"
+ ],
+ "categorias": [
+  "El Gráfico, 1931",
+  "Alberto Zozaya",
+  "Carlos Peucelle",
+  "Francisco Varallo",
+  "Alejandro Scopelli"
+ ]
+}
