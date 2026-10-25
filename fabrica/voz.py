@@ -28,11 +28,14 @@ SR = 24000
 LEAD = 0.35
 
 
-def rioplatense(texto, modo="ll"):
-    """Escribe la ll (y opcionalmente la y consonante) como "sh" para que la voz la diga a lo rioplatense."""
+def rioplatense(texto, modo="y"):
+    """Cambia la ll antes de pasarle el texto a la voz clonada.
+    modo "y" (por defecto, elegido por Carlos): ll → y · "ll": ll → sh · "ll+y": ll y la y consonante → sh."""
     if not modo:
         return texto
     import re as _re
+    if modo == "y":
+        return _re.sub(r"LL", "Y", _re.sub(r"Ll", "Y", _re.sub(r"ll", "y", texto)))
     t = _re.sub(r"ll", "sh", texto)
     t = _re.sub(r"Ll", "Sh", t)
     t = _re.sub(r"LL", "SH", t)
@@ -158,7 +161,7 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
         print("⚠ No está instalado Chatterbox (.venv-voz): uso Kokoro", flush=True)
         motor = "kokoro"
     lineas = guion["lineas"]
-    modo_rio = cfg.get("rioplatense", "ll")
+    modo_rio = cfg.get("rioplatense", "y")
     hablado = [rioplatense(ln["say"], modo_rio) if motor == "chatterbox" else ln["say"] for ln in lineas]
     archivos = [None] * len(lineas)
     mejor = {}  # línea → (puntaje, archivo) del mejor intento
