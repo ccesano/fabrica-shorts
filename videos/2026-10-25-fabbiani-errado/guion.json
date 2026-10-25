@@ -1,0 +1,235 @@
+{
+ "titulo": "El casi golazo del Ogro Fabbiani",
+ "paleta": "atardecer",
+ "musica": {
+  "animo": "alegre"
+ },
+ "ambiente": "cancha",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.pagina12.com.ar/diario/ultimas/20-114384-2008-11-02.html",
+  "https://www.perfil.com/noticias/deportes/con-un-penal-de-schiavi-newells-gano-el-clasico-rosarino-20081102-0025.phtml",
+  "https://www.c5n.com/deportes/tres-goles-errados-que-nadie-puede-explicar-como-ocurrieron-son-impresionantes-n185032",
+  "https://en.wikipedia.org/wiki/Cristian_Fabbiani",
+  "https://www.elgrafico.com.ar/articulo/la-jornada-esta-aqui/86299/newells-oficializo-a-cristian-fabbiani-como-nuevo-tecnico"
+ ],
+ "lineas": [
+  {
+   "say": "El mejor gol errado del fútbol argentino. Y lo erró con el arco vacío.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "Apertura 2008",
+    "palabras": [
+     {
+      "texto": "EL MEJOR GOL",
+      "en": "mejor gol"
+     },
+     {
+      "texto": "*ERRADO*",
+      "en": "errado"
+     },
+     {
+      "texto": "ARCO VACÍO",
+      "en": "arco vacío"
+     }
+    ]
+   },
+   "sub": "El mejor gol errado del fútbol argentino. Y lo erró con el arco vacío."
+  },
+  {
+   "say": "Dos de noviembre de dos mil ocho. Clásico rosarino en el Parque Independencia: Newell's contra Central.",
+   "sub": "2 de noviembre de 2008. Clásico rosarino en el Parque Independencia: Newell's contra Central.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Parque Independencia, Rosario",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Estadio_Marcelo_Bielsa.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Estadio_Marcelo_Bielsa.jpg",
+     "credito": "PitchdGroundhopping / Wikimedia Commons",
+     "licencia": "CC BY-SA 4.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Estadio Marcelo Bielsa"
+    },
+    "palabras": [
+     {
+      "texto": "CLÁSICO",
+      "en": "Clásico"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En Newell's jugaba Cristian Fabbiani. Le decían el Ogro desde que festejó un gol con una máscara de Shrek.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Cristian «Ogro» Fabbiani",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cristian_Fabbiani_LDUP_2016.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cristian_Fabbiani_LDUP_2016.JPG",
+     "credito": "Johnniebm / Wikimedia Commons",
+     "licencia": "CC BY-SA 4.0",
+     "tratamiento": "color",
+     "recorte": true
+    },
+    "palabras": [
+     {
+      "texto": "EL OGRO",
+      "en": "Ogro"
+     },
+     {
+      "texto": "SHREK",
+      "en": "Shrek"
+     }
+    ]
+   },
+   "sub": "En Newell's jugaba Cristian Fabbiani. Le decían el Ogro desde que festejó un gol con una máscara de Shrek."
+  },
+  {
+   "say": "Newell's ganaba uno a cero, con un penal de Schiavi.",
+   "sub": "Newell's ganaba 1 a 0, con un penal de Schiavi.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Apertura 2008, fecha 13",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "NEWELL'S",
+       1
+      ],
+      [
+       "CENTRAL",
+       0
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "PENAL DE SCHIAVI",
+      "en": "Schiavi"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Sobre el final, ocurrió lo magistral e impensado. El Ogro recuperó una pelota, dejó parada a media defensa, eludió a Broun… y con el arco vacío, la tiró por arriba del travesaño.",
+   "emocion": 0.85,
+   "pausa": 1.5,
+   "escena": {
+    "tipo": "jugada",
+    "etiqueta": "la jugada",
+    "sentido": "izquierda",
+    "rivales": 3,
+    "arquero": "eludido",
+    "resultado": "afuera",
+    "corrida_en": "recuperó",
+    "remate_en": "la tiró",
+    "arquero_color": "#1D3F8F",
+    "rival_color": "#1D3F8F",
+    "palabras": [
+     {
+      "texto": "ARCO VACÍO",
+      "en": "arco vacío"
+     }
+    ],
+    "sello": "¡AFUERA!"
+   },
+   "sub": "Sobre el final, ocurrió lo magistral e impensado. El Ogro recuperó una pelota, dejó parada a media defensa, eludió a Broun… y con el arco vacío, la tiró por arriba del travesaño."
+  },
+  {
+   "say": "Newell's ganó igual, uno a cero. Pero nadie se olvidó del gol que no fue.",
+   "sub": "Newell's ganó igual, 1 a 0. Pero nadie se olvidó del gol que no fue.",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "GANÓ IGUAL",
+      "en": "ganó igual"
+     },
+     {
+      "texto": "*EL GOL*",
+      "en": "gol"
+     },
+     {
+      "texto": "*QUE NO FUE*",
+      "en": "no fue"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Diecisiete años después, el Ogro volvió a Newell's. Esta vez, como técnico.",
+   "sub": "17 años después, el Ogro volvió a Newell's. Esta vez, como técnico.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "2025",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cristian_Fabbiani_2025.png",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Cristian_Fabbiani_2025.png",
+     "credito": "Newell's Old Boys / Wikimedia Commons",
+     "licencia": "CC BY 3.0",
+     "tratamiento": "color",
+     "recorte": true
+    },
+    "palabras": [
+     {
+      "texto": "DT DE NEWELL'S",
+      "en": "técnico"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Viste alguna vez un gol errado más increíble? Contalo en los comentarios.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿UN GOL ERRADO",
+      "en": "gol errado"
+     },
+     {
+      "texto": "*MÁS INCREÍBLE?*",
+      "en": "increíble"
+     }
+    ],
+    "objeto": {
+     "tipo": "pelota"
+    },
+    "cta": "Contalo en los comentarios."
+   },
+   "sub": "¿Viste alguna vez un gol errado más increíble? Contalo en los comentarios."
+  }
+ ],
+ "publicar": {
+  "titulo": "El mejor gol errado del clásico rosarino: el Ogro Fabbiani y el arco vacío #shorts",
+  "descripcion": "Apertura 2008: Fabbiani recuperó, eludió a todos y a Broun… y la tiró por arriba con el arco vacío.",
+  "hashtags": [
+   "newells",
+   "fabbiani",
+   "clasicorosarino",
+   "futbolargentino",
+   "shorts"
+  ],
+  "categoria_youtube": "17"
+ },
+ "voz": {
+  "rioplatense": "sch"
+ }
+}
