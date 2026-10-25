@@ -36,6 +36,11 @@ def rioplatense(texto, modo="y"):
     import re as _re
     if modo == "y":
         return _re.sub(r"LL", "Y", _re.sub(r"Ll", "Y", _re.sub(r"ll", "y", texto)))
+    if modo == "sch":   # elegido por Carlos: ll y la y consonante ("yo", "ya", "playa") → sch
+        t = _re.sub(r"LL", "SCH", _re.sub(r"Ll", "Sch", _re.sub(r"ll", "sch", texto)))
+        t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])y(?=[aeiouáéíóú])", "sch", t)
+        t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])Y(?=[aeiouáéíóú])", "Sch", t)
+        return _re.sub(r"(?<=[aeiouáéíóúAEIOU])y(?=[aeiouáéíóú])", "sch", t)
     t = _re.sub(r"ll", "sh", texto)
     t = _re.sub(r"Ll", "Sh", t)
     t = _re.sub(r"LL", "SH", t)
@@ -54,7 +59,7 @@ def _norm_txt(s):
         pass
     s = unicodedata.normalize("NFD", s.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    s = re.sub(r"sh|ll|ch", "y", s)   # la sh rioplatense se transcribe de muchas formas
+    s = re.sub(r"sch|sh|ll|ch", "y", s)   # la sh rioplatense se transcribe de muchas formas
     return re.sub(r"[^a-zñ ]+", " ", s).split()
 
 
@@ -161,7 +166,7 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
         print("⚠ No está instalado Chatterbox (.venv-voz): uso Kokoro", flush=True)
         motor = "kokoro"
     lineas = guion["lineas"]
-    modo_rio = cfg.get("rioplatense", "y")
+    modo_rio = cfg.get("rioplatense", "sch")
     hablado = [rioplatense(ln["say"], modo_rio) if motor == "chatterbox" else ln["say"] for ln in lineas]
     archivos = [None] * len(lineas)
     mejor = {}  # línea → (puntaje, archivo) del mejor intento
