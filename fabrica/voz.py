@@ -30,14 +30,17 @@ LEAD = 0.35
 
 def rioplatense(texto, modo="y"):
     """Cambia la ll antes de pasarle el texto a la voz clonada.
-    modo "y" (por defecto, elegido por Carlos): ll → y · "ll": ll → sh · "ll+y": ll y la y consonante → sh."""
+    modo "sch" (por defecto, elegido por Carlos): ll → sch, la y no se toca · "sch+y": también la y consonante
+    · "y": ll → y · "ll": ll → sh · "ll+y": ll y la y consonante → sh."""
     if not modo:
         return texto
     import re as _re
     if modo == "y":
         return _re.sub(r"LL", "Y", _re.sub(r"Ll", "Y", _re.sub(r"ll", "y", texto)))
-    if modo == "sch":   # elegido por Carlos: ll y la y consonante ("yo", "ya", "playa") → sch
+    if modo in ("sch", "sch+y"):   # elegido por Carlos: "sch" = solo la ll → sch; la y queda como y
         t = _re.sub(r"LL", "SCH", _re.sub(r"Ll", "Sch", _re.sub(r"ll", "sch", texto)))
+        if modo == "sch":
+            return t
         t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])y(?=[aeiouáéíóú])", "sch", t)
         t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])Y(?=[aeiouáéíóú])", "Sch", t)
         return _re.sub(r"(?<=[aeiouáéíóúAEIOU])y(?=[aeiouáéíóú])", "sch", t)

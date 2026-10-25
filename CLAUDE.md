@@ -41,9 +41,9 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
   extranjeros escritos como se pronuncian en castellano si son difíciles ("Stóichkov", "Súker").
   `sub` es el subtítulo: ahí sí van cifras y ortografía original.
 - Oraciones cortas. Tono de alguien que cuenta una historia a un amigo, rioplatense neutro (vos).
-- El `say` se escribe con ortografía normal: la fábrica cambia sola la **ll y la y consonante por "sch"** antes de
-  pasarlo a la voz clonada ("lluvia" → "schuvia", "yo" → "scho"): fue lo que mejor sonó en las pruebas de Carlos.
-  Otras opciones en el guion: `"voz": {"rioplatense": "ll"}` (ll → sh), `"y"`, `"ll+y"` o `false`.
+- El `say` se escribe con ortografía normal: la fábrica cambia sola **solo la ll por "sch"** antes de pasarlo a la voz
+  clonada ("lluvia" → "schuvia"); la y queda como y. Es lo que eligió Carlos tras escuchar las pruebas, con la muestra
+  de voz original (`voces/muestra.wav.gpg`). Otras opciones: `"voz": {"rioplatense": "sch+y"}`, `"ll"`, `"y"` o `false`.
 - `emocion` por línea (0 = calmo, 1 = muy intenso): varía la entonación de la voz clonada. Usar 0.4–0.6 de base y
   0.75–0.9 en el clímax.
 - `pausa` (s) después de cada línea: 0.4–0.6 normal, 1–1.4 antes y después de una frase textual.
