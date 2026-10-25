@@ -9,7 +9,7 @@ gh label create publicado --color 0E8A16 --force >/dev/null
 gh label create descartado --color B60205 --force >/dev/null
 gh release delete "$tag" -y --cleanup-tag >/dev/null 2>&1 || true
 gh release create "$tag" --prerelease --title "$titulo" --notes "Video generado por la fábrica desde videos/$s/guion.json ($GITHUB_SHA)." \
-  "$d/$s.mp4" "$d/hoja.jpg" "$d/publicacion.json" "$d/informe.json" "$d/voz/narracion.wav#voz-$s.wav" >/dev/null
+  "$d/$s.mp4" "$d/hoja.jpg" "$d/publicacion.json" "$d/informe.json" >/dev/null
 base="https://github.com/$GITHUB_REPOSITORY/releases/download/$tag"
 inf="$d/informe.json"
 cuerpo=$(cat <<MD
