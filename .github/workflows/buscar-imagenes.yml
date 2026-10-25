@@ -1,0 +1,36 @@
+name: Buscar imágenes
+# Claude sube investigacion/<slug>/consultas.json → esto busca en Wikimedia Commons y devuelve resultados.json + hoja.jpg al repo.
+on:
+  push:
+    branches: [main]
+    paths: ["investigacion/*/consultas.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-imagenes
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Buscar
+        run: |
+          pip install -q pillow
+          for f in $(git diff --name-only HEAD^ HEAD -- 'investigacion/*/consultas.json'); do
+            python3 fabrica/buscar_imagenes.py "$f"
+          done
+      - name: Devolver resultados al repo
+        run: |
+          git config user.name "fabrica-shorts"
+          git config user.email "actions@users.noreply.github.com"
+          git add investigacion
+          git commit -m "imágenes: resultados de búsqueda" || exit 0
+          git pull --rebase -q origin main
+          git push -q origin HEAD:main
