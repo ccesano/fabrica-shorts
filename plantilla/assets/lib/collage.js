@@ -246,7 +246,7 @@
           total = path.getTotalLength();
           mask.style.strokeDasharray = total.toFixed(1);
         }
-        var k = ease.inOutCubic(prog(t, t0, 1.2));
+        var k = ease.inOutCubic(prog(t, t0, num(el, "data-dur", 1.2)));
         mask.style.strokeDashoffset = (total * (1 - k)).toFixed(1);
         var a = path.getPointAtLength(total * k);
         var b = path.getPointAtLength(Math.min(total, total * k + 2));

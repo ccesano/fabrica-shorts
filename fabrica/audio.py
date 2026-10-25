@@ -152,6 +152,11 @@ def componer(tim, escenas, lineas, fin, animo="epico", seed=1):
 
 
 def ambiente(tipo, fin, golpes, seed=5):
+    if isinstance(tipo, list):
+        out = np.zeros((int(fin * SR), 2), np.float32)
+        for k, t in enumerate(tipo):
+            out += ambiente(t, fin, golpes, seed + k) * (0.8 if len(tipo) > 1 else 1)
+        return out
     N = int(fin * SR)
     amb = np.zeros((N, 2), np.float32)
     if tipo in (None, "", "ninguno"):
@@ -177,7 +182,9 @@ def ambiente(tipo, fin, golpes, seed=5):
     elif tipo == "lluvia":
         for c in range(2):
             x = bp(r.standard_normal(N), 800, 9000, 2)
-            amb[:, c] = (x / np.abs(x).max() * 0.12).astype(np.float32)
+            gotas = (r.random(N) > 0.9993).astype(np.float32) * r.uniform(0.2, 1, N).astype(np.float32)
+            gotas = bp(np.convolve(gotas, np.exp(-np.arange(200) / 30.0), mode="same"), 2000, 8000, 2)
+            amb[:, c] = (x / np.abs(x).max() * 0.1 + gotas / (np.abs(gotas).max() + 1e-9) * 0.05).astype(np.float32)
     elif tipo == "ciudad":
         for c in range(2):
             x = lp(np.cumsum(r.standard_normal(N)) * 0.01, 400, 2)

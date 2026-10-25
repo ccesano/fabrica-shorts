@@ -29,6 +29,7 @@ PALETAS = {
     "bosque":    dict(bgs=["#D8E8C8", "#F1E3C2", "#C8E0D8", "#E6EFD0", "#F3D9C8"], deep="#1F3A2E", acc="#E9C46A", acc2="#2A6F4E", ink="#1E1B18"),
     "diario":    dict(bgs=["#E9E4D8", "#D9D6CE", "#F1ECDD", "#E3DED2", "#EDE6D6"], deep="#1E1B18", acc="#E63B2E", acc2="#2B2B2B", ink="#1E1B18"),
     "oceano":    dict(bgs=["#CFE6F3", "#D7F0EC", "#E0E4F7", "#F3EED9", "#DDEFE3"], deep="#0E2F44", acc="#4FD1C5", acc2="#1D5C8C", ink="#1E1B18"),
+    "banda":     dict(bgs=["#F4F1EA", "#E8ECEF", "#F6E3E1", "#EDE7E0", "#F2EEE6"], deep="#16161A", acc="#E4002B", acc2="#C8102E", ink="#1E1B18"),
     "neon":      dict(bgs=["#F2D4E6", "#D9E4FF", "#FFF2C2", "#D6F5E3", "#FFE0CC"], deep="#1A1033", acc="#FF4FA3", acc2="#5B3CC4", ink="#1E1B18"),
 }
 
@@ -331,7 +332,68 @@ def foto(E, esc):
     E.zoom = 0.07   # acercamiento lento sobre la foto
 
 
-TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
+def _arquero(color):
+    """Arquero de papel, de frente, con los brazos arriba (SVG en coordenadas propias 240x300)."""
+    return (f'<svg viewBox="-10 -10 260 320" width="250" height="310" aria-hidden="true">'
+            f'<g stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" fill="#FFFFFF">'
+            f'<circle cx="120" cy="40" r="34"/><path d="M60,90 L180,90 L200,200 L40,200 Z"/>'
+            f'<path d="M62,96 L10,10 M178,96 L230,10" fill="none"/><path d="M70,200 L60,295 M170,200 L180,295" fill="none"/></g>'
+            f'<circle cx="120" cy="40" r="32" fill="#D9A77B" stroke="#1E1B18" stroke-width="5"/>'
+            f'<path d="M62,96 L10,10 M178,96 L230,10" stroke="{color}" stroke-width="26" stroke-linecap="round" fill="none"/>'
+            f'<path d="M62,96 L10,10 M178,96 L230,10" stroke="#1E1B18" stroke-width="4" stroke-linecap="round" fill="none" opacity=".25"/>'
+            f'<path d="M60,90 L180,90 L196,170 L44,170 Z" fill="{color}" stroke="#1E1B18" stroke-width="5" stroke-linejoin="round"/>'
+            f'<path d="M44,170 L196,170 L200,215 L40,215 Z" fill="#1E1B18"/>'
+            f'<path d="M70,212 L62,292 M170,212 L178,292" stroke="#1E1B18" stroke-width="22" stroke-linecap="round"/>'
+            f'<circle cx="5" cy="5" r="16" fill="#F3F0E6" stroke="#1E1B18" stroke-width="4"/><circle cx="235" cy="5" r="16" fill="#F3F0E6" stroke="#1E1B18" stroke-width="4"/></svg>')
+
+
+def _arco():
+    red = "".join(f'<line x1="{x}" y1="440" x2="{x - 20 + (x - 540) * 0.06:.0f}" y2="690" stroke="#FFFFFF" stroke-width="2" opacity=".7"/>' for x in range(250, 860, 40))
+    red += "".join(f'<line x1="240" y1="{y}" x2="850" y2="{y}" stroke="#FFFFFF" stroke-width="2" opacity=".7"/>' for y in range(470, 700, 38))
+    return (f'<svg class="cg-pop" data-t="{PUSH + 0.05}" data-anim="swap" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
+            f'<path d="M120,705 L960,705" stroke="#FFFFFF" stroke-width="10" opacity=".9"/>'
+            f'<rect x="232" y="432" width="626" height="270" fill="rgba(30,27,24,.10)"/>{red}'
+            f'<path d="M232,705 L232,432 L858,432 L858,705" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round"/>'
+            f'<path d="M232,705 L232,432 L858,432 L858,705" fill="none" stroke="#1E1B18" stroke-width="5" stroke-linejoin="round" opacity=".55"/></svg>')
+
+
+def jugada(E, esc):
+    """Una jugada dibujada: corrida punteada, el arquero que sale y la pelota que se la pica por arriba al arco."""
+    if esc.get("etiqueta"):
+        et = esc["etiqueta"]
+        E.tira("label", et, PUSH + 0.05, "left: 50px; top: 230px; width: 980px", cabe(et, "news", 980, 84, 54, 68))
+    E.world.append(_arco())
+    t_arq = PUSH + 0.3
+    E.world.append(f'<div class="cg-pop" data-t="{t_arq}" style="left: 400px; top: 560px">{_arquero(esc.get("arquero_color", "#5E7D95"))}</div>')
+    E.fx("pop", t_arq, 0.3)
+    t_run = E.cuando(esc.get("corrida_en", ""), PUSH + 0.4) if esc.get("corrida_en") else PUSH + 0.4
+    t_chip = E.cuando(esc.get("vaselina_en", ""), E.reparto(2, 3)) if esc.get("vaselina_en") else E.reparto(2, 3)
+    dur_run = max(0.6, min(2.2, t_chip - t_run - 0.15))
+    u = E.uid()
+    corrida = "M930,1360 C 800,1320 560,1230 340,1170"
+    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_run}" data-dur="{dur_run:.2f}" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
+                   f'<defs><mask id="{u}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{corrida}" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/></mask></defs>'
+                   f'<path class="cg-route" d="{corrida}" fill="none" stroke="#1E1B18" stroke-width="6" stroke-dasharray="3 17" stroke-linecap="round" mask="url(#{u}-m)"/>'
+                   f'<g class="cg-plane"><circle r="24" fill="var(--acc)" stroke="#FFFFFF" stroke-width="7"/><circle r="24" fill="none" stroke="#1E1B18" stroke-width="3"/></g></svg>')
+    u2 = E.uid()
+    arco = "M340,1170 Q 520,170 770,560"
+    from objetos import pelota
+    bola = pelota(80, u2).html.replace('<svg viewBox="0 0 300 300" width="80" height="80"', '<svg x="-40" y="-40" viewBox="0 0 300 300" width="80" height="80"')
+    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_chip}" data-dur="1.15" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
+                   f'<defs><mask id="{u2}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{arco}" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></mask></defs>'
+                   f'<path class="cg-route" d="{arco}" fill="none" stroke="var(--acc)" stroke-width="9" stroke-dasharray="4 18" stroke-linecap="round" mask="url(#{u2}-m)"/>'
+                   f'<g class="cg-plane">{bola}</g></svg>')
+    E.fx("whoosh", t_chip, 0.3, d=1.0)
+    for i, p in enumerate(esc.get("palabras", [])[:1]):
+        txt = limpio(item_txt(p)).upper()
+        E.tira("word", txt, E.cuando(item_en(p), t_chip), "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
+    sello = esc.get("sello", "¡GOL!")
+    if sello:
+        E.sello(sello.upper(), round(t_chip + 1.2, 3), "left: 600px; top: 780px", E.r.choice([-9, 8]))
+        E.fx("golpe", t_chip + 1.15, 0.45)
+
+
+TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "jugada": jugada, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
 SOLIDOS = {"golpe", "cita"}
 
 

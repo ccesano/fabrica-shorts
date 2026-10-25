@@ -52,9 +52,9 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 ```jsonc
 {
   "titulo": "…",                      // interno
-  "paleta": "bombonera",              // bombonera | atardecer | bosque | diario | oceano | neon (opcional; si falta se elige sola)
+  "paleta": "bombonera",              // bombonera | atardecer | bosque | diario | oceano | neon | banda (blanco/rojo/negro) (opcional; si falta se elige sola)
   "musica": {"animo": "epico"},       // epico | nostalgico | misterio | alegre | tension ; "volumen": 0.5 opcional
-  "ambiente": "cancha",               // cancha | lluvia | ciudad | ninguno
+  "ambiente": "cancha",               // cancha | lluvia | ciudad | ninguno, o varios: ["lluvia", "cancha"]
   "subtitulos": true,
   "fuentes": ["…"],
   "lineas": [
@@ -75,6 +75,7 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 | `lista` | nombres, pasos, ejemplos | `items` (≤ 6), `etiqueta`?, `remate`?, `numerada`? |
 | `cita` | frase textual de alguien | `texto` (con `*énfasis*`), `autor` |
 | `foto` | una imagen real como protagonista (con marco o recortada) | `foto` {…}, `etiqueta`?, `palabras` (≤ 2), `sello`? |
+| `jugada` | una jugada dibujada: corrida punteada, arquero de papel y la pelota que se la pica al arco | `etiqueta`?, `corrida_en`, `vaselina_en`, `arquero_color`?, `palabras` (1)?, `sello`? (por defecto "¡GOL!") |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
 
 Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
@@ -109,7 +110,8 @@ Cualquiera acepta `"en"` para aparecer en un momento de la narración. Si hace f
 - Carlos tiene una ONG con permisos sobre otras imágenes. Si una foto no tiene licencia libre, se puede usar igual
   **solo si Carlos la aprueba**: marcarla en la tabla del guion con ⚠️ y poner `"licencia": "uso autorizado (ONG)"`.
 - Siempre completar `credito`, `licencia` y `pagina`: quedan en `salida/derechos-imagenes.json` y el crédito va solo a la descripción.
-- Nunca video de terceros (partidos, TV, noticieros): Content ID los detecta y arriesga strikes.
+- Nunca video ni audio de terceros (partidos, TV, relatos de radio): Content ID los detecta y arriesga strikes.
+  Un relato famoso va como `cita` (texto breve, con autor) leído por la voz de Carlos; la jugada, con `jugada` + una foto.
 - En la tabla del guion, mostrar cada foto como link para que Carlos la vea antes de aprobar.
 - Desde las sesiones de Claude Wikimedia puede estar bloqueado para descargar; no importa: la descarga la hace
   GitHub Actions. Verificá la URL directa del archivo leyendo la página de Commons con WebFetch.
