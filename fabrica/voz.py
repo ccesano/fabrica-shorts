@@ -28,6 +28,21 @@ SR = 24000
 LEAD = 0.35
 
 
+def rioplatense(texto, modo="ll"):
+    """Escribe la ll (y opcionalmente la y consonante) como "sh" para que la voz la diga a lo rioplatense."""
+    if not modo:
+        return texto
+    import re as _re
+    t = _re.sub(r"ll", "sh", texto)
+    t = _re.sub(r"Ll", "Sh", t)
+    t = _re.sub(r"LL", "SH", t)
+    if modo == "ll+y":   # y seguida de vocal (yo, ya, ayer, playa), no la conjunción "y"
+        t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])y(?=[aeiouáéíóú])", "sh", t)
+        t = _re.sub(r"(?<![A-Za-zÁÉÍÓÚáéíóúñÑ])Y(?=[aeiouáéíóú])", "Sh", t)
+        t = _re.sub(r"(?<=[aeiouáéíóú])y(?=[aeiouáéíóú])", "sh", t)
+    return t
+
+
 def _norm_txt(s):
     try:
         from num2words import num2words
@@ -36,6 +51,7 @@ def _norm_txt(s):
         pass
     s = unicodedata.normalize("NFD", s.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = re.sub(r"sh|ll|ch", "y", s)   # la sh rioplatense se transcribe de muchas formas
     return re.sub(r"[^a-zñ ]+", " ", s).split()
 
 
@@ -94,9 +110,9 @@ def _leer(path):
     return x
 
 
-def _clave(motor, ref, ln, intento):
+def _clave(motor, ref, ln, intento, texto=None):
     h = hashlib.sha1()
-    h.update(f"{motor}|{ln['say']}|{ln.get('emocion', 0.5)}|{ln.get('velocidad', 1)}|{intento}".encode())
+    h.update(f"{motor}|{texto or ln['say']}|{ln.get('emocion', 0.5)}|{ln.get('velocidad', 1)}|{intento}".encode())
     if ref and Path(ref).exists():
         h.update(Path(ref).read_bytes()[:200000])
     return h.hexdigest()[:12]
@@ -142,6 +158,8 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
         print("⚠ No está instalado Chatterbox (.venv-voz): uso Kokoro", flush=True)
         motor = "kokoro"
     lineas = guion["lineas"]
+    modo_rio = cfg.get("rioplatense", "ll")
+    hablado = [rioplatense(ln["say"], modo_rio) if motor == "chatterbox" else ln["say"] for ln in lineas]
     archivos = [None] * len(lineas)
     mejor = {}  # línea → (puntaje, archivo) del mejor intento
     pendientes = list(range(len(lineas)))
@@ -151,14 +169,14 @@ def generar(guion, carpeta, motor=None, ref=None, umbral=0.7, reintentos=2):
         for i in pendientes:
             ln = lineas[i]
             em = float(ln.get("emocion", 0.5))
-            key = _clave(motor, ref if motor == "chatterbox" else None, ln, intento)
+            key = _clave(motor, ref if motor == "chatterbox" else None, ln, intento, hablado[i])
             out = cache / f"{motor}-{key}.wav"
             archivos[i] = out
             if motor == "grabada":
                 archivos[i] = carpeta / "voz" / f"l{i + 1}.wav"
                 continue
             if not out.exists():
-                trabajos.append(dict(say=ln["say"], exag=round(0.3 + 0.6 * em, 3), cfg=round(0.5 - 0.2 * em, 3),
+                trabajos.append(dict(say=hablado[i], exag=round(0.3 + 0.6 * em, 3), cfg=round(0.5 - 0.2 * em, 3),
                                      temp=0.75, seed=7 + intento * 101 + i, out=str(out), speed=0.95 * ln.get("velocidad", 1)))
         if trabajos:
             print(f"voz ({motor}): generando {len(trabajos)} línea(s)" + (f", intento {intento + 1}" if intento else ""), flush=True)
