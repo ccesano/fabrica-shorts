@@ -9,6 +9,8 @@ import io
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -58,6 +60,8 @@ def buscar(c):
     for cat in c.get("categorias", []):
         d = api(action="query", list="categorymembers", cmtitle="Category:" + cat, cmtype="file", cmlimit=maxn * 3)
         titulos += [x["title"] for x in d["query"]["categorymembers"]]
+    if c.get("solo_archivos"):
+        titulos = list(c.get("archivos", []))
     vistos, uniq = set(), []
     for t in titulos:
         if t not in vistos:
@@ -80,8 +84,16 @@ def hoja(res, out, cols=6, w=240, h=240):
     for i, r in enumerate(res):
         x, y = (i % cols) * w, (i // cols) * (h + 30)
         try:
-            req = urllib.request.Request(r["miniatura"], headers={"User-Agent": UA})
-            im = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=60).read())).convert("RGB")
+            im = None
+            for intento in range(4):
+                try:
+                    time.sleep(1.0 + 3 * intento)   # Wikimedia corta con 429 si se piden muy rápido
+                    req = urllib.request.Request(r["miniatura"], headers={"User-Agent": UA})
+                    im = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=60).read())).convert("RGB")
+                    break
+                except urllib.error.HTTPError as e:
+                    if e.code != 429 or intento == 3:
+                        raise
             im.thumbnail((w - 8, h - 8))
             sheet.paste(im, (x + (w - im.width) // 2, y + (h - im.height) // 2))
         except Exception as e:  # noqa: BLE001
