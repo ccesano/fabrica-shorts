@@ -370,13 +370,15 @@ def jugada(E, esc):
     t_chip = E.cuando(esc.get("vaselina_en", ""), E.reparto(2, 3)) if esc.get("vaselina_en") else E.reparto(2, 3)
     dur_run = max(0.6, min(2.2, t_chip - t_run - 0.15))
     u = E.uid()
-    corrida = "M930,1360 C 800,1320 560,1230 340,1170"
+    # sentido: hacia dónde viaja la pelota por arriba del arquero (visto desde atrás del jugador)
+    izq = esc.get("sentido", "izquierda") == "izquierda"
+    corrida = "M960,1400 C 900,1330 820,1240 740,1170" if izq else "M930,1360 C 800,1320 560,1230 340,1170"
     E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_run}" data-dur="{dur_run:.2f}" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
                    f'<defs><mask id="{u}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{corrida}" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/></mask></defs>'
                    f'<path class="cg-route" d="{corrida}" fill="none" stroke="#1E1B18" stroke-width="6" stroke-dasharray="3 17" stroke-linecap="round" mask="url(#{u}-m)"/>'
                    f'<g class="cg-plane"><circle r="24" fill="var(--acc)" stroke="#FFFFFF" stroke-width="7"/><circle r="24" fill="none" stroke="#1E1B18" stroke-width="3"/></g></svg>')
     u2 = E.uid()
-    arco = "M340,1170 Q 520,170 770,560"
+    arco = "M740,1170 Q 560,170 310,560" if izq else "M340,1170 Q 520,170 770,560"
     from objetos import pelota
     bola = pelota(80, u2).html.replace('<svg viewBox="0 0 300 300" width="80" height="80"', '<svg x="-40" y="-40" viewBox="0 0 300 300" width="80" height="80"')
     E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_chip}" data-dur="1.15" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
@@ -386,10 +388,10 @@ def jugada(E, esc):
     E.fx("whoosh", t_chip, 0.3, d=1.0)
     for i, p in enumerate(esc.get("palabras", [])[:1]):
         txt = limpio(item_txt(p)).upper()
-        E.tira("word", txt, E.cuando(item_en(p), t_chip), "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
+        E.tira("word", txt, E.cuando(item_en(p), t_chip), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
     sello = esc.get("sello", "¡GOL!")
     if sello:
-        E.sello(sello.upper(), round(t_chip + 1.2, 3), "left: 600px; top: 780px", E.r.choice([-9, 8]))
+        E.sello(sello.upper(), round(t_chip + 1.2, 3), "left: 110px; top: 780px" if izq else "left: 600px; top: 780px", E.r.choice([-9, 8]))
         E.fx("golpe", t_chip + 1.15, 0.45)
 
 
