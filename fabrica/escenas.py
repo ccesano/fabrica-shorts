@@ -252,8 +252,8 @@ def lista(E, esc):
         prefijo = f"{i + 1}. " if esc.get("numerada") else ""
         E.tira("tag", prefijo + txt.upper(), t, f"left: {x}px; top: {y0 + i * paso:.0f}px", sz, rot=E.r.choice([-2, -1, 1, 2]))
     if remate:
-        txt = limpio(remate).upper()
-        t = E.cuando(remate, E.reparto(len(items), len(items) + 1))
+        txt = limpio(item_txt(remate)).upper()
+        t = E.cuando(item_en(remate), E.reparto(len(items), len(items) + 1))
         E.tira("word", txt, t, f"right: 46px; top: {min(1210, y0 + len(items) * paso + 40):.0f}px", cabe(txt, "gloock", 990, 120, 64, 68))
 
 
@@ -294,7 +294,8 @@ def cierre(E, esc):
         y += size * 0.86 + 16
     if esc.get("objeto"):
         spec = {k: v for k, v in esc["objeto"].items() if k != "en"}
-        E.objeto(spec, E.reparto(1, 3), 800, max(560, y - 220), E.r.choice([-10, 10]), max_h=330, max_w=360)
+        E.objeto(spec, E.reparto(1, 3), 790, y + 10, E.r.choice([-10, 10]), max_h=300, max_w=340)
+        y += 330
     cta = esc.get("cta")
     if cta:
         partes = [p.strip() for p in re.split(r"(?<=[?.!])\s+", cta) if p.strip()]
