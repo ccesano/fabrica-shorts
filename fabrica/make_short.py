@@ -36,8 +36,10 @@ def validar(g):
     if not g.get("titulo"):
         err.append("falta 'titulo'")
     ls = g.get("lineas") or []
-    if not 3 <= len(ls) <= 14:
-        err.append(f"el guion tiene {len(ls)} líneas (entre 3 y 14)")
+    largo = bool(g.get("largo"))          # "largo": true → hasta ~3 min (máximo de Shorts, Reels y TikTok)
+    max_l, max_c = (24, 2600) if largo else (14, 900)
+    if not 3 <= len(ls) <= max_l:
+        err.append(f"el guion tiene {len(ls)} líneas (entre 3 y {max_l})")
     for i, ln in enumerate(ls, 1):
         if not ln.get("say"):
             err.append(f"línea {i}: falta 'say'")
@@ -47,8 +49,9 @@ def validar(g):
         if t not in TIPOS:
             err.append(f"línea {i}: tipo de escena '{t}' no existe ({', '.join(sorted(TIPOS))})")
     total = sum(len(ln.get("say", "")) for ln in ls)
-    if total > 900:
-        err.append(f"el texto suma {total} caracteres (≈ {total / 15:.0f} s); para un Short conviene ≤ 850")
+    if total > max_c:
+        err.append(f"el texto suma {total} caracteres (≈ {total / 15:.0f} s); el máximo es {max_c}"
+                   + ("" if largo else " (para más largo, poné \"largo\": true)"))
     if err:
         sys.exit("Guion con problemas:\n  - " + "\n  - ".join(err))
 
