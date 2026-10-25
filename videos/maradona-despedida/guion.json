@@ -1,50 +1,234 @@
 {
-  "titulo": "La pelota no se mancha",
-  "paleta": "bombonera",
-  "musica": {"animo": "epico"},
-  "ambiente": "cancha",
-  "fuentes": ["Ámbito", "TodoJujuy", "90min", "La República"],
-  "lineas": [
-    {"say": "El diez de noviembre de dos mil uno, Diego Maradona se despidió del fútbol.",
-     "sub": "10/11/2001: Diego Maradona se despidió del fútbol.", "emocion": 0.5, "pausa": 0.5,
-     "escena": {"tipo": "golpe", "kicker": "10 · 11 · 2001", "palabras": [{"texto": "EL DÍA QUE", "en": "diez de noviembre"}, "*DIEGO*", {"texto": "SE DESPIDIÓ", "en": "se despidió"}]}},
-    {"say": "Su último partido oficial había sido cuatro años antes, un Boca River. Salió en el entretiempo, y nunca tuvo despedida.",
-     "sub": "Su último partido oficial: un Boca–River de 1997. Salió en el entretiempo y nunca tuvo despedida.", "emocion": 0.45, "pausa": 0.6,
-     "escena": {"tipo": "collage", "etiqueta": "su último partido oficial",
-                "objeto": {"tipo": "recorte", "volanta": "Superclásico · 25/10/1997", "titular": "Boca visita a River en el Monumental"},
-                "objeto2": {"tipo": "reloj", "minuto": 45, "en": "entretiempo"},
-                "palabras": ["ENTRETIEMPO", {"texto": "SIN DESPEDIDA", "en": "nunca tuvo despedida"}]}},
-    {"say": "Hasta esa tarde. La Bombonera, repleta. Cincuenta mil personas.",
-     "sub": "Hasta esa tarde. La Bombonera, repleta. 50.000 personas.", "emocion": 0.7, "pausa": 0.5,
-     "escena": {"tipo": "cifra", "etiqueta": "La Bombonera, repleta", "numero": 50000, "en": "cincuenta mil", "palabra": "PERSONAS"}},
-    {"say": "Enfrente, el Resto del Mundo. Valderrama, Francescoli, Stoichkov, Suker. Y hasta Riquelme.",
-     "sub": "Enfrente, el Resto del Mundo: Valderrama, Francescoli, Stoichkov, Šuker… y hasta Riquelme.", "emocion": 0.6, "pausa": 0.5,
-     "escena": {"tipo": "lista", "etiqueta": "enfrente: el Resto del Mundo", "items": ["Valderrama", "Francescoli", "Stoichkov", {"texto": "Šuker", "en": "Suker"}], "remate": "¡Y RIQUELME!"}},
-    {"say": "Diego arrancó con la celeste. Pero terminó con la de Boca, con el nombre de Riquelme en la espalda.",
-     "sub": "Diego arrancó con la celeste, pero terminó con la de Boca, con el nombre de Riquelme en la espalda.", "emocion": 0.55, "pausa": 0.5,
-     "escena": {"tipo": "collage", "etiqueta": "arrancó con la celeste",
-                "objeto": {"tipo": "camiseta", "base": "#FBFAF5", "color": "#7FB8E6", "estilo": "rayas"},
-                "objeto2": {"tipo": "camiseta", "base": "#1F3F8F", "color": "#F3C33B", "estilo": "banda", "nombre": "Riquelme", "numero": "10", "letra": "#F3C33B", "en": "la de Boca"},
-                "palabras": [{"texto": "AZUL Y ORO", "en": "la de Boca"}, {"texto": "RIQUELME, 10", "en": "Riquelme en la espalda"}]}},
-    {"say": "Argentina ganó seis a tres. Diego hizo dos goles, uno de penal.",
-     "sub": "Argentina ganó 6 a 3. Diego hizo dos goles, uno de penal.", "emocion": 0.75, "pausa": 0.6, "musica": "golpe",
-     "escena": {"tipo": "collage", "etiqueta": "resultado final",
-                "objeto": {"tipo": "marcador", "filas": [["Argentina", 6], ["Resto del Mundo", 3]]},
-                "palabras": [{"texto": "6 A 3", "en": "seis a tres"}], "sello": "2 goles de Diego", "sello_en": "dos goles"}},
-    {"say": "Y al final, emocionado, dijo la frase que quedó para siempre.",
-     "sub": "Y al final, emocionado, dijo la frase que quedó para siempre:", "emocion": 0.5, "pausa": 1.1,
-     "escena": {"tipo": "golpe", "palabras": [{"texto": "Y DIJO", "en": "dijo"}, {"texto": "LA FRASE", "en": "la frase"}, {"texto": "*PARA SIEMPRE*", "en": "para siempre"}]}},
-    {"say": "Yo me equivoqué y pagué. Pero la pelota no se mancha.",
-     "sub": "«Yo me equivoqué y pagué. Pero la pelota no se mancha.»", "emocion": 0.85, "pausa": 1.4,
-     "escena": {"tipo": "cita", "texto": "Yo me equivoqué y pagué. Pero la *pelota* no se *mancha*.", "autor": "Diego Maradona"}},
-    {"say": "Gracias, Diego. ¿Vos lo viste en vivo? Contalo en los comentarios.",
-     "sub": "Gracias, Diego. ¿Vos lo viste en vivo? Contalo en los comentarios.", "emocion": 0.6, "pausa": 0.8,
-     "escena": {"tipo": "cierre", "titulo": [{"texto": "GRACIAS,", "en": "gracias"}, {"texto": "*DIEGO*", "en": "Diego"}],
-                "objeto": {"tipo": "pelota"}, "cta": "¿Lo viste en vivo? Contalo en los comentarios."}}
-  ],
-  "publicar": {
-    "titulo": "El día que Maradona se despidió: «la pelota no se mancha» #shorts",
-    "descripcion": "10 de noviembre de 2001, La Bombonera. El partido despedida de Diego y la frase que quedó para siempre.",
-    "hashtags": ["maradona", "futbol", "bombonera", "historiadelfutbol", "shorts"]
+ "titulo": "La pelota no se mancha",
+ "paleta": "bombonera",
+ "musica": {
+  "animo": "epico"
+ },
+ "ambiente": "cancha",
+ "fuentes": [
+  "Ámbito",
+  "TodoJujuy",
+  "90min",
+  "La República"
+ ],
+ "lineas": [
+  {
+   "say": "El diez de noviembre de dos mil uno, Diego Maradona se despidió del fútbol.",
+   "sub": "10/11/2001: Diego Maradona se despidió del fútbol.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "10 · 11 · 2001",
+    "palabras": [
+     {
+      "texto": "EL DÍA QUE",
+      "en": "diez de noviembre"
+     },
+     "*DIEGO*",
+     {
+      "texto": "SE DESPIDIÓ",
+      "en": "se despidió"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Su último partido oficial había sido cuatro años antes, un Boca River. Salió en el entretiempo, y nunca tuvo despedida.",
+   "sub": "Su último partido oficial: un Boca–River de 1997. Salió en el entretiempo y nunca tuvo despedida.",
+   "emocion": 0.45,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "su último partido oficial",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "Superclásico · 25/10/1997",
+     "titular": "Boca visita a River en el Monumental"
+    },
+    "objeto2": {
+     "tipo": "reloj",
+     "minuto": 45,
+     "en": "entretiempo"
+    },
+    "palabras": [
+     "ENTRETIEMPO",
+     {
+      "texto": "SIN DESPEDIDA",
+      "en": "nunca tuvo despedida"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hasta esa tarde. La Bombonera, repleta. Cincuenta mil personas.",
+   "sub": "Hasta esa tarde. La Bombonera, repleta. 50.000 personas.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "etiqueta": "La Bombonera, repleta",
+    "numero": 50000,
+    "en": "cincuenta mil",
+    "palabra": "PERSONAS"
+   }
+  },
+  {
+   "say": "Enfrente, el Resto del Mundo. Valderrama, Francescoli, Stoichkov, Suker. Y hasta Riquelme.",
+   "sub": "Enfrente, el Resto del Mundo: Valderrama, Francescoli, Stoichkov, Šuker… y hasta Riquelme.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "enfrente: el Resto del Mundo",
+    "items": [
+     "Valderrama",
+     "Francescoli",
+     "Stoichkov",
+     {
+      "texto": "Šuker",
+      "en": "Suker"
+     }
+    ],
+    "remate": "¡Y RIQUELME!"
+   }
+  },
+  {
+   "say": "Diego arrancó con la celeste. Pero terminó con la de Boca, con el nombre de Riquelme en la espalda.",
+   "sub": "Diego arrancó con la celeste, pero terminó con la de Boca, con el nombre de Riquelme en la espalda.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "arrancó con la celeste",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#FBFAF5",
+     "color": "#7FB8E6",
+     "estilo": "rayas"
+    },
+    "objeto2": {
+     "tipo": "camiseta",
+     "base": "#1F3F8F",
+     "color": "#F3C33B",
+     "estilo": "banda",
+     "nombre": "Riquelme",
+     "numero": "10",
+     "letra": "#F3C33B",
+     "en": "la de Boca"
+    },
+    "palabras": [
+     {
+      "texto": "AZUL Y ORO",
+      "en": "la de Boca"
+     },
+     {
+      "texto": "RIQUELME, 10",
+      "en": "Riquelme en la espalda"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Argentina ganó seis a tres. Diego hizo dos goles, uno de penal.",
+   "sub": "Argentina ganó 6 a 3. Diego hizo dos goles, uno de penal.",
+   "emocion": 0.75,
+   "pausa": 0.6,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "resultado final",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "Argentina",
+       6
+      ],
+      [
+       "Resto del Mundo",
+       3
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "6 A 3",
+      "en": "seis a tres"
+     }
+    ],
+    "sello": "2 goles de Diego",
+    "sello_en": "dos goles"
+   }
+  },
+  {
+   "say": "Y al final, emocionado, dijo la frase que quedó para siempre.",
+   "sub": "Y al final, emocionado, dijo la frase que quedó para siempre:",
+   "emocion": 0.5,
+   "pausa": 1.1,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "Y DIJO",
+      "en": "dijo"
+     },
+     {
+      "texto": "LA FRASE",
+      "en": "la frase"
+     },
+     {
+      "texto": "*PARA SIEMPRE*",
+      "en": "para siempre"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Yo me equivoqué y pagué. Pero la pelota no se mancha.",
+   "sub": "«Yo me equivoqué y pagué. Pero la pelota no se mancha.»",
+   "emocion": 0.85,
+   "pausa": 1.4,
+   "escena": {
+    "tipo": "cita",
+    "texto": "Yo me equivoqué y pagué. Pero la *pelota* no se *mancha*.",
+    "autor": "Diego Maradona"
+   }
+  },
+  {
+   "say": "Gracias, Diego. ¿Vos lo viste en vivo? Contalo en los comentarios.",
+   "sub": "Gracias, Diego. ¿Vos lo viste en vivo? Contalo en los comentarios.",
+   "emocion": 0.6,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "GRACIAS,",
+      "en": "gracias"
+     },
+     {
+      "texto": "*DIEGO*",
+      "en": "Diego"
+     }
+    ],
+    "objeto": {
+     "tipo": "pelota"
+    },
+    "cta": "¿Lo viste en vivo? Contalo en los comentarios."
+   }
   }
+ ],
+ "publicar": {
+  "titulo": "El día que Maradona se despidió: «la pelota no se mancha» #shorts",
+  "descripcion": "10 de noviembre de 2001, La Bombonera. El partido despedida de Diego y la frase que quedó para siempre.",
+  "hashtags": [
+   "maradona",
+   "futbol",
+   "bombonera",
+   "historiadelfutbol",
+   "shorts"
+  ],
+  "categoria_youtube": "17"
+ }
 }
