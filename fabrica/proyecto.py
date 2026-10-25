@@ -9,6 +9,8 @@ PLANTILLA = Path(__file__).resolve().parent.parent / "plantilla"
 
 def _scene_html(s):
     attrs = [f'data-seed="{s["seed"]}"', f'data-shake="{14 if s["solid"] else 8}"']
+    if s.get("zoom") is not None:
+        attrs.append(f'data-zoom="{s["zoom"]}"')
     if s["exit"] is not None:
         attrs.append(f'data-exit="{s["exit"]}"')
     if s["push"]:
@@ -46,11 +48,13 @@ def _scene_html(s):
 """
 
 
-def escribir(dest, escenas, fin, subs, audio_wav, titulo, acento):
+def escribir(dest, escenas, fin, subs, audio_wav, titulo, acento, extra_assets=None):
     dest = Path(dest)
     if dest.exists():
         shutil.rmtree(dest)
     shutil.copytree(PLANTILLA, dest)
+    if extra_assets and Path(extra_assets).exists():
+        shutil.copytree(extra_assets, dest / "assets", dirs_exist_ok=True)
     (dest / "compositions").mkdir(exist_ok=True)
     (dest / "assets/audio").mkdir(parents=True, exist_ok=True)
     shutil.copy(audio_wav, dest / "assets/audio/mezcla.wav")

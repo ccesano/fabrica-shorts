@@ -163,9 +163,15 @@ def postal(texto="Saludos desde", lugar="", colores=None):
     return Obj(f'<div class="pic">{deco}</div><div class="say">{e(texto)}<b>{e(lugar)}</b></div>', "doc", 760, 470)
 
 
-def foto(src, epigrafe="", w=560, h=640):
-    cap = f'<div class="cap2">{e(epigrafe)}</div>' if epigrafe else ""
-    return Obj(f'<img src="{e(src)}" alt="" style="width: {w}px; height: {h}px" />{cap}', "doc", w + 36, h + 82)
+def foto(src, epigrafe="", ancho=800, alto=600, marco=False, caja=(600, 680), **_):
+    """Foto ya preparada por imagenes.py: con marco blanco (tipo polaroid) o recortada (sticker)."""
+    z = min(caja[0] / ancho, caja[1] / alto)
+    w, h = int(ancho * z), int(alto * z)
+    if marco:
+        cap = f'<div class="cap2">{e(epigrafe)}</div>' if epigrafe else ""
+        pie = 64 if epigrafe else 18
+        return Obj(f'<img src="{e(src)}" alt="" style="width: {w}px; height: {h}px" />{cap}', "doc", w + 36, h + 18 + pie)
+    return Obj(f'<img src="{e(src)}" alt="" style="display: block; width: {w}px; height: {h}px" />', "prop", w, h)
 
 
 CLASES = {"entrada": "o-ticket", "recorte": "o-clip", "planilla": "o-sheet", "marcador": "o-score",
@@ -184,9 +190,13 @@ def crear(spec, uid):
     fn = CATALOGO[tipo]
     if "uid" in fn.__code__.co_varnames:
         spec["uid"] = uid
+    if tipo == "foto":
+        spec = {k: v for k, v in spec.items() if k in ("src", "epigrafe", "ancho", "alto", "marco", "caja")}
     if tipo == "pelota" and "tam" in spec:
         spec["tam"] = int(spec["tam"])
     o = fn(**spec)
     # var() en atributos de presentación SVG no es fiable: pasarlo a style
     o.html = re.sub(r'fill="var\((--[a-z0-9]+)\)"', r'style="fill: var(\1)"', o.html)
+    if tipo == "foto" and o.tipo == "prop":
+        return o, "o-cutout"
     return o, CLASES.get(tipo, f"o-{tipo}")

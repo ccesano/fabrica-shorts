@@ -16,7 +16,7 @@ need uv || { paso "uv"; curl -LsSf https://astral.sh/uv/install.sh | sh; export 
 
 paso "Entorno principal (.venv)"
 [ -x .venv/bin/python ] || uv venv -q -p 3.12 .venv
-VIRTUAL_ENV=.venv uv pip install -q numpy scipy soundfile soxr kokoro-onnx sherpa-onnx num2words
+VIRTUAL_ENV=.venv uv pip install -q numpy scipy soundfile soxr kokoro-onnx sherpa-onnx num2words pillow onnxruntime
 
 if [ "${1:-}" != "sin-voz" ]; then
   paso "Entorno de voz clonada (.venv-voz, Chatterbox)"
@@ -39,7 +39,7 @@ for lib in vsco2ce salamander freepats vcsl; do
   [ -d vendor/lemo-opuscar/core/audio/instruments/$lib ] || (cd vendor/lemo-opuscar && PY=$RAIZ/.venv/bin/python sh tools/fetch.sh instruments $lib)
 done
 
-paso "Modelos (Kokoro de respaldo + Whisper para el control de voz)"
+paso "Modelos (Kokoro de respaldo, Whisper para el control de voz, IS-Net para recortar fotos)"
 mkdir -p modelos
 B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
 [ -s modelos/kokoro-v1.0.onnx ] || curl -sSL -o modelos/kokoro-v1.0.onnx $B/kokoro-v1.0.onnx
@@ -47,6 +47,8 @@ B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
 if [ ! -d modelos/sherpa-onnx-whisper-base ]; then
   curl -sSL https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.tar.bz2 | tar xj -C modelos
 fi
+
+[ -s modelos/isnet-general-use.onnx ] || curl -sSL -o modelos/isnet-general-use.onnx https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx
 
 paso "HyperFrames"
 npx --yes hyperframes@0.8.190 --version >/dev/null && echo "hyperframes ok"

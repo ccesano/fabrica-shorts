@@ -52,6 +52,7 @@ jobs:
             ~/.local/share/uv
             ~/.npm
           key: entornos-v1-${{ runner.os }}-${{ hashFiles('setup.sh') }}
+          restore-keys: entornos-v1-${{ runner.os }}-
 
       - name: Caché de instrumentos y modelos
         uses: actions/cache@v4
@@ -61,6 +62,7 @@ jobs:
             modelos
             ~/.cache/huggingface
           key: pesados-v1-${{ hashFiles('setup.sh') }}
+          restore-keys: pesados-v1-
 
       - name: Caché de voces ya generadas
         uses: actions/cache@v4

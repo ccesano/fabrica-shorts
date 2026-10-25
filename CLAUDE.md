@@ -74,6 +74,7 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 | `cifra` | un número que impacta (cuenta hasta el valor) | `numero`, `etiqueta`?, `prefijo`?, `sufijo`?, `decimales`?, `palabra`?, `en`? |
 | `lista` | nombres, pasos, ejemplos | `items` (≤ 6), `etiqueta`?, `remate`?, `numerada`? |
 | `cita` | frase textual de alguien | `texto` (con `*énfasis*`), `autor` |
+| `foto` | una imagen real como protagonista (con marco o recortada) | `foto` {…}, `etiqueta`?, `palabras` (≤ 2), `sello`? |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
 
 Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
@@ -88,15 +89,37 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
 `pelota` · `camiseta` {base, color, estilo: rayas|banda|mitad|lisa, nombre, numero, letra} · `reloj` {minuto | hora "HH:MM"}
 · `vinilo` {titulo} · `tele` {texto} · `entrada` {titulo, nombre, campos{…}, talon} · `recorte` {volanta, titular}
 · `planilla` {volanta, titulo, filas [[n, texto]]} · `marcador` {filas [[equipo, goles]]} · `calendario` {dia, mes, anio}
-· `postal` {texto, lugar, colores[]} · `foto` {src, epigrafe} (imagen en `videos/<slug>/` con licencia libre).
+· `postal` {texto, lugar, colores[]} · `foto` (ver abajo).
 Cualquiera acepta `"en"` para aparecer en un momento de la narración. Si hace falta un objeto nuevo, se agrega en
 `fabrica/objetos.py` (+ estilos en `plantilla/assets/lib/fabrica.css`).
+
+### Imágenes reales (`foto`)
+
+```jsonc
+{"tipo": "foto", "url": "https://upload.wikimedia.org/…/archivo.jpg",   // URL DIRECTA al archivo (o "src": archivo en videos/<slug>/)
+ "pagina": "https://commons.wikimedia.org/wiki/File:…",                 // página de la imagen
+ "credito": "Autor / Archivo General de la Nación", "licencia": "dominio público",
+ "tratamiento": "sepia",      // color | byn | sepia — fotos viejas en sepia o byn quedan mejor con el papel
+ "recorte": true,             // true = se le quita el fondo (personas, objetos); false = foto con marco y cinta
+ "epigrafe": "La Bombonera, 1940"}
+```
+
+- Buscar fotos **durante la investigación**, primero en Wikimedia Commons (y Openverse). Fotos argentinas con más de
+  20 años de publicadas suelen estar en dominio público (ley 11.723, art. 34; en Commons: `PD-AR-Photo`).
+- Carlos tiene una ONG con permisos sobre otras imágenes. Si una foto no tiene licencia libre, se puede usar igual
+  **solo si Carlos la aprueba**: marcarla en la tabla del guion con ⚠️ y poner `"licencia": "uso autorizado (ONG)"`.
+- Siempre completar `credito`, `licencia` y `pagina`: quedan en `salida/derechos-imagenes.json` y el crédito va solo a la descripción.
+- Nunca video de terceros (partidos, TV, noticieros): Content ID los detecta y arriesga strikes.
+- En la tabla del guion, mostrar cada foto como link para que Carlos la vea antes de aprobar.
+- Desde las sesiones de Claude Wikimedia puede estar bloqueado para descargar; no importa: la descarga la hace
+  GitHub Actions. Verificá la URL directa del archivo leyendo la página de Commons con WebFetch.
 
 ## Cómo está armado
 
 - `fabrica/make_short.py` — orquesta todo; `--motor kokoro|chatterbox|grabada`, `--borrador`, `--sin-render`.
 - `fabrica/voz.py` (+ `motor_chatterbox.py`) — voz por línea, control con Whisper y re-generación si no se entiende; caché en `.cache/voz`.
 - `fabrica/escenas.py` / `objetos.py` / `proyecto.py` — escenas → proyecto HyperFrames (`plantilla/`).
+- `fabrica/imagenes.py` — descarga, sepia/byn, recorte de fondo (IS-Net) y créditos de las fotos.
 - `fabrica/audio.py` — música original (instrumentos de lemo-opuscar), ambiente, efectos y mezcla a −14 LUFS.
 - `plantilla/assets/lib/collage.js` — animación (paper-collage-skill, MIT) extendida con tipografía cinética, contador y transiciones.
 - `.github/workflows/` — *Fabricar* (render + issue de revisión) y *Publicar* (al aprobar, sube a YouTube, Instagram y TikTok vía Buffer).

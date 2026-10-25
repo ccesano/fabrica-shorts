@@ -16,3 +16,4 @@ voces/*.wav
 voces/*.mp3
 voces/*.m4a
 !voces/*.gpg
+videos/_*/

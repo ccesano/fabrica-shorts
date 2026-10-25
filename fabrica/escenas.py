@@ -67,6 +67,7 @@ class Escena:
         self.idx, self.linea, self.tl, self.S, self.dur = idx, linea, tl, inicio, dur
         self.pal, self.r, self.fondo = pal, rnd, fondo
         self.world, self.sfx = [], []
+        self.zoom = None
         self.n = 0
 
     # momento local (s, relativo a la escena) en que la narración dice `clave`
@@ -117,6 +118,8 @@ class Escena:
         self.fx("golpe", t + 0.1, 0.42)
 
     def objeto(self, spec, t, cx, top, rot, max_h=560, max_w=900):
+        if spec.get("tipo") == "foto" and "caja" not in spec:
+            spec = dict(spec, caja=(min(max_w, 640), max_h))
         o, cls = crear(spec, self.uid())
         z = min(1.0, max_h / o.h, max_w / o.w)
         w, h = o.w * z, o.h * z
@@ -302,7 +305,32 @@ def cierre(E, esc):
             E.tira("tag", resto.upper(), E.cuando(resto, E.reparto(2, 3)), f"left: 60px; top: {yc + 150:.0f}px", cabe(resto.upper(), "tag", 960, 58, 36, 48))
 
 
-TIPOS = {"golpe": golpe, "collage": collage, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
+def foto(E, esc):
+    """Una foto grande (con marco o recortada) como protagonista, con etiqueta arriba y 1-2 palabras abajo."""
+    palabras = esc.get("palabras", [])[:2]
+    top = 250
+    if esc.get("etiqueta"):
+        et = esc["etiqueta"]
+        E.tira("label", et, PUSH + 0.05, f"left: 50px; top: {E.r.choice([240, 260])}px; width: 980px", cabe(et, "news", 980, 92, 58, 68))
+        top = 390
+    alto = (1200 if not palabras else 1090 - 130 * len(palabras)) - top
+    spec = dict({k: v for k, v in esc["foto"].items() if k != "en"}, tipo="foto")
+    spec["caja"] = (900, alto)
+    t = E.cuando(esc["foto"].get("en", ""), PUSH + 0.2) if esc["foto"].get("en") else PUSH + 0.2
+    E.objeto(spec, t, 540, top, E.r.choice([-3, -2, 2, 3]), max_h=alto + 120, max_w=980)
+    ys = [1110, 1250] if len(palabras) == 2 else [1190]
+    for i, p in enumerate(palabras):
+        txt = limpio(item_txt(p)).upper()
+        t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))
+        style = f"left: {E.r.choice([46, 60])}px; top: {ys[i]}px" if i % 2 == 0 else f"right: {E.r.choice([40, 56])}px; top: {ys[i]}px"
+        E.tira("word", txt, t, style, cabe(txt, "gloock", 990, 118, 64, 68))
+    if esc.get("sello"):
+        t = E.cuando(esc.get("sello_en", esc["sello"]), E.reparto(2, 3))
+        E.sello(esc["sello"].upper(), t, f"right: {E.r.choice([80, 120])}px; top: {top + alto - 160}px", E.r.choice([-9, 7]))
+    E.zoom = 0.07   # acercamiento lento sobre la foto
+
+
+TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
 SOLIDOS = {"golpe", "cita"}
 
 
@@ -342,7 +370,7 @@ def armar(guion, timings, slug):
             E.fx("corte", 0.0, 0.3)
         bg = pal["bgs"][(bg_off + i) % len(pal["bgs"])]
         escenas.append(dict(id=f"s{i + 1}-{tipo}", start=S, dur=dur, bg=bg, solid=fondo == "solido", trans=trans,
-                            world=E.world, seed=seed % 997 + i * 13, pal=pal))
+                            world=E.world, seed=seed % 997 + i * 13, pal=pal, zoom=E.zoom))
         sfx += E.sfx
         trans_prev = trans
     for i, s in enumerate(escenas):

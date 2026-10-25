@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import escenas as ESC  # noqa: E402
+import imagenes  # noqa: E402
 import proyecto  # noqa: E402
 import voz  # noqa: E402
 
@@ -107,7 +108,7 @@ def hoja(video, escenas, out):
 CREDITOS_MUSICA = "Música original compuesta para este video con instrumentos sampleados (lemo-opuscar)."
 
 
-def publicacion(g, insts, out):
+def publicacion(g, insts, out, cred_img=""):
     p = dict(g.get("publicar", {}))
     p.setdefault("titulo", g["titulo"])
     desc = p.get("descripcion", "")
@@ -115,6 +116,8 @@ def publicacion(g, insts, out):
     if any(i in insts for i in ("piano",)):
         cred.append('Piano: "Salamander Grand Piano V3" de Alexander Holm (CC BY 3.0).')
     cred.append("Samples CC0: VS Chamber Orchestra Community Edition, Versilian Community Sample Library, FreePats.")
+    if cred_img:
+        cred.append(cred_img)
     if g.get("fuentes"):
         cred.append("Fuentes: " + ", ".join(g["fuentes"]) + ".")
     tags = p.get("hashtags", [])
@@ -147,6 +150,16 @@ def main():
     tiempos["voz"] = time.time() - t
     print(f"  narración: {tim['dur']:.1f} s ({tim['motor']})")
 
+    creditos_img = []
+    if any(True for _ in imagenes.recorrer(g)):
+        paso("Imágenes")
+        extra = sal / "_assets"
+        if extra.exists():
+            shutil.rmtree(extra)
+        creditos_img = imagenes.preparar_todas(g, gp.parent, extra)
+        (sal / "derechos-imagenes.json").write_text(json.dumps(creditos_img, ensure_ascii=False, indent=1))
+        print(f"  {len(creditos_img)} imagen(es) con crédito registrado")
+
     paso("Escenas")
     escenas, fin, cues, subs, pal = ESC.armar(g, tim, slug)
     if g.get("subtitulos", True) is False:
@@ -163,7 +176,7 @@ def main():
     tiempos["audio"] = time.time() - t
 
     paso("Proyecto HyperFrames")
-    pj = proyecto.escribir(sal / "proyecto", escenas, fin, subs, mezcla, g["titulo"], ESC.PALETAS[pal]["acc"])
+    pj = proyecto.escribir(sal / "proyecto", escenas, fin, subs, mezcla, g["titulo"], ESC.PALETAS[pal]["acc"], sal / "_assets")
     r = npx(["check", "--json"], pj, sal / "check.log")
     try:
         chk = json.loads(r.stdout[r.stdout.index("{"):])
@@ -171,7 +184,7 @@ def main():
         print(f"  chequeo: {len(errs)} error(es)" + "".join(f"\n    - {e.get('message', e)}" for e in errs[:8]))
     except (ValueError, AttributeError):
         print("  chequeo: ver salida/check.log")
-    pub = publicacion(g, insts, sal / "publicacion.json")
+    pub = publicacion(g, insts, sal / "publicacion.json", imagenes.linea_creditos(creditos_img))
     if a.sin_render:
         print(f"\nListo sin render ({time.time() - t_ini:.0f} s). Proyecto en {pj}")
         return
