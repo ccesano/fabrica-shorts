@@ -71,15 +71,31 @@ def _recortar(img):
     m = _mascara(img)
     m = m.point(lambda v: 255 if v > 128 else int(v * 1.6) if v > 40 else 0)
     from scipy import ndimage
-    a = np.asarray(m) > 100
+    arr = np.asarray(m)
+    a = arr > 128
     lab, n = ndimage.label(a)
-    if n > 1:  # quedarse con las piezas grandes (saca restos sueltos del fondo)
+    if n >= 1:
+        # la figura principal es la pieza más grande; otras piezas solo si son grandes y están pegadas a ella
+        # (antes entraban pedazos de pared o de fondo y la figura quedaba chica dentro de un recorte enorme)
         tam = ndimage.sum(a, lab, range(1, n + 1))
-        keep = np.isin(lab, [i + 1 for i, t in enumerate(tam) if t >= 0.04 * tam.max()])
-        m = Image.fromarray((np.asarray(m) * keep).astype("uint8"), "L")
-    bbox = m.point(lambda v: 255 if v > 100 else 0).getbbox()
+        prin = int(np.argmax(tam)) + 1
+        sl = ndimage.find_objects(lab)
+        y0, y1 = sl[prin - 1][0].start, sl[prin - 1][0].stop
+        x0, x1 = sl[prin - 1][1].start, sl[prin - 1][1].stop
+        my, mx = 0.15 * (y1 - y0), 0.15 * (x1 - x0)
+        ok = [prin]
+        for i in range(1, n + 1):
+            if i == prin or tam[i - 1] < 0.15 * tam[prin - 1]:
+                continue
+            cy, cx = ndimage.center_of_mass(a, lab, i)
+            if y0 - my <= cy <= y1 + my and x0 - mx <= cx <= x1 + mx:
+                ok.append(i)
+        keep = ndimage.binary_dilation(np.isin(lab, ok), iterations=6)
+        arr = (arr * keep).astype("uint8")
+        m = Image.fromarray(arr, "L")
+    bbox = Image.fromarray(((arr > 128) * 255).astype("uint8"), "L").getbbox()
     if bbox:
-        pad = 40
+        pad = max(12, int(0.025 * max(img.size)))
         bbox = (max(0, bbox[0] - pad), max(0, bbox[1] - pad), min(img.width, bbox[2] + pad), min(img.height, bbox[3] + pad))
         img, m = img.crop(bbox), m.crop(bbox)
     borde = m.filter(ImageFilter.MaxFilter(max(9, (min(img.size) // 90) * 2 + 1))).filter(ImageFilter.GaussianBlur(1.2))
@@ -103,6 +119,9 @@ def preparar(spec, carpeta_video, assets, n):
             raise SystemExit(f"No encuentro la imagen {f}")
     img = ImageOps.exif_transpose(Image.open(f)).convert("RGB")
     img.thumbnail((MAX_LADO, MAX_LADO), Image.LANCZOS)
+    if max(img.size) < 1100:   # imágenes chicas (grabados viejos, portadas): agrandar para que no se vean pixeladas
+        z = 1100 / max(img.size)
+        img = img.resize((round(img.width * z), round(img.height * z)), Image.LANCZOS)
     img = _tratar(img, spec.pop("tratamiento", "color"))
     destino = Path(assets) / "img"
     destino.mkdir(parents=True, exist_ok=True)

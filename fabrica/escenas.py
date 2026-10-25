@@ -196,7 +196,7 @@ def collage(E, esc):
     ys = [1010, 1190]
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
-        size = cabe(txt, "gloock", 990, 128, 64, 68)
+        size = cabe(txt, "gloock", 990, 128, 42, 68)
         t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))
         izq = (i % 2 == 0) == (lado == "izq")
         style = f"left: {E.r.choice([46, 60, 70])}px; top: {ys[i]}px" if izq else f"right: {E.r.choice([40, 50, 64])}px; top: {ys[i]}px"
@@ -228,7 +228,7 @@ def cifra(E, esc):
     if esc.get("palabra"):
         txt = esc["palabra"].upper()
         E.tira("word", txt, max(t + dur * 0.6, E.cuando(esc.get("palabra_en", esc["palabra"]), t + dur)),
-               f"right: 56px; top: {min(1240, y):.0f}px", cabe(txt, "gloock", 990, 120, 64, 68))
+               f"right: 56px; top: {min(1240, y):.0f}px", cabe(txt, "gloock", 990, 120, 42, 68))
     if esc.get("objeto"):
         spec = {k: v for k, v in esc["objeto"].items() if k != "en"}
         E.objeto(spec, t + dur + 0.2, 280, min(1080, y + 150), E.r.choice([-8, 8]), max_h=320, max_w=420)
@@ -255,7 +255,7 @@ def lista(E, esc):
     if remate:
         txt = limpio(item_txt(remate)).upper()
         t = E.cuando(item_en(remate), E.reparto(len(items), len(items) + 1))
-        E.tira("word", txt, t, f"right: 46px; top: {min(1210, y0 + len(items) * paso + 40):.0f}px", cabe(txt, "gloock", 990, 120, 64, 68))
+        E.tira("word", txt, t, f"right: 46px; top: {min(1210, y0 + len(items) * paso + 40):.0f}px", cabe(txt, "gloock", 990, 120, 42, 68))
 
 
 def cita(E, esc):
@@ -315,19 +315,21 @@ def foto(E, esc):
         et = esc["etiqueta"]
         E.tira("label", et, PUSH + 0.05, f"left: 50px; top: {E.r.choice([240, 260])}px; width: 980px", cabe(et, "news", 980, 92, 58, 68))
         top = 390
-    alto = (1200 if not palabras else 1090 - 130 * len(palabras)) - top
-    if esc["foto"].get("recorte"):   # una figura recortada puede quedar detrás de las palabras: más grande
-        alto = 1230 - top
+    # la foto ocupa todo el alto libre hasta las palabras (antes quedaba chica)
+    alto = {0: 1220, 1: 1160, 2: 1085}[len(palabras)] - top
+    marco = not esc["foto"].get("recorte")
+    if not marco:   # una figura recortada puede quedar detrás de las palabras: más grande
+        alto = 1250 - top
     spec = dict({k: v for k, v in esc["foto"].items() if k != "en"}, tipo="foto")
-    spec["caja"] = (900, alto)
+    spec["caja"] = (940, alto - (110 if marco else 0))   # el marco suma papel blanco y epígrafe
     t = E.cuando(esc["foto"].get("en", ""), PUSH) if esc["foto"].get("en") else PUSH
-    E.objeto(spec, t, 540, top, E.r.choice([-3, -2, 2, 3]), max_h=alto + 120, max_w=980)
+    E.objeto(spec, t, 540, top, E.r.choice([-3, -2, 2, 3]), max_h=alto + 40, max_w=1000)
     ys = [1110, 1250] if len(palabras) == 2 else [1190]
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
         t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))
         style = f"left: {E.r.choice([46, 60])}px; top: {ys[i]}px" if i % 2 == 0 else f"right: {E.r.choice([40, 56])}px; top: {ys[i]}px"
-        E.tira("word", txt, t, style, cabe(txt, "gloock", 990, 118, 64, 68))
+        E.tira("word", txt, t, style, cabe(txt, "gloock", 990, 118, 42, 68))
     if esc.get("sello"):
         t = E.cuando(esc.get("sello_en", esc["sello"]), E.reparto(2, 3))
         E.sello(esc["sello"].upper(), t, f"right: {E.r.choice([80, 120])}px; top: {top + alto - 160}px", E.r.choice([-9, 7]))
@@ -417,7 +419,7 @@ def jugada(E, esc):
     E.fx("whoosh", t_shot, 0.3, d=1.0)
     for i, p in enumerate(esc.get("palabras", [])[:1]):
         txt = limpio(item_txt(p)).upper()
-        E.tira("word", txt, E.cuando(item_en(p), t_shot), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
+        E.tira("word", txt, E.cuando(item_en(p), t_shot), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 42, 68))
     sello = esc.get("sello", "¡AFUERA!" if afuera else "¡GOL!")
     if sello:
         pos = "left: 600px; top: 480px" if afuera else ("left: 110px; top: 780px" if izq else "left: 600px; top: 780px")
