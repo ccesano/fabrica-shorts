@@ -15,6 +15,13 @@ El guion **siempre pasa por Carlos antes de fabricarse**. Dos tiempos:
    `# | Voz (say) | En pantalla (tipo de escena + textos + objeto) | Emoción`
    y arriba, en una línea: paleta · ánimo de la música · ambiente · duración estimada (caracteres / 15 ≈ segundos).
    Debajo, el título y la descripción de la publicación. Terminar preguntando qué cambiar.
+   **Además**, cargar el guion en la *Mesa de guiones* (https://claude.ai/artifact/BhPC4PrHy9mLcGiBbWBair) con
+   `ArtifactData` `set` en la colección `guiones`, doc id = slug. Campos: `titulo, slug, creado (ISO), estado: "borrador",
+   meta {paleta, musica, ambiente}, meta_original (copia), lineas [{n, tipo, voz, voz_original, pantalla,
+   pantalla_original, emocion, emocion_original, nota: ""}], fotos [{n, titulo, url (página de Commons), licencia}],
+   publicar {titulo, descripcion}, nota_general: ""`. Ahí Carlos corrige (se guarda solo) y toca *Aprobar*.
+   Cuando escriba "listo", leer el doc (`ArtifactData get`), aplicar las líneas cambiadas y las notas
+   (`nota` por línea y `nota_general` son pedidos para Claude) y, si `estado` es `"aprobado"`, fabricar.
 3. **Iterar** con sus pedidos creativos (gancho, objetos, colores, música, qué frase más emotiva, etc.) hasta que diga
    que está bien ("dale", "ok", "fabricalo"). Las palabras de Carlos mandan sobre las reglas de abajo, salvo los datos
    sin verificar.
