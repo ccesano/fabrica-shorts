@@ -51,6 +51,13 @@ def info(titulos):
     return out
 
 
+def externas(c):
+    """Imágenes de otras webs (sin licencia libre: requieren el OK de Carlos)."""
+    return [dict(titulo=e.get("titulo", e["url"].rsplit("/", 1)[-1]), url=e["url"], miniatura=e["url"], pagina=e.get("pagina", ""),
+                 ancho=None, alto=None, licencia=e.get("licencia", "© sin licencia libre"), libre=False,
+                 autor=e.get("autor", ""), fecha="", descripcion=e.get("descripcion", "")) for e in c.get("externas", [])]
+
+
 def buscar(c):
     maxn = int(c.get("max", 12))
     titulos = list(c.get("archivos", []))
@@ -67,7 +74,7 @@ def buscar(c):
         if t not in vistos:
             vistos.add(t)
             uniq.append(t)
-    return info(uniq)
+    return externas(c) + info(uniq)
 
 
 def hoja(res, out, cols=6, w=240, h=240):
