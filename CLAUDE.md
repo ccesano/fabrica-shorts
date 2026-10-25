@@ -39,6 +39,18 @@ Si Carlos pide cambios a un video ya hecho: editar su `guion.json` y volver a pu
 cambiaron se reutiliza y el issue se actualiza con la versión nueva).
 Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (uno debajo del otro) y fabricar los aprobados.
 
+## Qué historias contar
+
+Filtro: **¿la historia se sostiene contada en una mesa de café, sin mostrar el video?** Si lo que engancha es *ver* la
+jugada (goles lindos, gambetas, atajadas, rankings de goles), no va: no usamos video de terceros. Sí van orígenes y apodos,
+personajes, cifras, frases y relatos, "el día que…", historias humanas, curiosidades y nostalgia con pregunta. Si Carlos
+pide un tema visual, proponerle el ángulo de la historia (qué se dijo, qué significó, qué pasó después) o avisarle.
+
+**Banco de historias**: pestaña de la Mesa de guiones, colección `temas` (docs `t001`…: `n, titulo, gancho, categoria,
+formatos[], sensible, estado` = pendiente | elegido | hecho | descartado). Cuando Carlos pida "armá las elegidas",
+leerlas (`ArtifactData query` con `estado == elegido`), investigar y proponer los guiones. Al publicar un video, marcar su
+tema como `hecho`. Para sumar ideas nuevas, agregar docs con el número siguiente.
+
 ## Reglas del guion
 
 - 7 a 10 líneas, **≤ 850 caracteres** de narración en total (≈ 50–58 s con la voz clonada).
