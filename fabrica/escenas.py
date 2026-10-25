@@ -359,43 +359,70 @@ def _arco():
             f'<path d="M232,705 L232,432 L858,432 L858,705" fill="none" stroke="#1E1B18" stroke-width="5" stroke-linejoin="round" opacity=".55"/></svg>')
 
 
+def _ruta(u, d, t, dur, color, ancho, rider):
+    return (f'<svg class="cg-doodle" data-kind="flight" data-t="{t}" data-dur="{dur:.2f}" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
+            f'<defs><mask id="{u}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{d}" fill="none" stroke="#FFFFFF" stroke-width="{ancho + 14}" stroke-linecap="round"/></mask></defs>'
+            f'<path class="cg-route" d="{d}" fill="none" stroke="{color}" stroke-width="{ancho}" stroke-dasharray="4 18" stroke-linecap="round" mask="url(#{u}-m)"/>'
+            f'<g class="cg-plane">{rider}</g></svg>')
+
+
 def jugada(E, esc):
-    """Una jugada dibujada: corrida punteada, el arquero que sale y la pelota que se la pica por arriba al arco."""
+    """Una jugada dibujada sobre el arco de papel.
+    sentido: izquierda|derecha (hacia dónde va la pelota) · rivales: 0-3 defensores que elude en la corrida
+    arquero: parado (sale y se la pican) | eludido (queda en el piso) · resultado: gol | afuera (por arriba del travesaño)
+    corrida_en / remate_en (o vaselina_en): momentos de la narración."""
     if esc.get("etiqueta"):
         et = esc["etiqueta"]
         E.tira("label", et, PUSH + 0.05, "left: 50px; top: 230px; width: 980px", cabe(et, "news", 980, 84, 54, 68))
     E.world.append(_arco())
-    t_arq = PUSH + 0.3
-    E.world.append(f'<div class="cg-pop" data-t="{t_arq}" style="left: 400px; top: 560px">{_arquero(esc.get("arquero_color", "#5E7D95"))}</div>')
-    E.fx("pop", t_arq, 0.3)
-    t_run = E.cuando(esc.get("corrida_en", ""), PUSH + 0.4) if esc.get("corrida_en") else PUSH + 0.4
-    t_chip = E.cuando(esc.get("vaselina_en", ""), E.reparto(2, 3)) if esc.get("vaselina_en") else E.reparto(2, 3)
-    dur_run = max(0.6, min(2.2, t_chip - t_run - 0.15))
-    u = E.uid()
-    # sentido: hacia dónde viaja la pelota por arriba del arquero (visto desde atrás del jugador)
     izq = esc.get("sentido", "izquierda") == "izquierda"
-    corrida = "M960,1400 C 900,1330 820,1240 740,1170" if izq else "M930,1360 C 800,1320 560,1230 340,1170"
-    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_run}" data-dur="{dur_run:.2f}" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
-                   f'<defs><mask id="{u}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{corrida}" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/></mask></defs>'
-                   f'<path class="cg-route" d="{corrida}" fill="none" stroke="#1E1B18" stroke-width="6" stroke-dasharray="3 17" stroke-linecap="round" mask="url(#{u}-m)"/>'
-                   f'<g class="cg-plane"><circle r="24" fill="var(--acc)" stroke="#FFFFFF" stroke-width="7"/><circle r="24" fill="none" stroke="#1E1B18" stroke-width="3"/></g></svg>')
+    eludido = esc.get("arquero") == "eludido"
+    afuera = esc.get("resultado") == "afuera"
+    rivales = max(0, min(3, int(esc.get("rivales", 0))))
+    clave_remate = esc.get("remate_en") or esc.get("vaselina_en")
+    t_run = E.cuando(esc.get("corrida_en", ""), PUSH + 0.4) if esc.get("corrida_en") else PUSH + 0.4
+    t_shot = E.cuando(clave_remate, E.reparto(2, 3)) if clave_remate else E.reparto(2, 3)
+    dur_run = max(0.8, min(3.2, t_shot - t_run - 0.15))
+    color_arq = esc.get("arquero_color", "#5E7D95")
+    if eludido:
+        corrida = "M960,1450 C 880,1360 720,1240 660,1080 S 600,900 540,860"
+        remate = "M540,860 Q 572,470 612,350" if afuera else "M540,860 Q 600,600 700,560"
+        # el arquero queda en el piso, a un costado, cuando la corrida lo pasa
+        E.world.append(f'<div class="cg-pop" data-t="{round(t_run + dur_run * 0.82, 3)}" data-rot="-78" style="left: 150px; top: 690px; zoom: .8">{_arquero(color_arq)}</div>')
+        E.fx("papel", t_run + dur_run * 0.82, 0.3)
+        puntos = [(880, 1290), (790, 1140), (720, 990)]
+    else:
+        E.world.append(f'<div class="cg-pop" data-t="{PUSH + 0.3}" style="left: 400px; top: 560px">{_arquero(color_arq)}</div>')
+        E.fx("pop", PUSH + 0.3, 0.3)
+        corrida = "M960,1400 C 900,1330 820,1240 740,1170" if izq else "M930,1360 C 800,1320 560,1230 340,1170"
+        if afuera:
+            remate = "M740,1170 Q 560,170 300,330" if izq else "M340,1170 Q 520,170 790,330"
+        else:
+            remate = "M740,1170 Q 560,170 310,560" if izq else "M340,1170 Q 520,170 770,560"
+        puntos = [(900, 1330), (840, 1250), (790, 1200)]
+    if not izq:
+        corrida = corrida  # el camino con rivales está pensado de derecha a izquierda; se usa igual
+    for k in range(rivales):
+        x, y = puntos[k]
+        tk = round(t_run + dur_run * (k + 1) / (rivales + 2) - 0.3, 3)
+        E.world.append(f'<div class="cg-pop" data-t="{max(PUSH, tk)}" data-rot="{E.r.choice([-14, -8, 9, 15])}" style="left: {(x + 40) / 0.55:.0f}px; top: {(y - 150) / 0.55:.0f}px; zoom: .55">'
+                       f'{_arquero(esc.get("rival_color", "#2B4C9B"))}</div>')
+        E.fx("pop", max(PUSH, tk), 0.22)
+    punto = '<circle r="24" fill="var(--acc)" stroke="#FFFFFF" stroke-width="7"/><circle r="24" fill="none" stroke="#1E1B18" stroke-width="3"/>'
+    E.world.append(_ruta(E.uid(), corrida, t_run, dur_run, "#1E1B18", 6, punto))
     u2 = E.uid()
-    arco = "M740,1170 Q 560,170 310,560" if izq else "M340,1170 Q 520,170 770,560"
     from objetos import pelota
     bola = pelota(80, u2).html.replace('<svg viewBox="0 0 300 300" width="80" height="80"', '<svg x="-40" y="-40" viewBox="0 0 300 300" width="80" height="80"')
-    E.world.append(f'<svg class="cg-doodle" data-kind="flight" data-t="{t_chip}" data-dur="1.0" width="1080" height="1920" viewBox="0 0 1080 1920" style="left: 0; top: 0" aria-hidden="true">'
-                   f'<defs><mask id="{u2}-m" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920"><path class="cg-route-mask" d="{arco}" fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/></mask></defs>'
-                   f'<path class="cg-route" d="{arco}" fill="none" stroke="var(--acc)" stroke-width="9" stroke-dasharray="4 18" stroke-linecap="round" mask="url(#{u2}-m)"/>'
-                   f'<g class="cg-plane">{bola}</g></svg>')
-    E.fx("whoosh", t_chip, 0.3, d=1.0)
+    E.world.append(_ruta(u2, remate, t_shot, 0.8 if eludido else 1.0, "var(--acc)", 9, bola))
+    E.fx("whoosh", t_shot, 0.3, d=1.0)
     for i, p in enumerate(esc.get("palabras", [])[:1]):
         txt = limpio(item_txt(p)).upper()
-        E.tira("word", txt, E.cuando(item_en(p), t_chip), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
-    sello = esc.get("sello", "¡GOL!")
+        E.tira("word", txt, E.cuando(item_en(p), t_shot), "left: 50px; top: 1230px" if izq else "right: 50px; top: 1210px", cabe(txt, "gloock", 990, 124, 64, 68))
+    sello = esc.get("sello", "¡AFUERA!" if afuera else "¡GOL!")
     if sello:
-        E.sello(sello.upper(), round(t_chip + 1.0, 3), "left: 110px; top: 780px" if izq else "left: 600px; top: 780px", E.r.choice([-9, 8]))
-        E.fx("golpe", t_chip + 0.95, 0.45)
-
+        pos = "left: 600px; top: 480px" if afuera else ("left: 110px; top: 780px" if izq else "left: 600px; top: 780px")
+        E.sello(sello.upper(), round(t_shot + 0.95, 3), pos, E.r.choice([-9, 8]))
+        E.fx("golpe", t_shot + 0.9, 0.45)
 
 TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "jugada": jugada, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
 SOLIDOS = {"golpe", "cita"}

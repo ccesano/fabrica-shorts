@@ -78,7 +78,7 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 | `lista` | nombres, pasos, ejemplos | `items` (≤ 6), `etiqueta`?, `remate`?, `numerada`? |
 | `cita` | frase textual de alguien | `texto` (con `*énfasis*`), `autor` |
 | `foto` | una imagen real como protagonista (con marco o recortada) | `foto` {…}, `etiqueta`?, `palabras` (≤ 2), `sello`? |
-| `jugada` | una jugada dibujada: corrida punteada, arquero de papel y la pelota que se la pica al arco | `etiqueta`?, `corrida_en`, `vaselina_en`, `sentido` (izquierda\|derecha: hacia dónde va la pelota), `arquero_color`?, `palabras` (1)?, `sello`? (por defecto "¡GOL!") |
+| `jugada` | una jugada dibujada: corrida punteada, rivales y arquero de papel, y el remate | `etiqueta`?, `corrida_en`, `remate_en`, `sentido` (izquierda\|derecha), `rivales` (0–3), `arquero` (parado\|eludido), `resultado` (gol\|afuera), `arquero_color`?, `rival_color`?, `palabras` (1)?, `sello`? |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
 
 Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
