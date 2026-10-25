@@ -41,15 +41,19 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 
 ## Qué historias contar
 
-Filtro: **¿la historia se sostiene contada en una mesa de café, sin mostrar el video?** Si lo que engancha es *ver* la
-jugada (goles lindos, gambetas, atajadas, rankings de goles), no va: no usamos video de terceros. Sí van orígenes y apodos,
-personajes, cifras, frases y relatos, "el día que…", historias humanas, curiosidades y nostalgia con pregunta. Si Carlos
-pide un tema visual, proponerle el ángulo de la historia (qué se dijo, qué significó, qué pasó después) o avisarle.
+Concepto del canal: **historias increíbles y reales** (fútbol, música, famosos, historia, inventos y gente común), con
+ángulo argentino y latinoamericano. La promesa es "esto pasó de verdad", así que verificar es lo más importante: lo que
+no se confirma no va, y una leyenda se cuenta como leyenda ("dicen que…").
+Filtro: **¿se sostiene contada en una mesa de café, sin mostrar el video?** No usamos video ni audio de terceros: nada de
+goles para *ver*, canciones, letras ni fragmentos de TV. Famosos: solo hechos documentados, nunca rumores. Gente común:
+solo historias ya publicadas en medios, sin exponer a personas vulnerables ni a menores; tragedias con respeto.
 
-**Banco de historias**: pestaña de la Mesa de guiones, colección `temas` (docs `t001`…: `n, titulo, gancho, categoria,
-formatos[], sensible, estado` = pendiente | elegido | hecho | descartado). Cuando Carlos pida "armá las elegidas",
-leerlas (`ArtifactData query` con `estado == elegido`), investigar y proponer los guiones. Al publicar un video, marcar su
-tema como `hecho`. Para sumar ideas nuevas, agregar docs con el número siguiente.
+**Banco de historias**: pestaña de la Mesa de guiones, colección `temas` (`n, titulo, gancho, categoria, formatos[],
+sensible, estado` = pendiente | elegido | hecho | descartado). Categorías: Fútbol (los docs t001–t100 tienen la
+subcategoría vieja en `categoria`; la página los agrupa como Fútbol), Música, Famosos, Historia, Inventos y curiosidades,
+Gente común. Carlos puede agregar las suyas desde la página (`origen: "Carlos"`, `fuente`, `nota`, id `c…`).
+Cuando pida "armá las elegidas", leerlas (`ArtifactData query` con `estado == elegido`), investigar y proponer los guiones.
+Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar docs `t<n>` con el número siguiente.
 
 ## Reglas del guion
 
