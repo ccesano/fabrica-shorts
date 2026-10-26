@@ -25,7 +25,7 @@ Estados: `borrador` → (Carlos corrige: `con cambios`) → `aprobado` (botón d
 (video en la Mesa) → `publicacion pedida` (botón de Carlos) → `programado` / `publicado`. Si falla: `falla`.
 Si Carlos edita un guion ya fabricado, vuelve a `con cambios` y hay que aprobarlo de nuevo.
 
-## A. Guiones del día (todos los días, 8:30)
+## A. Guiones del día (todos los días, listos a las 5:00; la tarea arranca 4:44)
 
 1. Clonar/actualizar el repo `ccesano/fabrica-shorts` y leer `CLAUDE.md`.
 2. Ver qué hay en la Mesa (`ArtifactData list guiones`): si ya hay guiones de hoy, no duplicar.
