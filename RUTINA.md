@@ -25,16 +25,39 @@ Estados: `borrador` → (Carlos corrige: `con cambios`) → `aprobado` (botón d
 (video en la Mesa) → `publicacion pedida` (botón de Carlos) → `programado` / `publicado`. Si falla: `falla`.
 Si Carlos edita un guion ya fabricado, vuelve a `con cambios` y hay que aprobarlo de nuevo.
 
+## 0. Propuestas de temas para mañana (todos los días, listas a las 19:00)
+
+1. Clonar/actualizar el repo y leer `CLAUDE.md` y este archivo. Fecha objetivo = **mañana** (hora Argentina).
+2. Si ya hay temas con `propuesta == <mañana>` en la colección `temas`, no duplicar.
+3. Proponer **3 de fútbol y 3 de interés general** (música, famosos, historia, inventos, gente común, casos reales),
+   ordenados del más recomendado al menos. Mezclar:
+   - **Efemérides de mañana** (buscar en la web: "un día como hoy <día> de <mes>" fútbol / historia / música).
+   - **Actualidad de mañana**: partidos grandes, finales, clásicos, aniversarios redondos, homenajes.
+   - **Banco**: temas `pendiente` no `sensible` que no se hayan hecho; si Carlos dejó alguno `elegido` sin usar, va primero.
+   Cada propuesta tiene que pasar el filtro de "Qué historias contar" de `CLAUDE.md`, y el dato central tiene que estar
+   confirmado por al menos una fuente seria (si no, no se propone). No repetir temas ya hechos (`estado == "hecho"`
+   o con un guion en la Mesa).
+4. Cargarlas en `temas`:
+   - Tema nuevo: doc `t<n>` con el número siguiente: `n, titulo, gancho` (una línea que enganche), `categoria`
+     ("Fútbol", "Música", "Famosos", "Historia", "Inventos y curiosidades" o "Gente común"), `formatos`, `sensible`,
+     `estado: "pendiente"`, `propuesta: "<mañana AAAA-MM-DD>"`, `porque` (ej. "Efeméride: 27/10/1986" o "Actualidad:
+     se juega el clásico" o "Del banco"), `fuente` (link principal).
+   - Tema del banco: `update` con `propuesta` y `porque`.
+5. Mensaje final corto para Carlos: las 6 propuestas en una línea cada una y "Elegí en la Mesa (Banco de historias →
+   Propuestas para mañana) antes de las 5".
+
 ## A. Guiones del día (todos los días, listos a las 5:00; la tarea arranca 4:44)
 
 1. Clonar/actualizar el repo `ccesano/fabrica-shorts` y leer `CLAUDE.md`.
 2. Ver qué hay en la Mesa (`ArtifactData list guiones`): si ya hay guiones de hoy, no duplicar.
-3. Elegir **2 temas**: uno de fútbol y uno de interés general.
-   - Primero los temas del banco con `estado == "elegido"` (colección `temas`; fútbol = `categoria` "Fútbol" o
-     las subcategorías viejas de t001–t100).
-   - Si no hay elegidos: una **efeméride** de hoy o algo de **actualidad** (buscar en la web: "un día como hoy" +
-     fecha, partidos grandes del día, aniversarios, muertes de famosos), o un tema `pendiente` del banco que no sea
-     `sensible`. Variar: no repetir categoría ni estructura de escenas del video anterior.
+3. Elegir **2 temas**: uno de fútbol y uno de interés general (fútbol = `categoria` "Fútbol" o las subcategorías
+   viejas de t001–t100; general = el resto).
+   - Primero, de las **propuestas de hoy** (`propuesta == <hoy>`), las que Carlos marcó `elegido`.
+   - Después, cualquier otro tema del banco `elegido` (los agregados por Carlos, `origen: "Carlos"`, tienen prioridad).
+   - Si en una categoría no eligió nada: la **primera propuesta de hoy** de esa categoría (menor `n`), y avisarlo en el
+     mensaje final ("no elegiste de fútbol, fui con la primera propuesta").
+   - Si tampoco hay propuestas: una efeméride de hoy, actualidad o un `pendiente` no `sensible` del banco.
+   Variar: no repetir paleta, música ni estructura de escenas del video anterior.
 4. Para cada tema: investigar con búsqueda web (cada dato con 2 fuentes si se puede; si no se confirma, no va),
    buscar fotos libres (push de `investigacion/<slug>/consultas.json` → el flujo *Buscar imágenes* devuelve
    `resultados.json` en ~2 min) y escribir el `guion.json` según `CLAUDE.md` (si la historia necesita más de 60 s
