@@ -39,6 +39,13 @@ Si Carlos pide cambios a un video ya hecho: editar su `guion.json` y volver a pu
 cambiaron se reutiliza y el issue se actualiza con la versión nueva).
 Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (uno debajo del otro) y fabricar los aprobados.
 
+## Rutina automática
+
+Hay dos tareas programadas que arman los guiones del día (8:30) y revisan la Mesa cada hora (fabricar lo aprobado,
+traer los videos, programar lo que Carlos pidió publicar). Cómo funcionan y los campos extra de la Mesa: `RUTINA.md`.
+Si Carlos pide un video desde el chat, se sigue el flujo de arriba, pero al cargarlo en la Mesa se agregan `categoria`
+y `guion` (el JSON completo) para que la rutina pueda fabricarlo cuando lo apruebe.
+
 ## Qué historias contar
 
 Concepto del canal: **historias increíbles y reales** (fútbol, música, famosos, historia, inventos y gente común), con
