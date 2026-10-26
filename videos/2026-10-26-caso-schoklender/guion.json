@@ -1,0 +1,313 @@
+{
+ "titulo": "El caso Schoklender",
+ "largo": true,
+ "paleta": "diario",
+ "musica": {
+  "animo": "misterio"
+ },
+ "ambiente": "ciudad",
+ "subtitulos": true,
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/Schoklender_case",
+  "https://www.canal26.com/policiales/2021/05/29/el-parricidio-de-los-schoklender-a-40-anos-de-un-caso-que-mantiene-el-misterio-y-marco-a-la-historia-argentina/",
+  "https://www.todojujuy.com/policiales/shoklender-40-anos-del-parricidio-que-espanto-al-pais-n204405",
+  "https://www.diariodecuyo.com.ar/noticias/destino-marcado-por-rejas-773834.html",
+  "https://www.contextotucuman.com/nota/418104/suenos-compartidos-condenaron-a-jose-lopez-a-los-hermanos-schoklender-y-absolvieron-a-julio-de-vido-por-el-plan-de-viviendas.html"
+ ],
+ "lineas": [
+  {
+   "say": "Mayo de mil novecientos ochenta y uno. Dos hermanos mataron a sus padres en Buenos Aires. Cuarenta y cinco años después, todavía no se sabe del todo por qué.",
+   "sub": "Mayo de 1981. Dos hermanos mataron a sus padres en Buenos Aires. 45 años después, todavía no se sabe del todo por qué.",
+   "emocion": 1.0,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "el caso Schoklender",
+    "palabras": [
+     {
+      "texto": "DOS HERMANOS",
+      "en": "hermanos"
+     },
+     {
+      "texto": "SUS PADRES",
+      "en": "padres"
+     },
+     {
+      "texto": "*¿POR QUÉ?*",
+      "en": "por qué"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Los Schoklender vivían en un departamento en Belgrano. Mauricio, el padre, era ingeniero. Con su esposa, Cristina, tenían tres hijos: Sergio, de veintitrés años, Pablo, de veinte, y Ana Valeria.",
+   "sub": "Los Schoklender vivían en un departamento en Belgrano. Mauricio, el padre, era ingeniero. Con su esposa, Cristina, tenían tres hijos: Sergio, de 23 años, Pablo, de 20, y Ana Valeria.",
+   "emocion": 1.0,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "La familia",
+    "items": [
+     {
+      "texto": "Mauricio · padre, ingeniero",
+      "en": "Mauricio"
+     },
+     {
+      "texto": "Cristina · madre",
+      "en": "Cristina"
+     },
+     {
+      "texto": "Sergio · 23 años",
+      "en": "Sergio"
+     },
+     {
+      "texto": "Pablo · 20 años",
+      "en": "Pablo"
+     },
+     {
+      "texto": "Ana Valeria · hermana",
+      "en": "Ana Valeria"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En la madrugada del treinta de mayo, Sergio y Pablo mataron a sus padres dentro de ese departamento.",
+   "sub": "En la madrugada del 30 de mayo, Sergio y Pablo mataron a sus padres dentro de ese departamento.",
+   "emocion": 1.0,
+   "pausa": 0.7,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Belgrano, Buenos Aires",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": "30",
+     "mes": "MAYO",
+     "anio": "1981"
+    },
+    "palabras": [
+     {
+      "texto": "MADRUGADA",
+      "en": "madrugada"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Después cargaron los cuerpos en el baúl del auto de la familia y lo dejaron estacionado frente al Parque Las Heras.",
+   "sub": "Después cargaron los cuerpos en el baúl del auto de la familia y lo dejaron estacionado frente al Parque Las Heras.",
+   "emocion": 1.0,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Parque Las Heras",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "Palermo, 1981",
+     "titular": "Un auto abandonado frente al parque"
+    },
+    "palabras": [
+     {
+      "texto": "EL BAÚL",
+      "en": "baúl"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Poco después, unos chicos que jugaban cerca vieron sangre en el baúl. Sus padres avisaron a la policía.",
+   "sub": "Poco después, unos chicos que jugaban cerca vieron sangre en el baúl. Sus padres avisaron a la policía.",
+   "emocion": 0.85,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "UNOS CHICOS",
+      "en": "chicos"
+     },
+     {
+      "texto": "*AVISARON*",
+      "en": "avisaron"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Para entonces, los hermanos ya se habían escapado. Sergio huyó a Mar del Plata, compró un caballo y terminó detenido. Pablo cayó días después, en Tucumán.",
+   "sub": "Para entonces, los hermanos ya se habían escapado. Sergio huyó a Mar del Plata, compró un caballo y terminó detenido. Pablo cayó días después, en Tucumán.",
+   "emocion": 1.0,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "La fuga",
+    "items": [
+     {
+      "texto": "Sergio → Mar del Plata, a caballo",
+      "en": "Mar del Plata"
+     },
+     {
+      "texto": "Pablo → Tucumán",
+      "en": "Tucumán"
+     }
+    ],
+    "remate": {
+     "texto": "LOS DOS, DETENIDOS",
+     "en": "detenido"
+    }
+   }
+  },
+  {
+   "say": "Sergio confesó el crimen. Pero años después cambió su versión: dijo que a sus padres los habían matado unos sicarios, por negocios de armas del padre.",
+   "sub": "Sergio confesó el crimen. Pero años después cambió su versión: dijo que a sus padres los habían matado unos sicarios, por negocios de armas del padre.",
+   "emocion": 0.95,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Dos versiones",
+    "objeto": {
+     "tipo": "planilla",
+     "volanta": "Expediente",
+     "titulo": "Caso Schoklender",
+     "filas": [
+      [
+       "1",
+       "Confesión de Sergio"
+      ],
+      [
+       "2",
+       "«Fueron unos sicarios»"
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "¿SICARIOS?",
+      "en": "sicarios"
+     }
+    ]
+   }
+  },
+  {
+   "say": "La Justicia no le creyó. Para los jueces, el crimen nació de los conflictos dentro de la familia. Los dos fueron condenados a prisión perpetua.",
+   "sub": "La Justicia no le creyó. Para los jueces, el crimen nació de los conflictos dentro de la familia. Los dos fueron condenados a prisión perpetua.",
+   "emocion": 1.0,
+   "pausa": 0.7,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "la sentencia",
+    "palabras": [
+     {
+      "texto": "PRISIÓN",
+      "en": "prisión"
+     },
+     {
+      "texto": "*PERPETUA*",
+      "en": "perpetua"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Pero por la ley del dos por uno, que contaba doble algunos años de cárcel, Sergio empezó a salir en mil novecientos noventa y cinco. Pablo quedó libre en dos mil uno.",
+   "sub": "Pero por la ley del 2x1, que contaba doble algunos años de cárcel, Sergio empezó a salir en 1995. Pablo quedó libre en 2001.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "La salida",
+    "items": [
+     {
+      "texto": "Sergio · desde 1995",
+      "en": "Sergio"
+     },
+     {
+      "texto": "Pablo · en 2001",
+      "en": "Pablo"
+     }
+    ],
+    "remate": {
+     "texto": "LEY DEL 2X1",
+     "en": "dos por uno"
+    }
+   }
+  },
+  {
+   "say": "Y la historia siguió. Sergio llegó a ser apoderado de la Fundación Madres de Plaza de Mayo, y manejó Sueños Compartidos, un plan para construir viviendas con fondos del Estado.",
+   "sub": "Y la historia siguió. Sergio llegó a ser apoderado de la Fundación Madres de Plaza de Mayo, y manejó Sueños Compartidos, un plan para construir viviendas con fondos del Estado.",
+   "emocion": 0.85,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Años después",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "Sueños Compartidos",
+     "titular": "Un plan de viviendas con fondos del Estado"
+    },
+    "palabras": [
+     {
+      "texto": "SUEÑOS COMPARTIDOS",
+      "en": "Sueños Compartidos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En septiembre de este año, la Justicia condenó a los dos hermanos por desviar más de doscientos seis millones de pesos de ese plan. La condena todavía no está firme.",
+   "sub": "En septiembre de 2026, la Justicia condenó a los dos hermanos por desviar más de 206 millones de pesos de ese plan. La condena todavía no está firme.",
+   "emocion": 1.0,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "cifra",
+    "etiqueta": "Septiembre de 2026",
+    "numero": 206,
+    "prefijo": "$",
+    "sufijo": " MILLONES",
+    "en": "doscientos seis",
+    "palabra": "TODAVÍA NO FIRME",
+    "palabra_en": "firme"
+   }
+  },
+  {
+   "say": "Cuarenta y cinco años después, la gran pregunta sigue abierta: ¿qué pasó de verdad esa noche? ¿Vos te acordás de este caso? Contalo en los comentarios.",
+   "sub": "45 años después, la gran pregunta sigue abierta: ¿qué pasó de verdad esa noche? ¿Vos te acordás de este caso? Contalo en los comentarios.",
+   "emocion": 1.0,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿QUÉ PASÓ",
+      "en": "qué pasó"
+     },
+     {
+      "texto": "*ESA NOCHE?*",
+      "en": "esa noche"
+     }
+    ],
+    "cta": "¿Te acordás de este caso? Contalo en los comentarios."
+   }
+  }
+ ],
+ "voz": {
+  "rioplatense": "sch",
+  "pronunciar": {
+   "Schoklender": "Shóklender"
+  }
+ },
+ "publicar": {
+  "titulo": "El caso Schoklender: el crimen que conmovió a la Argentina #shorts",
+  "descripcion": "Mayo de 1981: dos hermanos mataron a sus padres en Belgrano. La fuga, las dos versiones, la condena, la salida por el 2x1 y la condena de 2026 por Sueños Compartidos.",
+  "hashtags": [
+   "casoschoklender",
+   "historia",
+   "argentina",
+   "policiales",
+   "shorts"
+  ],
+  "categoria_youtube": "24"
+ }
+}
