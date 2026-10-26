@@ -174,11 +174,51 @@ def foto(src, epigrafe="", ancho=800, alto=600, marco=False, caja=(600, 680), **
     return Obj(f'<img src="{e(src)}" alt="" style="display: block; width: {w}px; height: {h}px" />', "prop", w, h)
 
 
+def gallina(banda="#D81E2A", uid="g"):
+    """Gallina blanca de papel, de perfil, con una banda cruzada (por defecto la roja de River)."""
+    cuerpo = "M300,215 C300,300 230,345 160,345 C95,345 50,300 52,240 C30,225 18,190 30,150 C60,175 80,185 105,180 C120,150 150,138 175,140 C190,95 205,60 240,52 C275,46 300,70 300,100 C300,130 285,150 280,170 C292,182 300,198 300,215 Z"
+    svg = (f'<svg viewBox="0 0 360 400" width="360" height="400" aria-hidden="true"><defs><clipPath id="gc-{uid}"><path d="{cuerpo}"/></clipPath></defs>'
+           # borde blanco de recorte
+           f'<g stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round" fill="#FFFFFF"><path d="{cuerpo}"/>'
+           '<path d="M232,52 C228,30 244,18 252,34 C258,14 278,18 274,40 C290,32 300,48 284,60 Z"/>'
+           '<path d="M298,92 L336,104 L298,116 Z"/><path d="M150,345 L140,392 M200,345 L212,392"/></g>'
+           # cresta, pico, barba y patas
+           '<path d="M232,52 C228,30 244,18 252,34 C258,14 278,18 274,40 C290,32 300,48 284,60 Z" fill="#D81E2A" stroke="#1E1B18" stroke-width="5"/>'
+           '<path d="M298,92 L336,104 L298,116 Z" fill="#F3B33B" stroke="#1E1B18" stroke-width="5" stroke-linejoin="round"/>'
+           '<path d="M292,120 C306,128 304,150 290,150 C282,140 284,128 292,120 Z" fill="#D81E2A" stroke="#1E1B18" stroke-width="4"/>'
+           '<path d="M150,342 L140,390 L122,396 M140,390 L156,398 M200,342 L212,390 L196,397 M212,390 L230,396" fill="none" stroke="#E0A030" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>'
+           # cuerpo blanco y banda cruzada
+           f'<path d="{cuerpo}" fill="#FBFAF5" stroke="#1E1B18" stroke-width="5"/>'
+           f'<g clip-path="url(#gc-{uid})"><path d="M120,120 L190,120 L330,330 L260,330 Z" fill="{banda}"/></g>'
+           f'<path d="{cuerpo}" fill="none" stroke="#1E1B18" stroke-width="5"/>'
+           '<path d="M110,250 C140,230 190,232 215,262 C185,275 140,278 110,250 Z" fill="#EDE8DC" stroke="#1E1B18" stroke-width="4"/>'
+           '<circle cx="268" cy="92" r="9" fill="#1E1B18"/><circle cx="271" cy="89" r="3" fill="#FFFFFF"/></svg>')
+    return Obj(svg, "prop", 360, 400)
+
+
+def billetes(valor="1000", uid="m"):
+    """Pila de billetes de papel, abiertos en abanico."""
+    def billete(rot, dx, dy, fondo):
+        return (f'<g transform="translate({200 + dx},{130 + dy}) rotate({rot})">'
+                f'<rect x="-170" y="-80" width="340" height="160" rx="10" fill="#FFFFFF"/>'
+                f'<rect x="-160" y="-70" width="320" height="140" rx="6" fill="{fondo}" stroke="#1E1B18" stroke-width="5"/>'
+                '<rect x="-146" y="-56" width="292" height="112" rx="4" fill="none" stroke="#2E5A3A" stroke-width="3" stroke-dasharray="7 5"/>'
+                '<circle cx="0" cy="0" r="40" fill="#EAF2DF" stroke="#2E5A3A" stroke-width="4"/>'
+                '<text x="0" y="17" text-anchor="middle" font-family="Gloock, serif" font-size="50" fill="#2E5A3A">$</text>'
+                f'<text x="-136" y="-30" font-family="Archivo Black, sans-serif" font-size="24" fill="#2E5A3A">{e(valor[:6])}</text>'
+                f'<text x="136" y="50" text-anchor="end" font-family="Archivo Black, sans-serif" font-size="24" fill="#2E5A3A">{e(valor[:6])}</text>'
+                '<text x="0" y="62" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="14" letter-spacing="3" fill="#2E5A3A">PESOS</text></g>')
+    svg = ('<svg viewBox="0 0 400 280" width="440" height="308" aria-hidden="true">'
+           + billete(-14, -18, 18, "#B9D3A0") + billete(6, 14, 6, "#C6DCAE") + billete(-3, 0, -4, "#D3E5BE") + '</svg>')
+    return Obj(svg, "prop", 440, 308)
+
+
 CLASES = {"entrada": "o-ticket", "recorte": "o-clip", "planilla": "o-sheet", "marcador": "o-score",
           "calendario": "o-cal", "postal": "o-post", "foto": "o-photo"}
 CATALOGO = {"pelota": pelota, "camiseta": camiseta, "reloj": reloj, "vinilo": vinilo, "tele": tele,
             "entrada": entrada, "recorte": recorte, "planilla": planilla, "marcador": marcador,
-            "calendario": calendario, "postal": postal, "foto": foto}
+            "calendario": calendario, "postal": postal, "foto": foto,
+            "gallina": gallina, "billetes": billetes}
 
 
 def crear(spec, uid):

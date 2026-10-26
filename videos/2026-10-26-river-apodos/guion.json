@@ -1,0 +1,262 @@
+{
+ "titulo": "Por qué a River le dicen Gallina y Millonario",
+ "paleta": "banda",
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "ambiente": "cancha",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.goal.com/es-ar/noticias/por-que-a-river-plate-le-dicen-millonarios/1dc525qhwdrh71ii1khx6rfpa7",
+  "https://www.ellitoral.com/deportes/hace-45-anos-river-ganaba-mote-gallina_0_QNKc0YqRXn.html",
+  "https://billiken.lat/interesante/por-que-a-los-hinchas-de-river-se-les-dice-gallina/",
+  "https://en.wikipedia.org/wiki/1966_Copa_Libertadores_finals",
+  "https://carasycaretas.org.ar/2023/12/01/bernabe-ferreyra-la-fiera-del-gol/",
+  "https://en.wikipedia.org/wiki/Bernab%C3%A9_Ferreyra"
+ ],
+ "lineas": [
+  {
+   "say": "A River le dicen Millonario y también Gallina. Uno de los apodos nació de una fortuna. El otro, de un infortunio.",
+   "sub": "A River le dicen Millonario y también Gallina. Uno de los apodos nació de una fortuna. El otro, de un infortunio.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "dupla",
+    "kicker": "los apodos de River",
+    "partes": [
+     {
+      "palabra": {
+       "texto": "MILLONARIO",
+       "en": "Millonario"
+      },
+      "objeto": {
+       "tipo": "billetes"
+      }
+     },
+     {
+      "palabra": {
+       "texto": "*GALLINA*",
+       "en": "Gallina"
+      },
+      "objeto": {
+       "tipo": "gallina"
+      }
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Empecemos por la plata. En mil novecientos treinta y uno, River pagó diez mil pesos por Carlos Peucelle, un delantero de Sportivo Buenos Aires. Para que te des una idea: un auto cero kilómetro costaba unos siete mil.",
+   "sub": "Empecemos por la plata. En 1931, River pagó 10.000 pesos por Carlos Peucelle, un delantero de Sportivo Buenos Aires. Para que te des una idea: un auto 0 km costaba unos 7.000.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "1931",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Carlos_Peucelle%2C_Los_Sports%2C_1930-01-03_%28356%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Carlos_Peucelle,_Los_Sports,_1930-01-03_(356).jpg",
+     "licencia": "dominio público",
+     "credito": "Revista Los Sports, 1930 / Wikimedia Commons",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Carlos Peucelle, 1930"
+    },
+    "palabras": [
+     {
+      "texto": "$10.000",
+      "en": "diez mil"
+     },
+     {
+      "texto": "MÁS QUE UN AUTO",
+      "en": "auto"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Al año siguiente fue más lejos: treinta y cinco mil pesos por Bernabé Ferreyra, el goleador de Tigre. Eran cinco autos nuevos. Fue la compra más cara que se había hecho en el fútbol argentino.",
+   "sub": "Al año siguiente fue más lejos: 35.000 pesos por Bernabé Ferreyra, el goleador de Tigre. Eran cinco autos nuevos. Fue la compra más cara que se había hecho en el fútbol argentino.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "etiqueta": "1932 · de Tigre a River",
+    "numero": 35000,
+    "prefijo": "$",
+    "en": "treinta y cinco mil",
+    "palabra": "¡RÉCORD!",
+    "palabra_en": "más cara",
+    "objeto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bernabe_ferreyra_figurita.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Bernabe_ferreyra_figurita.jpg",
+     "licencia": "dominio público",
+     "credito": "Figurita de 1933 / Wikimedia Commons",
+     "tratamiento": "color",
+     "tipo": "foto"
+    }
+   }
+  },
+  {
+   "say": "Tantas compras caras le dejaron un apodo para siempre: los Millonarios.",
+   "sub": "Tantas compras caras le dejaron un apodo para siempre: los Millonarios.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "LOS",
+      "en": "los"
+     },
+     {
+      "texto": "*MILLONARIOS*",
+      "en": "Millonarios"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "El otro apodo nació en mil novecientos sesenta y seis. Final de la Copa Libertadores contra Peñarol, en Chile. River ganaba dos a cero.",
+   "sub": "El otro apodo nació en 1966. Final de la Copa Libertadores contra Peñarol, en Chile. River ganaba 2 a 0.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Final de la Libertadores, 1966",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "RIVER",
+       2
+      ],
+      [
+       "PEÑAROL",
+       0
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "2 A 0",
+      "en": "dos a cero"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Dicen que el arquero Amadeo Carrizo paró una pelota con el pecho, para lucirse. Pero Peñarol lo dio vuelta: ganó cuatro a dos en el alargue.",
+   "sub": "Dicen que el arquero Amadeo Carrizo paró una pelota con el pecho, para lucirse. Pero Peñarol lo dio vuelta: ganó 4 a 2 en el alargue.",
+   "emocion": 0.8,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Amadeo Carrizo",
+    "foto": {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/AmadeoCarrizo.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:AmadeoCarrizo.jpg",
+     "licencia": "dominio público",
+     "credito": "El Gráfico / Wikimedia Commons",
+     "tratamiento": "byn",
+     "recorte": false
+    },
+    "palabras": [
+     {
+      "texto": "CON EL PECHO",
+      "en": "pecho"
+     },
+     {
+      "texto": "*4 A 2*",
+      "en": "cuatro a dos"
+     }
+    ]
+   },
+   "musica": "golpe"
+  },
+  {
+   "say": "Días después, River jugó contra Banfield. Y desde la tribuna tiraron a la cancha una gallina blanca, con una franja roja pintada.",
+   "sub": "Días después, River jugó contra Banfield. Y desde la tribuna tiraron a la cancha una gallina blanca, con una franja roja pintada.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Días después, en Banfield",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "Banfield, mayo de 1966",
+     "titular": "Una gallina blanca con una franja roja, a la cancha"
+    },
+    "palabras": [
+     {
+      "texto": "*GALLINA*",
+      "en": "gallina"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Era una burla. Pero con el tiempo, los hinchas de River adoptaron el apodo, y hoy lo cantan ellos mismos.",
+   "sub": "Era una burla. Pero con el tiempo, los hinchas de River adoptaron el apodo, y hoy lo cantan ellos mismos.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "ERA UNA BURLA",
+      "en": "burla"
+     },
+     {
+      "texto": "*HOY LO CANTAN*",
+      "en": "cantan"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Millonario o Gallina?",
+   "sub": "¿Millonario o Gallina?",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿MILLONARIO",
+      "en": "Millonario"
+     },
+     {
+      "texto": "*O GALLINA?*",
+      "en": "Gallina"
+     }
+    ],
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#FFFFFF",
+     "color": "#D81E2A",
+     "estilo": "banda"
+    },
+    "cta": "Contalo en los comentarios."
+   }
+  }
+ ],
+ "voz": {
+  "rioplatense": "sch"
+ },
+ "publicar": {
+  "titulo": "¿Por qué a River le dicen Millonario y Gallina? #shorts",
+  "descripcion": "Los fichajes caros de los años 30 y la final de 1966 contra Peñarol: el origen de los dos apodos de River.",
+  "hashtags": [
+   "river",
+   "riverplate",
+   "futbolargentino",
+   "historia",
+   "shorts"
+  ],
+  "categoria_youtube": "17"
+ },
+ "largo": true
+}

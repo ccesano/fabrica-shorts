@@ -57,7 +57,8 @@ Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar doc
 
 ## Reglas del guion
 
-- 7 a 10 líneas, **≤ 850 caracteres** de narración en total (≈ 50–58 s con la voz clonada).
+- 7 a 10 líneas, **≤ 850 caracteres** de narración en total (≈ 50–58 s con la voz clonada). Si Carlos pide contar más o
+  la historia no se entiende en 60 s: `"largo": true` (hasta 24 líneas / 2600 caracteres, ≈ 3 min, el máximo de Shorts).
 - **Línea 1 = gancho** en ≤ 3 s: el hecho más sorprendente o la promesa. Nada de "Hola, hoy les cuento…".
 - **Última línea = cierre + pregunta** para comentarios ("¿Vos lo viviste? Contalo en los comentarios.").
 - `say` es lo que se lee: **números en letras** ("cincuenta mil", "mil novecientos ochenta y seis"), nombres
@@ -105,6 +106,7 @@ Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar doc
 | `cita` | frase textual de alguien | `texto` (con `*énfasis*`), `autor` |
 | `foto` | una imagen real como protagonista (con marco o recortada) | `foto` {…}, `etiqueta`?, `palabras` (≤ 2), `sello`? |
 | `jugada` | una jugada dibujada: corrida punteada, rivales y arquero de papel, y el remate | `etiqueta`?, `corrida_en`, `remate_en`, `sentido` (izquierda\|derecha), `rivales` (0–3), `arquero` (parado\|eludido), `resultado` (gol\|afuera), `arquero_color`?, `rival_color`?, `palabras` (1)?, `sello`? |
+| `dupla` | dos palabras grandes, cada una con su objeto de papel abajo (ej. MILLONARIO + billetes / GALLINA + gallina) | `partes` [{`palabra`, `objeto`}, {…}], `kicker`? |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
 
 Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
@@ -119,7 +121,7 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
 `pelota` · `camiseta` {base, color, estilo: rayas|banda|mitad|lisa, nombre, numero, letra} · `reloj` {minuto | hora "HH:MM"}
 · `vinilo` {titulo} · `tele` {texto} · `entrada` {titulo, nombre, campos{…}, talon} · `recorte` {volanta, titular}
 · `planilla` {volanta, titulo, filas [[n, texto]]} · `marcador` {filas [[equipo, goles]]} · `calendario` {dia, mes, anio}
-· `postal` {texto, lugar, colores[]} · `foto` (ver abajo).
+· `postal` {texto, lugar, colores[]} · `gallina` {banda} · `billetes` {valor} · `foto` (ver abajo).
 Cualquiera acepta `"en"` para aparecer en un momento de la narración. Si hace falta un objeto nuevo, se agrega en
 `fabrica/objetos.py` (+ estilos en `plantilla/assets/lib/fabrica.css`).
 

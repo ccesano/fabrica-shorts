@@ -426,8 +426,30 @@ def jugada(E, esc):
         E.sello(sello.upper(), round(t_shot + 0.95, 3), pos, E.r.choice([-9, 8]))
         E.fx("golpe", t_shot + 0.9, 0.45)
 
-TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "jugada": jugada, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre}
-SOLIDOS = {"golpe", "cita"}
+def dupla(E, esc):
+    """Dos palabras grandes, una arriba y otra abajo, cada una con su objeto de papel debajo.
+    {"partes": [{"palabra": "MILLONARIO" | {"texto","en"}, "objeto": {...}}, {...}], "kicker"?}"""
+    partes = esc.get("partes", [])[:2]
+    y = 340
+    if esc.get("kicker"):
+        E.world.append(f'<div class="kick cg-fade" data-t="{PUSH + 0.05}" style="left: 76px; top: 240px">{escape(esc["kicker"], quote=False)}</div>')
+    alto_obj = 330
+    for i, parte in enumerate(partes):
+        p = parte.get("palabra", "")
+        txt = item_txt(p)
+        txt = ("*" + limpio(txt).upper() + "*") if es_acento(txt) else txt.upper()
+        size = cabe(limpio(txt), "league", 940, 190, 90)
+        t = E.cuando(item_en(p), E.reparto(i, len(partes)))
+        E.kin(txt, t, 70, y, size, "zoom" if i == 0 else "left")
+        y += int(size * 0.86) + 24
+        if parte.get("objeto"):
+            spec = {k: v for k, v in parte["objeto"].items() if k != "en"}
+            E.objeto(spec, t + 0.35, E.r.choice([500, 540, 580]), y, E.r.choice([-7, -4, 4, 7]), max_h=alto_obj, max_w=700)
+        y += alto_obj + 40
+
+
+TIPOS = {"golpe": golpe, "collage": collage, "foto": foto, "jugada": jugada, "cifra": cifra, "lista": lista, "cita": cita, "cierre": cierre, "dupla": dupla}
+SOLIDOS = {"golpe", "cita", "dupla"}
 
 
 # ── armado ───────────────────────────────────────────────────────────────────
