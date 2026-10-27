@@ -1,0 +1,340 @@
+{
+  "ambiente": [
+    "lluvia",
+    "cancha"
+  ],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/1968_Intercontinental_Cup",
+    "https://rsssf.org/tablesi/intconclub68.html",
+    "https://www.elgrafico.com.ar/articulo/1090/32691/1968-estudiantes-campeon-del-mundo",
+    "https://www.diariodecuyo.com.ar/noticias/pincharon-el-old-trafford-996132.html",
+    "https://442.perfil.com/noticias/futbol/el-hito-de-la-bruja-veron-en-old-trafford-y-su-consagracion-como-leyenda-de-estudiantes.phtml",
+    "https://en.wikipedia.org/wiki/United_Trinity",
+    "https://www.noticiasrcn.com/deportes/cuando-es-la-final-de-la-libertadores-1074479"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "1968",
+        "palabras": [
+          {
+            "en": "Estudiantes",
+            "texto": "ESTUDIANTES"
+          },
+          {
+            "en": "campeón",
+            "texto": "CAMPEÓN"
+          },
+          {
+            "en": "mundo",
+            "texto": "DEL MUNDO"
+          },
+          {
+            "en": "Manchester",
+            "texto": "*EN MANCHESTER*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Estudiantes, campeón del mundo en Manchester."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Copa Intercontinental 1968",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "El plantel de Estudiantes en Manchester, 1968",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Estudiantes_en_manchester.jpg",
+          "recorte": false,
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Estudiantes_en_manchester.jpg"
+        },
+        "palabras": [
+          {
+            "en": "La Plata",
+            "texto": "LA PLATA"
+          },
+          {
+            "en": "Europa",
+            "texto": "VS. *EUROPA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Pasó en mil novecientos sesenta y ocho. Un club de La Plata contra el campeón de Europa: el Manchester United.",
+      "sub": "Pasó en 1968. Un club de La Plata contra el campeón de Europa: el Manchester United."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "etiqueta": "el Manchester United",
+        "items": [
+          {
+            "en": "Charlton",
+            "texto": "Bobby Charlton"
+          },
+          {
+            "en": "Best",
+            "texto": "George Best"
+          },
+          {
+            "en": "Law",
+            "texto": "Denis Law"
+          }
+        ],
+        "remate": {
+          "en": "Balón de Oro",
+          "texto": "3 BALONES DE ORO"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Ellos tenían a Bobby Charlton, a George Best y a Denis Law. Los tres ganaron el Balón de Oro."
+    },
+    {
+      "emocion": 1,
+      "escena": {
+        "etiqueta": "el técnico",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Zubeldía con sus jugadores",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Zubeldia_estudiantes_players.jpg",
+          "recorte": false,
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Zubeldia_estudiantes_players.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Zubeldía",
+            "texto": "ZUBELDÍA"
+          },
+          {
+            "en": "Bilardo",
+            "texto": "*Y BILARDO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Estudiantes tenía a Osvaldo Zubeldía en el banco. Y en el medio de la cancha, a un tal Carlos Bilardo."
+    },
+    {
+      "say": "La ida fue en la Bombonera.",
+      "sub": "La ida fue en la Bombonera.",
+      "emocion": 0.6,
+      "pausa": 0.3,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "la ida · 25/9/1968",
+        "objeto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/La_bombonera_vista_aerea_1940.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_bombonera_vista_aerea_1940.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "byn",
+          "recorte": false,
+          "epigrafe": "La Bombonera"
+        },
+        "palabras": [
+          {
+            "texto": "LA *BOMBONERA*",
+            "en": "Bombonera"
+          }
+        ]
+      }
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el gol de la ida",
+        "objeto": {
+          "en": "Uno a cero",
+          "filas": [
+            [
+              "ESTUDIANTES",
+              1
+            ],
+            [
+              "MANCHESTER",
+              0
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "objeto2": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "en": "Conigliaro",
+          "epigrafe": "El gol de Conigliaro",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Gol_conigliaro_vs_manchester.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Gol_conigliaro_vs_manchester.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Conigliaro",
+            "texto": "*CONIGLIARO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Uno a cero, gol de Conigliaro.",
+      "sub": "1 a 0, gol de Conigliaro."
+    },
+    {
+      "emocion": 1,
+      "escena": {
+        "en": "sesenta y tres mil",
+        "etiqueta": "Old Trafford · 16/10/1968",
+        "numero": 63428,
+        "palabra": "en contra",
+        "tipo": "cifra"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "La vuelta, en Old Trafford. Bajo la lluvia y con más de sesenta y tres mil personas en contra.",
+      "sub": "La vuelta, en Old Trafford. Bajo la lluvia y con más de 63.000 personas en contra."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "etiqueta": "la Bruja",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Juan Ramón Verón, 1967",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Juan-ramon-veron-1967.jpg",
+          "recorte": true,
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Juan-ramon-veron-1967.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cabeza",
+            "texto": "*DE CABEZA*"
+          }
+        ],
+        "sello": "¡GOL!",
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.8,
+      "say": "Apenas arrancó el partido, la Bruja Verón la metió de cabeza. Uno a cero.",
+      "sub": "Apenas arrancó el partido, la Bruja Verón la metió de cabeza. 1 a 0."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "minuto 90",
+        "palabras": [
+          {
+            "en": "empató",
+            "texto": "1 A 1"
+          },
+          {
+            "en": "tarde",
+            "texto": "*YA ERA TARDE*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Manchester empató recién en el último minuto. Ya era tarde."
+    },
+    {
+      "emocion": 0.9,
+      "escena": {
+        "etiqueta": "campeones del mundo",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Verón y Conigliaro con la copa",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Veron_conigliaro_copa.jpg",
+          "recorte": false,
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Veron_conigliaro_copa.jpg"
+        },
+        "palabras": [
+          {
+            "en": "campeón del mundo",
+            "texto": "*CAMPEÓN*"
+          },
+          {
+            "en": "mundo",
+            "texto": "DEL MUNDO"
+          }
+        ],
+        "sello": "1968",
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 1,
+      "say": "Estudiantes de La Plata era campeón del mundo. En la cancha del campeón de Europa."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "¿Vos te acordás de aquel equipo?",
+        "objeto": {
+          "base": "#FBFAF5",
+          "color": "#D7262E",
+          "estilo": "rayas",
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "acordás",
+            "texto": "¿TE ACORDÁS"
+          },
+          {
+            "en": "equipo",
+            "texto": "*DE AQUEL EQUIPO?*"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "Ahora va por otra final de la Libertadores, contra Palmeiras. ¿Vos te acordás de aquel equipo?"
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": 17,
+    "descripcion": "En 1968, Estudiantes de La Plata le ganó la Copa Intercontinental al Manchester United de Charlton, Best y Law: 1 a 0 en la Bombonera (gol de Conigliaro) y 1 a 1 en Old Trafford (gol de la Bruja Verón). Ahora el Pincha va por otra final de la Libertadores. ¿Te acordás de aquel equipo?",
+    "hashtags": [
+      "Estudiantes",
+      "Pincha",
+      "ManchesterUnited",
+      "Verón",
+      "Zubeldía",
+      "FútbolArgentino",
+      "Historia"
+    ],
+    "titulo": "Estudiantes, campeón del mundo en Manchester ⚽ #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Estudiantes, campeón del mundo en Manchester",
+  "voz": {
+    "pronunciar": {
+      "Charlton": "Chárlton",
+      "Conigliaro": "Coniliaro",
+      "Law": "Lo",
+      "Palmeiras": "Palméiras",
+      "Trafford": "Tráford"
+    }
+  }
+}
