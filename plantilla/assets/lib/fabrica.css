@@ -85,6 +85,11 @@
 .cg-prop.o-cutout img { display: block; }
 
 /* Subtítulos quemados: un poco más chicos que el original, franja inferior segura para Shorts. */
-.cap-wrap { top: 1470px; }
+.cap-wrap { top: 1300px; left: 60px; right: 170px; }
 .cap { font-size: 56px; -webkit-text-stroke: 11px #111111; }
 .cap .hl { color: var(--cap-acc, #F3C33B); }
+
+/* marca del canal, vertical sobre el borde izquierdo (zona libre en TikTok, Reels y Shorts) */
+.marca { position: absolute; left: 24px; top: 760px; transform-origin: left top; transform: rotate(-90deg); white-space: nowrap;
+  font-family: "Archivo Black"; font-size: 30px; letter-spacing: 0.04em; color: #FFFFFF; opacity: 0.85;
+  -webkit-text-stroke: 6px #111111; paint-order: stroke fill; }

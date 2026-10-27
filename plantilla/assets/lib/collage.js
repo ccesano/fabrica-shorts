@@ -362,7 +362,7 @@
     var push = stage.getAttribute("data-push") === "1";
     var pushOut = num(stage, "data-pushout", -1);
     var world = stage.querySelector(".cg-world");
-    var zoom = num(stage, "data-zoom", 0.03);
+    var zoom = num(stage, "data-zoom", 0.06);
     var parts = [];
     var hits = [];
     var trans = stage.getAttribute("data-trans") || "up";
@@ -414,7 +414,12 @@
       stage.style.opacity = op.toFixed(3);
       stage.style.transform = "translate(" + px(tx) + "," + px(ty) + ") scale(" + sc.toFixed(4) + ")";
       var sh = shake(t);
-      if (world) world.style.transform = "translate(" + px(sh[0]) + "," + px(sh[1]) + ") scale(" + (1 + zoom * prog(t, 0.4, 6)).toFixed(4) + ")";
+      // cámara viva: acercamiento durante toda la escena + deriva suave, para que nada quede quieto más de ~1 s
+      var largo = exitAt < 900 ? Math.max(2, exitAt - 0.4) : 6;
+      var fase = seed * 0.37;
+      var dx = 14 * Math.sin(t * 0.9 + fase), dy = 10 * Math.cos(t * 0.7 + fase * 1.3);
+      var rot = 0.35 * Math.sin(t * 0.5 + fase);
+      if (world) world.style.transform = "translate(" + px(sh[0] + dx) + "," + px(sh[1] + dy) + ") rotate(" + rot.toFixed(3) + "deg) scale(" + (1 + zoom * ease.inOutCubic(prog(t, 0.4, largo))).toFixed(4) + ")";
       for (var i = 0; i < parts.length; i += 1) parts[i](t);
     };
   }

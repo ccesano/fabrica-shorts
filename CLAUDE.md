@@ -66,7 +66,11 @@ Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar doc
 
 - 7 a 10 líneas, **≤ 850 caracteres** de narración en total (≈ 50–58 s con la voz clonada). Si Carlos pide contar más o
   la historia no se entiende en 60 s: `"largo": true` (hasta 24 líneas / 2600 caracteres, ≈ 3 min, el máximo de Shorts).
-- **Línea 1 = gancho** en ≤ 3 s: el hecho más sorprendente o la promesa. Nada de "Hola, hoy les cuento…".
+- **Línea 1 = gancho en ~1,5 s**: una frase de **5 a 8 palabras (≤ 45 caracteres)** con el hecho más sorprendente o la
+  promesa ("Dos hermanos mataron a sus padres."). El contexto va en la línea 2. Nada de "Hola, hoy les cuento…".
+- **Ritmo: nada quieto.** Cada línea es una escena: mejor líneas cortas (≤ 110 caracteres, ≈ 8 s) y más escenas que
+  pocas escenas largas. Si una idea necesita más, partila en dos líneas con escenas distintas. La fábrica avisa
+  ("⚠ ritmo") cuando la línea 1 o alguna línea se pasa. La cámara ya se mueve sola en todas las escenas.
 - **Última línea = cierre + pregunta** para comentarios ("¿Vos lo viviste? Contalo en los comentarios.").
 - `say` es lo que se lee: **números en letras** ("cincuenta mil", "mil novecientos ochenta y seis"), nombres
   extranjeros escritos como se pronuncian en castellano si son difíciles ("Stóichkov", "Súker").
@@ -122,6 +126,10 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
 - Cada palabra aparece cuando la voz la dice. Si el texto en pantalla no coincide con lo leído, usar
   `{"texto": "EN PANTALLA", "en": "fragmento del say"}`.
 - Textos en pantalla cortos: `etiqueta` ≤ 32 caracteres, `palabras` ≤ 16 caracteres por renglón.
+- **Zona segura** (ya resuelta en `escenas.py`): el contenido termina antes de y≈1280 (abajo van los subtítulos, y
+  más abajo el usuario y el título de cada app) y a partir de y≈850 deja ~170 px libres a la derecha (botones de
+  TikTok, Reels y Shorts). Si se agrega una escena o un objeto nuevo, respetar esas zonas.
+- **Marca**: cada video lleva "@lodelhongo" chico, vertical, en el borde izquierdo (`"marca"` en el guion para cambiarlo).
 
 ### Objetos (`"objeto": {"tipo": …}`)
 

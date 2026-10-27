@@ -1,6 +1,7 @@
 """Escribe el proyecto HyperFrames de un video a partir de las escenas armadas.
 Basado en scripts/build.py de paper-collage-skill (MIT)."""
 import json
+from html import escape as html_escape
 import shutil
 from pathlib import Path
 
@@ -48,7 +49,7 @@ def _scene_html(s):
 """
 
 
-def escribir(dest, escenas, fin, subs, audio_wav, titulo, acento, extra_assets=None):
+def escribir(dest, escenas, fin, subs, audio_wav, titulo, acento, extra_assets=None, marca="@lodelhongo"):
     dest = Path(dest)
     if dest.exists():
         shutil.rmtree(dest)
@@ -64,9 +65,9 @@ def escribir(dest, escenas, fin, subs, audio_wav, titulo, acento, extra_assets=N
              f'data-composition-src="compositions/{s["id"]}.html" data-start="{s["start"]}" data-duration="{s["dur"]}" '
              f'data-track-index="{1 + (z - 1) % 2}"></div>' for z, s in enumerate(escenas, start=1)]
     script = ""
-    if subs:
-        (dest / "assets/lib/captions.js").write_text(f"window.CAPTIONS = {json.dumps(subs, ensure_ascii=False)};\nwindow.CAPTIONS_END = {fin};\n")
-        (dest / "compositions/captions.html").write_text(CAPTIONS_HTML.replace("__END__", str(fin)))
+    if subs or marca:   # la capa de subtítulos también lleva la marca del canal
+        (dest / "assets/lib/captions.js").write_text(f"window.CAPTIONS = {json.dumps(subs or [], ensure_ascii=False)};\nwindow.CAPTIONS_END = {fin};\n")
+        (dest / "compositions/captions.html").write_text(CAPTIONS_HTML.replace("__END__", str(fin)).replace("__MARCA__", html_escape(marca or "")))
         hosts.append(f'      <div id="el-captions" class="scene" style="z-index: 50" data-track-kind="captions" data-composition-id="captions" '
                      f'data-composition-src="compositions/captions.html" data-start="0" data-duration="{fin}" data-track-index="5"></div>')
         script = '\n    <script src="assets/lib/captions.js"></script>'
@@ -109,6 +110,7 @@ CAPTIONS_HTML = """<!doctype html>
     <template id="captions-template">
       <div id="cap-root" data-composition-id="captions" data-width="1080" data-height="1920" data-duration="__END__" style="position: absolute; inset: 0">
         <div class="cap-wrap"><span id="cap-text" class="cap" data-layout-allow-overlap></span></div>
+        <div class="marca" data-layout-allow-overlap>__MARCA__</div>
       </div>
       <script>
         (function () {

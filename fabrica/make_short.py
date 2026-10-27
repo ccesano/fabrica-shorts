@@ -54,6 +54,11 @@ def validar(g):
                    + ("" if largo else " (para más largo, poné \"largo\": true)"))
     if err:
         sys.exit("Guion con problemas:\n  - " + "\n  - ".join(err))
+    if ls and len(ls[0].get("say", "")) > 60:
+        print(f"⚠ ritmo: la línea 1 tiene {len(ls[0]['say'])} caracteres; el gancho tiene que entrar en ~1,5 s (≤ 45)", flush=True)
+    for i, ln in enumerate(ls, 1):
+        if len(ln.get("say", "")) > 140:
+            print(f"⚠ ritmo: la línea {i} tiene {len(ln['say'])} caracteres (≈ {len(ln['say']) / 13:.0f} s en una sola escena); conviene partirla", flush=True)
 
 
 def navegador():
@@ -179,7 +184,8 @@ def main():
     tiempos["audio"] = time.time() - t
 
     paso("Proyecto HyperFrames")
-    pj = proyecto.escribir(sal / "proyecto", escenas, fin, subs, mezcla, g["titulo"], ESC.PALETAS[pal]["acc"], sal / "_assets")
+    pj = proyecto.escribir(sal / "proyecto", escenas, fin, subs, mezcla, g["titulo"], ESC.PALETAS[pal]["acc"], sal / "_assets",
+                          marca=g.get("marca", "@lodelhongo"))
     r = npx(["check", "--json"], pj, sal / "check.log")
     try:
         chk = json.loads(r.stdout[r.stdout.index("{"):])
