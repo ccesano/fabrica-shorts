@@ -82,7 +82,14 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
   2. Validar, escribir `videos/<slug>/guion.json`, commit `video: <título>` y push a `main`.
   3. Actualizar el doc: `estado: "fabricando"`, `fabricado: <link commit>`, y el `guion` con los cambios aplicados.
 - **`fabricando`** → ver si terminó: issue con `<!-- slug: <slug> -->` (`gh api repos/ccesano/fabrica-shorts/issues`)
-  y release `video-<slug>`. Si está: `estado: "listo"`, `issue`, `video {url, hoja}` (URLs de descarga del release).
+  y release `video-<slug>`. Si está: `estado: "listo"`, `issue`, `video {url, hoja, ver, ver_id}`.
+  `url` y `hoja` son las URLs de descarga del release. **Para que Carlos lo vea en el celular** (la página no puede
+  reproducir el link de GitHub, que además fuerza la descarga): bajar el mp4 con
+  `gh api -H "Accept: application/octet-stream" repos/ccesano/fabrica-shorts/releases/assets/<id>` (no `gh release download`,
+  usa GraphQL y falla), hacer una copia liviana
+  `ffmpeg -i in.mp4 -vf scale=720:-2 -c:v libx264 -crf 27 -c:a aac -b:a 96k -movflags +faststart <slug>-ver.mp4`
+  (≈ 4 MB; el límite de assets es 15 MB), subirla a la Mesa con `Artifact` (`asset: true`, `url` de la Mesa) y guardar
+  `ver: "/_blob/<id>"` y `ver_id: "<id>"`. La Mesa reproduce `ver`; el link de abajo es para descargar en calidad completa.
   Si hay un issue con etiqueta `falla` posterior al commit: `estado: "falla"` y explicar el error en el resumen.
 - **`publicacion pedida`** → comentar en el issue `/publicar` (si `cuando` es "ahora") o `/publicar AAAA-MM-DD HH:MM`;
   esperar la respuesta del flujo *Publicar* (✅ Enviado a Buffer) y poner `estado: "programado"` (o `"publicado"` si
