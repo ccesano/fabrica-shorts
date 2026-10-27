@@ -193,7 +193,7 @@ def collage(E, esc):
         spec = {k: v for k, v in esc["objeto2"].items() if k != "en"}
         t2 = E.cuando(esc["objeto2"].get("en", ""), E.reparto(1, 2)) if esc["objeto2"].get("en") else E.reparto(1, 2)
         E.objeto(spec, t2, 540 + (220 if lado == "izq" else -220), 520, -rot, max_h=420, max_w=420)
-    ys = [960, 1110]
+    ys = [950, 1085]
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
         size = cabe(txt, "gloock", 860, 128, 42, 68)
@@ -324,7 +324,7 @@ def foto(E, esc):
     spec["caja"] = (940, alto - (110 if marco else 0))   # el marco suma papel blanco y epígrafe
     t = E.cuando(esc["foto"].get("en", ""), PUSH) if esc["foto"].get("en") else PUSH
     E.objeto(spec, t, 540, top, E.r.choice([-3, -2, 2, 3]), max_h=alto + 40, max_w=1000)
-    ys = [1010, 1130] if len(palabras) == 2 else [1090]
+    ys = [985, 1095] if len(palabras) == 2 else [1080]
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
         t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))

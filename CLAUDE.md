@@ -126,8 +126,8 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
 - Cada palabra aparece cuando la voz la dice. Si el texto en pantalla no coincide con lo leído, usar
   `{"texto": "EN PANTALLA", "en": "fragmento del say"}`.
 - Textos en pantalla cortos: `etiqueta` ≤ 32 caracteres, `palabras` ≤ 16 caracteres por renglón.
-- **Zona segura** (ya resuelta en `escenas.py`): el contenido termina antes de y≈1280 (abajo van los subtítulos, y
-  más abajo el usuario y el título de cada app) y a partir de y≈850 deja ~170 px libres a la derecha (botones de
+- **Zona segura** (ya resuelta en `escenas.py`): el contenido termina antes de y≈1280; los subtítulos van en y≈1430 (con aire
+  entre el diseño y el texto) y más abajo queda el usuario y el título de cada app y a partir de y≈850 deja ~170 px libres a la derecha (botones de
   TikTok, Reels y Shorts). Si se agrega una escena o un objeto nuevo, respetar esas zonas.
 - **Marca**: cada video lleva "@lodelhongo" chico, vertical, en el borde izquierdo (`"marca"` en el guion para cambiarlo).
 
