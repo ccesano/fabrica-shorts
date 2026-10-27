@@ -1,290 +1,291 @@
 {
-  "ambiente": "ninguno",
-  "fuentes": [
-    "https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_B%C3%ADr%C3%B3",
-    "https://www.tiempoar.com.ar/ta_article/dia-del-inventor-la-increible-historia-de-biro/",
-    "https://casarosada.gob.ar/international/latest-news/50685-inventor-s-day-tribute-to-ladislao-jose-biro-the-genius-behind-the-ballpoint-pen",
-    "https://billiken.lat/interesante/sabes-quien-invento-la-birome/"
-  ],
-  "lineas": [
-    {
-      "emocion": 0.65,
-      "escena": {
-        "palabras": [
-          {
-            "en": "lapicera",
-            "texto": "LA LAPICERA"
-          },
-          {
-            "en": "mundo",
-            "texto": "DEL MUNDO"
-          },
-          {
-            "en": "nació",
-            "texto": "*NACIÓ ACÁ*"
-          }
-        ],
-        "tipo": "golpe"
-      },
-      "musica": "golpe",
-      "pausa": 0.5,
-      "say": "La lapicera de todo el mundo nació acá."
-    },
-    {
-      "emocion": 0.5,
-      "escena": {
-        "etiqueta": "el inventor",
-        "foto": {
-          "credito": "Autor desconocido / Wikimedia Commons",
-          "epigrafe": "Ladislao Biro, hacia 1978",
-          "licencia": "dominio público",
-          "pagina": "https://commons.wikimedia.org/wiki/File:Ladislao_Biro_Argentina_Circa_1978.JPG",
-          "recorte": true,
-          "tratamiento": "byn",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Ladislao_Biro_Argentina_Circa_1978.JPG"
-        },
-        "palabras": [
-          {
-            "en": "Biro",
-            "texto": "LADISLAO BIRO"
-          },
-          {
-            "en": "periodista",
-            "texto": "*PERIODISTA*"
-          }
-        ],
-        "tipo": "foto"
-      },
-      "pausa": 0.5,
-      "say": "Su inventor fue Ladislao Biro, un periodista húngaro que odiaba mancharse con la pluma."
-    },
-    {
-      "emocion": 0.5,
-      "escena": {
-        "etiqueta": "la pista",
-        "objeto": {
-          "tipo": "recorte",
-          "titular": "La tinta que se seca al instante",
-          "volanta": "Budapest"
-        },
-        "palabras": [
-          {
-            "en": "secaba",
-            "texto": "SE SECA"
-          },
-          {
-            "en": "enseguida",
-            "texto": "*ENSEGUIDA*"
-          }
-        ],
-        "tipo": "collage"
-      },
-      "pausa": 0.5,
-      "say": "En el diario vio que la tinta de imprenta se secaba enseguida. Pero era muy espesa para una pluma."
-    },
-    {
-      "emocion": 0.6,
-      "escena": {
-        "etiqueta": "la idea",
-        "foto": {
-          "credito": "Daniel Schwen / Wikimedia Commons (CC BY-SA 2.5)",
-          "epigrafe": "La bolita, de cerca",
-          "licencia": "CC BY-SA 2.5",
-          "pagina": "https://commons.wikimedia.org/wiki/File:Macro_Biro_writing2.jpg",
-          "recorte": false,
-          "tratamiento": "color",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Macro_Biro_writing2.jpg"
-        },
-        "palabras": [
-          {
-            "en": "bolitas",
-            "texto": "UNA *BOLITA*"
-          },
-          {
-            "en": "huella",
-            "texto": "EN LA PUNTA"
-          }
-        ],
-        "tipo": "foto"
-      },
-      "pausa": 0.5,
-      "say": "La idea le llegó viendo a unos chicos jugar a las bolitas: la bolita mojada deja una huella."
-    },
-    {
-      "emocion": 0.6,
-      "escena": {
-        "etiqueta": "el encuentro",
-        "foto": {
-          "credito": "Posiblemente Witcomb / Wikimedia Commons",
-          "epigrafe": "Agustín P. Justo",
-          "licencia": "dominio público",
-          "pagina": "https://commons.wikimedia.org/wiki/File:Agust%C3%ADn_P._Justo.jpg",
-          "recorte": false,
-          "tratamiento": "sepia",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Agust%C3%ADn_P._Justo.jpg"
-        },
-        "palabras": [
-          {
-            "en": "Justo",
-            "texto": "*AGUSTÍN P. JUSTO*"
-          }
-        ],
-        "tipo": "foto"
-      },
-      "pausa": 0.5,
-      "say": "En Yugoslavia lo vio escribir un argentino: Agustín P. Justo, que había sido presidente.",
-      "sub": "En Yugoslavia lo vio escribir un argentino: Agustín P. Justo, que había sido presidente."
-    },
-    {
-      "emocion": 0.65,
-      "escena": {
-        "etiqueta": "años 40",
-        "objeto": {
-          "colores": [
-            "#74ACDF",
-            "#FBFAF5",
-            "#74ACDF"
-          ],
-          "lugar": "Buenos Aires",
-          "texto": "Saludos desde",
-          "tipo": "postal"
-        },
-        "palabras": [
-          {
-            "en": "Buenos Aires",
-            "texto": "*BUENOS AIRES*"
-          }
-        ],
-        "tipo": "collage"
-      },
-      "musica": "subida",
-      "pausa": 0.5,
-      "say": "Justo lo invitó al país. En los años cuarenta, escapando de los nazis, Biro llegó a Buenos Aires."
-    },
-    {
-      "emocion": 0.6,
-      "escena": {
-        "etiqueta": "1943",
-        "objeto": {
-          "credito": "László y György Bíró / Wikimedia Commons",
-          "epigrafe": "Una patente de los hermanos Biro, 1943",
-          "licencia": "dominio público",
-          "pagina": "https://commons.wikimedia.org/wiki/File:Ballpoint_pen_patent_2390636_june1943.jpg",
-          "recorte": false,
-          "tipo": "foto",
-          "tratamiento": "sepia",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ballpoint_pen_patent_2390636_june1943.jpg"
-        },
-        "palabras": [
-          {
-            "en": "patentó",
-            "texto": "*PATENTADA*"
-          }
-        ],
-        "sello": "1943",
-        "tipo": "collage"
-      },
-      "pausa": 0.5,
-      "say": "En mil novecientos cuarenta y tres patentó su lapicera en Buenos Aires.",
-      "sub": "En 1943 patentó su lapicera en Buenos Aires."
-    },
-    {
-      "emocion": 0.75,
-      "escena": {
-        "kicker": "¿y el nombre?",
-        "palabras": [
-          {
-            "en": "Meyne",
-            "texto": "BIRO + MEYNE"
-          },
-          {
-            "en": "Birome",
-            "texto": "= *BIROME*"
-          }
-        ],
-        "tipo": "golpe"
-      },
-      "musica": "golpe",
-      "pausa": 0.8,
-      "say": "¿Y el nombre? Biro, más Meyne, su socio. Birome."
-    },
-    {
-      "emocion": 0.6,
-      "escena": {
-        "etiqueta": "la birome conquista el mundo",
-        "items": [
-          {
-            "en": "pilotos",
-            "texto": "Pilotos ingleses"
-          },
-          {
-            "en": "altura",
-            "texto": "Escribe en la altura"
-          },
-          {
-            "en": "Bich",
-            "texto": "Marcel Bich"
-          }
-        ],
-        "remate": {
-          "en": "nació la Bic",
-          "texto": "NACE LA *BIC*"
-        },
-        "tipo": "lista"
-      },
-      "pausa": 0.5,
-      "say": "Después la usaron los pilotos ingleses: escribía en la altura. Y el francés Bich compró la licencia: nació la Bic."
-    },
-    {
-      "emocion": 0.55,
-      "escena": {
-        "cta": "¿Vos le decís birome? Contalo en los comentarios.",
-        "objeto": {
-          "anio": "Día del Inventor",
-          "dia": 29,
-          "mes": 9,
-          "tipo": "calendario"
-        },
-        "tipo": "cierre",
-        "titulo": [
-          {
-            "en": "birome",
-            "texto": "¿BIROME"
-          },
-          {
-            "en": "Contalo",
-            "texto": "O *LAPICERA*?"
-          }
-        ]
-      },
-      "pausa": 0.6,
-      "say": "Por él, cada veintinueve de septiembre es el Día del Inventor. ¿Vos le decís birome? Contalo en los comentarios.",
-      "sub": "Por él, cada 29 de septiembre es el Día del Inventor. ¿Vos le decís birome? Contalo en los comentarios."
-    }
-  ],
-  "musica": {
-    "animo": "alegre"
-  },
-  "paleta": "oceano",
-  "publicar": {
-    "categoria_youtube": 27,
-    "descripcion": "Ladislao Biro, un periodista húngaro, tuvo la idea de la lapicera con bolita. El ex presidente Agustín P. Justo lo invitó a la Argentina y en 1943 la patentó en Buenos Aires con su socio Juan Jorge Meyne: Biro + Meyne = birome. Por él, cada 29 de septiembre es el Día del Inventor. ¿Vos le decís birome o lapicera?",
-    "hashtags": [
-      "birome",
-      "LadislaoBiro",
-      "inventos",
-      "Argentina",
-      "historia",
-      "DíaDelInventor"
+ "ambiente": "ninguno",
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_B%C3%ADr%C3%B3",
+  "https://www.tiempoar.com.ar/ta_article/dia-del-inventor-la-increible-historia-de-biro/",
+  "https://casarosada.gob.ar/international/latest-news/50685-inventor-s-day-tribute-to-ladislao-jose-biro-the-genius-behind-the-ballpoint-pen",
+  "https://billiken.lat/interesante/sabes-quien-invento-la-birome/"
+ ],
+ "lineas": [
+  {
+   "emocion": 0.65,
+   "escena": {
+    "palabras": [
+     {
+      "en": "lapicera",
+      "texto": "LA LAPICERA"
+     },
+     {
+      "en": "mundo",
+      "texto": "DEL MUNDO"
+     },
+     {
+      "en": "nació",
+      "texto": "*NACIÓ ACÁ*"
+     }
     ],
-    "titulo": "La birome se inventó en la Argentina 🖊️ #shorts"
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "La lapicera de todo el mundo nació acá."
   },
-  "subtitulos": true,
-  "titulo": "La birome: la lapicera del mundo nació en la Argentina",
-  "voz": {
-    "pronunciar": {
-      "Bich": "Bic",
-      "Meyne": "Méine"
-    }
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "el inventor",
+    "foto": {
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "epigrafe": "Ladislao Biro, hacia 1978",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ladislao_Biro_Argentina_Circa_1978.JPG",
+     "recorte": true,
+     "tratamiento": "byn",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Ladislao_Biro_Argentina_Circa_1978.JPG"
+    },
+    "palabras": [
+     {
+      "en": "Biro",
+      "texto": "LADISLAO BIRO"
+     },
+     {
+      "en": "periodista",
+      "texto": "*PERIODISTA*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Su inventor fue Ladislao Biro, un periodista húngaro que odiaba mancharse con la pluma."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "la pista",
+    "objeto": {
+     "tipo": "recorte",
+     "titular": "La tinta que se seca al instante",
+     "volanta": "Budapest"
+    },
+    "palabras": [
+     {
+      "en": "secaba",
+      "texto": "SE SECA"
+     },
+     {
+      "en": "enseguida",
+      "texto": "*ENSEGUIDA*"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "En el diario vio que la tinta de imprenta se secaba enseguida. Pero era muy espesa para una pluma."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "la idea",
+    "foto": {
+     "credito": "Daniel Schwen / Wikimedia Commons (CC BY-SA 2.5)",
+     "epigrafe": "La bolita, de cerca",
+     "licencia": "CC BY-SA 2.5",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Macro_Biro_writing2.jpg",
+     "recorte": false,
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Macro_Biro_writing2.jpg"
+    },
+    "palabras": [
+     {
+      "en": "bolitas",
+      "texto": "UNA *BOLITA*"
+     },
+     {
+      "en": "huella",
+      "texto": "EN LA PUNTA"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "La idea le llegó viendo a unos chicos jugar a las bolitas: la bolita mojada deja una huella."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "el encuentro",
+    "foto": {
+     "credito": "Posiblemente Witcomb / Wikimedia Commons",
+     "epigrafe": "Agustín P. Justo",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Agust%C3%ADn_P._Justo.jpg",
+     "recorte": false,
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Agust%C3%ADn_P._Justo.jpg"
+    },
+    "palabras": [
+     {
+      "en": "Justo",
+      "texto": "*AGUSTÍN P. JUSTO*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "En Yugoslavia lo vio escribir un argentino: Agustín P. Justo, que había sido presidente.",
+   "sub": "En Yugoslavia lo vio escribir un argentino: Agustín P. Justo, que había sido presidente."
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "etiqueta": "años 40",
+    "objeto": {
+     "colores": [
+      "#74ACDF",
+      "#FBFAF5",
+      "#74ACDF"
+     ],
+     "lugar": "Buenos Aires",
+     "texto": "Saludos desde",
+     "tipo": "postal"
+    },
+    "palabras": [
+     {
+      "en": "Buenos Aires",
+      "texto": "*BUENOS AIRES*"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "musica": "subida",
+   "pausa": 0.5,
+   "say": "Justo lo invitó al país. En los años cuarenta, escapando de los nazis, Biro llegó a Buenos Aires."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "1943",
+    "objeto": {
+     "credito": "László y György Bíró / Wikimedia Commons",
+     "epigrafe": "Una patente de los hermanos Biro, 1943",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ballpoint_pen_patent_2390636_june1943.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ballpoint_pen_patent_2390636_june1943.jpg"
+    },
+    "palabras": [
+     {
+      "en": "patentó",
+      "texto": "*PATENTADA*"
+     }
+    ],
+    "sello": "1943",
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "En mil novecientos cuarenta y tres patentó su lapicera en Buenos Aires.",
+   "sub": "En 1943 patentó su lapicera en Buenos Aires."
+  },
+  {
+   "emocion": 0.75,
+   "escena": {
+    "kicker": "¿y el nombre?",
+    "palabras": [
+     {
+      "en": "Meyne",
+      "texto": "BIRO + MEYNE"
+     },
+     {
+      "en": "Birome",
+      "texto": "= *BIROME*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.8,
+   "say": "¿Y el nombre? Biro, más Meyne, su socio. Birome."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "la birome conquista el mundo",
+    "items": [
+     {
+      "en": "pilotos",
+      "texto": "Pilotos ingleses"
+     },
+     {
+      "en": "altura",
+      "texto": "Escribe en la altura"
+     },
+     {
+      "en": "Bich",
+      "texto": "Marcel Bich"
+     }
+    ],
+    "remate": {
+     "en": "nació la Bic",
+     "texto": "NACE LA *BIC*"
+    },
+    "tipo": "lista"
+   },
+   "pausa": 0.5,
+   "say": "Después la usaron los pilotos ingleses: escribía en la altura. Y el francés Bich compró la licencia: nació la Bic."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "cta": "¿Vos le decís birome? Contalo en los comentarios.",
+    "objeto": {
+     "anio": "Día del Inventor",
+     "dia": 29,
+     "mes": 9,
+     "tipo": "calendario"
+    },
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "en": "birome",
+      "texto": "¿BIROME"
+     },
+     {
+      "en": "Contalo",
+      "texto": "O *LAPICERA*?"
+     }
+    ]
+   },
+   "pausa": 0.6,
+   "say": "Por él, cada veintinueve de septiembre es el Día del Inventor. ¿Vos le decís birome? Contalo en los comentarios.",
+   "sub": "Por él, cada 29 de septiembre es el Día del Inventor. ¿Vos le decís birome? Contalo en los comentarios."
   }
+ ],
+ "musica": {
+  "animo": "alegre"
+ },
+ "paleta": "oceano",
+ "publicar": {
+  "categoria_youtube": 27,
+  "descripcion": "Ladislao Biro, un periodista húngaro, tuvo la idea de la lapicera con bolita. El ex presidente Agustín P. Justo lo invitó a la Argentina y en 1943 la patentó en Buenos Aires con su socio Juan Jorge Meyne: Biro + Meyne = birome. Por él, cada 29 de septiembre es el Día del Inventor. ¿Vos le decís birome o lapicera?",
+  "hashtags": [
+   "birome",
+   "LadislaoBiro",
+   "inventos",
+   "Argentina",
+   "historia",
+   "DíaDelInventor"
+  ],
+  "titulo": "La birome se inventó en la Argentina 🖊️ #shorts"
+ },
+ "subtitulos": true,
+ "titulo": "La birome: la lapicera del mundo nació en la Argentina",
+ "voz": {
+  "pronunciar": {
+   "Bich": "Bic",
+   "Meyne": "Méine"
+  }
+ },
+ "rev": 2
 }
