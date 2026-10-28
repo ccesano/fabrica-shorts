@@ -1,0 +1,305 @@
+{
+  "ambiente": "ciudad",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Artaud_(album)",
+    "https://diariodecuyo.com.ar/espectaculos/Hace-50-anos-Spinetta-lanzaba-Artaud-el-disco-que-no-encaja-en-ninguna-discoteca-20231009-0050.html",
+    "https://www.ellitoral.com/informacion-general/luis-alberto-spinetta-aniversario-artaud_0_rT9YDaOQ9S.html",
+    "https://www.lacapital.com.ar/zoom/artaud-punto-partida-una-reedicion-vinilos-del-rock-nacional-los-70-n473194.html",
+    "https://www.tiempoar.com.ar/ta_article/spinetta-fue-simpatizante-del-peronismo-y-seguia-de-cerca-la-realidad-del-pais/",
+    "https://misionesonline.net/2020/07/18/sale-a-la-luz-despues-de-47-anos-la-increible-historia-de-un-show-de-luis-alberto-spinetta/",
+    "https://en.wikipedia.org/wiki/Rolling_Stone_Argentina%27s_The_100_Greatest_Albums_of_National_Rock"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "disco",
+            "texto": "ESTE DISCO"
+          },
+          {
+            "en": "entraba",
+            "texto": "NO ENTRABA"
+          },
+          {
+            "en": "ningún",
+            "texto": "*EN NINGÚN LADO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Este disco que no entraba en ningún lado."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "octubre de 1973",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Luis Alberto Spinetta, hacia 1973",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Spinetta_circa_1973.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Spinetta_circa_1973.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Spinetta",
+            "texto": "SPINETTA"
+          },
+          {
+            "en": "veintitrés",
+            "texto": "*23 AÑOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Octubre de mil novecientos setenta y tres. Luis Alberto Spinetta tenía veintitrés años y sacaba Artaud.",
+      "sub": "Octubre de 1973. Luis Alberto Spinetta tenía 23 años y sacaba Artaud."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "la tapa",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "Artaud"
+        },
+        "palabras": [
+          {
+            "en": "no era",
+            "texto": "NO ERA"
+          },
+          {
+            "en": "cuadrada",
+            "texto": "*CUADRADA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "La tapa no era cuadrada: una forma irregular, verde y amarilla, diseñada por Juan Gatti."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "kicker": "disquerías, 1973",
+        "palabras": [
+          {
+            "en": "forma",
+            "texto": "NO ENTRABA"
+          },
+          {
+            "en": "bateas",
+            "texto": "EN LAS *BATEAS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "En las disquerías no había forma de ordenarla en las bateas."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el homenaje",
+        "foto": {
+          "credito": "Agence de presse Meurisse / Wikimedia Commons",
+          "epigrafe": "Antonin Artaud, 1926",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Antonin_Artaud_1926.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Antonin_Artaud_1926.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Antonin",
+            "texto": "ANTONIN ARTAUD"
+          },
+          {
+            "en": "poeta",
+            "texto": "*POETA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El nombre era un homenaje a Antonin Artaud, un poeta francés."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "28 de octubre de 1973",
+        "foto": {
+          "credito": "Revista Radiolandia / Wikimedia Commons",
+          "epigrafe": "El Teatro Astral, sobre Corrientes (1963)",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Buenas_noches_Buenos_Aires_-_Astral_-_Radiolandia_-_1963.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Buenas_noches_Buenos_Aires_-_Astral_-_Radiolandia_-_1963.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Astral",
+            "texto": "TEATRO ASTRAL"
+          },
+          {
+            "en": "guitarra",
+            "texto": "SOLO CON *GUITARRA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El veintiocho de octubre lo tocó en el Teatro Astral, un domingo a la mañana. Solo, con su guitarra.",
+      "sub": "El 28 de octubre lo tocó en el Teatro Astral, un domingo a la mañana. Solo, con su guitarra."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "en la entrada",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Rock: música dura, la suicidada por la sociedad",
+          "volanta": "Manifiesto"
+        },
+        "palabras": [
+          {
+            "en": "manifiesto",
+            "texto": "UN *MANIFIESTO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "A cada uno le dio un manifiesto escrito por él."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "fila 10",
+        "objeto": {
+          "campos": {
+            "Fecha": "28/10/1973",
+            "Fila": "10"
+          },
+          "nombre": "Spinetta · Artaud",
+          "talon": "Platea",
+          "tipo": "entrada",
+          "titulo": "Teatro Astral"
+        },
+        "palabras": [
+          {
+            "en": "casete",
+            "texto": "UN *CASETE*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Y un fan, desde la fila diez, lo grabó todo con un grabador de casete.",
+      "sub": "Y un fan, desde la fila 10, lo grabó todo con un grabador de casete."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "en": "Cuarenta",
+        "etiqueta": "la grabación salió en 2020",
+        "numero": 47,
+        "palabra": "GUARDADA",
+        "palabra_en": "después",
+        "sufijo": " AÑOS",
+        "tipo": "cifra"
+      },
+      "pausa": 0.7,
+      "say": "Esa cinta se editó recién en dos mil veinte. Cuarenta y siete años después.",
+      "sub": "Esa cinta se editó recién en 2020. 47 años después."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "kicker": "Rolling Stone, 2007",
+        "palabras": [
+          {
+            "en": "mejor",
+            "texto": "EL *MEJOR*"
+          },
+          {
+            "en": "disco",
+            "texto": "DISCO DEL"
+          },
+          {
+            "en": "argentino",
+            "texto": "ROCK ARGENTINO"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.9,
+      "say": "Y en dos mil siete, la revista Rolling Stone lo eligió el mejor disco del rock argentino.",
+      "sub": "Y en 2007, la revista Rolling Stone lo eligió el mejor disco del rock argentino."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "Artaud"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "tenés",
+            "texto": "¿LO TENÉS"
+          },
+          {
+            "en": "original",
+            "texto": "*ORIGINAL*?"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "¿Vos lo tenés, con la tapa original? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "bosque",
+  "publicar": {
+    "categoria_youtube": 10,
+    "descripcion": "En octubre de 1973, con 23 años, Luis Alberto Spinetta sacó Artaud (firmado como Pescado Rabioso), dedicado al poeta francés Antonin Artaud. Su tapa irregular, verde y amarilla, diseñada por Juan Gatti, no se podía ordenar en las bateas de las disquerías. El 28 de octubre lo tocó solo con su guitarra en el Teatro Astral, un domingo a la mañana; un fan lo grabó en casete y esa cinta se editó en 2020. En 2007 la Rolling Stone lo eligió el mejor disco del rock argentino. ¿Lo tenés con la tapa original?",
+    "hashtags": [
+      "Spinetta",
+      "Artaud",
+      "rocknacional",
+      "PescadoRabioso",
+      "música",
+      "historia"
+    ],
+    "titulo": "Artaud, el disco de Spinetta que no entraba en las bateas 💿 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Artaud: el disco de Spinetta que no entraba en ningún lado",
+  "voz": {
+    "pronunciar": {
+      "Antonin": "Antonén",
+      "Artaud": "Artó",
+      "Gatti": "Gáti"
+    }
+  }
+}
