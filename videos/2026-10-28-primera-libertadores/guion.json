@@ -1,0 +1,330 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/1960_Copa_Libertadores_finals",
+    "https://rsssf.org/sacups/copa60.html",
+    "https://www.lanacion.com.ar/deportes/futbol/sesenta-anos-copa-libertadores-primer-partido-nid2355807",
+    "https://www.elcomercio.com/deportes/spencer-figura-libertadores-primer-partido/",
+    "https://en.wikipedia.org/wiki/Alberto_Spencer",
+    "https://www.primicias.ec/deportes/futbol/final-copa-libertadores-palmeiras-estudiantes-plata-fecha-lugar-estadio-partido-135556/",
+    "https://www.todojujuy.com/estudiantes-elimino-penales-flamengo-y-es-finalista-la-copa-libertadores-n297837"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "texto": "LA COPA"
+          },
+          {
+            "en": "importante",
+            "texto": "MÁS IMPORTANTE"
+          },
+          {
+            "en": "siete",
+            "texto": "*7 EQUIPOS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "La Copa más importante nació con siete equipos.",
+      "sub": "La Copa más importante nació con 7 equipos."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el comienzo",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "El Estadio Centenario, Montevideo",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Centenario_durante_la_final_del_primer_Campeonato_Mundial_de_F%C3%BAtbol_change.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Vista_a%C3%A9rea_del_Estadio_Centenario_durante_la_final_del_primer_Campeonato_Mundial_de_F%C3%BAtbol_change.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Diecinueve",
+            "texto": "19 DE ABRIL"
+          },
+          {
+            "en": "sesenta",
+            "texto": "*1960*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Diecinueve de abril de mil novecientos sesenta. Estadio Centenario, Montevideo.",
+      "sub": "19 de abril de 1960. Estadio Centenario, Montevideo."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el nombre original",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Arranca la Copa de Campeones",
+          "volanta": "Montevideo, 1960"
+        },
+        "palabras": [
+          {
+            "en": "Copa",
+            "texto": "COPA DE"
+          },
+          {
+            "en": "Campeones",
+            "texto": "*CAMPEONES*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Ni siquiera se llamaba Libertadores: era la Copa de Campeones de América."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "primer partido",
+        "objeto": {
+          "filas": [
+            [
+              "PEÑAROL",
+              7
+            ],
+            [
+              "J. WILSTERMANN",
+              1
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "siete",
+            "texto": "7 A 1"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Primer partido: Peñarol siete, Jorge Wilstermann de Bolivia, uno.",
+      "sub": "Primer partido: Peñarol 7, Jorge Wilstermann (Bolivia) 1."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "arquero": "parado",
+        "corrida_en": "tiro",
+        "etiqueta": "el primer gol · 13'",
+        "palabras": [
+          {
+            "en": "Borges",
+            "texto": "*BORGES*"
+          }
+        ],
+        "remate_en": "rebote",
+        "resultado": "gol",
+        "rivales": 1,
+        "sentido": "derecha",
+        "tipo": "jugada"
+      },
+      "pausa": 0.5,
+      "say": "El primer gol de la historia: un tiro en el travesaño y Carlos Borges, de rebote, a los trece minutos.",
+      "sub": "El primer gol de la historia: un tiro en el travesaño y Carlos Borges, de rebote, a los 13 minutos."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "la figura",
+        "foto": {
+          "credito": "Eduardo Forte / El Gráfico / Wikimedia Commons",
+          "epigrafe": "Alberto Spencer, hacia 1960",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Spencer_el_grafico.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Spencer_el_grafico.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Spencer",
+            "texto": "ALBERTO SPENCER"
+          },
+          {
+            "en": "cuatro",
+            "texto": "*4 GOLES*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Pero la figura fue un ecuatoriano: Alberto Spencer, con cuatro goles.",
+      "sub": "Pero la figura fue un ecuatoriano: Alberto Spencer, con 4 goles."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "el camino de Peñarol",
+        "items": [
+          {
+            "en": "Después",
+            "texto": "Wilstermann: 7 a 1"
+          },
+          {
+            "en": "San Lorenzo",
+            "texto": "San Lorenzo: desempate"
+          },
+          {
+            "en": "Olimpia",
+            "texto": "Olimpia: la final"
+          }
+        ],
+        "numerada": true,
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Después eliminó a San Lorenzo en un desempate. En la final esperaba Olimpia, de Paraguay."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "la final",
+        "objeto": {
+          "campos": {
+            "Estadio": "Centenario",
+            "Fecha": "12/06/1960"
+          },
+          "nombre": "Peñarol vs. Olimpia",
+          "talon": "Tribuna",
+          "tipo": "entrada",
+          "titulo": "Final · Ida",
+          "en": "Centenario"
+        },
+        "palabras": [
+          {
+            "en": "uno a cero",
+            "texto": "1 A 0"
+          },
+          {
+            "en": "Asunción",
+            "texto": "*1 A 1*"
+          }
+        ],
+        "tipo": "collage",
+        "objeto2": {
+          "tipo": "entrada",
+          "titulo": "Final · Vuelta",
+          "nombre": "Olimpia vs. Peñarol",
+          "campos": {
+            "Fecha": "19/06/1960",
+            "Estadio": "Puerto Sajonia"
+          },
+          "talon": "Tribuna",
+          "en": "Asunción"
+        }
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "En el Centenario ganó uno a cero, otra vez con gol de Spencer. En Asunción, uno a uno.",
+      "sub": "En el Centenario ganó 1 a 0, otra vez con gol de Spencer. En Asunción, 1 a 1."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "etiqueta": "junio de 1960",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Peñarol, campeón de América 1960",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Penarol-1960.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Penarol-1960.jpg"
+        },
+        "palabras": [
+          {
+            "en": "campeón",
+            "texto": "*PRIMER CAMPEÓN*"
+          }
+        ],
+        "sello": "1960",
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.9,
+      "say": "Peñarol fue el primer campeón de América."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "en": "cincuenta y cuatro",
+        "etiqueta": "goles de Spencer en la Copa",
+        "numero": 54,
+        "palabra": "RÉCORD",
+        "palabra_en": "Nadie",
+        "tipo": "cifra"
+      },
+      "pausa": 0.6,
+      "say": "Spencer terminó con cincuenta y cuatro goles en la Copa. Nadie hizo más.",
+      "sub": "Spencer terminó con 54 goles en la Copa. Nadie hizo más."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "¿Quién gana? Contalo en los comentarios.",
+        "objeto": {
+          "anio": 2026,
+          "dia": 28,
+          "mes": 11,
+          "tipo": "calendario"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Estudiantes",
+            "texto": "¿ESTUDIANTES"
+          },
+          {
+            "en": "Palmeiras",
+            "texto": "O *PALMEIRAS*?"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "El veintiocho de noviembre la final vuelve ahí, a donde se jugó la primera: Estudiantes contra Palmeiras. ¿Quién gana? Contalo en los comentarios.",
+      "sub": "El 28 de noviembre la final vuelve ahí, a donde se jugó la primera: Estudiantes contra Palmeiras. ¿Quién gana? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "diario",
+  "publicar": {
+    "categoria_youtube": 17,
+    "descripcion": "El 19 de abril de 1960, en el Estadio Centenario, arrancó la Copa de Campeones de América, la que hoy es la Libertadores. Jugaron siete equipos. Peñarol le ganó 7 a 1 a Jorge Wilstermann (primer gol: Carlos Borges; cuatro de Alberto Spencer) y en la final venció a Olimpia: 1 a 0 en Montevideo y 1 a 1 en Asunción. Spencer terminó su carrera con 54 goles en la Copa, el récord. Este 28 de noviembre la final vuelve al Centenario: Estudiantes vs. Palmeiras. ¿Quién gana?",
+    "hashtags": [
+      "CopaLibertadores",
+      "Peñarol",
+      "AlbertoSpencer",
+      "Estudiantes",
+      "fútbol",
+      "historia"
+    ],
+    "titulo": "La primera Libertadores tuvo solo 7 equipos 🏆 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "La primera Libertadores: siete equipos y un campeón",
+  "voz": {
+    "pronunciar": {
+      "Wilstermann": "Uílsterman"
+    }
+  }
+}
