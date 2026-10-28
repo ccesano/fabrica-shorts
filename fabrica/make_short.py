@@ -193,6 +193,9 @@ def main():
         print(f"  chequeo: {len(errs)} error(es)" + "".join(f"\n    - {e.get('message', e)}" for e in errs[:8]))
     except (ValueError, AttributeError):
         print("  chequeo: ver salida/check.log")
+    # portada (Instagram y TikTok): el gancho de la línea 1 ya completo, justo antes de pasar a la escena 2
+    g.setdefault("publicar", {}).setdefault("portada_ms", int(max(1.0, escenas[1]["start"] - 0.3) * 1000)
+                                            if len(escenas) > 1 else 1500)
     pub = publicacion(g, insts, sal / "publicacion.json", imagenes.linea_creditos(creditos_img))
     if a.sin_render:
         print(f"\nListo sin render ({time.time() - t_ini:.0f} s). Proyecto en {pj}")

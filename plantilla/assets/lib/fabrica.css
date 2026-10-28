@@ -85,7 +85,7 @@
 .cg-prop.o-cutout img { display: block; }
 
 /* Subtítulos quemados: un poco más chicos que el original, franja inferior segura para Shorts. */
-.cap-wrap { top: 1430px; left: 60px; right: 170px; }
+.cap-wrap { top: 1430px; left: 170px; right: 170px; }
 .cap { font-size: 56px; -webkit-text-stroke: 11px #111111; }
 .cap .hl { color: var(--cap-acc, #F3C33B); }
 
