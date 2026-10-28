@@ -69,7 +69,7 @@ Si Carlos edita un guion ya fabricado, vuelve a `con cambios` y hay que aprobarl
    `categoria`, `guion` (el JSON completo) y `tema`. En el banco, al tema usado ponerle `guion: <slug>`.
 7. Terminar con un resumen corto para el aviso al celular: los dos títulos y "revisalos en la Mesa".
 
-## B. Revisión de la Mesa (cada hora, de 9 a 23)
+## B. Revisión de la Mesa (3 veces por día: 8:40, 12:40 y 16:40; si no hay nada pendiente, termina enseguida)
 
 Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su estado:
 
