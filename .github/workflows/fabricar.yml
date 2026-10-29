@@ -30,13 +30,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: ¿Qué videos hay que fabricar?
         id: cuales
+        # Mira TODOS los commits de la subida (no solo el último): si llegan dos guiones juntos, se fabrican los dos.
         run: |
+          antes="${{ github.event.before }}"
           if [ -n "${{ inputs.slug }}" ]; then s="${{ inputs.slug }}"
-          else s=$(git diff --name-only HEAD^ HEAD -- 'videos/*/guion.json' | cut -d/ -f2 | sort -u | tr '\n' ' '); fi
+          else
+            if [ -z "$antes" ] || [ "$antes" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$antes^{commit}" 2>/dev/null; then
+              antes=$(git rev-parse HEAD^)
+            fi
+            s=$(git diff --name-only "$antes" HEAD -- 'videos/*/guion.json' | cut -d/ -f2 | sort -u \
+                | while read -r x; do if [ -f "videos/$x/guion.json" ]; then echo "$x"; fi; done | tr '\n' ' ')
+          fi
           echo "slugs=$s" >> "$GITHUB_OUTPUT"; echo "Videos: $s"
 
       - uses: actions/setup-node@v4
@@ -78,28 +86,36 @@ jobs:
         env:
           VOZ_CLAVE: ${{ secrets.VOZ_CLAVE }}
 
-      - name: Fabricar
+      - name: Fabricar y subir para revisión
+        id: fab
+        # Cada video por separado: si uno falla, los demás igual se fabrican y llegan a revisión.
         run: |
-          set -o pipefail
+          fallas=""
           for s in ${{ steps.cuales.outputs.slugs }}; do
             mkdir -p "videos/$s/salida"
-            .venv/bin/python fabrica/make_short.py "videos/$s/guion.json" --motor "${{ inputs.motor || 'chatterbox' }}" 2>&1 | tee "videos/$s/salida/fabricar.log"
+            echo "::group::$s"
+            if .venv/bin/python fabrica/make_short.py "videos/$s/guion.json" --motor "${{ inputs.motor || 'chatterbox' }}" 2>&1 | tee "videos/$s/salida/fabricar.log" \
+               && bash .github/scripts/revision.sh "$s"; then
+              echo "✅ $s"
+            else
+              echo "❌ $s"; fallas="$fallas $s"
+            fi
+            echo "::endgroup::"
           done
+          echo "fallas=$fallas" >> "$GITHUB_OUTPUT"
+          [ -z "$fallas" ]
+        shell: bash -o pipefail {0}
         env:
           HF_HUB_DISABLE_PROGRESS_BARS: "1"
-
-      - name: Subir para revisión
-        run: |
-          for s in ${{ steps.cuales.outputs.slugs }}; do bash .github/scripts/revision.sh "$s"; done
-        env:
           GH_TOKEN: ${{ github.token }}
 
       - name: Avisar si falló
         if: failure()
         run: |
-          log=$(for s in ${{ steps.cuales.outputs.slugs }}; do tail -n 40 "videos/$s/salida/fabricar.log" 2>/dev/null; done)
-          [ -n "$log" ] || log=$(tail -n 40 setup.log 2>/dev/null)
+          malos="${{ steps.fab.outputs.fallas }}"; [ -n "$malos" ] || malos="${{ steps.cuales.outputs.slugs }}"
+          log=$(for s in $malos; do echo "== $s"; tail -n 40 "videos/$s/salida/fabricar.log" 2>/dev/null; done)
+          [ -n "$(echo "$log" | grep -v '^== ')" ] || log=$(tail -n 40 setup.log 2>/dev/null)
           gh label create falla --color B60205 --force >/dev/null
-          gh issue create --label falla --title "Falló la fabricación: ${{ steps.cuales.outputs.slugs }}" --body "$(printf 'Run: %s\n\n```\n%s\n```' "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" "$log")"
+          gh issue create --label falla --title "Falló la fabricación:$malos" --body "$(printf 'Run: %s\n\n```\n%s\n```' "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" "$log")"
         env:
           GH_TOKEN: ${{ github.token }}
