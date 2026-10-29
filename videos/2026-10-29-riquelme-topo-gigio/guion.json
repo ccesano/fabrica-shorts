@@ -1,0 +1,265 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.canal26.com/deportes/2026/04/08/a-25-anos-del-topo-gigio-de-juan-roman-riquelme-en-boca-como-nacio-el-desafiante-festejo-que-recorre-el-mundo/",
+    "https://442.perfil.com/noticias/futbol/a-veinte-anos-del-topo-gigio-que-riquelme-le-dedico-a-macri.phtml",
+    "https://www.elcomercio.com/deportes/futbol/celebracion-argentino-juan-roman-riquelme/",
+    "https://www.pagina12.com.ar/diario/suplementos/libero/10-246-2002-07-01.html",
+    "https://www.uefa.com/uefachampionsleague/news/018b-0e6a42a387b3-ced1600a8b32-1000--barca-take-up-riquelme-option",
+    "https://primicias.ec/noticias/jugada/juan-roman-riquelme-presidente-boca-juniors"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "festejo",
+            "texto": "EL FESTEJO"
+          },
+          {
+            "en": "famoso",
+            "texto": "MÁS FAMOSO"
+          },
+          {
+            "en": "destinatario",
+            "texto": "*TENÍA DUEÑO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "El festejo más famoso tenía destinatario."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Boca, 2001",
+        "foto": {
+          "credito": "Chivista / Wikimedia Commons",
+          "epigrafe": "Riquelme con la camiseta de Boca",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Juan_Riquelme_beim_Audi_Cup.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Juan_Riquelme_beim_Audi_Cup.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Riquelme",
+            "texto": "RIQUELME"
+          },
+          {
+            "en": "contrato",
+            "texto": "*CONTRATO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Marzo de dos mil uno. Riquelme era la figura de Boca y pedía que le mejoraran el contrato.",
+      "sub": "Marzo de 2001. Riquelme era la figura de Boca y pedía que le mejoraran el contrato."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "en": "veintiséis",
+        "etiqueta": "Macri anuncia la venta",
+        "numero": 26,
+        "palabra": "BARCELONA",
+        "palabra_en": "Barcelona",
+        "prefijo": "US$ ",
+        "sufijo": " M",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "El presidente, Mauricio Macri, decía que el contrato estaba firmado. Y anunció su venta al Barcelona: veintiséis millones de dólares.",
+      "sub": "El presidente, Mauricio Macri, decía que el contrato estaba firmado. Y anunció su venta al Barcelona: 26 millones de dólares."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Juan Román Riquelme",
+        "texto": "Ahora dicen que ya me vendieron y yo *no sé nada*.",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "Riquelme respondió: «Ahora dicen que ya me vendieron y yo no sé nada»."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el Superclásico",
+        "foto": {
+          "credito": "Diego Delso / Wikimedia Commons",
+          "epigrafe": "La Bombonera",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Bombonera_-_Buenos_Aires_-_Argentina.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/La_Bombonera_-_Buenos_Aires_-_Argentina.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Superclásico",
+            "texto": "BOCA VS. RIVER"
+          },
+          {
+            "en": "Ocho",
+            "texto": "*8/4/2001*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Ocho de abril de dos mil uno. Superclásico en la Bombonera, con Macri en el palco.",
+      "sub": "8 de abril de 2001. Superclásico en la Bombonera, con Macri en el palco."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "arquero": "parado",
+        "arquero_color": "#E8E3D8",
+        "corrida_en": "Penal",
+        "etiqueta": "el segundo gol",
+        "palabras": [
+          {
+            "en": "cabeza",
+            "texto": "*GOL*"
+          }
+        ],
+        "remate_en": "rebote",
+        "resultado": "gol",
+        "rivales": 0,
+        "sentido": "derecha",
+        "tipo": "jugada"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Penal para Boca. Costanzo lo ataja… y Riquelme mete el rebote de cabeza."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "kicker": "el festejo",
+        "palabras": [
+          {
+            "en": "quieto",
+            "texto": "QUIETO"
+          },
+          {
+            "en": "manos",
+            "texto": "MANOS EN"
+          },
+          {
+            "en": "orejas",
+            "texto": "LAS OREJAS"
+          },
+          {
+            "en": "palco",
+            "texto": "*AL PALCO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "Corrió al medio, se quedó quieto, se puso las manos detrás de las orejas… y miró al palco."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Riquelme, tras el partido",
+        "texto": "El festejo fue para mi hija, porque le encanta el *Topo Gigio*.",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "Después dijo: «El festejo fue para mi hija, porque le encanta el Topo Gigio»."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "etiqueta": "veintidós años después",
+        "foto": {
+          "credito": "Todo Noticias / Wikimedia Commons",
+          "epigrafe": "Juan Román Riquelme, 2019",
+          "licencia": "CC BY 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Juan_Rom%C3%A1n_Riquelme_-_2019.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Juan_Rom%C3%A1n_Riquelme_-_2019.jpg"
+        },
+        "palabras": [
+          {
+            "en": "presidente",
+            "texto": "PRESIDENTE"
+          },
+          {
+            "en": "veintitrés",
+            "texto": "*2023*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.6,
+      "say": "Boca ganó tres a cero. Y en dos mil veintitrés, Riquelme fue elegido presidente de Boca.",
+      "sub": "Boca ganó 3 a 0. Y en 2023, Riquelme fue elegido presidente de Boca."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#103F8F",
+          "color": "#F3C33B",
+          "estilo": "banda",
+          "nombre": "RIQUELME",
+          "numero": "10",
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "¿TE ACORDÁS"
+          },
+          {
+            "en": "Topo",
+            "texto": "DEL *TOPO GIGIO*?"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "¿Te acordás de ese Topo Gigio? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "tension"
+  },
+  "paleta": "bombonera",
+  "publicar": {
+    "categoria_youtube": 17,
+    "descripcion": "Marzo de 2001: Riquelme pedía mejorar su contrato y Mauricio Macri, presidente de Boca, anunció su venta al Barcelona por 26 millones de dólares, cifra récord. «Ahora dicen que ya me vendieron y yo no sé nada», dijo Román. El 8 de abril, en el Superclásico de la Bombonera, Costanzo le atajó un penal, Riquelme metió el rebote de cabeza y festejó con las manos detrás de las orejas mirando al palco. «El festejo fue para mi hija, porque le encanta el Topo Gigio». Boca ganó 3 a 0. Riquelme se fue al Barcelona en 2002 y en 2023 fue elegido presidente de Boca. ¿Te acordás?",
+    "hashtags": [
+      "Riquelme",
+      "TopoGigio",
+      "BocaJuniors",
+      "Superclásico",
+      "fútbol",
+      "historia"
+    ],
+    "titulo": "El Topo Gigio de Riquelme tenía destinatario 🐭 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Riquelme y el Topo Gigio: el festejo que tenía destinatario",
+  "voz": {
+    "pronunciar": {
+      "Costanzo": "Costanso",
+      "Gigio": "Yiyo"
+    }
+  }
+}
