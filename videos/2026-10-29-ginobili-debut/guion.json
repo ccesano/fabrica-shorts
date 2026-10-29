@@ -1,0 +1,266 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.cadena3.com/noticia/basquet/un-dia-bisagra-se-cumplen-23-anos-del-debut-de-manu-ginobili-en-la-nba_480169",
+    "https://espndeportes.espn.com/basquetbol/noticias/ginodecl20021030.html",
+    "https://en.wikipedia.org/wiki/Manu_Gin%C3%B3bili",
+    "https://batimes.com.ar/news/sports/argentinas-four-time-nba-champ-manu-ginobili-enters-hall-of-fame.phtml"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "último",
+            "texto": "CASI ÚLTIMO"
+          },
+          {
+            "en": "Cuatro",
+            "texto": "*4 ANILLOS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Casi último en el draft. Cuatro anillos."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Bahía Blanca → NBA",
+        "foto": {
+          "credito": "Mike from Orlando, FL / Wikimedia Commons",
+          "epigrafe": "Manu Ginóbili con los Spurs",
+          "licencia": "CC BY-SA 2.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Manu_Gin%C3%B3bili_(cropped_2).jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Manu_Gin%C3%B3bili_%28cropped_2%29.jpg"
+        },
+        "palabras": [
+          {
+            "en": "chico",
+            "texto": "MANU"
+          },
+          {
+            "en": "Veintinueve",
+            "texto": "*29/10/2002*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Veintinueve de octubre de dos mil dos. Un chico de Bahía Blanca debuta en la NBA.",
+      "sub": "29 de octubre de 2002. Un chico de Bahía Blanca debuta en la NBA."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "el estreno",
+        "foto": {
+          "credito": "Daniel Lobo / Wikimedia Commons",
+          "epigrafe": "Staples Center, Los Ángeles",
+          "licencia": "CC0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Staples_Center_in_2006.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Staples_Center_in_2006.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Lakers",
+            "texto": "VS. LAKERS"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "San Antonio visitaba a los Lakers, los tricampeones, en Los Ángeles."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "en": "cincuenta",
+        "etiqueta": "draft de 1999",
+        "numero": 57,
+        "palabra": "CASI ÚLTIMO",
+        "palabra_en": "número",
+        "prefijo": "#",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Tres años antes, los Spurs lo habían elegido en el draft con el número cincuenta y siete.",
+      "sub": "Tres años antes, los Spurs lo habían elegido en el draft con el número 57."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "autor": "Manu Ginóbili",
+        "texto": "Ni siquiera sabía dónde quedaba *San Antonio* en el mundo.",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "Años después lo contó: «Ni siquiera sabía dónde quedaba San Antonio en el mundo»."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "su debut",
+        "items": [
+          {
+            "en": "veinte",
+            "texto": "20 minutos"
+          },
+          {
+            "en": "siete",
+            "texto": "7 puntos"
+          },
+          {
+            "en": "cuatro",
+            "texto": "4 robos"
+          }
+        ],
+        "remate": {
+          "en": "Ganaron",
+          "texto": "Spurs 87 – Lakers 82"
+        },
+        "tipo": "lista"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Esa noche jugó veinte minutos: siete puntos y cuatro robos. Ganaron ochenta y siete a ochenta y dos.",
+      "sub": "Esa noche jugó 20 minutos: 7 puntos y 4 robos. Ganaron 87 a 82."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "después del partido",
+        "objeto": {
+          "en": "confesó",
+          "texto": "NERVIOSO",
+          "tipo": "tele"
+        },
+        "palabras": [
+          {
+            "en": "nervioso",
+            "texto": "*NERVIOSO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 1,
+      "say": "Después confesó: «Estaba un poco nervioso. Es natural»."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "etiqueta": "campeón",
+        "foto": {
+          "credito": "Pete Souza / Casa Blanca",
+          "epigrafe": "Duncan, Ginóbili y Parker en la Casa Blanca, 2015",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Tim_Duncan,_Manu_Ginobili_and_Tony_Parker_present_President_Barack_Obama_with_a_Spurs_jersey_2015-01-12.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tim_Duncan%2C_Manu_Ginobili_and_Tony_Parker_present_President_Barack_Obama_with_a_Spurs_jersey_2015-01-12.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cuatro",
+            "texto": "*4 ANILLOS*"
+          }
+        ],
+        "sello": "2003·05·07·14",
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Con los Spurs ganó cuatro anillos: dos mil tres, dos mil cinco, dos mil siete y dos mil catorce.",
+      "sub": "Con los Spurs ganó cuatro anillos: 2003, 2005, 2007 y 2014."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "palabras": [
+          {
+            "en": "oro",
+            "texto": "*ORO*"
+          },
+          {
+            "en": "Atenas",
+            "texto": "ATENAS 2004"
+          },
+          {
+            "en": "Salón",
+            "texto": "SALÓN DE"
+          },
+          {
+            "en": "Fama",
+            "texto": "*LA FAMA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.7,
+      "say": "En el medio, el oro olímpico en Atenas dos mil cuatro. Y en dos mil veintidós, el Salón de la Fama.",
+      "sub": "En el medio, el oro olímpico en Atenas 2004. Y en 2022, el Salón de la Fama."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#F6F3EC",
+          "color": "#1E1B18",
+          "estilo": "lisa",
+          "letra": "#1E1B18",
+          "nombre": "GINÓBILI",
+          "numero": "20",
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "¿DÓNDE"
+          },
+          {
+            "en": "estabas",
+            "texto": "ESTABAS?"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "¿Dónde estabas cuando Manu ganó el oro? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": 17,
+    "descripcion": "El 29 de octubre de 2002, Manu Ginóbili debutó en la NBA con los San Antonio Spurs, de visitante contra los Lakers en Los Ángeles: 20 minutos, 7 puntos y 4 robos en el triunfo 87 a 82. Tres años antes lo habían elegido en el draft con el número 57. «Ni siquiera sabía dónde quedaba San Antonio en el mundo», contó en 2022. Ganó cuatro anillos (2003, 2005, 2007 y 2014), el oro olímpico en Atenas 2004 y entró al Salón de la Fama en 2022. ¿Dónde estabas cuando Manu ganó el oro?",
+    "hashtags": [
+      "Ginóbili",
+      "Manu",
+      "NBA",
+      "Spurs",
+      "básquet",
+      "GeneraciónDorada"
+    ],
+    "titulo": "Lo eligieron casi último… y ganó 4 anillos: el debut de Manu 🏀 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "El debut de Manu Ginóbili en la NBA",
+  "voz": {
+    "pronunciar": {
+      "Lakers": "Léikers",
+      "Spurs": "Spers"
+    }
+  }
+}
