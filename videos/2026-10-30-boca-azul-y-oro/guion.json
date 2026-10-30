@@ -1,0 +1,307 @@
+{
+  "ambiente": "ciudad",
+  "fuentes": [
+    "https://www.todojujuy.com/boca-juniors-cumple-120-anos-cual-es-la-historia-su-fundacion-n267159",
+    "https://www.goal.com/es/noticias/el-origen-sueco-de-la-camiseta-de-boca/ieocf40mhge31rxqksqmy1ufp",
+    "https://outsidewrite.co.uk/how-clubs-got-their-colours-boca-juniors",
+    "https://www.iprofesional.com/actualidad/403224-nueva-camiseta-de-boca-juniors-esta-inspirada-en-su-origen-la-bandera-de-suecia",
+    "https://www.noticiasnqn.com.ar/noticias/2026/10/27/358410-boca-vs-river-horario-donde-ver-en-vivo-y-que-se-juega-en-el-superclasico"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "colores",
+            "texto": "LOS COLORES"
+          },
+          {
+            "en": "Boca",
+            "texto": "DE BOCA"
+          },
+          {
+            "en": "barco",
+            "texto": "*UN BARCO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Los colores de Boca los eligió un barco."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "La Boca, hacia 1900",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "El puerto de La Boca, hacia 1900",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Boca_en_1900.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/La_Boca_en_1900.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cinco",
+            "texto": "*1905*"
+          },
+          {
+            "en": "genoveses",
+            "texto": "XENEIZES"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Mil novecientos cinco. En el barrio de La Boca, unos pibes hijos de genoveses fundan un club.",
+      "sub": "1905. En el barrio de La Boca, unos pibes hijos de genoveses fundan un club."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "las primeras camisetas",
+        "items": [
+          {
+            "en": "Blanca",
+            "texto": "Blanca con rayitas negras"
+          },
+          {
+            "en": "Celeste",
+            "texto": "Celeste"
+          },
+          {
+            "en": "rayas azules",
+            "texto": "Con rayas azules"
+          }
+        ],
+        "remate": {
+          "en": "azules",
+          "texto": "¿Y AHORA?"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Pero con la camiseta no se ponían de acuerdo. Blanca con rayitas negras. Celeste. Con rayas azules."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "la leyenda",
+        "objeto": {
+          "base": "#FBFAF5",
+          "color": "#7FB8E6",
+          "estilo": "rayas",
+          "tipo": "camiseta"
+        },
+        "palabras": [
+          {
+            "en": "perdieron",
+            "texto": "*PERDIERON*"
+          }
+        ],
+        "sello": "DICEN QUE",
+        "sello_en": "Dicen",
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Dicen que hasta se jugaron la camiseta en un partido contra otro club que usaba la misma. Y perdieron."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "la asamblea de 1907",
+        "objeto": {
+          "filas": [
+            [
+              1,
+              "Ir al puerto"
+            ],
+            [
+              2,
+              "Esperar un barco"
+            ],
+            [
+              3,
+              "Copiar su bandera"
+            ]
+          ],
+          "tipo": "planilla",
+          "titulo": "LOS COLORES",
+          "volanta": "Boca Juniors · 1907"
+        },
+        "palabras": [
+          {
+            "en": "destino",
+            "texto": "*EL DESTINO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Mil novecientos siete. Juan Brichetto, que presidía el club, propone dejarlo en manos del destino.",
+      "sub": "1907. Juan Brichetto, que presidía el club, propone dejarlo en manos del destino."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "el puerto de La Boca",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Barcos en La Boca, 1900",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Boca_ships_1900.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/La_Boca_ships_1900.jpg"
+        },
+        "palabras": [
+          {
+            "en": "primer",
+            "texto": "EL PRIMER"
+          },
+          {
+            "en": "barco",
+            "texto": "*BARCO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "La idea: ir al puerto y copiar la bandera del primer barco que entrara."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "kicker": "dicen que…",
+        "palabras": [
+          {
+            "en": "fue",
+            "texto": "ERA"
+          },
+          {
+            "en": "sueco",
+            "texto": "*SUECO*"
+          },
+          {
+            "en": "azul",
+            "texto": "AZUL Y"
+          },
+          {
+            "en": "amarilla",
+            "texto": "AMARILLO"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.7,
+      "say": "Y dicen que el primero en entrar fue uno sueco. Bandera azul, con una cruz amarilla."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "la franja",
+        "objeto": {
+          "base": "#10214D",
+          "color": "#F2C230",
+          "estilo": "banda",
+          "tipo": "camiseta"
+        },
+        "palabras": [
+          {
+            "en": "oro",
+            "texto": "AZUL Y *ORO*"
+          },
+          {
+            "en": "trece",
+            "texto": "1913"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Así nació el azul y oro. Primero, con la franja cruzada. Desde mil novecientos trece, derecha.",
+      "sub": "Así nació el azul y oro. Primero, con la franja cruzada. Desde 1913, derecha."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "etiqueta": "domingo 1 de noviembre",
+        "objeto": {
+          "anio": "2026",
+          "dia": 1,
+          "mes": 11,
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "superclásico",
+            "texto": "BOCA–RIVER"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Y este domingo, esa camiseta sale a jugar el superclásico en la Bombonera."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "colores": [
+            "#1F5AA6",
+            "#1F5AA6",
+            "#1F5AA6",
+            "#F2C230",
+            "#1F5AA6",
+            "#1F5AA6",
+            "#1F5AA6"
+          ],
+          "lugar": "SUECIA",
+          "texto": "Saludos desde",
+          "tipo": "postal"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Sabías",
+            "texto": "¿SABÍAS QUE"
+          },
+          {
+            "en": "Suecia",
+            "texto": "*VINO DE SUECIA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "¿Sabías que el azul y oro vino de Suecia? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "oceano",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Boca se fundó en 1905 en La Boca y tardó en decidir su camiseta: blanca con rayitas negras, celeste, con rayas azules. En 1907, con Juan Brichetto al frente del club, se aprobó el azul y amarillo. La historia más contada dice que lo decidió el primer barco que entró al puerto: uno sueco, el Drottning Sophia. La franja fue diagonal hasta 1913, cuando pasó a ser horizontal. ¿La conocías?",
+    "hashtags": [
+      "boca",
+      "bocajuniors",
+      "superclasico",
+      "futbolargentino",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "¿Por qué Boca es azul y oro? 🚢 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Por qué Boca es azul y oro"
+}
