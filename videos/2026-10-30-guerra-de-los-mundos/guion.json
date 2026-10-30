@@ -1,0 +1,285 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.slate.com/articles/arts/history/2013/10/orson_welles_war_of_the_worlds_panic_myth_the_infamous_radio_broadcast_did.single.html",
+    "https://www.latercera.com/culto/2021/05/06/guerra-de-los-mundos-orson-welles-y-panico-que-no-fue/",
+    "https://www.ebsco.com/research-starters/history/welles-broadcasts-war-worlds",
+    "https://www.poynter.org/reporting-editing/2013/threatened-by-radio-newspapers-exaggerated-war-of-the-worlds-panic/"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Marcianos",
+            "texto": "MARCIANOS"
+          },
+          {
+            "en": "radio",
+            "texto": "EN LA RADIO"
+          },
+          {
+            "en": "nadie",
+            "texto": "*NADIE*"
+          },
+          {
+            "en": "escuchó",
+            "texto": "ESCUCHÓ"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Marcianos en la radio. Y casi nadie escuchó."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Nueva York, 1938",
+        "foto": {
+          "credito": "Dallas Dispatch-Journal / Wikimedia Commons",
+          "epigrafe": "Orson Welles en el estudio de CBS, 1938",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Welles-Radio-Studio-1938.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Welles-Radio-Studio-1938.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Welles",
+            "texto": "ORSON WELLES"
+          },
+          {
+            "en": "veintitrés",
+            "texto": "*23 AÑOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Treinta de octubre de mil novecientos treinta y ocho. Orson Welles, de veintitrés años, hace radioteatro en la CBS.",
+      "sub": "30 de octubre de 1938. Orson Welles, de 23 años, hace radioteatro en la CBS."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "la novela de H. G. Wells",
+        "objeto": {
+          "credito": "Henrique Alvim Corrêa, 1906 / Wikimedia Commons",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:The_War_of_the_Worlds_by_Henrique_Alvim_Corr%C3%AAa,_original_graphic_15.jpg",
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_War_of_the_Worlds_by_Henrique_Alvim_Corr%C3%AAa%2C_original_graphic_15.jpg"
+        },
+        "palabras": [
+          {
+            "en": "guerra",
+            "texto": "*LA GUERRA*"
+          },
+          {
+            "en": "mundos",
+            "texto": "DE LOS MUNDOS"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Domingo a la noche, víspera de Halloween. Esa noche hacen La guerra de los mundos."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "el truco",
+        "palabras": [
+          {
+            "en": "Boletines",
+            "texto": "BOLETÍN"
+          },
+          {
+            "en": "urgentes",
+            "texto": "*URGENTE*"
+          },
+          {
+            "en": "Marcianos",
+            "texto": "MARCIANOS"
+          },
+          {
+            "en": "Jersey",
+            "texto": "EN NUEVA JERSEY"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "El truco: contarla como un noticiero. Boletines urgentes. Marcianos aterrizando en Nueva Jersey."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "31 de octubre de 1938",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Radio Listeners in Panic, Taking War Drama as Fact",
+          "volanta": "The New York Times"
+        },
+        "palabras": [
+          {
+            "en": "pánico",
+            "texto": "*PÁNICO*"
+          }
+        ],
+        "sello": "EN TAPA",
+        "sello_en": "tapa",
+        "tipo": "collage"
+      },
+      "pausa": 1,
+      "say": "Al otro día, el New York Times tituló en tapa: «Oyentes de radio en pánico»."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "en": "dos por ciento",
+        "etiqueta": "la encuesta Hooper",
+        "numero": 2,
+        "palabra": "OÍA A WELLES",
+        "palabra_en": "escuchaba",
+        "sufijo": "%",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Pero la encuestadora Hooper llamó a cinco mil hogares. Solo el dos por ciento escuchaba a Welles.",
+      "sub": "Pero la encuestadora Hooper llamó a 5.000 hogares. Solo el 2 % escuchaba a Welles."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "kicker": "el resto",
+        "palabras": [
+          {
+            "en": "otra",
+            "texto": "OTRA RADIO"
+          },
+          {
+            "en": "un",
+            "texto": "UN"
+          },
+          {
+            "en": "ventrílocuo",
+            "texto": "*VENTRÍLOCUO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Casi todos estaban en otra radio, riéndose con un ventrílocuo: Edgar Bergen."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "diarios contra radio",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Terror por radio",
+          "volanta": "Editorial del Times"
+        },
+        "objeto2": {
+          "en": "avisos",
+          "tipo": "billetes",
+          "valor": "avisos"
+        },
+        "palabras": [
+          {
+            "en": "diarios",
+            "texto": "LOS DIARIOS"
+          },
+          {
+            "en": "agrandaron",
+            "texto": "*AGRANDARON*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "¿Por qué? Los diarios le tenían miedo a la radio: les sacaba avisos. Y agrandaron la historia."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Orson Welles, al cierre del programa",
+        "texto": "Es la versión radial de disfrazarse con una sábana y gritar *¡Bu!*",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "Al final, Welles lo dijo: era como disfrazarse con una sábana y gritar «¡Bu!»."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "credito": "The Express / Wikimedia Commons",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Orson_Welles_1938_War_of_the_Worlds.jpg",
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Orson_Welles_1938_War_of_the_Worlds.jpg"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Vos",
+            "texto": "¿VOS TE"
+          },
+          {
+            "en": "hubieras",
+            "texto": "*HUBIERAS*"
+          },
+          {
+            "en": "asustado",
+            "texto": "ASUSTADO?"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Asustados hubo. Pero el gran pánico salió en los diarios. ¿Vos te hubieras asustado?"
+    }
+  ],
+  "musica": {
+    "animo": "misterio"
+  },
+  "paleta": "diario",
+  "publicar": {
+    "categoria_youtube": "24",
+    "descripcion": "El 30 de octubre de 1938, Orson Welles, de 23 años, emitió por CBS La guerra de los mundos como si fuera un noticiero. Al día siguiente, The New York Times tituló en tapa «Radio Listeners in Panic». Pero una encuesta de C. E. Hooper a 5.000 hogares encontró que solo el 2 % escuchaba el programa: la mayoría estaba con el ventrílocuo Edgar Bergen en otra radio. Los diarios, que perdían avisos frente a la radio, agrandaron la historia. ¿Vos te hubieras asustado?",
+    "hashtags": [
+      "orsonwelles",
+      "laguerradelosmundos",
+      "radio",
+      "historia",
+      "curiosidades",
+      "shorts"
+    ],
+    "titulo": "El pánico marciano que casi nadie escuchó 👽 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "La guerra de los mundos: el pánico que no fue",
+  "voz": {
+    "pronunciar": {
+      "CBS": "ce be ese",
+      "Edgar Bergen": "Édgar Bérguen",
+      "Halloween": "Jálouin",
+      "Hooper": "Júper",
+      "New York Times": "Niu York Taims",
+      "Nueva Jersey": "Nueva Yérsey",
+      "Welles": "Uéls",
+      "Wells": "Uéls"
+    }
+  }
+}
