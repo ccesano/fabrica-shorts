@@ -1,0 +1,269 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://brianmay.com/queen-news/2015/10/40th-anniversary-of-bohemian-rhapsody-31st-october-2015/",
+    "https://brianmay.com/queen-news/2015/10/on-40th-anniversary-of-queens-bohemian-rhapsody-enjoy-30-fascinating-facts-about-freddie-mercury-hit/",
+    "https://mentalfloss.com/article/70634/10-operatic-facts-about-bohemian-rhapsody",
+    "https://www.udiscovermusic.com/stories/bohemian-rhapshody-were-not-worthy/",
+    "https://www.todayifoundout.com/?p=41084"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Seis",
+            "texto": "6 MINUTOS"
+          },
+          {
+            "en": "Ninguna",
+            "texto": "NINGUNA"
+          },
+          {
+            "en": "radio",
+            "texto": "*RADIO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Seis minutos. Ninguna radio la iba a pasar."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Queen, 1975",
+        "foto": {
+          "credito": "Koh Hasebe / Elektra Records / Wikimedia Commons",
+          "epigrafe": "Queen, 1975",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Queen_A_Night_At_The_Opera_(1975_Elektra_publicity_photo_02).jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Queen_A_Night_At_The_Opera_%281975_Elektra_publicity_photo_02%29.jpg"
+        },
+        "palabras": [
+          {
+            "en": "ópera",
+            "texto": "*ÓPERA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Mil novecientos setenta y cinco. Queen termina una canción rarísima: sin estribillo y con ópera en el medio.",
+      "sub": "1975. Queen termina una canción rarísima: sin estribillo y con ópera en el medio."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "la hoja de grabación",
+        "objeto": {
+          "credito": "海獺 / Wikimedia Commons",
+          "licencia": "CC BY-SA 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Bohemian_Rhapsody_Track_Sheet_(replica)_(edit)_1975.jpg",
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bohemian_Rhapsody_Track_Sheet_%28replica%29_%28edit%29_1975.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cincuenta y cinco",
+            "texto": "*5:55*"
+          },
+          {
+            "en": "tres",
+            "texto": "CONTRA 3"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Duraba cinco minutos cincuenta y cinco. Los simples de la radio duraban tres.",
+      "sub": "Duraba 5 minutos 55. Los simples de la radio duraban 3."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "la discográfica",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "Bohemian Rhapsody"
+        },
+        "palabras": [
+          {
+            "en": "cortarla",
+            "texto": "¿CORTARLA?"
+          }
+        ],
+        "sello": "NO",
+        "sello_en": "no.",
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "La discográfica quería cortarla: así, no la iba a pasar nadie. Queen dijo que no."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "Kenny Everett, DJ",
+        "foto": {
+          "credito": "Edwardx / Wikimedia Commons",
+          "epigrafe": "Placa de Kenny Everett en Londres",
+          "licencia": "CC BY-SA 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Kenny_Everett_91_Lexham_Gardens_blue_plaque.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Kenny_Everett_91_Lexham_Gardens_blue_plaque.jpg"
+        },
+        "palabras": [
+          {
+            "en": "pasarla",
+            "texto": "*NO PASARLA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Entonces le dan una copia a un DJ amigo de Freddie, Kenny Everett. Con una condición: no pasarla."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "dicen que…",
+        "palabras": [
+          {
+            "en": "prometió",
+            "texto": "PROMETIÓ"
+          },
+          {
+            "en": "no.",
+            "texto": "QUE NO"
+          },
+          {
+            "en": "guiñó",
+            "texto": "*Y GUIÑÓ*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Dicen que prometió que no. Y guiñó un ojo."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "en": "catorce",
+        "etiqueta": "en dos días",
+        "numero": 14,
+        "palabra": "VECES",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "La pasó catorce veces en dos días.",
+      "sub": "La pasó 14 veces en dos días."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el simple",
+        "objeto": {
+          "anio": "1975",
+          "dia": 31,
+          "en": "Salió",
+          "mes": 10,
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "existía",
+            "texto": "*NO EXISTÍA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "La gente quería comprarla, y el disco todavía no existía. Salió el treinta y uno de octubre.",
+      "sub": "La gente quería comprarla, y el disco todavía no existía. Salió el 31 de octubre."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "kicker": "Inglaterra",
+        "palabras": [
+          {
+            "en": "número",
+            "texto": "*NÚMERO 1*"
+          },
+          {
+            "en": "nueve",
+            "texto": "9 SEMANAS"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Fue número uno en Inglaterra durante nueve semanas.",
+      "sub": "Fue número 1 en Inglaterra durante 9 semanas."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "credito": "Koh Hasebe / Elektra Records / Wikimedia Commons",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Freddie_Mercury_(1975_Elektra_publicity_photo).jpg",
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Freddie_Mercury_%281975_Elektra_publicity_photo%29.jpg"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "dónde",
+            "texto": "¿DÓNDE LA"
+          },
+          {
+            "en": "escuchaste",
+            "texto": "*ESCUCHASTE?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "La canción que nadie quería en la radio. ¿Vos dónde la escuchaste por primera vez? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "alegre"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": "10",
+    "descripcion": "En 1975 Queen terminó Bohemian Rhapsody: 5 minutos 55, sin estribillo y con ópera en el medio. La discográfica y el mánager decían que era demasiado larga para la radio y querían cortarla; la banda se negó. El DJ Kenny Everett, amigo de Freddie Mercury, recibió una copia con la condición de no pasarla… y la pasó 14 veces en dos días. La gente quería comprar un disco que todavía no existía. El simple salió el 31 de octubre de 1975 y fue número 1 en Inglaterra durante 9 semanas. ¿Dónde la escuchaste por primera vez?",
+    "hashtags": [
+      "queen",
+      "freddiemercury",
+      "bohemianrhapsody",
+      "musica",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "La canción que ninguna radio iba a pasar 🎹 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Bohemian Rhapsody: la canción que nadie quería",
+  "voz": {
+    "pronunciar": {
+      "Freddie": "Frédi",
+      "Kenny Everett": "Kéni Éveret",
+      "Queen": "Cuín"
+    }
+  }
+}
