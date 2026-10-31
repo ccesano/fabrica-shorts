@@ -1,0 +1,266 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/1994_FIFA_World_Cup_qualification_(OFC%E2%80%93CONMEBOL_play-off)",
+    "https://www.goal.com/es-ar/noticias/la-vuelta-de-diego-el-partido-mas-recordado-de-argentina-en/3wtdaahq3b8u1bqbdduz7e1ir",
+    "https://www.footyalmanac.com.au/top-100-world-cup-moments-from-the-aussie-p-o-v-24-argentina-gives-australia-everything-except-a-ticket-to-the-world-cup-1993/",
+    "https://thesefootballtimes.co/2019/01/23/argentinas-night-of-shame-when-colombia-went-to-a-feisty-buenos-aires-and-won-5-0/",
+    "https://www.planetfootball.com/nostalgia/a-forensic-analysis-of-argentina-0-5-colombia-footballs-a-vehicle-for-dreams",
+    "https://www.thescore.com/news/786430",
+    "https://www.lavozdesanjusto.com.ar/a-25-anos-del-0-5-ante-colombia-45950"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Cinco",
+            "texto": "5 A 0"
+          },
+          {
+            "en": "llamaron",
+            "texto": "Y LLAMARON"
+          },
+          {
+            "en": "Diego",
+            "texto": "*A DIEGO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Cinco a cero. Y llamaron a Diego.",
+      "sub": "5 a 0. Y llamaron a Diego."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Eliminatorias · 5/9/1993",
+        "objeto": {
+          "filas": [
+            [
+              "ARGENTINA",
+              0
+            ],
+            [
+              "COLOMBIA",
+              5
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "Monumental",
+            "texto": "*MONUMENTAL*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Cinco de septiembre de mil novecientos noventa y tres. Colombia le hace cinco goles a Argentina en el Monumental.",
+      "sub": "5 de septiembre de 1993. Colombia le hace cinco goles a Argentina en el Monumental."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "en la tribuna",
+        "palabras": [
+          {
+            "en": "mira",
+            "texto": "DIEGO MIRA"
+          },
+          {
+            "en": "aplaude",
+            "texto": "Y APLAUDEN"
+          },
+          {
+            "en": "Colombia",
+            "texto": "*A COLOMBIA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Diego lo mira desde la tribuna. Y al final, la gente aplaude a Colombia."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "etiqueta": "7 de septiembre de 1993",
+        "objeto": {
+          "en": "tapa",
+          "tipo": "recorte",
+          "titular": "¡VERGÜENZA!",
+          "volanta": "El Gráfico"
+        },
+        "palabras": [
+          {
+            "en": "negra",
+            "texto": "TAPA *NEGRA*"
+          }
+        ],
+        "sello": "EN TAPA",
+        "sello_en": "tapa",
+        "tipo": "collage"
+      },
+      "pausa": 1.1,
+      "say": "Dos días después, El Gráfico sale con la tapa negra y una palabra gigante: «Vergüenza»."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "el repechaje",
+        "objeto": {
+          "base": "#FBFAF5",
+          "color": "#7FB8E6",
+          "estilo": "rayas",
+          "nombre": "MARADONA",
+          "numero": 10,
+          "tipo": "camiseta"
+        },
+        "palabras": [
+          {
+            "en": "llama",
+            "texto": "*VUELVE*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Argentina tiene que jugar un repechaje con Australia. Y Basile, que no lo convocaba, llama a Maradona."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "en": "dos",
+        "etiqueta": "desde Italia 90",
+        "numero": 2,
+        "palabra": "PARTIDOS",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Desde el Mundial noventa, había jugado solo dos partidos con la Selección.",
+      "sub": "Desde el Mundial 90, había jugado solo 2 partidos con la Selección."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "31 de octubre de 1993",
+        "foto": {
+          "credito": "Business Slayer / Wikimedia Commons",
+          "epigrafe": "El estadio de Sídney",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Sydney_Football_Stadium_(Allianz_Stadium)_Moore_Park_NSW_Australia.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sydney_Football_Stadium_%28Allianz_Stadium%29_Moore_Park_NSW_Australia.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Sídney",
+            "texto": "*SÍDNEY*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Treinta y uno de octubre. Sídney. Cancha llena: casi cuarenta y cuatro mil personas.",
+      "sub": "31 de octubre. Sídney. Cancha llena: casi 44.000 personas."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "arquero": "parado",
+        "arquero_color": "#1F7A3D",
+        "corrida_en": "escapa",
+        "etiqueta": "la jugada",
+        "palabras": [
+          {
+            "en": "Balbo",
+            "texto": "*BALBO*"
+          }
+        ],
+        "remate_en": "cabeza",
+        "resultado": "gol",
+        "rival_color": "#F2C230",
+        "rivales": 1,
+        "sello": "¡GOL!",
+        "sentido": "derecha",
+        "tipo": "jugada"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Diego se escapa por la derecha, tira el centro, y Balbo la mete de cabeza."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "etiqueta": "17 de noviembre de 1993",
+        "objeto": {
+          "anio": "1993",
+          "dia": 17,
+          "mes": 11,
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "Mundial",
+            "texto": "*AL MUNDIAL*"
+          }
+        ],
+        "sello": "USA 94",
+        "sello_en": "va",
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Australia empata enseguida. Pero en la vuelta, en el Monumental, Argentina gana uno a cero y va al Mundial.",
+      "sub": "Australia empata enseguida. Pero en la vuelta, en el Monumental, Argentina gana 1 a 0 y va al Mundial."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "pelota"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "acordás",
+            "texto": "¿TE ACORDÁS"
+          },
+          {
+            "en": "Sídney",
+            "texto": "*DE SÍDNEY?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Diego volvió cuando hacía falta. ¿Vos te acordás de esa noche en Sídney? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "El 5 de septiembre de 1993 Colombia le ganó 5 a 0 a Argentina en el Monumental, con Maradona mirando desde la tribuna. El Gráfico sacó su tapa negra: «¡Vergüenza!». Argentina tuvo que jugar el primer repechaje de su historia, contra Australia, y Alfio Basile volvió a convocar a Diego. El 31 de octubre de 1993, en Sídney, ante casi 44.000 personas, Maradona tiró el centro y Abel Balbo hizo el gol de cabeza; Aurelio Vidmar empató enseguida. En la vuelta, en el Monumental, Argentina ganó 1 a 0 y se clasificó al Mundial 94. ¿Te acordás?",
+    "hashtags": [
+      "maradona",
+      "seleccionargentina",
+      "futbolargentino",
+      "eliminatorias",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "Después del 5 a 0, llamaron a Maradona 🇦🇷 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Maradona vuelve para salvar a la Selección"
+}
