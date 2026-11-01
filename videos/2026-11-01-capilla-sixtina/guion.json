@@ -1,0 +1,264 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.museivaticani.va/content/museivaticani/es/collezioni/musei/cappella-sistina/volta.html",
+    "https://www.history.com/articles/7-things-you-may-not-know-about-the-sistine-chapel",
+    "https://news.artnet.com/art-world/art-bites-michelangelo-sistine-chapel-poem-2435098",
+    "https://infovaticana.com/2025/11/01/1-de-noviembre-de-1512-la-capilla-sixtina-abre-sus-puertas-al-mundo/"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Era",
+            "texto": "ERA"
+          },
+          {
+            "en": "escultor",
+            "texto": "*ESCULTOR*"
+          },
+          {
+            "en": "Papa",
+            "texto": "Y LO PUSIERON"
+          },
+          {
+            "en": "pintar",
+            "texto": "A PINTAR"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Era escultor. Y el Papa lo puso a pintar."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Miguel Ángel Buonarroti",
+        "foto": {
+          "credito": "Atribuido a Daniele da Volterra / Wikimedia Commons",
+          "epigrafe": "Miguel Ángel, por Daniele da Volterra",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Miguel_%C3%81ngel,_por_Daniele_da_Volterra_(detalle).jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg"
+        },
+        "palabras": [
+          {
+            "en": "ocho",
+            "texto": "*1508*"
+          },
+          {
+            "en": "mármol",
+            "texto": "MÁRMOL"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Roma, mil quinientos ocho. Miguel Ángel está tallando en mármol la tumba del Papa Julio Segundo.",
+      "sub": "Roma, 1508. Miguel Ángel está tallando en mármol la tumba del Papa Julio II."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el encargo",
+        "objeto": {
+          "en": "Doce",
+          "filas": [
+            [
+              12,
+              "apóstoles"
+            ],
+            [
+              "+",
+              "adornos"
+            ]
+          ],
+          "tipo": "planilla",
+          "titulo": "CONTRATO",
+          "volanta": "8 de mayo de 1508"
+        },
+        "objeto2": {
+          "credito": "Rafael / Wikimedia Commons",
+          "epigrafe": "Julio II, por Rafael (1511)",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pope_Julius_II.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Pope_Julius_II.jpg"
+        },
+        "palabras": [
+          {
+            "en": "techo",
+            "texto": "*EL TECHO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Pero Julio Segundo le pide otra cosa: pintar el techo de su capilla. Doce apóstoles y unos adornos.",
+      "sub": "Pero Julio II le pide otra cosa: pintar el techo de su capilla. Doce apóstoles y unos adornos."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "el problema",
+        "palabras": [
+          {
+            "en": "Nunca",
+            "texto": "NUNCA HIZO"
+          },
+          {
+            "en": "fresco",
+            "texto": "UN *FRESCO*"
+          },
+          {
+            "en": "Papa",
+            "texto": "Y NO PODÍA"
+          },
+          {
+            "en": "no",
+            "texto": "DECIR QUE NO"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Nunca había terminado un fresco. Trató de zafar. Pero a un Papa no se le dice que no."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "lo que pintó",
+        "items": [
+          {
+            "en": "Génesis",
+            "texto": "Historias del Génesis"
+          },
+          {
+            "en": "profetas",
+            "texto": "Profetas"
+          },
+          {
+            "en": "sibilas",
+            "texto": "Sibilas"
+          }
+        ],
+        "remate": {
+          "en": "trescientas",
+          "texto": "+300 FIGURAS"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "El contrato le pareció «cosa pobre». Pintó historias del Génesis, profetas, sibilas. Más de trescientas figuras.",
+      "sub": "El contrato le pareció «cosa pobre». Pintó historias del Génesis, profetas, sibilas. Más de 300 figuras."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "1508 – 1512",
+        "foto": {
+          "credito": "Antoine Taveneaux / Wikimedia Commons",
+          "epigrafe": "La bóveda de la Capilla Sixtina",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Sistine_Chapel_ceiling_01.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Sistine_Chapel_ceiling_01.jpg"
+        },
+        "palabras": [
+          {
+            "en": "parado",
+            "texto": "*PARADO*"
+          }
+        ],
+        "sello": "4 AÑOS",
+        "tipo": "foto"
+      },
+      "pausa": 0.6,
+      "say": "Fueron cuatro años en un andamio. Y no acostado, como se cuenta: parado, con la cabeza para atrás."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "autor": "Miguel Ángel, a Giovanni da Pistoia (1509)",
+        "texto": "No estoy en mi lugar. *No soy pintor.*",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "En una carta en verso a un amigo, se quejó: «No estoy en mi lugar. No soy pintor»."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "en": "quinientos catorce",
+        "etiqueta": "1/11/1512 → hoy",
+        "numero": 514,
+        "palabra": "AÑOS",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "El primero de noviembre de mil quinientos doce, el Papa dio misa bajo ese techo. Hace quinientos catorce años.",
+      "sub": "El 1 de noviembre de 1512, el Papa dio misa bajo ese techo. Hace 514 años."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "credito": "Miguel Ángel / Wikimedia Commons",
+          "epigrafe": "La creación de Adán",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "viste",
+            "texto": "¿LO VISTE"
+          },
+          {
+            "en": "persona",
+            "texto": "*EN PERSONA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "El que no quería pintar hizo el techo más famoso del mundo. ¿Lo viste en persona? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "En 1508 Miguel Ángel trabajaba en la tumba de mármol de Julio II cuando el Papa le encargó pintar la bóveda de la Capilla Sixtina. Se consideraba escultor y nunca había terminado un fresco. El contrato pedía doce apóstoles; él lo llamó «cosa pobre» y pintó historias del Génesis, profetas y sibilas: más de 300 figuras. Trabajó cuatro años, de pie sobre un andamio, y en 1509 le escribió en verso a su amigo Giovanni da Pistoia: «No estoy en mi lugar, no soy pintor». El 1 de noviembre de 1512 el Papa dio misa bajo la bóveda terminada. Imágenes: Daniele da Volterra, Rafael, Antoine Taveneaux (CC BY-SA 3.0) / Wikimedia Commons. ¿La viste en persona?",
+    "hashtags": [
+      "capillasixtina",
+      "miguelangel",
+      "arte",
+      "historia",
+      "curiosidades",
+      "shorts"
+    ],
+    "titulo": "El escultor que pintó la Capilla Sixtina 🎨 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "La Capilla Sixtina la pintó un escultor"
+}
