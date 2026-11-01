@@ -1,0 +1,272 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/La_Bombonera",
+    "https://buenosaires.gob.ar/noticias/historias-de-mi-comuna-la-bombonera",
+    "https://www.tiempodesanjuan.com/deportes/2020/5/25/la-bombonera-cumple-80-anos-el-curioso-origen-de-su-apodo-los-grandes-hitos-records-286322.html/amp",
+    "https://www.camarco.org.ar/2014/08/27/la-bombonera-de-delpini/",
+    "https://eleconomista.com.ar/deportes/boca-vs-river-torneo-clausura-2026-n89975"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.65,
+      "escena": {
+        "palabras": [
+          {
+            "en": "caja",
+            "texto": "UNA CAJA"
+          },
+          {
+            "en": "bombones",
+            "texto": "DE *BOMBONES*"
+          },
+          {
+            "en": "nombre",
+            "texto": "LE PUSO NOMBRE"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Una caja de bombones le puso el nombre."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "domingo 1 de noviembre",
+        "foto": {
+          "credito": "Diego Delso / Wikimedia Commons",
+          "epigrafe": "La Bombonera, Buenos Aires",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Bombonera_-_Buenos_Aires_-_Argentina.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/La_Bombonera_-_Buenos_Aires_-_Argentina.jpg"
+        },
+        "palabras": [
+          {
+            "en": "superclásico",
+            "texto": "*SUPERCLÁSICO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Hoy, a las tres de la tarde, Boca y River juegan el superclásico en la Bombonera.",
+      "sub": "Hoy, a las 15, Boca y River juegan el superclásico en la Bombonera."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "en construcción",
+        "objeto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "La Bombonera en construcción, 1940",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Bombonera_en_construcci%C3%B3n.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/La_Bombonera_en_construcci%C3%B3n.jpg"
+        },
+        "palabras": [
+          {
+            "en": "terreno",
+            "texto": "*POCO* LUGAR"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "¿Pero por qué le dicen así? Todo empezó con un problema: poco terreno para una cancha grande."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "la solución",
+        "palabras": [
+          {
+            "en": "subir",
+            "texto": "PARA"
+          },
+          {
+            "en": "empinadas",
+            "texto": "*ARRIBA*"
+          },
+          {
+            "en": "paradas",
+            "texto": "CASI PARADAS"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "La solución fue subir: tribunas empinadas, casi paradas, una encima de la otra."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el proyecto",
+        "items": [
+          {
+            "en": "arquitecto",
+            "texto": "Viktor Sulčič, arquitecto esloveno"
+          },
+          {
+            "en": "ingeniero",
+            "texto": "José Luis Delpini, ingeniero"
+          },
+          {
+            "en": "geómetra",
+            "texto": "Raúl Bes, geómetra"
+          }
+        ],
+        "numerada": true,
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "La diseñaron tres: el arquitecto Víktor Súlchich, el ingeniero José Luis Delpini y el geómetra Raúl Bes.",
+      "sub": "La diseñaron tres: el arquitecto Viktor Sulčič, el ingeniero José Luis Delpini y el geómetra Raúl Bes."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "la leyenda",
+        "objeto": {
+          "colores": [
+            "#1F4FA0",
+            "#F2C230",
+            "#1F4FA0",
+            "#F2C230",
+            "#1F4FA0"
+          ],
+          "lugar": "VIKTOR",
+          "texto": "¡Feliz cumpleaños!",
+          "tipo": "postal"
+        },
+        "palabras": [
+          {
+            "en": "bombones",
+            "texto": "*BOMBONES*"
+          }
+        ],
+        "sello": "DICEN QUE",
+        "sello_en": "dicen",
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Y dicen que un día, para su cumpleaños, a Súlchich le regalaron una caja de bombones.",
+      "sub": "Y dicen que un día, para su cumpleaños, a Sulčič le regalaron una caja de bombones."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "kicker": "dicen que…",
+        "palabras": [
+          {
+            "en": "vio",
+            "texto": "ERA"
+          },
+          {
+            "en": "cancha",
+            "texto": "*LA CANCHA*"
+          },
+          {
+            "en": "dibujando",
+            "texto": "A ESCALA"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.7,
+      "say": "La abrió y vio la cancha que estaba dibujando. Hasta la llevaba a las reuniones para mostrarla."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "25 de mayo de 1940",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Inauguración, 25 de mayo de 1940",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Inauguracion_bombonera_1940.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Inauguracion_bombonera_1940.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Boca",
+            "texto": "*BOCA 2*"
+          },
+          {
+            "en": "Lorenzo",
+            "texto": "SAN LORENZO 0"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Se inauguró el veinticinco de mayo de mil novecientos cuarenta. Boca le ganó dos a cero a San Lorenzo.",
+      "sub": "Se inauguró el 25 de mayo de 1940. Boca le ganó 2 a 0 a San Lorenzo."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "campos": {
+            "Fecha": "1/11/2026",
+            "Hora": "15:00"
+          },
+          "nombre": "BOCA – RIVER",
+          "talon": "La Bombonera",
+          "tipo": "entrada",
+          "titulo": "SUPERCLÁSICO"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Fuiste",
+            "texto": "¿FUISTE A LA"
+          },
+          {
+            "en": "Bombonera",
+            "texto": "*BOMBONERA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy esa caja de bombones late otra vez. ¿Fuiste alguna vez a la Bombonera? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "alegre"
+  },
+  "paleta": "bombonera",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "El estadio de Boca, el Alberto J. Armando, lo proyectaron el arquitecto esloveno Viktor Sulčič, el ingeniero José Luis Delpini y el geómetra Raúl Bes. Como el terreno era chico, las tribunas se hicieron empinadas, una encima de la otra. Cuenta la leyenda que Sulčič recibió una caja de bombones por su cumpleaños, vio que tenía la forma de la cancha que estaba diseñando y la llevaba a las reuniones. Se inauguró el 25 de mayo de 1940: Boca 2, San Lorenzo 0. Hoy se juega ahí el superclásico. ¿Fuiste alguna vez?",
+    "hashtags": [
+      "boca",
+      "bombonera",
+      "superclasico",
+      "futbolargentino",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "¿Por qué le dicen Bombonera? 🍫 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Por qué le dicen Bombonera",
+  "voz": {
+    "pronunciar": {
+      "Sulčič": "Súlchich"
+    }
+  }
+}
