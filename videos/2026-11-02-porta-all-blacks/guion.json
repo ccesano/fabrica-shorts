@@ -1,0 +1,280 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/1985_New_Zealand_rugby_union_tour_of_Argentina",
+    "https://www.infobae.com/2011/10/02/608913-el-dia-que-porta-hizo-temblar-nueva-zelanda/",
+    "https://www.lanacion.com.ar/deportes/rugby/hugo-porta-y-aquel-historico-test-de-1985-nid355722",
+    "https://www.rugbypass.com/news/closest-los-pumas-got-beating-blacks",
+    "https://www.infobae.com/2011/10/05/609482-si-jugara-otra-vez-el-test-los-all-blacks-la-pelota-no-se-me-cae/",
+    "https://www.losandes.com.ar/mas-deportes/la-voz-de-hugo-porta-tras-el-tirunfo-historico-de-los-pumas-la-camiseta-el-mensaje-a-sanchez-y-los-clubes"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "en": "veintiún",
+        "etiqueta": "un solo jugador",
+        "numero": 21,
+        "palabra": "PUNTOS",
+        "palabra_en": "puntos",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Hizo los veintiún puntos de su equipo.",
+      "sub": "Hizo los 21 puntos de su equipo."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Caballito, Buenos Aires",
+        "objeto": {
+          "anio": 1985,
+          "dia": 2,
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "Ferro",
+            "texto": "*FERRO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Fue un día como hoy, hace cuarenta y un años, en la cancha de Ferro.",
+      "sub": "Fue un día como hoy, hace 41 años, en la cancha de Ferro."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "test match",
+        "partes": [
+          {
+            "objeto": {
+              "base": "#FBFAF5",
+              "color": "#74ACDF",
+              "estilo": "rayas",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "Pumas",
+              "texto": "PUMAS"
+            }
+          },
+          {
+            "objeto": {
+              "base": "#151515",
+              "color": "#151515",
+              "estilo": "lisa",
+              "letra": "#FBFAF5",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "Blacks",
+              "texto": "*ALL BLACKS*"
+            }
+          }
+        ],
+        "tipo": "dupla"
+      },
+      "pausa": 0.5,
+      "say": "Los Pumas contra los All Blacks, el equipo más temido del rugby."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "primer test, 26/10/1985",
+        "objeto": {
+          "filas": [
+            [
+              "ARGENTINA",
+              20
+            ],
+            [
+              "N. ZELANDA",
+              33
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "ganado",
+            "texto": "PALIZA"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Una semana antes, en esa misma cancha, Nueva Zelanda había ganado treinta y tres a veinte.",
+      "sub": "Una semana antes, en esa misma cancha, Nueva Zelanda había ganado 33 a 20."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el diez de los Pumas",
+        "foto": {
+          "credito": "Autor desconocido (El Gráfico) / Wikimedia Commons",
+          "epigrafe": "Porta contra Nueva Zelanda, 1985",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Porta_kicking.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Porta_kicking.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Porta",
+            "texto": "*HUGO PORTA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Pero esta vez el diez de los Pumas, Hugo Porta, se cargó el partido al hombro."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "los puntos de Porta",
+        "items": [
+          {
+            "en": "Cuatro",
+            "texto": "4 penales = 12"
+          },
+          {
+            "en": "tres",
+            "texto": "3 drops = 9"
+          }
+        ],
+        "remate": {
+          "en": "Todos",
+          "texto": "21 PUNTOS"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Cuatro penales y tres drops. Todos los puntos, con el pie."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "último minuto",
+        "foto": {
+          "credito": "Autor desconocido (El Gráfico) / Wikimedia Commons",
+          "epigrafe": "Pumas – All Blacks, segundo test, 1985",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pumas_allblacks_1985.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pumas_allblacks_1985.jpg"
+        },
+        "palabras": [
+          {
+            "en": "empatado",
+            "texto": "*21 A 21*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Los neozelandeses hicieron cuatro tries. Y el partido llegó empatado al último minuto.",
+      "sub": "Los neozelandeses hicieron 4 tries. Y el partido llegó empatado al último minuto."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "kicker": "en el ingoal",
+        "palabras": [
+          {
+            "en": "Solo",
+            "texto": "SOLO HABÍA"
+          },
+          {
+            "en": "apoyar",
+            "texto": "QUE APOYARLA"
+          },
+          {
+            "en": "cayó",
+            "texto": "*Y SE CAYÓ*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 1,
+      "say": "Scrum de los Pumas, empujando en el ingoal. Solo había que apoyar la pelota. Y se cayó."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Hugo Porta",
+        "texto": "Empatamos por un error en el último minuto, habiendo *podido ganar*.",
+        "tipo": "cita"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "Porta lo resumió así: Empatamos por un error en el último minuto, habiendo podido ganar."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#FBFAF5",
+          "color": "#74ACDF",
+          "estilo": "rayas",
+          "nombre": "PORTA",
+          "numero": 10,
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "viste",
+            "texto": "¿LO VISTE"
+          },
+          {
+            "en": "Porta",
+            "texto": "*JUGAR A PORTA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "La primera victoria contra los All Blacks llegó recién en dos mil veinte. ¿Lo viste jugar a Porta? Contalo en los comentarios.",
+      "sub": "La primera victoria contra los All Blacks llegó recién en 2020. ¿Lo viste jugar a Porta? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "oceano",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "El 2 de noviembre de 1985, en la cancha de Ferro, Los Pumas empataron 21-21 con los All Blacks. Hugo Porta hizo todos los puntos argentinos: cuatro penales y tres drops. Nueva Zelanda, que una semana antes había ganado 33-20 en la misma cancha, hizo cuatro tries. En el último minuto, con un scrum argentino empujando en el ingoal, la pelota se cayó y el partido terminó empatado. La primera victoria de Los Pumas sobre los All Blacks llegó recién en 2020. ¿Lo viste jugar a Porta?",
+    "hashtags": [
+      "rugby",
+      "lospumas",
+      "hugoporta",
+      "allblacks",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "21 puntos contra los All Blacks, todos de Hugo Porta 🏉 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Hugo Porta contra los All Blacks",
+  "voz": {
+    "pronunciar": {
+      "All Blacks": "Ol Blaks",
+      "drops": "drops",
+      "tries": "trais",
+      "try": "trai"
+    }
+  }
+}
