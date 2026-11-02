@@ -256,5 +256,11 @@
     "titulo": "Lo echaron a los 8 minutos de un Boca-River 🟥 #shorts"
   },
   "subtitulos": true,
-  "titulo": "Mostaza Merlo, expulsado a los 8 minutos"
+  "titulo": "Mostaza Merlo, expulsado a los 8 minutos",
+  "voz": {
+    "pronunciar": {
+      "Fillol": "Filiol",
+      "Passarella": "Passarela"
+    }
+  }
 }

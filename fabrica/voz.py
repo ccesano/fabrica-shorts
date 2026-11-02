@@ -58,6 +58,9 @@ def rioplatense(texto, modo="y"):
 # El guion puede sumar o pisar entradas con "voz": {"pronunciar": {"Nombre": "Cómo se dice"}}.
 PRONUNCIAR = {
     "Newell's": "Ñuls", "Newell’s": "Ñuls", "Newells": "Ñuls", "NEWELL'S": "ÑULS",
+    # la ll rioplatense (ll → sch) no va en estos apellidos: los corrigió Carlos escuchando la voz
+    "Fillol": "Filiol", "FILLOL": "FILIOL",
+    "Passarella": "Passarela", "PASSARELLA": "PASSARELA",
 }
 
 
