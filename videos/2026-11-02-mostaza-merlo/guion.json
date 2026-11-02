@@ -1,0 +1,260 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://historiadeboca.com.ar/partido/boca-1-river-0-torneo-nacional-1980/1865.html",
+    "https://www.radiogol.com.ar/futbol/a-un-minuto-de-mostaza-merlo-la-historica-y-tempranera-roja-a-martinez-quarta-en-la-bombonera-233883/",
+    "https://www.ambito.com/deportes/asi-fue-la-temprana-expulsion-lucas-martinez-quarta-el-superclasico-n6340282",
+    "https://www.lanueva.com/nota/2026-11-1-15-33-0-asi-fue-la-expulsion-de-martinez-quarta-la-segunda-mas-rapida-en-la-historia-del-superclasico"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Duró",
+            "texto": "DURÓ"
+          },
+          {
+            "en": "ocho minutos",
+            "texto": "*8 MINUTOS*"
+          },
+          {
+            "en": "Bombonera",
+            "texto": "EN LA BOMBONERA"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Duró ocho minutos en la Bombonera."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "domingo 1 de noviembre",
+        "objeto": {
+          "minuto": 9,
+          "tipo": "reloj"
+        },
+        "palabras": [
+          {
+            "en": "roja",
+            "texto": "*ROJA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Ayer, Martínez Quarta vio la roja a los nueve minutos del superclásico.",
+      "sub": "Ayer, Martínez Quarta vio la roja a los 9 minutos del superclásico."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "a un minuto de…",
+        "palabras": [
+          {
+            "en": "récord",
+            "texto": "UN RÉCORD"
+          },
+          {
+            "en": "cuarenta y seis",
+            "texto": "DE *46 AÑOS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Y quedó a un minuto de un récord que ya tiene cuarenta y seis años.",
+      "sub": "Y quedó a un minuto de un récord que ya tiene 46 años."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "hace 46 años, como hoy",
+        "objeto": {
+          "anio": 1980,
+          "dia": 2,
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "Boca",
+            "texto": "BOCA – RIVER"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Dos de noviembre de mil novecientos ochenta. Torneo Nacional. River visita a Boca.",
+      "sub": "2 de noviembre de 1980. Torneo Nacional. River visita a Boca."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el River de Labruna",
+        "items": [
+          {
+            "en": "Fillol",
+            "texto": "Fillol"
+          },
+          {
+            "en": "Passarella",
+            "texto": "Passarella"
+          },
+          {
+            "en": "Tarantini",
+            "texto": "Tarantini"
+          },
+          {
+            "en": "Ramón",
+            "texto": "Ramón Díaz"
+          }
+        ],
+        "tipo": "lista"
+      },
+      "pausa": 0.4,
+      "say": "El River de Labruna tenía a Fillol, Passarella, Tarantini y Ramón Díaz."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "volante de River",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Reinaldo Merlo, River Plate",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Merlo_river.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Merlo_river.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Mostaza",
+            "texto": "*MOSTAZA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Y en el medio, un ídolo: Reinaldo Mostaza Merlo."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "en": "ocho",
+        "etiqueta": "minuto de la expulsión",
+        "numero": 8,
+        "palabra": "RÉCORD",
+        "palabra_en": "Nadie",
+        "sufijo": "'",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.7,
+      "say": "A los ocho minutos, el árbitro lo echó. Nadie se fue antes en un superclásico."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "tres expulsados",
+        "items": [
+          {
+            "en": "ocho",
+            "texto": "8' Merlo (River)"
+          },
+          {
+            "en": "Pernía",
+            "texto": "43' Pernía (Boca)"
+          },
+          {
+            "en": "Santos",
+            "texto": "67' De los Santos (River)"
+          }
+        ],
+        "numerada": true,
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "No fue el único: también echaron a Pernía, de Boca, y a De los Santos, de River."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "etiqueta": "gol de Perotti, 86'",
+        "objeto": {
+          "filas": [
+            [
+              "BOCA",
+              1
+            ],
+            [
+              "RIVER",
+              0
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "tiro libre",
+            "texto": "*TIRO LIBRE*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Con River con nueve, Perotti la clavó de tiro libre a los ochenta y seis. Boca uno, River cero.",
+      "sub": "Con River con nueve, Perotti la clavó de tiro libre a los 86'. Boca 1, River 0."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "minuto": 8,
+          "tipo": "reloj"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "acordás",
+            "texto": "¿TE ACORDÁS"
+          },
+          {
+            "en": "partido",
+            "texto": "*DE ESE PARTIDO?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Cuarenta y seis años después, el récord sigue siendo de Mostaza. ¿Te acordás de ese partido? Contalo en los comentarios.",
+      "sub": "46 años después, el récord sigue siendo de Mostaza. ¿Te acordás de ese partido? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "tension"
+  },
+  "paleta": "banda",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "El 2 de noviembre de 1980, por el Torneo Nacional, Reinaldo \"Mostaza\" Merlo fue expulsado a los 8 minutos en la Bombonera: la expulsión más rápida de la historia del superclásico. Ese día también echaron a Pernía (Boca) y a De los Santos (River), y Boca ganó 1-0 con un tiro libre de Hugo Perotti a los 86'. Ayer, Lucas Martínez Quarta vio la roja a los 9 minutos y quedó a un minuto del récord. ¿Te acordás de ese partido?",
+    "hashtags": [
+      "river",
+      "boca",
+      "superclasico",
+      "mostazamerlo",
+      "futbolargentino",
+      "shorts"
+    ],
+    "titulo": "Lo echaron a los 8 minutos de un Boca-River 🟥 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Mostaza Merlo, expulsado a los 8 minutos"
+}
