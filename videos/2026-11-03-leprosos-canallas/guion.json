@@ -1,0 +1,273 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.elobservador.com.uy/nota/-leprosos-la-historia-del-curioso-apodo-de-newell-s-201422713530",
+    "https://billiken.lat/saber-mas/por-que-a-los-hinchas-de-newells-se-los-llama-leprosos/",
+    "https://billiken.lat/historia/por-que-a-los-hinchas-de-rosario-central-se-los-llama-canallas/",
+    "https://en.wikipedia.org/wiki/Newell%27s_Old_Boys"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "Rosario",
+        "palabras": [
+          {
+            "en": "apodos",
+            "texto": "DOS APODOS"
+          },
+          {
+            "en": "partido",
+            "texto": "UN PARTIDO"
+          },
+          {
+            "en": "fantasma",
+            "texto": "*FANTASMA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Dos apodos nacieron de un partido fantasma."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "en": "ciento",
+        "etiqueta": "3 de noviembre de 1903",
+        "numero": 123,
+        "palabra": "AÑOS",
+        "palabra_en": "años",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Newell's cumple hoy ciento veintitrés años. Nació en Rosario en mil novecientos tres.",
+      "sub": "Newell's cumple hoy 123 años. Nació en Rosario en 1903."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el maestro inglés",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Isaac Newell, c. 1900",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Isaac_newell.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Isaac_newell.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Isaac",
+            "texto": "*ISAAC NEWELL*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Lo fundaron ex alumnos del colegio de un maestro inglés, Isaac Newell."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "los colores del escudo",
+        "objeto": {
+          "base": "#C8102E",
+          "color": "#151515",
+          "estilo": "mitad",
+          "nombre": "NEWELL'S",
+          "tipo": "camiseta"
+        },
+        "palabras": [
+          {
+            "en": "rojo",
+            "texto": "*ROJO Y NEGRO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "El rojo y el negro salieron de las banderas de Inglaterra y de Alemania."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Rosario, años 20",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Un clásico a beneficio",
+          "volanta": "Hospital Carrasco"
+        },
+        "palabras": [
+          {
+            "en": "beneficio",
+            "texto": "*A BENEFICIO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "En los años veinte, las damas del Hospital Carrasco quisieron armar un clásico a beneficio.",
+      "sub": "En los años 20, las damas del Hospital Carrasco quisieron armar un clásico a beneficio."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "palabras": [
+          {
+            "en": "para",
+            "texto": "PARA LOS"
+          },
+          {
+            "en": "enfermos",
+            "texto": "ENFERMOS"
+          },
+          {
+            "en": "lepra",
+            "texto": "*DE LEPRA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "La plata era para los enfermos de lepra."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "kicker": "dicen que…",
+        "partes": [
+          {
+            "objeto": {
+              "base": "#C8102E",
+              "color": "#151515",
+              "estilo": "mitad",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "aceptó",
+              "texto": "NEWELL'S: SÍ"
+            }
+          },
+          {
+            "objeto": {
+              "base": "#0B3D91",
+              "color": "#F2C230",
+              "estilo": "rayas",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "dijo",
+              "texto": "*CENTRAL: NO*"
+            }
+          }
+        ],
+        "tipo": "dupla"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Dicen que Newell's aceptó enseguida. Y que Rosario Central dijo que no."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "etiqueta": "la tribuna",
+        "foto": {
+          "credito": "Diario La Tribuna de Rosario / Wikimedia Commons",
+          "epigrafe": "Clásico rosarino, 1939",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Hinchada_RC_1939.JPG",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Hinchada_RC_1939.JPG"
+        },
+        "palabras": [
+          {
+            "en": "canallas",
+            "texto": "CANALLAS"
+          },
+          {
+            "en": "leprosos",
+            "texto": "*LEPROSOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Desde Newell's empezaron a gritarles canallas. Y los de Central contestaron: leprosos."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "palabras": [
+          {
+            "en": "insultos",
+            "texto": "ERAN INSULTOS"
+          },
+          {
+            "en": "Hoy",
+            "texto": "HOY SON"
+          },
+          {
+            "en": "orgullo",
+            "texto": "*ORGULLO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Eran insultos. Hoy los dos los gritan con orgullo."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "pelota"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "leproso",
+            "texto": "¿LEPROSO"
+          },
+          {
+            "en": "canalla",
+            "texto": "*O CANALLA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Feliz cumpleaños, Newell's. ¿Y vos sos leproso o canalla? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "alegre"
+  },
+  "paleta": "diario",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Newell's Old Boys nació en Rosario el 3 de noviembre de 1903, fundado por ex alumnos del colegio del maestro inglés Isaac Newell. Los apodos del clásico rosarino vienen, según la versión más difundida, de los años 20: las damas del Hospital Carrasco quisieron organizar un clásico a beneficio de los enfermos de lepra. Dicen que Newell's aceptó y Central no. Desde entonces, unos son canallas y otros leprosos. Cada club cuenta su versión, pero hoy los dos apodos se gritan con orgullo. ¿Vos sos leproso o canalla?",
+    "hashtags": [
+      "newells",
+      "rosariocentral",
+      "clasicorosarino",
+      "futbolargentino",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "¿Por qué leprosos y canallas? El partido que nunca se jugó ⚽ #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Leprosos y canallas",
+  "voz": {
+    "pronunciar": {
+      "Newell": "Niúel"
+    }
+  }
+}
