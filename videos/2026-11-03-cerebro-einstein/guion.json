@@ -1,0 +1,243 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.npr.org/2005/04/18/4602913/the-long-strange-journey-of-einsteins-brain",
+    "https://en.wikipedia.org/wiki/Thomas_Stoltz_Harvey",
+    "https://livescience.com/where-is-albert-einstein-brain",
+    "https://pbs.org/newshour/health/the-strange-story-of-einsteins-brain"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "foto": {
+          "credito": "Orren Jack Turner / Library of Congress / Wikimedia Commons",
+          "epigrafe": "Albert Einstein, 1947",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cerebro",
+            "texto": "*EL CEREBRO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Un médico se llevó el cerebro de Einstein."
+    },
+    {
+      "emocion": 0.45,
+      "escena": {
+        "etiqueta": "Princeton, Estados Unidos",
+        "objeto": {
+          "anio": 1955,
+          "dia": 18,
+          "mes": "ABRIL",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "cincuenta",
+            "texto": "*1955*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Einstein murió en Princeton, Estados Unidos, en abril de mil novecientos cincuenta y cinco.",
+      "sub": "Einstein murió en Princeton, Estados Unidos, en abril de 1955."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Hospital de Princeton",
+        "objeto": {
+          "hora": "08:00",
+          "tipo": "reloj"
+        },
+        "palabras": [
+          {
+            "en": "autopsia",
+            "texto": "*AUTOPSIA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "A las ocho de la mañana, el patólogo de guardia, Thomas Harvey, le hizo la autopsia."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Sacó",
+            "texto": "SACÓ EL"
+          },
+          {
+            "en": "cerebro",
+            "texto": "CEREBRO"
+          },
+          {
+            "en": "no",
+            "texto": "*Y NO LO*"
+          },
+          {
+            "en": "devolvió",
+            "texto": "*DEVOLVIÓ*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.8,
+      "say": "Sacó el cerebro. Y no lo devolvió."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "abril de 1955",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Einstein fue cremado",
+          "volanta": "Princeton"
+        },
+        "palabras": [
+          {
+            "en": "después",
+            "texto": "*SIN AVISAR*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "El cuerpo fue cremado. La familia se enteró después."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "en": "doscientos",
+        "etiqueta": "el cerebro de Einstein",
+        "numero": 200,
+        "palabra": "PEDAZOS",
+        "palabra_en": "pedazos",
+        "prefijo": "+",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Lo cortó en más de doscientos pedazos.",
+      "sub": "Lo cortó en más de 200 pedazos."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "dónde lo guardó",
+        "items": [
+          {
+            "en": "guardó",
+            "texto": "Frascos en su casa"
+          },
+          {
+            "en": "caja",
+            "texto": "Una caja de sidra"
+          }
+        ],
+        "remate": {
+          "en": "sidra",
+          "texto": "Wichita, Kansas"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Lo echaron del hospital. Y guardó el cerebro durante décadas, hasta en una caja de sidra."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Steven Levy, periodista (1978)",
+        "texto": "*Encontré* el cerebro de Einstein.",
+        "tipo": "cita"
+      },
+      "musica": "silencio",
+      "pausa": 1.1,
+      "say": "En el setenta y ocho lo encontró un periodista. Su nota se llamó: Encontré el cerebro de Einstein."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "kicker": "1997",
+        "palabras": [
+          {
+            "en": "baúl",
+            "texto": "EN EL BAÚL"
+          },
+          {
+            "en": "auto",
+            "texto": "DEL AUTO"
+          },
+          {
+            "en": "quiso",
+            "texto": "*NO LO QUISO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "En el noventa y siete lo llevó en el baúl del auto hasta la nieta de Einstein. Y ella no lo quiso."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Vos",
+            "texto": "¿VOS LO"
+          },
+          {
+            "en": "sabías",
+            "texto": "*SABÍAS?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Lo devolvió cuarenta y tres años después. ¿Vos lo sabías? Contalo en los comentarios.",
+      "sub": "Lo devolvió 43 años después. ¿Vos lo sabías? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "misterio"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "Albert Einstein murió en Princeton el 18 de abril de 1955. El patólogo de guardia, Thomas Harvey, le hizo la autopsia, le sacó el cerebro y se lo quedó, sin permiso previo de la familia (el hijo de Einstein aceptó después, a regañadientes). Lo cortó en más de 200 pedazos, lo echaron del hospital y lo guardó durante décadas en frascos, hasta en una caja de sidra en Wichita, Kansas. En 1978 lo encontró el periodista Steven Levy. En 1997 lo llevó en el baúl de su auto hasta California para dárselo a la nieta de Einstein, que no lo quiso. En 1998 devolvió lo que quedaba al hospital de Princeton. ¿Vos lo sabías?",
+    "hashtags": [
+      "einstein",
+      "historia",
+      "historiasreales",
+      "ciencia",
+      "curiosidades",
+      "shorts"
+    ],
+    "titulo": "El médico que se llevó el cerebro de Einstein 🧠 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "El cerebro de Einstein",
+  "voz": {
+    "pronunciar": {
+      "Einstein": "Áinstain",
+      "Harvey": "Járvi",
+      "Princeton": "Prínceton"
+    }
+  }
+}
