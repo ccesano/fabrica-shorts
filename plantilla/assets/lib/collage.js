@@ -299,16 +299,19 @@
     var rot = num(el, "data-rot", 0);
     var from = el.getAttribute("data-from") || "zoom";
     hits.push(t0 + 0.12);
+    if (from === "slam") { hits.push(t0 + 0.16); hits.push(t0 + 0.2); }
+    var dim = num(el, "data-dim", -1);
     return function (t) {
       var p = prog(t, t0, 0.24);
       var q = prog(t, exitAt, 0.18);
       var k = ease.outBack(p, 1.25);
-      var s = from === "zoom" ? lerp(1.7, 1, k) : 1;
+      var s = from === "zoom" ? lerp(1.7, 1, k) : from === "slam" ? lerp(2.8, 1, ease.outCubic(prog(t, t0, 0.14))) : 1;
       var x = from === "left" ? lerp(-1200, 0, ease.outCubic(p)) : from === "right" ? lerp(1200, 0, ease.outCubic(p)) : 0;
       var y = from === "up" ? lerp(-260, 0, k) : from === "down" ? lerp(260, 0, k) : 0;
       x += lerp(0, -1300, ease.inCubic(q));
       var blur = (1 - clamp01(p * 1.6)) * 10;
-      el.style.opacity = p > 0 && q < 1 ? clamp01(p * 4).toFixed(3) : "0";
+      var dk = dim >= 0 ? 1 - 0.55 * prog(t, dim, 0.3) : 1;
+      el.style.opacity = p > 0 && q < 1 ? (clamp01(p * 4) * dk).toFixed(3) : "0";
       el.style.filter = blur > 0.05 ? "blur(" + blur.toFixed(2) + "px)" : "none";
       el.style.transform = "translate(" + px(x) + "," + px(y) + ") rotate(" + rot.toFixed(2) + "deg) scale(" + s.toFixed(4) + ")";
     };
@@ -356,6 +359,64 @@
     };
   }
 
+  // Máquina de escribir: el texto aparece letra por letra con un cursor que titila.
+  function mountType(el, stageExit) {
+    var t0 = num(el, "data-t", 0), cps = num(el, "data-cps", 18);
+    var exitAt = num(el, "data-out", stageExit);
+    var full = el.textContent;
+    var dim = num(el, "data-dim", -1);
+    el.textContent = "";
+    var txt = document.createElement("span"), cur = document.createElement("span");
+    cur.className = "cursor"; cur.textContent = "|";
+    el.appendChild(txt); el.appendChild(cur);
+    return function (t) {
+      var n = Math.max(0, Math.min(full.length, Math.floor((t - t0) * cps) + 1));
+      txt.textContent = t >= t0 ? full.slice(0, n) : "";
+      var done = (t - t0) * cps >= full.length;
+      cur.style.opacity = t >= t0 && (!done || Math.floor(t * 2.5) % 2 === 0) && t < exitAt ? "1" : "0";
+      var q = prog(t, exitAt, 0.18);
+      var dk = dim >= 0 ? 1 - 0.55 * prog(t, dim, 0.3) : 1;
+      el.style.opacity = t >= t0 ? ((1 - q) * dk).toFixed(3) : "0";
+      el.style.transform = "translateX(" + px(lerp(0, -1300, ease.inCubic(q))) + ")";
+    };
+  }
+
+  // Destello blanco de un golpe fuerte.
+  function mountFlash(el) {
+    var t0 = num(el, "data-t", 0);
+    return function (t) {
+      var k = t < t0 ? 0 : 1 - ease.outCubic(prog(t, t0, 0.32));
+      el.style.opacity = (0.75 * k).toFixed(3);
+    };
+  }
+
+  // Película vieja: grano que cambia 12 veces por segundo y una luz cálida que respira.
+  function mountFilm(el, seed) {
+    var g = el.querySelector(".grano"), l = el.querySelector(".luz");
+    return function (t) {
+      var f = Math.floor(t * 12), r = rng(seed * 131 + f);
+      g.style.backgroundPosition = Math.floor(r() * 512) + "px " + Math.floor(r() * 512) + "px";
+      g.style.opacity = (0.16 + 0.05 * r()).toFixed(3);
+      var a = t * 0.35 + seed;
+      l.style.opacity = (0.22 + 0.14 * Math.sin(a * 1.7)).toFixed(3);
+      l.style.transform = "translate(" + px(260 * Math.sin(a)) + "," + px(380 * Math.cos(a * 0.8)) + ")";
+    };
+  }
+
+  // Borde rasgado (polígono irregular) a la altura y; inclinado para que parezca un tirón.
+  function ripEdge(seed, y, grosor) {
+    var r = rng(seed * 7 + 3), pts = [], n = 30;
+    for (var i = 0; i <= n; i += 1) {
+      var x = (1080 * i) / n;
+      pts.push([x, y + (x / 1080 - 0.5) * 160 + (r() - 0.5) * 34]);
+    }
+    if (!grosor) return pts;
+    return pts.map(function (p) { return [p[0], p[1] + grosor * (0.6 + 0.8 * r())]; });
+  }
+  function poly(pts) {
+    return "polygon(" + pts.map(function (p) { return p[0].toFixed(0) + "px " + p[1].toFixed(0) + "px"; }).join(",") + ")";
+  }
+
   function mount(stage) {
     var seed = num(stage, "data-seed", 1);
     var exitAt = num(stage, "data-exit", 999);
@@ -380,6 +441,12 @@
     each(stage, ".cg-kin", function (el, i) { parts.push(mountKin(el, exitAt, seed + 501 + i, hits)); });
     each(stage, ".cg-count", function (el) { parts.push(mountCount(el, exitAt, hits)); });
     each(stage, ".cg-fade", function (el) { parts.push(mountFade(el, exitAt)); });
+    each(stage, ".cg-type", function (el) { parts.push(mountType(el, exitAt)); });
+    each(stage, ".cg-flash", function (el) { parts.push(mountFlash(el)); });
+    each(stage, ".cg-film", function (el) { parts.push(mountFilm(el, seed)); });
+    var rip = stage.querySelector(".cg-rip");
+    var foco = (stage.getAttribute("data-foco") || "").split(",").map(parseFloat);
+    if (foco.length === 4 && world) world.style.transformOrigin = foco[0] + "px " + foco[1] + "px";
 
     function shake(t) {
       var x = 0, y = 0;
@@ -401,14 +468,27 @@
         else if (trans === "right") tx = lerp(-1080, 0, k);
         else if (trans === "zoom") { sc = lerp(1.35, 1, ease.outCubic(prog(t, 0, 0.35))); op = clamp01(prog(t, 0, 0.18)); }
         else if (trans === "cut") { op = t >= 0 ? 1 : 0; }
+        else if (trans === "rip") { }
         else ty = lerp(1920, 0, k);
+      }
+      if (push && trans === "rip") {
+        var kr = ease.inOutCubic(prog(t, 0, 0.42));
+        if (kr < 1) {
+          var yy = lerp(2040, -140, kr), edge = ripEdge(seed, yy, 0);
+          stage.style.clipPath = poly(edge.concat([[1080, 2100], [0, 2100]]));
+          var band = ripEdge(seed, yy, 22);
+          if (rip) { rip.style.display = "block"; rip.style.clipPath = poly(edge.concat(band.slice().reverse())); }
+        } else {
+          stage.style.clipPath = "none";
+          if (rip) rip.style.display = "none";
+        }
       }
       if (pushOut >= 0) {
         var o = ease.inOutCubic(prog(t, pushOut, 0.4));
         if (outDir === "left") tx += lerp(0, -420, o);
         else if (outDir === "right") tx += lerp(0, 420, o);
         else if (outDir === "zoom") sc *= lerp(1, 0.86, o);
-        else if (outDir === "cut") { }
+        else if (outDir === "cut" || outDir === "rip") { }
         else ty += lerp(0, -520, o);
       }
       stage.style.opacity = op.toFixed(3);
@@ -419,7 +499,7 @@
       var fase = seed * 0.37;
       var dx = 14 * Math.sin(t * 0.9 + fase), dy = 10 * Math.cos(t * 0.7 + fase * 1.3);
       var rot = 0.35 * Math.sin(t * 0.5 + fase);
-      if (world) world.style.transform = "translate(" + px(sh[0] + dx) + "," + px(sh[1] + dy) + ") rotate(" + rot.toFixed(3) + "deg) scale(" + (1 + zoom * ease.inOutCubic(prog(t, 0.4, largo))).toFixed(4) + ")";
+      if (world) world.style.transform = "translate(" + px(sh[0] + dx) + "," + px(sh[1] + dy) + ") rotate(" + rot.toFixed(3) + "deg) scale(" + ((1 + zoom * ease.inOutCubic(prog(t, 0.4, largo))) * (foco.length === 4 ? 1 + foco[3] * ease.inOutCubic(prog(t, foco[2], 1.1)) : 1)).toFixed(4) + ")";
       for (var i = 0; i < parts.length; i += 1) parts[i](t);
     };
   }

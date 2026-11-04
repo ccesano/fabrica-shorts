@@ -93,3 +93,23 @@
 .marca { position: absolute; left: 24px; top: 760px; transform-origin: left top; transform: rotate(-90deg); white-space: nowrap;
   font-family: "Archivo Black"; font-size: 30px; letter-spacing: 0.04em; color: #FFFFFF; opacity: 0.85;
   -webkit-text-stroke: 6px #111111; paint-order: stroke fill; }
+
+/* ── Efectos (rama muestra-efectos) ── */
+@font-face { font-family: "Permanent Marker"; src: url("assets/fonts/permanent-marker-latin-400-normal.woff2") format("woff2"); }
+.nota-wrap { position: absolute; transform-origin: 0 50%; }
+.nota { position: relative; font-family: "Permanent Marker"; font-size: 60px; line-height: 1; white-space: nowrap; }
+.cg-type { position: absolute; white-space: nowrap; font-family: "League Gothic"; line-height: 0.86; color: #F6F3EC; }
+.cg-type.acc { color: var(--acc); }
+.cg-type .cursor { color: var(--acc); margin-left: 0.04em; }
+.cg-flash { position: absolute; inset: 0; background: #FFFDF7; opacity: 0; pointer-events: none; }
+.cg-film { position: absolute; inset: 0; pointer-events: none; }
+.cg-film .grano { position: absolute; inset: 0; background: url("assets/tex/grano.png") 0 0 / 512px 512px repeat; mix-blend-mode: overlay; }
+.cg-film .luz { position: absolute; left: 140px; top: 360px; width: 800px; height: 800px; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 170, 80, .75), rgba(255, 120, 40, 0)); mix-blend-mode: screen; }
+.cg-film::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 75% 60% at 50% 45%, transparent 55%, rgba(30, 18, 8, .5) 100%); }
+.cg-rip { position: absolute; inset: 0; display: none; background: #FFFDF7; z-index: 5; }
+.o-mapa { background: #FFFDF7; box-shadow: 0 2px 0 rgba(0,0,0,.05); }
+.o-mapa .mar { fill: #A9CCDA; }
+.o-mapa .tierra path { fill: #F4EEDD; stroke: #1E1B18; stroke-opacity: .35; stroke-width: 1.4; stroke-linejoin: round; }
+.o-mapa .tierra-r path { fill: var(--acc); stroke: #1E1B18; stroke-opacity: .5; stroke-width: 1.6; }
+.o-mapa .pin { width: 34px; height: 34px; border-radius: 50%; background: var(--acc2); border: 6px solid #FFFDF7; box-shadow: 0 3px 6px rgba(0,0,0,.3); }

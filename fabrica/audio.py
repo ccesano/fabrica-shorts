@@ -222,6 +222,16 @@ def efectos(cues, fin):
             x = X.clack(0.8, 1.0)
         elif k == "tic":
             x = X.click(1.7, 1.0)
+        elif k == "rasgado":   # papel que se rompe: ruido con chasquidos irregulares
+            n = int(0.42 * SR)
+            env = np.minimum(1, np.arange(n) / (0.02 * SR)) * np.exp(-np.arange(n) / (0.16 * SR))
+            crack = (np.random.random(n) < 0.012) * np.random.uniform(0.5, 1.6, n)
+            x = X.norm(bp(np.random.standard_normal(n) * (0.35 + crack), 900, 6500, 2) * env)
+        elif k == "marcador":  # trazo de fibra sobre papel
+            n = int(max(0.2, c.get("d", .4)) * SR)
+            tt = np.arange(n) / SR
+            env = np.minimum(1, tt / 0.03) * np.minimum(1, (tt[-1] - tt) / 0.05 + 0.001) * (0.7 + 0.3 * np.sin(2 * np.pi * 7 * tt))
+            x = X.norm(bp(np.random.standard_normal(n), 2500, 8000, 2) * env)
         elif k == "ding":
             x = X.ding(1.0)
         else:
