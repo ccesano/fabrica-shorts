@@ -139,6 +139,7 @@ Si una línea no dice nada, la fábrica decide sola (transición al azar, destel
 | película vieja | todo el video | `"textura": "pelicula"` (en el guion, afuera de las líneas) | historias de antes de ~1970 |
 | mapa | escena propia | tipo `mapa` | viajes, de dónde vino alguien, dónde pasó |
 
+Ejemplo completo con casi todos los efectos: `ejemplos/efectos-tutankamon.json`.
 Para ubicar `marca` y `lupa` hace falta haber visto la foto (la hoja de *Buscar imágenes* sirve). En la tabla del guion y en
 la Mesa, nombrar el efecto en la columna "En pantalla" (ej. "foto del sello + círculo «los sellos» + lupa").
 
