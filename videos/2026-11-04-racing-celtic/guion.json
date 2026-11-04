@@ -1,0 +1,282 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/1967_Intercontinental_Cup",
+    "https://www.thecelticwiki.com/1967-11-04-racing-club-1-0-celtic-intercontinental-club-cup-play-off/",
+    "https://442.perfil.com/noticias/futbol/dolor-en-racing-murio-el-chango-cardenas-autor-del-mitico-gol-ante-celtic.phtml",
+    "https://rsssf.org/tablesi/intconclub67.html"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.75,
+      "escena": {
+        "kicker": "Montevideo, 1967",
+        "palabras": [
+          {
+            "en": "Seis",
+            "texto": "SEIS"
+          },
+          {
+            "en": "expulsados",
+            "texto": "EXPULSADOS"
+          },
+          {
+            "en": "copa",
+            "texto": "*UNA COPA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Seis expulsados y una copa del mundo."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "hace 59 años, como hoy",
+        "objeto": {
+          "anio": 1967,
+          "dia": 4,
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "Celtic",
+            "texto": "*CELTIC*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Cuatro de noviembre de mil novecientos sesenta y siete. Racing contra el Celtic de Escocia.",
+      "sub": "4 de noviembre de 1967. Racing contra el Celtic de Escocia."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Copa Intercontinental",
+        "objeto": {
+          "en": "Avellaneda",
+          "filas": [
+            [
+              "RACING",
+              2
+            ],
+            [
+              "CELTIC",
+              1
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "dos a uno",
+            "texto": "*2 A 1*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "En Glasgow ganó el Celtic, uno a cero. En Avellaneda, Racing, dos a uno.",
+      "sub": "En Glasgow ganó el Celtic, 1 a 0. En Avellaneda, Racing, 2 a 1."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "los hinchas cruzaron el río",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Hinchas de Racing en Montevideo, 4/11/1967",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Hinchas_Racing_1967.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hinchas_Racing_1967.jpg"
+        },
+        "palabras": [
+          {
+            "en": "desempatar",
+            "texto": "*DESEMPATE*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Hubo que desempatar en cancha neutral: el Centenario de Montevideo."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "en": "seis",
+        "etiqueta": "la batalla de Montevideo",
+        "numero": 6,
+        "palabra": "EXPULSADOS",
+        "tipo": "cifra"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Fue una batalla. El árbitro paraguayo echó a seis jugadores."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "las rojas",
+        "items": [
+          "Lennox (Celtic)",
+          "Johnstone (Celtic)",
+          "Hughes (Celtic)",
+          "Auld (Celtic)",
+          {
+            "en": "Basile",
+            "texto": "Basile (Racing)"
+          },
+          {
+            "en": "Rulli",
+            "texto": "Rulli (Racing)"
+          }
+        ],
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Cuatro del Celtic y dos de Racing: Basile y Rulli."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "Bertie Auld",
+        "palabras": [
+          {
+            "en": "quiso",
+            "texto": "LO ECHARON"
+          },
+          {
+            "en": "Siguió",
+            "texto": "Y SIGUIÓ"
+          },
+          {
+            "en": "jugando",
+            "texto": "*JUGANDO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Y uno de los escoceses, Auld, no se quiso ir. Siguió jugando hasta el final."
+    },
+    {
+      "emocion": 0.9,
+      "escena": {
+        "arquero": "parado",
+        "arquero_color": "#1E8C4E",
+        "corrida_en": "Chango",
+        "etiqueta": "el gol",
+        "palabras": [
+          {
+            "en": "ángulo",
+            "texto": "*AL ÁNGULO*"
+          }
+        ],
+        "remate_en": "zurdazo",
+        "resultado": "gol",
+        "rival_color": "#1E8C4E",
+        "rivales": 2,
+        "sentido": "derecha",
+        "tipo": "jugada"
+      },
+      "musica": "golpe",
+      "pausa": 0.8,
+      "say": "A los diez minutos del segundo tiempo, el Chango Cárdenas sacó un zurdazo de afuera del área… al ángulo."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "etiqueta": "el autor del gol",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Juan Carlos Cárdenas con la copa, 1967",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cardenas_copa_1967.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Cardenas_copa_1967.jpg"
+        },
+        "palabras": [
+          {
+            "en": "campeón",
+            "texto": "*CAMPEÓN*"
+          },
+          {
+            "en": "mundo",
+            "texto": "DEL MUNDO"
+          }
+        ],
+        "sello": "PRIMER ARGENTINO",
+        "tipo": "foto"
+      },
+      "pausa": 0.6,
+      "say": "Uno a cero. Racing fue el primer equipo argentino campeón del mundo.",
+      "sub": "1 a 0. Racing fue el primer equipo argentino campeón del mundo."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#FFFFFF",
+          "color": "#6CACE4",
+          "estilo": "rayas",
+          "nombre": "CÁRDENAS",
+          "numero": 9,
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "escuchaste",
+            "texto": "¿LO ESCUCHASTE"
+          },
+          {
+            "en": "radio",
+            "texto": "*POR RADIO?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "¿Vos escuchaste ese gol por la radio? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "oceano",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "El 4 de noviembre de 1967, en el Estadio Centenario de Montevideo, Racing le ganó 1 a 0 al Celtic de Escocia el desempate de la Copa Intercontinental y se convirtió en el primer club argentino campeón del mundo. En Glasgow había ganado el Celtic 1-0 y en Avellaneda Racing 2-1. El tercer partido pasó a la historia como «la batalla de Montevideo»: el árbitro paraguayo Rodolfo Pérez Osorio expulsó a seis jugadores (Lennox, Johnstone, Hughes y Auld del Celtic; Basile y Rulli de Racing), y Auld se negó a salir y siguió jugando. El gol lo hizo Juan Carlos «Chango» Cárdenas, con un zurdazo de afuera del área al ángulo. El técnico era Juan José Pizzuti. ¿Vos lo escuchaste por radio?",
+    "hashtags": [
+      "racing",
+      "racingclub",
+      "celtic",
+      "intercontinental",
+      "futbolargentino",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "Seis expulsados y Racing campeón del mundo 🏆 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Racing campeón del mundo",
+  "voz": {
+    "pronunciar": {
+      "Auld": "Old",
+      "Celtic": "Séltic",
+      "Glasgow": "Glásgou",
+      "Racing": "Rásin",
+      "Rulli": "Ruli"
+    }
+  }
+}
