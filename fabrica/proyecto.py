@@ -9,7 +9,9 @@ PLANTILLA = Path(__file__).resolve().parent.parent / "plantilla"
 
 
 def _scene_html(s):
-    attrs = [f'data-seed="{s["seed"]}"', f'data-shake="{14 if s["solid"] else 8}"']
+    attrs = [f'data-seed="{s["seed"]}"', f'data-shake="{s.get("shake") or (14 if s["solid"] else 8)}"']
+    if s.get("foco"):
+        attrs.append('data-foco="{},{},{},{}"'.format(*s["foco"]))
     if s.get("zoom") is not None:
         attrs.append(f'data-zoom="{s["zoom"]}"')
     if s["exit"] is not None:
@@ -25,6 +27,11 @@ def _scene_html(s):
     cls = "cg-stage solid" if s["solid"] else "cg-stage"
     bd = '<div class="cg-bg-grid"></div><div class="cg-bg-crumple"></div>'
     world = "\n            ".join(s["world"])
+    capa = "".join(s.get("capa") or [])
+    if s.get("textura") == "pelicula":   # grano, viñeta y luz de foto vieja encima de todo
+        capa += '<div class="cg-film"><div class="grano"></div><div class="luz"></div></div>'
+    if s.get("push") and s.get("trans") == "rip":
+        capa += '<div class="cg-rip"></div>'
     sid = s["id"]
     return f"""<!doctype html>
 <html>
@@ -38,6 +45,7 @@ def _scene_html(s):
           <div class="cg-world">
             {world}
           </div>
+          {capa}
         </div>
       </div>
       <script>
