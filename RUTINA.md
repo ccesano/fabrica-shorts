@@ -61,7 +61,8 @@ Si Carlos edita un guion ya fabricado, vuelve a `con cambios` y hay que aprobarl
 4. Para cada tema: investigar con búsqueda web (cada dato con 2 fuentes si se puede; si no se confirma, no va),
    buscar fotos libres (push de `investigacion/<slug>/consultas.json` → el flujo *Buscar imágenes* devuelve
    `resultados.json` en ~2 min) y escribir el `guion.json` según `CLAUDE.md` (si la historia necesita más de 60 s
-   para entenderse: `"largo": true`).
+   para entenderse: `"largo": true`). Elegir 2 a 4 **efectos** para esa historia (tabla "Efectos" de `CLAUDE.md`),
+   distintos de los del guion anterior, y nombrarlos en la columna "En pantalla".
 5. Validar sin render: `.venv/bin/python fabrica/make_short.py <ruta>/guion.json --sin-render --motor kokoro`
    (si no hay `.venv`: `bash setup.sh sin-voz`). Con fotos de Commons bloqueadas desde la sesión, alcanza con
    `validar()` de `make_short.py`. **No pushear el guion** (el push dispara la fábrica).

@@ -102,7 +102,7 @@
      }
     ],
     "tipo": "collage",
-    "transicion": "rip"
+    "transicion": "rasgado"
    },
    "musica": "subida",
    "pausa": 0.6,
@@ -169,7 +169,7 @@
      }
     ],
     "tipo": "foto",
-    "transicion": "rip",
+    "transicion": "rasgado",
     "marca": {
      "forma": "circulo",
      "x": 0.1,
@@ -230,7 +230,7 @@
     "palabra": "OBJETOS",
     "palabra_en": "objetos",
     "tipo": "cifra",
-    "transicion": "rip"
+    "transicion": "rasgado"
    },
    "pausa": 0.6,
    "say": "Adentro había cinco mil trescientos noventa y ocho objetos. Y un faraón con máscara de oro.",

@@ -45,9 +45,18 @@ def validar(g):
             err.append(f"línea {i}: falta 'say'")
         if re.search(r"\d", ln.get("say", "")):
             err.append(f"línea {i}: 'say' tiene cifras; escribilas en letras (los números con cifras van en 'sub')")
-        t = (ln.get("escena") or {}).get("tipo", "golpe")
+        esc = ln.get("escena") or {}
+        t = esc.get("tipo", "golpe")
         if t not in TIPOS:
             err.append(f"línea {i}: tipo de escena '{t}' no existe ({', '.join(sorted(TIPOS))})")
+        if esc.get("transicion") and esc["transicion"] not in ("rasgado", "arriba", "izquierda", "derecha", "zoom", "corte"):
+            err.append(f"línea {i}: transición '{esc['transicion']}' no existe (rasgado, arriba, izquierda, derecha, zoom, corte)")
+        if t == "golpe" and esc.get("estilo", "normal") not in ("normal", "maquina", "impacto"):
+            err.append(f"línea {i}: estilo de golpe '{esc['estilo']}' no existe (normal, maquina, impacto)")
+        if t == "mapa" and not all(k in esc.get(c, {}) for c in ("desde", "hasta") for k in ("lat", "lon")):
+            err.append(f"línea {i}: el mapa necesita 'desde' y 'hasta' con lat y lon")
+    if g.get("textura", "ninguna") not in ("pelicula", "ninguna"):
+        err.append(f"textura '{g['textura']}' no existe (pelicula, ninguna)")
     total = sum(len(ln.get("say", "")) for ln in ls)
     if total > max_c:
         err.append(f"el texto suma {total} caracteres (≈ {total / 15:.0f} s); el máximo es {max_c}"

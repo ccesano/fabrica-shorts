@@ -113,3 +113,8 @@
 .o-mapa .tierra path { fill: #F4EEDD; stroke: #1E1B18; stroke-opacity: .35; stroke-width: 1.4; stroke-linejoin: round; }
 .o-mapa .tierra-r path { fill: var(--acc); stroke: #1E1B18; stroke-opacity: .5; stroke-width: 1.6; }
 .o-mapa .pin { width: 34px; height: 34px; border-radius: 50%; background: var(--acc2); border: 6px solid #FFFDF7; box-shadow: 0 3px 6px rgba(0,0,0,.3); }
+.cg-kin.centro, .cg-type.centro { transform-origin: 50% 60%; }
+.cg-kin .kt { position: relative; display: inline-block; }
+.cg-kin.box.centro { padding: 0; background: none; }
+.cg-kin.box.centro .kt { padding: 6px 26px 0; background: var(--acc); }
+.cg-bar { position: absolute; left: -3%; width: 106%; border-radius: 8px; transform-origin: 0 50%; opacity: 0; }

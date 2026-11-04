@@ -366,18 +366,32 @@
     var full = el.textContent;
     var dim = num(el, "data-dim", -1);
     el.textContent = "";
-    var txt = document.createElement("span"), cur = document.createElement("span");
-    cur.className = "cursor"; cur.textContent = "|";
-    el.appendChild(txt); el.appendChild(cur);
+    // lo que falta escribir ocupa su lugar (invisible) para que el texto centrado no se corra mientras se tipea
+    var txt = document.createElement("span"), cur = document.createElement("span"), rest = document.createElement("span");
+    cur.className = "cursor"; cur.textContent = "|"; rest.style.visibility = "hidden";
+    el.appendChild(txt); el.appendChild(cur); el.appendChild(rest);
     return function (t) {
       var n = Math.max(0, Math.min(full.length, Math.floor((t - t0) * cps) + 1));
       txt.textContent = t >= t0 ? full.slice(0, n) : "";
+      rest.textContent = t >= t0 ? full.slice(n) : full;
       var done = (t - t0) * cps >= full.length;
-      cur.style.opacity = t >= t0 && (!done || Math.floor(t * 2.5) % 2 === 0) && t < exitAt ? "1" : "0";
+      var tipos = el.parentNode.querySelectorAll(".cg-type");
+      var ultimo = tipos[tipos.length - 1] === el;   // el cursor queda titilando solo en la última línea
+      cur.style.opacity = t >= t0 && t < exitAt && (!done || (ultimo && Math.floor(t * 2.5) % 2 === 0)) ? "1" : "0";
       var q = prog(t, exitAt, 0.18);
       var dk = dim >= 0 ? 1 - 0.55 * prog(t, dim, 0.3) : 1;
       el.style.opacity = t >= t0 ? ((1 - q) * dk).toFixed(3) : "0";
       el.style.transform = "translateX(" + px(lerp(0, -1300, ease.inCubic(q))) + ")";
+    };
+  }
+
+  // Trazo de marcador recto (tachado): una barra que se estira de izquierda a derecha.
+  function mountBar(el) {
+    var t0 = num(el, "data-t", 0), d = num(el, "data-dur", 0.25), rot = num(el, "data-rot", -3);
+    return function (t) {
+      var k = ease.outCubic(prog(t, t0, d));
+      el.style.opacity = t >= t0 ? "0.92" : "0";
+      el.style.transform = "rotate(" + rot + "deg) scaleX(" + k.toFixed(4) + ")";
     };
   }
 
@@ -390,13 +404,13 @@
     };
   }
 
-  // Película vieja: grano que cambia 12 veces por segundo y una luz cálida que respira.
+  // Película vieja: grano que cambia 8 veces por segundo y una luz cálida que respira.
   function mountFilm(el, seed) {
     var g = el.querySelector(".grano"), l = el.querySelector(".luz");
     return function (t) {
-      var f = Math.floor(t * 12), r = rng(seed * 131 + f);
+      var f = Math.floor(t * 8), r = rng(seed * 131 + f);
       g.style.backgroundPosition = Math.floor(r() * 512) + "px " + Math.floor(r() * 512) + "px";
-      g.style.opacity = (0.16 + 0.05 * r()).toFixed(3);
+      g.style.opacity = (0.09 + 0.03 * r()).toFixed(3);
       var a = t * 0.35 + seed;
       l.style.opacity = (0.22 + 0.14 * Math.sin(a * 1.7)).toFixed(3);
       l.style.transform = "translate(" + px(260 * Math.sin(a)) + "," + px(380 * Math.cos(a * 0.8)) + ")";
@@ -443,6 +457,7 @@
     each(stage, ".cg-fade", function (el) { parts.push(mountFade(el, exitAt)); });
     each(stage, ".cg-type", function (el) { parts.push(mountType(el, exitAt)); });
     each(stage, ".cg-flash", function (el) { parts.push(mountFlash(el)); });
+    each(stage, ".cg-bar", function (el) { parts.push(mountBar(el)); });
     each(stage, ".cg-film", function (el) { parts.push(mountFilm(el, seed)); });
     var rip = stage.querySelector(".cg-rip");
     var foco = (stage.getAttribute("data-foco") || "").split(",").map(parseFloat);

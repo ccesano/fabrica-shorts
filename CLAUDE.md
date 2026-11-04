@@ -12,7 +12,7 @@ El guion **siempre pasa por Carlos antes de fabricarse**. Dos tiempos:
 1. **Investigar** el tema con búsqueda web. Cada dato del guion tiene que estar verificado; anotar las fuentes en `"fuentes"`.
    Si algo no se puede confirmar, no va.
 2. **Mostrar el guion en el chat** como una tabla, una fila por línea:
-   `# | Voz (say) | En pantalla (tipo de escena + textos + objeto) | Emoción`
+   `# | Voz (say) | En pantalla (tipo de escena + textos + objeto + efecto) | Emoción`
    y arriba, en una línea: paleta · ánimo de la música · ambiente · duración estimada (caracteres / 15 ≈ segundos).
    Debajo, el título y la descripción de la publicación. Terminar preguntando qué cambiar.
    **Además**, cargar el guion en la *Mesa de guiones* (https://claude.ai/artifact/BhPC4PrHy9mLcGiBbWBair) con
@@ -85,7 +85,7 @@ Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar doc
 - `emocion` por línea (0 = calmo, 1 = muy intenso): varía la entonación de la voz clonada. Usar 0.4–0.6 de base y
   0.75–0.9 en el clímax.
 - `pausa` (s) después de cada línea: 0.4–0.6 normal, 1–1.4 antes y después de una frase textual.
-- **Variar** de un video a otro: tipos de escena, paleta, ánimo musical, objeto. YouTube desmonetiza contenido
+- **Variar** de un video a otro: tipos de escena, paleta, ánimo musical, objeto y **efectos** (ver "Efectos"). YouTube desmonetiza contenido
   "repetitivo o de plantilla", así que no repetir la misma secuencia de escenas dos videos seguidos.
 
 ## Formato de `guion.json`
@@ -119,6 +119,28 @@ Al publicar un video, marcar su tema como `hecho`. Para sumar ideas, agregar doc
 | `jugada` | una jugada dibujada: corrida punteada, rivales y arquero de papel, y el remate | `etiqueta`?, `corrida_en`, `remate_en`, `sentido` (izquierda\|derecha), `rivales` (0–3), `arquero` (parado\|eludido), `resultado` (gol\|afuera), `arquero_color`?, `rival_color`?, `palabras` (1)?, `sello`? |
 | `dupla` | dos palabras grandes, cada una con su objeto de papel abajo (ej. MILLONARIO + billetes / GALLINA + gallina) | `partes` [{`palabra`, `objeto`}, {…}], `kicker`? |
 | `cierre` | final + pregunta | `titulo` (renglones), `cta`, `objeto`? |
+| `mapa` | un viaje o un lugar: mapa de papel con el recorrido punteado (barco o avión) | `desde` {`nombre`, `lat`, `lon`}, `hasta` {…}, `resaltar`? ["Egipto"], `vehiculo`? (avion\|barco), `ruta_en`?, `etiqueta`?, `palabras` (1)? |
+
+### Efectos (los elige Claude al escribir cada guion)
+
+Cada efecto se pide en la escena de la línea. **Elegirlos pensando en la historia**: 2 a 4 efectos destacados por video,
+no más de uno por escena, y **nunca la misma combinación que el video anterior** (es lo que hace que no sean todos iguales).
+Si una línea no dice nada, la fábrica decide sola (transición al azar, destello en el clímax).
+
+| efecto | dónde | cómo se pide | cuándo usarlo |
+|---|---|---|---|
+| transición | cualquier escena (desde la 2) | `"transicion": "rasgado"` (o `arriba`, `izquierda`, `derecha`, `zoom`, `corte`) | rasgado: cambio de época, giro, "pero…" |
+| máquina de escribir | `golpe` | `"estilo": "maquina"` | fechas, lugares, documentos, el comienzo de un caso |
+| impacto | `golpe` | `"estilo": "impacto"` (sale solo con emoción ≥ 0,85) | la revelación, el golpe fuerte |
+| tachado | palabra de un `golpe` | `{"texto": "ABANDONAR", "en": "abandonar", "tachar_en": "última"}` | algo que iba a pasar y no pasó, un error, un mito desmentido |
+| marcador | `foto` | `"marca": {"forma": "circulo"\|"flecha"\|"subrayado", "x", "y", "w", "h", "texto"?, "en"?}` (x, y, w, h de 0 a 1 sobre la foto) | señalar una cara, un detalle, "mirá esto" |
+| lupa | `foto` | `"lupa": {"x", "y", "z"? (0.25), "en"?}` | acercarse a un detalle mientras la voz lo nombra |
+| destello | cualquier escena | `"destello": true` / `false` (por defecto: emoción ≥ 0,85) | el clímax; apagarlo si hay muchos seguidos |
+| película vieja | todo el video | `"textura": "pelicula"` (en el guion, afuera de las líneas) | historias de antes de ~1970 |
+| mapa | escena propia | tipo `mapa` | viajes, de dónde vino alguien, dónde pasó |
+
+Para ubicar `marca` y `lupa` hace falta haber visto la foto (la hoja de *Buscar imágenes* sirve). En la tabla del guion y en
+la Mesa, nombrar el efecto en la columna "En pantalla" (ej. "foto del sello + círculo «los sellos» + lupa").
 
 Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entretenimiento (por defecto), 27 educación, 10 música, 25 noticias.
 

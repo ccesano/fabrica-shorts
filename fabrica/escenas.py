@@ -35,6 +35,8 @@ PALETAS = {
 }
 
 TRANS = ["up", "left", "right", "zoom", "rip"]   # rip = el papel se rasga y deja ver la escena nueva
+TRANSICIONES = {"rasgado": "rip", "arriba": "up", "izquierda": "left", "derecha": "right", "zoom": "zoom", "corte": "cut",
+                "rip": "rip", "up": "up", "left": "left", "right": "right", "cut": "cut"}
 MARCADOR = "#D2402E"   # rojo de marcador para círculos, flechas y tachados
 
 
@@ -116,16 +118,24 @@ class Escena:
         else:
             self.fx("papel", t, 0.18)
 
-    def kin(self, texto, t, x, y, size, desde="zoom", clase="", extra=""):
+    def kin(self, texto, t, x, y, size, desde="zoom", clase="", extra="", dentro=""):
+        """Texto gigante. x=None lo centra (lo mide el navegador): en todo el ancho arriba de y≈850 y, más abajo,
+        en la franja libre de los botones de las apps."""
         cls = ("acc " if es_acento(texto) else "") + clase
+        if x is None:
+            a, b = (110, 910) if y + size * 0.86 > 850 else (70, 1010)
+            pos, cls = f"left: {a}px; width: {b - a}px; text-align: center", cls + " centro"
+        else:
+            pos = f"left: {x}px"
+        cuerpo = f'<span class="kt">{escape(limpio(texto), quote=False)}{dentro}</span>'
         if desde == "type":   # máquina de escribir: letra por letra
             self.world.append(f'<div class="cg-type cg-kin-type {cls.strip()}" data-t="{t}" data-cps="18" {extra} '
-                              f'style="left: {x}px; top: {y}px; font-size: {size}px">{escape(limpio(texto), quote=False)}</div>')
+                              f'style="{pos}; top: {y}px; font-size: {size}px">{escape(limpio(texto), quote=False)}</div>')
             for i in range(len(limpio(texto))):
                 self.fx("tecla", t + i / 18, 0.12, pan=(i / max(1, len(texto)) - 0.5) * 0.6)
             return
         self.world.append(f'<div class="cg-kin {cls.strip()}" data-t="{t}" data-from="{desde}" {extra} '
-                          f'style="left: {x}px; top: {y}px; font-size: {size}px">{escape(limpio(texto), quote=False)}</div>')
+                          f'style="{pos}; top: {y}px; font-size: {size}px">{cuerpo}</div>')
         self.fx("golpe", t + 0.1, 0.42)
 
     def objeto(self, spec, t, cx, top, rot, max_h=560, max_w=900):
@@ -210,29 +220,27 @@ def golpe(E, esc):
     alto = sum(s * 0.86 + 14 for s in sizes)
     y = 270 + (980 - alto) / 2
     if esc.get("kicker"):
-        E.world.append(f'<div class="kick cg-fade" data-t="{PUSH + 0.05}" style="left: 76px; top: {y - 110:.0f}px">{escape(esc["kicker"], quote=False)}</div>')
+        E.world.append(f'<div class="kick cg-fade" data-t="{PUSH + 0.05}" style="left: 0; width: 1080px; text-align: center; top: {y - 110:.0f}px">{escape(esc["kicker"], quote=False)}</div>')
     desdes = ["zoom", "left", "up", "right", "zoom", "down"]
     E.r.shuffle(desdes)
-    estilo = esc.get("estilo") or ("impacto" if E.linea.get("emocion", 0.5) >= 0.85 else "")
+    estilo = esc.get("estilo") or ("impacto" if E.linea.get("emocion", 0.5) >= 0.85 else "normal")
+    if estilo not in ("normal", "maquina", "impacto"):
+        raise SystemExit(f"línea {E.idx}: estilo de golpe desconocido '{estilo}' (hay: normal, maquina, impacto)")
     desdes = ["slam" if estilo == "impacto" else "zoom"] + desdes
     for i, (p, s) in enumerate(zip(palabras, sizes)):
         t = E.cuando(item_en(p), E.reparto(i, len(palabras)))
         clase = "box" if es_acento(item_txt(p)) and E.r.random() < 0.35 and estilo != "maquina" else ""
         txt = item_txt(p)
         txt = ("*" + limpio(txt).upper() + "*") if es_acento(txt) else txt.upper()
-        extra = ""
+        extra, dentro = "", ""
         if isinstance(p, dict) and p.get("tachar_en"):   # la palabra aparece y después la tachan con marcador
             tt = E.cuando(p["tachar_en"], t + 0.8)
             extra = f'data-dim="{tt + 0.35}"'
-            w = len(limpio(txt)) * s * ANCHO["league"]
-            yy = y + s * 0.42
-            d = (f'<path d="M{50:.0f},{yy + 14:.0f} L{90 + w:.0f},{yy - 16:.0f}" stroke="{MARCADOR}" stroke-width="{max(14, s // 9)}"/>'
-                 f'<path d="M{60:.0f},{yy + 40:.0f} L{80 + w:.0f},{yy + 6:.0f}" stroke="{MARCADOR}" stroke-width="{max(10, s // 12)}"/>')
-            E.world.append(f'<svg class="cg-draw" data-t="{tt}" data-dur="0.4" width="1080" height="1920" viewBox="0 0 1080 1920" '
-                           f'style="left: 0; top: 0; z-index: 3" aria-hidden="true">{d}</svg>')
+            dentro = (f'<i class="cg-bar" data-t="{tt}" data-dur="0.22" data-rot="-4" style="top: 40%; height: {max(14, s // 9)}px; background: {MARCADOR}"></i>'
+                      f'<i class="cg-bar" data-t="{tt + 0.2}" data-dur="0.2" data-rot="-3" style="top: 60%; left: 2%; width: 94%; height: {max(10, s // 12)}px; background: {MARCADOR}"></i>')
             E.fx("marcador", tt, 0.3, d=0.4)
         desde = "type" if estilo == "maquina" else desdes[i % len(desdes)]
-        E.kin(txt, t, 70, int(y), s, desde, clase, extra)
+        E.kin(txt, t, None, int(y), s, desde, clase, extra, dentro)
         if desde == "slam":
             E.flash(t + 0.1)
         y += s * 0.86 + 14
@@ -259,10 +267,10 @@ def collage(E, esc):
     ys = [950, 1085]
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
-        size = cabe(txt, "gloock", 860, 128, 42, 68)
+        size = cabe(txt, "gloock", 790, 128, 42, 68)
         t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))
         izq = (i % 2 == 0) == (lado == "izq")
-        style = f"left: {E.r.choice([46, 60, 70])}px; top: {ys[i]}px" if izq else f"right: {E.r.choice([170, 180, 190])}px; top: {ys[i]}px"
+        style = f"left: {E.r.choice([100, 115, 130])}px; top: {ys[i]}px" if izq else f"right: {E.r.choice([170, 180, 190])}px; top: {ys[i]}px"
         E.tira("word", txt, t, style, size)
     if esc.get("sello"):
         t = E.cuando(esc.get("sello_en", esc["sello"]), E.reparto(2, 3))
@@ -291,7 +299,7 @@ def cifra(E, esc):
     if esc.get("palabra"):
         txt = esc["palabra"].upper()
         E.tira("word", txt, max(t + dur * 0.6, E.cuando(esc.get("palabra_en", esc["palabra"]), t + dur)),
-               f"right: {E.r.choice([170, 180, 190])}px; top: {min(1130, y):.0f}px", cabe(txt, "gloock", 860, 120, 42, 68))
+               f"right: {E.r.choice([170, 180, 190])}px; top: {min(1130, y):.0f}px", cabe(txt, "gloock", 790, 120, 42, 68))
     if esc.get("objeto"):
         spec = {k: v for k, v in esc["objeto"].items() if k != "en"}
         E.objeto(spec, t + dur + 0.2, 280, min(1080, y + 150), E.r.choice([-8, 8]), max_h=320, max_w=420)
@@ -310,15 +318,15 @@ def lista(E, esc):
     size = min(int(paso * 0.62), 76)
     for i, it in enumerate(items):
         txt = item_txt(it)
-        sz = min(size, cabe(txt.upper(), "tag", 820, 76, 36, 48))
+        sz = min(size, cabe(txt.upper(), "tag", 760, 76, 36, 48))
         t = E.cuando(item_en(it), E.reparto(i, len(items) + (1 if remate else 0)))
-        x = 70 + (110 if i % 2 else 0) + E.r.randint(-12, 12)
+        x = 110 + (80 if i % 2 else 0) + E.r.randint(-12, 12)
         prefijo = f"{i + 1}. " if esc.get("numerada") else ""
         E.tira("tag", prefijo + txt.upper(), t, f"left: {x}px; top: {y0 + i * paso:.0f}px", sz, rot=E.r.choice([-2, -1, 1, 2]))
     if remate:
         txt = limpio(item_txt(remate)).upper()
         t = E.cuando(item_en(remate), E.reparto(len(items), len(items) + 1))
-        E.tira("word", txt, t, f"right: {E.r.choice([170, 180, 190])}px; top: {min(1120, y0 + len(items) * paso + 30):.0f}px", cabe(txt, "gloock", 860, 120, 42, 68))
+        E.tira("word", txt, t, f"right: {E.r.choice([170, 180, 190])}px; top: {min(1120, y0 + len(items) * paso + 30):.0f}px", cabe(txt, "gloock", 790, 120, 42, 68))
 
 
 def cita(E, esc):
@@ -354,7 +362,7 @@ def cierre(E, esc):
         size = cabe(limpio(txt).upper(), "league", 900, 300 if i else 200, 90)
         t = E.cuando(item_en(p), E.reparto(i, len(titulo) + 2))
         up = ("*" + limpio(txt).upper() + "*") if es_acento(txt) else txt.upper()
-        E.kin(up, t, 70, y, size, "zoom" if i == 0 else "left", "" if es_acento(txt) else "ink")
+        E.kin(up, t, None, y, size, "zoom" if i == 0 else "left", "" if es_acento(txt) else "ink")
         y += size * 0.86 + 16
     if esc.get("objeto"):
         spec = {k: v for k, v in esc["objeto"].items() if k != "en"}
@@ -365,9 +373,9 @@ def cierre(E, esc):
         partes = [p.strip() for p in re.split(r"(?<=[?.!])\s+", cta) if p.strip()]
         primera, resto = partes[0], " ".join(partes[1:])
         yc = min(1000, max(y + 60, 940))
-        E.tira("label", primera, E.cuando(primera, E.reparto(1, 2)), f"left: 50px; top: {yc:.0f}px; width: 840px", cabe(primera, "news", 840, 84, 46, 68))
+        E.tira("label", primera, E.cuando(primera, E.reparto(1, 2)), f"left: 120px; top: {yc:.0f}px; width: 790px", cabe(primera, "news", 790, 84, 46, 68))
         if resto:
-            E.tira("tag", resto.upper(), E.cuando(resto, E.reparto(2, 3)), f"left: 60px; top: {min(1150, yc + 150):.0f}px", cabe(resto.upper(), "tag", 820, 58, 32, 48))
+            E.tira("tag", resto.upper(), E.cuando(resto, E.reparto(2, 3)), f"left: 130px; top: {min(1150, yc + 150):.0f}px", cabe(resto.upper(), "tag", 760, 58, 32, 48))
 
 
 def foto(E, esc):
@@ -402,8 +410,8 @@ def foto(E, esc):
     for i, p in enumerate(palabras):
         txt = limpio(item_txt(p)).upper()
         t = E.cuando(item_en(p), E.reparto(i + 1, len(palabras) + 1))
-        style = f"left: {E.r.choice([46, 60])}px; top: {ys[i]}px" if i % 2 == 0 else f"right: {E.r.choice([170, 180, 190])}px; top: {ys[i]}px"
-        E.tira("word", txt, t, style, cabe(txt, "gloock", 860, 118, 42, 68))
+        style = f"left: {E.r.choice([100, 120])}px; top: {ys[i]}px" if i % 2 == 0 else f"right: {E.r.choice([170, 180, 190])}px; top: {ys[i]}px"
+        E.tira("word", txt, t, style, cabe(txt, "gloock", 790, 118, 42, 68))
     if esc.get("sello"):
         t = E.cuando(esc.get("sello_en", esc["sello"]), E.reparto(2, 3))
         E.sello(esc["sello"].upper(), t, f"right: {E.r.choice([180, 220])}px; top: {min(1000, top + alto - 160)}px", E.r.choice([-9, 7]))
@@ -493,7 +501,7 @@ def jugada(E, esc):
     E.fx("whoosh", t_shot, 0.3, d=1.0)
     for i, p in enumerate(esc.get("palabras", [])[:1]):
         txt = limpio(item_txt(p)).upper()
-        E.tira("word", txt, E.cuando(item_en(p), t_shot), "left: 50px; top: 1130px" if izq else f"right: {E.r.choice([170, 180, 190])}px; top: 1110px", cabe(txt, "gloock", 860, 124, 42, 68))
+        E.tira("word", txt, E.cuando(item_en(p), t_shot), "left: 110px; top: 1130px" if izq else f"right: {E.r.choice([170, 180, 190])}px; top: 1110px", cabe(txt, "gloock", 790, 124, 42, 68))
     sello = esc.get("sello", "¡AFUERA!" if afuera else "¡GOL!")
     if sello:
         pos = "left: 600px; top: 480px" if afuera else ("left: 110px; top: 780px" if izq else "left: 600px; top: 780px")
@@ -506,7 +514,7 @@ def dupla(E, esc):
     partes = esc.get("partes", [])[:2]
     y = 340
     if esc.get("kicker"):
-        E.world.append(f'<div class="kick cg-fade" data-t="{PUSH + 0.05}" style="left: 76px; top: 240px">{escape(esc["kicker"], quote=False)}</div>')
+        E.world.append(f'<div class="kick cg-fade" data-t="{PUSH + 0.05}" style="left: 0; width: 1080px; text-align: center; top: 240px">{escape(esc["kicker"], quote=False)}</div>')
     alto_obj = 260
     for i, parte in enumerate(partes):
         p = parte.get("palabra", "")
@@ -514,7 +522,7 @@ def dupla(E, esc):
         txt = ("*" + limpio(txt).upper() + "*") if es_acento(txt) else txt.upper()
         size = cabe(limpio(txt), "league", 940, 190, 90)
         t = E.cuando(item_en(p), E.reparto(i, len(partes)))
-        E.kin(txt, t, 70, y, size, "zoom" if i == 0 else "left")
+        E.kin(txt, t, None, y, size, "zoom" if i == 0 else "left")
         y += int(size * 0.86) + 24
         if parte.get("objeto"):
             spec = {k: v for k, v in parte["objeto"].items() if k != "en"}
@@ -575,7 +583,7 @@ def mapa(E, esc):
     for p in palabras:
         txt = limpio(item_txt(p)).upper()
         E.tira("word", txt, E.cuando(item_en(p), tr + dur), f"right: {E.r.choice([170, 180, 190])}px; top: {top + H + 20}px",
-               cabe(txt, "gloock", 860, 118, 42, 68))
+               cabe(txt, "gloock", 790, 118, 42, 68))
     E.zoom = 0.05
 
 
@@ -609,13 +617,17 @@ def armar(guion, timings, slug):
         E = Escena(i + 1, ln, tl, S, dur, pal, random.Random(seed + i * 7919), fondo)
         TIPOS[tipo](E, esc)
         climax = ln.get("emocion", 0.5) >= 0.85
-        if climax and not any("cg-flash" in c for c in E.capa):
+        destello = esc.get("destello", climax)   # el guion puede pedirlo o apagarlo; si no dice nada, va en el clímax
+        if destello and not any("cg-flash" in c for c in E.capa):
             E.flash(PUSH + 0.02)
         if i == 0:
             trans = None
         else:
             opciones = ["cut", "zoom"] if tipo == "golpe" else [t for t in TRANS if t != trans_prev]
-            trans = esc.get("transicion") or rnd.choice(opciones)
+            pedida = esc.get("transicion")
+            if pedida and pedida not in TRANSICIONES:
+                raise SystemExit(f"línea {i + 1}: transición desconocida '{pedida}' (hay: rasgado, arriba, izquierda, derecha, zoom, corte)")
+            trans = TRANSICIONES[pedida] if pedida else rnd.choice(opciones)
         if trans == "rip":
             E.fx("rasgado", 0.0, 0.34)
         elif trans and trans != "cut":
@@ -625,7 +637,7 @@ def armar(guion, timings, slug):
         bg = pal["bgs"][(bg_off + i) % len(pal["bgs"])]
         escenas.append(dict(id=f"s{i + 1}-{tipo}", start=S, dur=dur, bg=bg, solid=fondo == "solido", trans=trans,
                             world=E.world, seed=seed % 997 + i * 13, pal=pal, zoom=E.zoom, foco=E.foco, capa=E.capa,
-                            textura=guion.get("textura"), shake=26 if climax else None))
+                            textura=esc.get("textura", guion.get("textura")), shake=26 if destello else None))
         sfx += E.sfx
         trans_prev = trans
     for i, s in enumerate(escenas):
