@@ -1,0 +1,257 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Discovery_of_the_tomb_of_Tutankhamun",
+    "https://tutankhamun.griffith.ox.ac.uk/seasons/1st-season-1922-1923",
+    "https://historic-uk.com/HistoryUK/HistoryofBritain/Howard-Carter-Tutankhamun"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "Egipto, 1922",
+        "palabras": [
+          {
+            "en": "Cinco",
+            "texto": "CINCO AÑOS"
+          },
+          {
+            "en": "cavando",
+            "texto": "CAVANDO"
+          },
+          {
+            "en": "Nada",
+            "texto": "*NADA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Cinco años cavando en el desierto. Nada."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el arqueólogo",
+        "foto": {
+          "credito": "National Photo Company Collection / Library of Congress",
+          "epigrafe": "Howard Carter, 1924",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Howard_Carter_1924.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Howard_Carter_1924.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Tutankamón",
+            "texto": "*TUTANKAMÓN*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El inglés Howard Carter buscaba la tumba de un faraón casi olvidado: Tutankamón."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Valle de los Reyes",
+        "objeto": {
+          "tipo": "recorte",
+          "titular": "Una temporada más y se termina",
+          "volanta": "Lord Carnarvon"
+        },
+        "palabras": [
+          {
+            "en": "última",
+            "texto": "*LA ÚLTIMA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "El que pagaba, Lord Carnarvon, estaba por abandonar. Le dio una última temporada."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "hace 104 años, como hoy",
+        "objeto": {
+          "anio": 1922,
+          "dia": 4,
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "escalón",
+            "texto": "UN *ESCALÓN*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "El cuatro de noviembre de mil novecientos veintidós apareció un escalón tallado en la roca.",
+      "sub": "El 4 de noviembre de 1922 apareció un escalón tallado en la roca."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "dicen que…",
+        "foto": {
+          "credito": "Harry Burton / Wikimedia Commons",
+          "epigrafe": "Hussein Abdel-Rassoul, c. 1925",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Hussein_Abdel-Rassoul_par_Harry_Burton_vers_1925,_vall%C3%A9e_des_rois.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Hussein_Abdel-Rassoul_par_Harry_Burton_vers_1925%2C_vall%C3%A9e_des_rois.jpg"
+        },
+        "palabras": [
+          {
+            "en": "chico",
+            "texto": "*EL CHICO*"
+          },
+          {
+            "en": "agua",
+            "texto": "DEL AGUA"
+          }
+        ],
+        "sello": "LEYENDA",
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Dicen que lo encontró un chico que llevaba el agua. Nunca se pudo confirmar."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "la entrada",
+        "foto": {
+          "credito": "Harry Burton / Wikimedia Commons",
+          "epigrafe": "El sello intacto, 1922",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:The_unbroken_seal_on_Tutankhamun%E2%80%99s_tomb,_1922.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/The_unbroken_seal_on_Tutankhamun%E2%80%99s_tomb%2C_1922.jpg"
+        },
+        "palabras": [
+          {
+            "en": "sellos",
+            "texto": "*SELLADA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.6,
+      "say": "Abajo de la escalera había una puerta con los sellos intactos."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "kicker": "26 de noviembre",
+        "palabras": [
+          {
+            "en": "agujero",
+            "texto": "UN AGUJERO"
+          },
+          {
+            "en": "vela",
+            "texto": "UNA *VELA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "El veintiséis de noviembre, Carter hizo un agujero y espió con una vela.",
+      "sub": "El 26 de noviembre, Carter hizo un agujero y espió con una vela."
+    },
+    {
+      "emocion": 0.9,
+      "escena": {
+        "autor": "Howard Carter",
+        "texto": "Sí. Cosas *maravillosas*.",
+        "tipo": "cita"
+      },
+      "musica": "golpe",
+      "pausa": 1.2,
+      "say": "Le preguntaron si veía algo. Y contestó: «Sí. Cosas maravillosas»."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "en": "cinco mil",
+        "etiqueta": "la tumba KV62",
+        "numero": 5398,
+        "palabra": "OBJETOS",
+        "palabra_en": "objetos",
+        "tipo": "cifra"
+      },
+      "pausa": 0.6,
+      "say": "Adentro había cinco mil trescientos noventa y ocho objetos. Y un faraón con máscara de oro.",
+      "sub": "Adentro había 5.398 objetos. Y un faraón con máscara de oro."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "colores": [
+            "#C9853A",
+            "#F2D49B"
+          ],
+          "lugar": "Luxor, Egipto",
+          "texto": "Valle de los Reyes",
+          "tipo": "postal"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "animado",
+            "texto": "¿TE ANIMABAS"
+          },
+          {
+            "en": "entrar",
+            "texto": "*A ENTRAR?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Todo por un escalón. ¿Vos te hubieras animado a entrar? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "tension"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "Howard Carter buscó durante años, en el Valle de los Reyes, la tumba del faraón Tutankamón. Su mecenas, Lord Carnarvon, estaba por abandonar y aceptó pagar una última temporada. El 4 de noviembre de 1922 apareció el primer escalón de una escalera tallada en la roca, que bajaba hasta una puerta con los sellos intactos. Dicen que lo encontró un chico que llevaba el agua a los obreros, pero nunca se confirmó. El 26 de noviembre Carter abrió un agujero y miró con una vela; según su libro, cuando le preguntaron si veía algo respondió: «Sí, cosas maravillosas». En la tumba se catalogaron 5.398 objetos, entre ellos la famosa máscara de oro. Fotos: Harry Burton y Library of Congress (dominio público). ¿Te hubieras animado a entrar?",
+    "hashtags": [
+      "tutankamon",
+      "egipto",
+      "historia",
+      "arqueologia",
+      "howardcarter",
+      "shorts"
+    ],
+    "titulo": "Cinco años sin nada… y apareció un escalón: Tutankamón 🏺 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Tutankamón: el escalón que cambió todo",
+  "voz": {
+    "pronunciar": {
+      "Carnarvon": "Carnárvon",
+      "Carter": "Cárter",
+      "Howard": "Jáuard"
+    }
+  }
+}
