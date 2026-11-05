@@ -1,0 +1,253 @@
+{
+  "ambiente": "lluvia",
+  "fuentes": [
+    "https://billiken.lat/mi-pais/villa-epecuen-a-40-anos-de-la-inundacion-que-destruyo-el-balneario-de-la-provincia-de-buenos-aires/",
+    "https://www.argentina.gob.ar/node/136404",
+    "https://www.lacapitalmdp.com/a-los-93-anos-murio-pablo-novak-el-ultimo-habitante-de-epecuen/",
+    "https://gizmodo.com/this-argentinian-tourist-village-sat-underwater-for-25-5970880"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "pueblo",
+            "texto": "UN PUEBLO"
+          },
+          {
+            "en": "entero",
+            "texto": "ENTERO"
+          },
+          {
+            "en": "agua",
+            "texto": "*BAJO EL AGUA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Un pueblo entero quedó bajo el agua."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "estilo": "maquina",
+        "kicker": "provincia de Buenos Aires",
+        "palabras": [
+          {
+            "en": "Villa",
+            "texto": "VILLA"
+          },
+          {
+            "en": "Epecuén",
+            "texto": "*EPECUÉN*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Villa Epecuén, cerca de Carhué, provincia de Buenos Aires."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "en": "veinticinco",
+        "etiqueta": "en los años setenta",
+        "numero": 25000,
+        "palabra": "TURISTAS",
+        "palabra_en": "turistas",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Era un balneario famoso. Llegaba a recibir veinticinco mil turistas por verano.",
+      "sub": "Era un balneario famoso. Llegaba a recibir 25.000 turistas por verano."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Lago Epecuén, 1938",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Bañistas en el lago, 1938",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Banistas_lago_epecuen_1938.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banistas_lago_epecuen_1938.jpg"
+        },
+        "palabras": [
+          {
+            "en": "salada",
+            "texto": "*SALADA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Venían por su laguna, salada como el mar Muerto. Decían que curaba."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "hace 41 años",
+        "objeto": {
+          "anio": 1985,
+          "dia": 10,
+          "en": "diez",
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "lluvias",
+            "texto": "*LLUVIAS*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.4,
+      "say": "Pero la laguna venía creciendo con las lluvias. Y el diez de noviembre de mil novecientos ochenta y cinco…",
+      "sub": "Pero la laguna venía creciendo con las lluvias. Y el 10 de noviembre de 1985…"
+    },
+    {
+      "emocion": 0.88,
+      "escena": {
+        "estilo": "impacto",
+        "palabras": [
+          {
+            "en": "agua",
+            "texto": "EL AGUA"
+          },
+          {
+            "en": "rompió",
+            "texto": "*ROMPIÓ*"
+          },
+          {
+            "en": "desapareció",
+            "texto": "DESAPARECIÓ"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "rasgado"
+      },
+      "musica": "golpe",
+      "pausa": 0.7,
+      "say": "…el agua rompió el terraplén. En pocas horas, el pueblo desapareció."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "en": "diez",
+        "etiqueta": "de agua encima",
+        "numero": 10,
+        "palabra": "DE AGUA",
+        "palabra_en": "metros",
+        "sufijo": " m",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "No murió nadie. Pero el agua siguió subiendo: llegó a cubrirlo con diez metros.",
+      "sub": "No murió nadie. Pero el agua siguió subiendo: llegó a cubrirlo con 10 metros."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "etiqueta": "Villa Epecuén, hoy",
+        "foto": {
+          "credito": "Gafotos / Wikimedia Commons (CC BY-SA 4.0)",
+          "epigrafe": "Las ruinas, 2022",
+          "licencia": "CC BY-SA 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ruinas_de_Epecuen_42.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Ruinas_de_Epecuen_42.jpg"
+        },
+        "lupa": {
+          "en": "aparecer",
+          "x": 0.5,
+          "y": 0.55,
+          "z": 0.25
+        },
+        "palabras": [
+          {
+            "en": "volvió",
+            "texto": "*VOLVIÓ*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "rasgado"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Más de veinte años después, la laguna empezó a bajar. Y el pueblo volvió a aparecer."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "autor": "Pablo Novak",
+        "texto": "No voy a olvidarme nunca del *ruido del agua*.",
+        "tipo": "cita"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "Pablo Novak, su último habitante, decía: «No voy a olvidarme nunca del ruido del agua»."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "colores": [
+            "#2F6F5E",
+            "#E8D9A8"
+          ],
+          "lugar": "Villa Epecuén",
+          "texto": "Ruinas de",
+          "tipo": "postal"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "conociste",
+            "texto": "¿CONOCISTE"
+          },
+          {
+            "en": "Epecuén",
+            "texto": "*EPECUÉN?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy sus ruinas se visitan. ¿Vos conociste Epecuén? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "misterio"
+  },
+  "paleta": "bosque",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "Villa Epecuén, cerca de Carhué (provincia de Buenos Aires), era un balneario famoso: en los años setenta recibía unos 25.000 turistas por verano, que venían por su laguna salada, comparada con el mar Muerto. La laguna venía creciendo con las lluvias y el 10 de noviembre de 1985 el agua rompió el terraplén que la contenía. En pocas horas el pueblo quedó bajo el agua; no hubo víctimas, pero los vecinos lo perdieron casi todo. El agua llegó a cubrirlo con unos 10 metros. Más de veinte años después la laguna empezó a bajar y las ruinas volvieron a aparecer. Pablo Novak, su último habitante, decía: \"No voy a olvidarme nunca del ruido del agua\". ¿Vos conociste Epecuén? Fotos: Wikimedia Commons (bañistas de 1938, dominio público; ruinas de Gafotos, CC BY-SA 4.0).",
+    "hashtags": [
+      "epecuen",
+      "carhue",
+      "historia",
+      "argentina",
+      "pueblofantasma",
+      "shorts"
+    ],
+    "titulo": "El pueblo argentino que quedó bajo el agua #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Epecuén, el pueblo bajo el agua",
+  "voz": {
+    "pronunciar": {
+      "Novak": "Nóvak"
+    }
+  }
+}
