@@ -1,0 +1,276 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Alejandro_Sabella",
+    "https://www.lanacion.com.ar/deportes/futbol/alex-sabella-ese-tipo-encantador-nid2535604",
+    "https://www.fourfourtwo.com/features/sabella-yorkshire-how-argentina-boss-came-sheffield-united-because-they-couldnt-afford"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "Inglaterra, 1978",
+        "palabras": [
+          {
+            "en": "Vinieron",
+            "texto": "VINIERON POR"
+          },
+          {
+            "en": "Maradona",
+            "tachar_en": "otro",
+            "texto": "MARADONA"
+          },
+          {
+            "en": "llevaron",
+            "texto": "SE LLEVARON"
+          },
+          {
+            "en": "otro",
+            "texto": "*A OTRO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Vinieron por Maradona y se llevaron a otro."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "desde": {
+          "lat": 53.38,
+          "lon": -1.47,
+          "nombre": "Sheffield"
+        },
+        "etiqueta": "Harry Haslam, 1978",
+        "hasta": {
+          "lat": -34.6,
+          "lon": -58.38,
+          "nombre": "Buenos Aires"
+        },
+        "palabras": [
+          {
+            "en": "Argentina",
+            "texto": "*ARGENTINA*"
+          }
+        ],
+        "resaltar": [
+          "Argentina"
+        ],
+        "ruta_en": "viaja",
+        "tipo": "mapa",
+        "vehiculo": "avion"
+      },
+      "pausa": 0.5,
+      "say": "Mil novecientos setenta y ocho. El técnico del Sheffield United viaja de Inglaterra a la Argentina.",
+      "sub": "1978. El técnico del Sheffield United viaja de Inglaterra a la Argentina."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Argentinos Juniors, 1978",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Maradona ante Chacarita, 1978",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_v_chacarita_1978.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Maradona_v_chacarita_1978.jpg"
+        },
+        "palabras": [
+          {
+            "en": "diecisiete",
+            "texto": "*17 AÑOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Quería a un pibe de diecisiete años de Argentinos Juniors: Diego Maradona.",
+      "sub": "Quería a un pibe de 17 años de Argentinos Juniors: Diego Maradona."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "palabras": [
+          {
+            "en": "pase",
+            "texto": "EL PASE"
+          },
+          {
+            "en": "trabó",
+            "texto": "*SE TRABÓ*"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "rasgado"
+      },
+      "musica": "silencio",
+      "pausa": 0.5,
+      "say": "Pero el pase se trabó. Y Diego se quedó en la Argentina."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el consejo de Rattín",
+        "objeto": {
+          "campos": {
+            "Año": "1978",
+            "Estadio": "La Bombonera"
+          },
+          "en": "Bombonera",
+          "nombre": "Boca vs. River",
+          "talon": "Popular",
+          "tipo": "entrada",
+          "titulo": "Superclásico"
+        },
+        "palabras": [
+          {
+            "en": "Rattín",
+            "texto": "*RATTÍN*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Antonio Rattín, que lo asesoraba, lo llevó a la Bombonera a ver un Boca-River."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "River Plate",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Sabella en River",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Sabella_river.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sabella_river.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Sabella",
+            "texto": "*SABELLA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Y ahí, con la camiseta de River, vio a Alejandro Sabella."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "en": "ciento",
+        "etiqueta": "récord del Sheffield",
+        "numero": 160000,
+        "palabra": "RÉCORD",
+        "palabra_en": "Récord",
+        "prefijo": "£",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Se lo llevó por ciento sesenta mil libras. Récord del club.",
+      "sub": "Se lo llevó por £160.000. Récord del club."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "destello": true,
+        "etiqueta": "Sheffield United, 1978",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Sabella en el Sheffield, 1978",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Sabella_sheffield.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sabella_sheffield.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Mago",
+            "texto": "EL *MAGO*"
+          }
+        ],
+        "sello": "EL MAGO",
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.8,
+      "say": "En Inglaterra los hinchas lo bautizaron «el Mago»."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "lo que vino después",
+        "items": [
+          "Leeds United, 1980",
+          "Estudiantes de La Plata",
+          "Libertadores 2009 (DT)",
+          "Final del Mundial 2014 (DT)"
+        ],
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Después vinieron el Leeds, Estudiantes, y como técnico, una Libertadores y una final del mundo."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "pelota"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "viste",
+            "texto": "¿LO VISTE"
+          },
+          {
+            "en": "jugar",
+            "texto": "*JUGAR?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy cumpliría setenta y dos años. ¿Lo viste jugar? Contalo en los comentarios.",
+      "sub": "Hoy cumpliría 72 años. ¿Lo viste jugar? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "banda",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "En 1978 Harry Haslam, técnico del Sheffield United, viajó a la Argentina para fichar a un pibe de 17 años de Argentinos Juniors: Diego Maradona. El pase se trabó y Diego se quedó. Antonio Rattín, que lo asesoraba, lo llevó a ver un Boca-River a la Bombonera, y ahí apareció Alejandro Sabella, de River. El Sheffield lo compró por 160.000 libras, récord del club, y los hinchas lo bautizaron \"el Mago\". Después jugó en el Leeds y fue bicampeón con Estudiantes; como técnico ganó la Libertadores 2009 y llevó a la Argentina a la final del Mundial 2014. Sabella nació el 5 de noviembre de 1954. ¿Lo viste jugar? Fotos: Wikimedia Commons (dominio público).",
+    "hashtags": [
+      "sabella",
+      "maradona",
+      "river",
+      "estudiantes",
+      "futbolargentino",
+      "shorts"
+    ],
+    "titulo": "Fueron por Maradona y volvieron con Sabella #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Fueron por Maradona y volvieron con Sabella",
+  "voz": {
+    "pronunciar": {
+      "Juniors": "Yúniors",
+      "Leeds": "Lids",
+      "Sheffield": "Shéfild",
+      "United": "Iunáited"
+    }
+  }
+}
