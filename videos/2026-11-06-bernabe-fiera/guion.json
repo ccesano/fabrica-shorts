@@ -1,0 +1,289 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Bernab%C3%A9_Ferreyra",
+    "https://www.laprensa.com.ar/Bernabe-Ferreyra-el-primer-gran-idolo-popular-549826.note.aspx",
+    "https://billiken.lat/mi-pais/cual-es-el-unico-futbolista-que-hizo-mas-de-un-gol-por-partido-en-la-primera-division-de-argentina/",
+    "https://www.lanacion.com.ar/deportes/futbol/la-fiera-fue-tan-idolo-como-gardel-nid306970/"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "diario",
+            "texto": "UN DIARIO"
+          },
+          {
+            "en": "premiaba",
+            "texto": "PREMIABA"
+          },
+          {
+            "en": "arquero",
+            "texto": "AL *ARQUERO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Un diario premiaba al arquero que lo frenara."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el Mortero de Rufino",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Bernabé Ferreyra, 1932",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Bernabe,_1932_(colour).jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bernabe%2C_1932_%28colour%29.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Bernabé",
+            "texto": "*BERNABÉ*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "zoom"
+      },
+      "pausa": 0.5,
+      "say": "Se llamaba Bernabé Ferreyra. Era de Rufino, Santa Fe, y pateaba como nadie."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "en": "treinta y cinco",
+        "etiqueta": "de Tigre a River, 1932",
+        "numero": 35000,
+        "palabra": "UN RÉCORD",
+        "palabra_en": "récord",
+        "prefijo": "$",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "En mil novecientos treinta y dos, River se lo compró a Tigre por treinta y cinco mil pesos. Un récord.",
+      "sub": "En 1932, River se lo compró a Tigre por 35.000 pesos. Un récord."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "así nació el apodo",
+        "objeto": {
+          "en": "compras",
+          "tipo": "billetes",
+          "valor": "100"
+        },
+        "palabras": [
+          {
+            "en": "Millonarios",
+            "texto": "*MILLONARIOS*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Por compras como esa, a River le empezaron a decir «los Millonarios»."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "un tango para él",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Partitura del tango «La Fiera», 1932",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Tango_la_fiera_partitura.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Tango_la_fiera_partitura.jpg"
+        },
+        "lupa": {
+          "en": "tango",
+          "x": 0.5,
+          "y": 0.1,
+          "z": 0.3
+        },
+        "palabras": [
+          {
+            "en": "Fiera",
+            "texto": "*LA FIERA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Pateaba tan fuerte que un periodista lo bautizó «la Fiera». Hasta le escribieron un tango."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "en": "cuarenta",
+        "etiqueta": "campeonato de 1932",
+        "numero": 40,
+        "palabra": "GOLES",
+        "palabra_en": "goles",
+        "prefijo": "+",
+        "tipo": "cifra"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Ese año hizo más de cuarenta goles, y River salió campeón."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "diario Crítica",
+        "foto": {
+          "credito": "Diario Crítica / Wikimedia Commons",
+          "epigrafe": "Crítica, 5 de junio de 1932",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Diario_critica_portada_5jun1932.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Diario_critica_portada_5jun1932.jpg"
+        },
+        "marca": {
+          "en": "Crítica",
+          "forma": "circulo",
+          "h": 0.12,
+          "texto": "Crítica",
+          "w": 0.5,
+          "x": 0.45,
+          "y": 0.06
+        },
+        "palabras": [
+          {
+            "en": "medalla",
+            "texto": "*UNA MEDALLA*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "rasgado"
+      },
+      "pausa": 0.5,
+      "say": "Entonces el diario Crítica prometió una medalla al primer arquero que no le hiciera un gol."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "estilo": "impacto",
+        "palabras": [
+          {
+            "en": "Fecha",
+            "texto": "FECHA TRAS"
+          },
+          {
+            "en": "fecha,",
+            "texto": "FECHA"
+          },
+          {
+            "en": "ningún",
+            "texto": "*NINGUNO*"
+          },
+          {
+            "en": "pudo",
+            "texto": "PUDO"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Fecha tras fecha, ningún arquero pudo."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "etiqueta": "el primero que lo frenó",
+        "objeto": {
+          "en": "uno a uno",
+          "filas": [
+            [
+              "River",
+              1
+            ],
+            [
+              "Huracán",
+              1
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "Nicola",
+            "texto": "*DE NICOLA*"
+          }
+        ],
+        "sello": "MEDALLA",
+        "sello_en": "medalla",
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Hasta que Cándido De Nicola, de Huracán, aguantó en un uno a uno. Se llevó la medalla.",
+      "sub": "Hasta que Cándido De Nicola, de Huracán, aguantó en un 1 a 1. Se llevó la medalla."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#FFFFFF",
+          "color": "#D0021B",
+          "estilo": "banda",
+          "nombre": "BERNABÉ",
+          "numero": 9,
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Sabías",
+            "texto": "¿SABÍAS"
+          },
+          {
+            "en": "viene",
+            "texto": "*DE DÓNDE VENÍA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Terminó con más goles que partidos. ¿Sabías de dónde viene lo de Millonarios? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "diario",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Bernabé Ferreyra, «el Mortero de Rufino», llegó a River desde Tigre en 1932 por 35.000 pesos, la compra más cara del país hasta entonces. Por pases como ese, a River le empezaron a decir «los Millonarios». Un periodista de Crítica lo bautizó «la Fiera» y hasta tuvo un tango con ese nombre. En 1932 hizo más de 40 goles y River fue campeón. El diario Crítica ofreció una medalla al primer arquero que no le hiciera goles: el primero en ganarla fue Cándido De Nicola, de Huracán, en un 1 a 1. Se retiró en 1939 con más goles que partidos en River. ¿Sabías de dónde viene lo de Millonarios? Fotos: Wikimedia Commons (dominio público).",
+    "hashtags": [
+      "river",
+      "bernabeferreyra",
+      "millonarios",
+      "futbolargentino",
+      "historia",
+      "shorts"
+    ],
+    "titulo": "Un diario premiaba al arquero que le atajara todo #shorts"
+  },
+  "subtitulos": true,
+  "textura": "pelicula",
+  "titulo": "Bernabé Ferreyra, la Fiera",
+  "voz": {
+    "pronunciar": {
+      "De Nicola": "De Nícola",
+      "Ferreyra": "Ferreira"
+    }
+  }
+}

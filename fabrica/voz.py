@@ -61,6 +61,7 @@ PRONUNCIAR = {
     # la ll rioplatense (ll → sch) no va en estos apellidos: los corrigió Carlos escuchando la voz
     "Fillol": "Filiol", "FILLOL": "FILIOL",
     "Passarella": "Passarela", "PASSARELLA": "PASSARELA",
+    "Ferreyra": "Ferreira", "FERREYRA": "FERREIRA",
 }
 
 
