@@ -1,0 +1,270 @@
+{
+  "ambiente": "ciudad",
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Adolphe_Sax",
+    "https://brusselstimes.com/365135/today-in-history-death-of-adolphe-sax-inventor-of-the-saxophone",
+    "https://es.metallirari.com/tormentosa-vida-adolphe-sax-inventor-saxofon/",
+    "https://vanguardia.com.mx/show/2683954-adolphe-sax-el-inventor-del-saxofon-murio-solo-y-pobre-hace-120-anos-LXVG2683954",
+    "https://www.yahoo.com/entertainment/music/articles/adolphe-sax-man-survived-seven-144019474.html"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "muere",
+            "texto": "CASI SE MUERE"
+          },
+          {
+            "en": "siete",
+            "texto": "*SIETE*"
+          },
+          {
+            "en": "veces",
+            "texto": "VECES"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "De chico, casi se muere siete veces."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "6 de noviembre de 1814",
+        "foto": {
+          "credito": "DimiTalen / Wikimedia Commons (CC0)",
+          "epigrafe": "Dinant, Bélgica",
+          "licencia": "CC0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:View_of_Dinant,_with_the_Coll%C3%A9giale_and_Citadelle,_from_Avenue_Colonel_Cadoux,_2025.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/View_of_Dinant%2C_with_the_Coll%C3%A9giale_and_Citadelle%2C_from_Avenue_Colonel_Cadoux%2C_2025.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Dinant",
+            "texto": "*DINANT*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Adolphe Sax nació un día como hoy, en mil ochocientos catorce, en Dinant, Bélgica.",
+      "sub": "Adolphe Sax nació un día como hoy, en 1814, en Dinant, Bélgica."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "según sus biógrafos",
+        "items": [
+          {
+            "en": "cayó",
+            "texto": "Se cayó de un 3er piso"
+          },
+          {
+            "en": "ácido",
+            "texto": "Tomó ácido"
+          },
+          {
+            "en": "pólvora",
+            "texto": "Se quemó con pólvora"
+          }
+        ],
+        "numerada": true,
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Según sus biógrafos, se cayó de un tercer piso, tomó ácido y se quemó con pólvora."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "y siguió",
+        "items": [
+          {
+            "en": "ahoga",
+            "texto": "Casi se ahoga"
+          },
+          {
+            "en": "piedra",
+            "texto": "Una piedra en la cabeza"
+          }
+        ],
+        "numerada": true,
+        "remate": {
+          "en": "cabeza",
+          "texto": "…y sobrevivió"
+        },
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Casi se ahoga en un río. Y una piedra le pegó en la cabeza."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "estilo": "maquina",
+        "kicker": "en Dinant",
+        "palabras": [
+          {
+            "en": "pequeño",
+            "texto": "EL PEQUEÑO"
+          },
+          {
+            "en": "fantasma",
+            "texto": "*FANTASMA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.8,
+      "say": "Los vecinos le decían «el pequeño fantasma»."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el inventor",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Adolphe Sax, hacia 1850",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Adolphe_Sax_3.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Adolphe_Sax_3.jpg"
+        },
+        "palabras": [
+          {
+            "en": "París",
+            "texto": "*PARÍS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Su papá fabricaba instrumentos, y él siguió el oficio. En mil ochocientos cuarenta y dos se fue a París.",
+      "sub": "Su papá fabricaba instrumentos, y él siguió el oficio. En 1842 se fue a París."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "destello": true,
+        "etiqueta": "patente de 1846",
+        "foto": {
+          "credito": "The Metropolitan Museum of Art / Wikimedia Commons (CC0)",
+          "epigrafe": "Saxo alto de Sax, hacia 1855",
+          "licencia": "CC0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Alto_saxophone_in_E-flat_MET_DP338623.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Alto_saxophone_in_E-flat_MET_DP338623.jpg"
+        },
+        "palabras": [
+          {
+            "en": "saxofón",
+            "texto": "*EL SAXOFÓN*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "zoom"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Y en mil ochocientos cuarenta y seis patentó su gran invento: el saxofón.",
+      "sub": "Y en 1846 patentó su gran invento: el saxofón."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "los rivales",
+        "palabras": [
+          {
+            "en": "juicios",
+            "texto": "*JUICIOS*"
+          },
+          {
+            "en": "más",
+            "texto": "MÁS DE"
+          },
+          {
+            "en": "veinte",
+            "texto": "20 AÑOS"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "rasgado"
+      },
+      "pausa": 0.5,
+      "say": "Pero los fabricantes rivales le hicieron juicios. Pelearon más de veinte años."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "en": "tres",
+        "etiqueta": "1852 · 1873 · 1877",
+        "numero": 3,
+        "palabra": "QUIEBRAS",
+        "palabra_en": "Quebró",
+        "tipo": "cifra"
+      },
+      "pausa": 0.7,
+      "say": "Quebró tres veces. Y en mil ochocientos noventa y cuatro murió pobre, en París.",
+      "sub": "Quebró tres veces. Y en 1894 murió pobre, en París."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "SAXO"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "tema",
+            "texto": "¿QUÉ TEMA"
+          },
+          {
+            "en": "saxo",
+            "texto": "*CON SAXO?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy su saxo suena en el jazz, el rock y la cumbia. ¿Qué tema con saxo te gusta? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "alegre"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "Adolphe Sax nació el 6 de noviembre de 1814 en Dinant, Bélgica. Según sus biógrafos, de chico se cayó de un tercer piso, tomó ácido, se quemó con pólvora, casi se ahoga en un río y una piedra le pegó en la cabeza: los vecinos le decían «el pequeño fantasma». Hijo de un fabricante de instrumentos, se fue a París en 1842 y en 1846 patentó el saxofón. Los fabricantes rivales le hicieron juicios durante más de veinte años; quebró tres veces (1852, 1873 y 1877) y murió pobre en París en 1894. Hoy su invento suena en el jazz, el rock y la cumbia. ¿Qué tema con saxo te gusta? Fotos: Wikimedia Commons (retrato, dominio público; Dinant, DimiTalen, CC0; saxo alto, The Metropolitan Museum of Art, CC0).",
+    "hashtags": [
+      "saxofon",
+      "adolphesax",
+      "inventos",
+      "historia",
+      "musica",
+      "shorts"
+    ],
+    "titulo": "De chico casi se muere 7 veces… y después inventó el saxo #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Adolphe Sax, el chico que no se moría",
+  "voz": {
+    "pronunciar": {
+      "Adolphe": "Adolf",
+      "Dinant": "Dinán"
+    }
+  }
+}
