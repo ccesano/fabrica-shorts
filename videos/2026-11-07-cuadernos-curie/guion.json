@@ -1,0 +1,271 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.csmonitor.com/Innovation/Horizons/2011/1107/Marie-Curie-Why-her-papers-are-still-radioactive",
+    "https://www.sciencealert.com/these-personal-effects-of-marie-curie-will-be-radioactive-for-another-1-500-years",
+    "https://nobelprize.org/prizes/chemistry/1911/marie-curie",
+    "https://en.wikipedia.org/wiki/Marie_Curie"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "cuadernos",
+            "texto": "SUS CUADERNOS"
+          },
+          {
+            "en": "todavía",
+            "texto": "TODAVÍA SON"
+          },
+          {
+            "en": "radiactivos",
+            "texto": "*RADIACTIVOS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Sus cuadernos todavía son radiactivos."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "7 de noviembre de 1867",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Marie Curie, c. 1900",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Marie_Curie,_portrait,_1900.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Marie_Curie%2C_portrait%2C_1900.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Curie",
+            "texto": "*MARIE CURIE*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Son de Marie Curie, que nació un día como hoy, en Varsovia, en mil ochocientos sesenta y siete.",
+      "sub": "Son de Marie Curie, que nació un día como hoy, en Varsovia, en 1867."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "dos premios Nobel",
+        "items": [
+          {
+            "en": "primera",
+            "texto": "1903 · Física"
+          },
+          {
+            "en": "otro",
+            "texto": "1911 · Química"
+          }
+        ],
+        "remate": "LA PRIMERA MUJER",
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Descubrió el radio con su marido, Pierre. Fue la primera mujer con un Nobel. Y después ganó otro."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "en el bolsillo",
+        "foto": {
+          "credito": "Fotógrafo desconocido / Wikimedia Commons",
+          "epigrafe": "Pierre y Marie Curie en el laboratorio",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pierre_and_Marie_Curie.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Pierre_and_Marie_Curie.jpg"
+        },
+        "palabras": [
+          {
+            "en": "radio",
+            "texto": "*RADIO*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "izquierda"
+      },
+      "pausa": 0.5,
+      "say": "Trabajaban en un laboratorio de París. Ella llevaba frascos con radio y polonio en el bolsillo."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Marie Curie",
+        "texto": "Los tubos brillantes parecían tenues *luces de hadas*.",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "De noche, los tubos brillaban. Ella escribió: «Los tubos brillantes parecían tenues luces de hadas»."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "kicker": "4 de julio de 1934",
+        "palabras": [
+          {
+            "en": "luz",
+            "texto": "ESA LUZ"
+          },
+          {
+            "en": "fue",
+            "texto": "LA FUE"
+          },
+          {
+            "en": "enfermando",
+            "texto": "*ENFERMANDO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "silencio",
+      "pausa": 0.6,
+      "say": "Esa luz la fue enfermando. Murió en mil novecientos treinta y cuatro, se cree que por la radiación.",
+      "sub": "Esa luz la fue enfermando. Murió en 1934, se cree que por la radiación."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "Biblioteca Nacional de Francia",
+        "foto": {
+          "credito": "Wellcome Collection / Wikimedia Commons",
+          "epigrafe": "Páginas de un cuaderno de Marie Curie",
+          "licencia": "CC BY 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pages_from_Marie_Curie%27s_notebook,_Wellcome_L0001764.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Pages_from_Marie_Curie%27s_notebook%2C_Wellcome_L0001764.jpg"
+        },
+        "lupa": {
+          "en": "cuadernos",
+          "x": 0.27,
+          "y": 0.23,
+          "z": 0.3
+        },
+        "palabras": [
+          {
+            "en": "plomo",
+            "texto": "*PLOMO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.5,
+      "say": "Hoy sus cuadernos están en la Biblioteca Nacional de Francia, en cajas forradas con plomo."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "antes de abrir la caja",
+        "objeto": {
+          "filas": [
+            [
+              1,
+              "Ropa de protección"
+            ],
+            [
+              2,
+              "Firma de deslinde"
+            ]
+          ],
+          "tipo": "planilla",
+          "titulo": "REQUISITOS",
+          "volanta": "Para consultar"
+        },
+        "palabras": [
+          {
+            "en": "firmar",
+            "texto": "*FIRMAR*"
+          }
+        ],
+        "sello": "PELIGRO",
+        "sello_en": "deslinde",
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Para abrirlas hay que ponerse ropa de protección y firmar un deslinde."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "destello": true,
+        "en": "mil seiscientos",
+        "etiqueta": "vida media del radio-226",
+        "numero": 1600,
+        "palabra": "LA MITAD",
+        "palabra_en": "mitad",
+        "sufijo": " AÑOS",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "El radio tarda mil seiscientos años en perder la mitad de su radiactividad."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "anio": 1867,
+          "dia": 7,
+          "mes": "NOVIEMBRE",
+          "tipo": "calendario"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Sabías",
+            "texto": "¿SABÍAS"
+          },
+          {
+            "en": "historia",
+            "texto": "*ESTA HISTORIA?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hasta sus restos se sellaron con plomo. ¿Sabías esta historia? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "misterio"
+  },
+  "paleta": "bosque",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "Marie Curie nació el 7 de noviembre de 1867 en Varsovia. Descubrió el radio junto a Pierre Curie, fue la primera mujer en ganar un Nobel (Física, 1903) y la única persona con premios Nobel en dos ciencias distintas (Química, 1911). Llevaba frascos con radio y polonio en el bolsillo y escribió que los tubos brillantes parecían «tenues luces de hadas». Murió en 1934 de una anemia aplásica que se atribuye a la radiación. Sus cuadernos se guardan en la Biblioteca Nacional de Francia en cajas forradas con plomo: para consultarlos hay que usar ropa de protección y firmar un deslinde. El radio-226 tiene una vida media de unos 1.600 años. Cuando trasladaron sus restos al Panteón de París, en 1995, se sellaron con plomo. Fotos: Wikimedia Commons (dominio público; cuaderno: Wellcome Collection, CC BY 4.0).",
+    "hashtags": [
+      "mariecurie",
+      "ciencia",
+      "historia",
+      "radio",
+      "curiosidades",
+      "shorts"
+    ],
+    "titulo": "Sus cuadernos siguen siendo radiactivos #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Los cuadernos radiactivos de Marie Curie",
+  "voz": {
+    "pronunciar": {
+      "Curie": "Curí",
+      "Pierre": "Piér"
+    }
+  }
+}
