@@ -1,0 +1,290 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.lanacion.com.ar/deportes/a-50-anos-antonio-rattin-recuerda-su-expulsion-frente-a-inglaterra-que-dio-inicio-una-rivalidad-atipica-nid1921048/",
+    "https://inside.fifa.com/news/1966-world-cup-gripping-tales-and-inspirational-traffic-lights-2812820",
+    "https://global.espn.com/football/story/_/id/49336785/argentine-antonio-rattin-inspired-red-yellow-cards-dies-89",
+    "https://www.lacapital.com.ar/ovacion/el-dia-que-rattin-se-sento-la-alfombra-roja-la-reina-isabel-ii-n1195764.html",
+    "https://thesefootballtimes.co/2018/02/02/the-dirty-look-and-the-traffic-lights-that-gave-birth-to-yellow-and-red-cards/"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Por",
+            "texto": "POR ÉL"
+          },
+          {
+            "en": "inventó",
+            "texto": "SE INVENTÓ"
+          },
+          {
+            "en": "tarjeta",
+            "texto": "LA TARJETA"
+          },
+          {
+            "en": "roja",
+            "texto": "*ROJA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Por él se inventó la tarjeta roja."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "estilo": "maquina",
+        "kicker": "23 de julio de 1966",
+        "palabras": [
+          {
+            "en": "Wembley",
+            "texto": "WEMBLEY"
+          },
+          {
+            "en": "Argentina",
+            "texto": "ARGENTINA"
+          },
+          {
+            "en": "Inglaterra",
+            "texto": "VS. *INGLATERRA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Wembley, mil novecientos sesenta y seis. Argentina contra Inglaterra, cuartos de final del Mundial.",
+      "sub": "Wembley, 1966. Argentina contra Inglaterra, cuartos de final del Mundial."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el capitán",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Antonio Rattín en Boca",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Rattin_waving_crowd.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Rattin_waving_crowd.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Rattín",
+            "texto": "*RATTÍN*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El capitán argentino era Antonio Rattín, el Rata, ídolo de Boca."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "árbitro: Rudolf Kreitlein",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Rattín expulsado, Wembley 1966",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Argentina_1966_rattin.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Argentina_1966_rattin.jpg"
+        },
+        "marca": {
+          "en": "expulsó",
+          "forma": "circulo",
+          "h": 0.55,
+          "texto": "Rattín",
+          "w": 0.17,
+          "x": 0.22,
+          "y": 0.28
+        },
+        "palabras": [
+          {
+            "en": "expulsó",
+            "texto": "*AFUERA*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "izquierda"
+      },
+      "pausa": 0.6,
+      "say": "En el primer tiempo, el árbitro alemán lo expulsó. Ninguno de los dos hablaba el idioma del otro."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Antonio Rattín",
+        "texto": "Yo le insisto al juez con que entre un *intérprete* y me expulsa.",
+        "tipo": "cita"
+      },
+      "pausa": 1.1,
+      "say": "Rattín lo contó así: «Yo le insisto al juez con que entre un intérprete y me expulsa»."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "kicker": "el palco real",
+        "palabras": [
+          {
+            "en": "alfombra",
+            "texto": "LA ALFOMBRA"
+          },
+          {
+            "en": "Reina",
+            "tachar_en": "estaba",
+            "texto": "DE LA *REINA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "No se quería ir. Y se sentó en la alfombra roja reservada para la Reina, que ni estaba."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "camino al vestuario",
+        "objeto": {
+          "en": "ganó",
+          "filas": [
+            [
+              "Inglaterra",
+              1
+            ],
+            [
+              "Argentina",
+              0
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "banderín",
+            "texto": "*EL BANDERÍN*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Al irse, estrujó un banderín con la bandera inglesa. Inglaterra ganó uno a cero.",
+      "sub": "Al irse, estrujó un banderín con la bandera inglesa. Inglaterra ganó 1 a 0."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el inventor",
+        "foto": {
+          "credito": "Aysolaw5 / Wikimedia Commons",
+          "epigrafe": "Ken Aston",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Ken_Aston_MBE_Portrait.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ken_Aston_MBE_Portrait.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Aston",
+            "texto": "*KEN ASTON*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "arriba"
+      },
+      "pausa": 0.5,
+      "say": "En la cancha estaba Ken Aston, jefe de los árbitros. Después, en un semáforo de Londres, tuvo la idea."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "kicker": "México 1970",
+        "palabras": [
+          {
+            "en": "Amarillo",
+            "texto": "AMARILLO"
+          },
+          {
+            "en": "Rojo",
+            "texto": "*ROJO*"
+          },
+          {
+            "en": "afuera",
+            "texto": "AFUERA"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Amarillo, cuidado. Rojo, afuera. Las tarjetas debutaron en el Mundial de México setenta.",
+      "sub": "Amarillo, cuidado. Rojo, afuera. Las tarjetas debutaron en el Mundial de México 70."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#0B2A6F",
+          "color": "#F2C230",
+          "estilo": "banda",
+          "nombre": "RATTÍN",
+          "numero": 5,
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "acordás",
+            "texto": "¿TE ACORDÁS"
+          },
+          {
+            "en": "partido",
+            "texto": "*DEL PARTIDO?*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Rattín murió en julio, a los ochenta y nueve. ¿Te acordás de aquel partido? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "tension"
+  },
+  "paleta": "bombonera",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Mundial de 1966, cuartos de final en Wembley: Argentina contra Inglaterra. En el primer tiempo, el árbitro alemán Rudolf Kreitlein expulsó al capitán argentino Antonio Rattín, que pedía un intérprete: ninguno hablaba el idioma del otro. Rattín no se quería ir, se sentó en la alfombra roja reservada para la Reina (que no estaba en el estadio) y, al salir, estrujó un banderín con la bandera británica. Inglaterra ganó 1 a 0. Ken Aston, jefe de la comisión de árbitros de la FIFA, estaba en la cancha; después, frenado en un semáforo de Londres, pensó en el amarillo y el rojo: las tarjetas debutaron en el Mundial de México 1970. Rattín murió en julio de 2026, a los 89 años. ¿Te acordás de aquel partido? Fotos: Wikimedia Commons (dominio público; retrato de Ken Aston por Aysolaw5, CC BY-SA 3.0).",
+    "hashtags": [
+      "rattin",
+      "boca",
+      "seleccionargentina",
+      "mundial1966",
+      "tarjetaroja",
+      "futbolargentino",
+      "shorts"
+    ],
+    "titulo": "Lo echaron y se sentó en la alfombra de la Reina #shorts"
+  },
+  "subtitulos": true,
+  "textura": "pelicula",
+  "titulo": "Rattín y la alfombra de la Reina",
+  "voz": {
+    "pronunciar": {
+      "Aston": "Áston",
+      "Wembley": "Uémbli"
+    }
+  }
+}
