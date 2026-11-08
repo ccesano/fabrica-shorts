@@ -1,0 +1,270 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.cadena3.com/noticia/perfiles/sebastian-battaglia-el-mas-campeon-de-los-campeones_261616",
+    "https://www.elgrafico.com.ar/articulo/primera-division/47317/sebastian-battaglia-el-mas-ganador-en-la-historia-de-boca",
+    "https://www.lacapitalmdp.com/todavia-no-caigo-en-que-soy-el-que-mas-titulos-gano-en-boca/",
+    "https://442.perfil.com/noticias/futbol/10-anos-del-ultimo-partido-de-sebastian-battaglia-en-boca.phtml"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "ganador",
+            "texto": "EL MÁS GANADOR"
+          },
+          {
+            "en": "Boca",
+            "texto": "DE *BOCA*"
+          },
+          {
+            "en": "Riquelme",
+            "tachar_en": "Riquelme",
+            "texto": "RIQUELME"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "El más ganador de Boca no es Riquelme."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Santa Fe, 8/11/1980",
+        "foto": {
+          "credito": "Víctor Santa María / Wikimedia Commons",
+          "epigrafe": "Sebastián Battaglia, 2015",
+          "licencia": "CC BY 2.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Battaglia_mar2015.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Battaglia_mar2015.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Battaglia",
+            "texto": "*BATTAGLIA*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Es Sebastián Battaglia, un volante santafesino que hoy cumple cuarenta y seis años.",
+      "sub": "Es Sebastián Battaglia, un volante santafesino que hoy cumple 46 años."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el debut",
+        "objeto": {
+          "anio": 1998,
+          "dia": 31,
+          "en": "Debutó",
+          "mes": 5,
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "diecisiete",
+            "texto": "*17 AÑOS*"
+          }
+        ],
+        "tipo": "collage",
+        "transicion": "arriba"
+      },
+      "pausa": 0.5,
+      "say": "Debutó en la Primera de Boca en mil novecientos noventa y ocho, con diecisiete años.",
+      "sub": "Debutó en la Primera de Boca en 1998, con 17 años."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "destello": true,
+        "en": "diecisiete",
+        "etiqueta": "títulos con Boca",
+        "numero": 17,
+        "palabra": "RÉCORD",
+        "tipo": "cifra"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "En menos de trece años con la azul y oro ganó diecisiete títulos.",
+      "sub": "En menos de 13 años con la azul y oro ganó 17 títulos."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "la vitrina",
+        "items": [
+          {
+            "en": "Cuatro",
+            "texto": "4 Libertadores"
+          },
+          {
+            "en": "dos",
+            "texto": "2 Intercontinentales"
+          },
+          {
+            "en": "siete",
+            "texto": "7 torneos locales"
+          },
+          {
+            "en": "una",
+            "texto": "1 Sudamericana"
+          },
+          {
+            "en": "tres",
+            "texto": "3 Recopas"
+          }
+        ],
+        "numerada": false,
+        "remate": "NADIE GANÓ MÁS",
+        "tipo": "lista"
+      },
+      "pausa": 0.5,
+      "say": "Cuatro Libertadores, dos Intercontinentales, siete campeonatos locales, una Sudamericana y tres Recopas."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "el museo de Boca",
+        "foto": {
+          "credito": "Javier666rock / Wikimedia Commons",
+          "epigrafe": "Copas en el Museo de Boca",
+          "licencia": "CC BY-SA 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Copas_Boca.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Museo_Copas_Boca.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cualquiera",
+            "texto": "*MÁS QUE NADIE*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "zoom"
+      },
+      "pausa": 0.5,
+      "say": "Le ganó al Real Madrid y al Milan. Más que Riquelme, más que Palermo, más que cualquiera."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "las lesiones",
+        "palabras": [
+          {
+            "en": "cuerpo",
+            "texto": "EL CUERPO"
+          },
+          {
+            "en": "pasó",
+            "texto": "LE PASÓ"
+          },
+          {
+            "en": "factura",
+            "texto": "*FACTURA*"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "rasgado"
+      },
+      "musica": "silencio",
+      "pausa": 0.6,
+      "say": "Pero el cuerpo le pasó factura: ligamentos rotos, pubalgia, las dos rodillas, el tobillo."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "11 de diciembre de 2011",
+        "objeto": {
+          "en": "Entró",
+          "filas": [
+            [
+              "Boca",
+              1
+            ],
+            [
+              "All Boys",
+              0
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "campeón",
+            "texto": "*CAMPEÓN*"
+          }
+        ],
+        "sello": "EL 17",
+        "sello_en": "campeón",
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Su último partido fue en la Bombonera, en dos mil once. Entró en el segundo tiempo y se despidió campeón.",
+      "sub": "Su último partido fue en la Bombonera, en 2011. Entró en el segundo tiempo y se despidió campeón."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "autor": "Sebastián Battaglia, 2017",
+        "texto": "Todavía hoy no caigo en que soy el que *más títulos* ganó en Boca.",
+        "tipo": "cita"
+      },
+      "pausa": 1.2,
+      "say": "Años después dijo: «Todavía hoy no caigo en que soy el que más títulos ganó en Boca»."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#0B2A6F",
+          "color": "#F2C230",
+          "estilo": "banda",
+          "nombre": "BATTAGLIA",
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Diecisiete",
+            "texto": "17 VUELTAS"
+          },
+          {
+            "en": "olímpicas",
+            "texto": "*OLÍMPICAS*"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "Diecisiete vueltas olímpicas. ¿Lo viste jugar? Contalo en los comentarios.",
+      "sub": "17 vueltas olímpicas. ¿Lo viste jugar? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": 17,
+    "descripcion": "Sebastián Battaglia nació el 8 de noviembre de 1980 en Santa Fe y debutó en la Primera de Boca en 1998, con 17 años. En menos de 13 años ganó 17 títulos con el club, récord histórico: 4 Copas Libertadores (2000, 2001, 2003, 2007), 2 Intercontinentales (Real Madrid 2000, Milan 2003), 7 torneos locales, la Sudamericana 2005 y 3 Recopas. Las lesiones lo marcaron y jugó su último partido el 11 de diciembre de 2011, ante All Boys en la Bombonera, en el Apertura que Boca ganó. ¿Lo viste jugar? Fotos: Víctor Santa María (CC BY 2.0) y Javier666rock (CC BY-SA 4.0), vía Wikimedia Commons.",
+    "hashtags": [
+      "Boca",
+      "Battaglia",
+      "FutbolArgentino",
+      "HistoriasDelFutbol"
+    ],
+    "titulo": "El que más ganó en Boca no fue Riquelme #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Battaglia, el que más ganó en Boca"
+}
