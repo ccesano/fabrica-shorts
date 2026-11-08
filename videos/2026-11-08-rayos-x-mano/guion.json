@@ -1,0 +1,269 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.historyofinformation.com/detail.php?id=550",
+    "https://litfl.com/8-november-1895-x-rays-discovered/",
+    "https://hyperallergic.com/i-have-seen-my-death-the-first-x-ray-photograph",
+    "https://dpma.de/english/our_office/publications/milestones/inventionsthatmadehistory/roentgensx-rays/index.html",
+    "https://www.itnonline.com/content/november-8-international-day-radiology"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "huesos",
+            "texto": "VIO LOS HUESOS"
+          },
+          {
+            "en": "esposa",
+            "texto": "DE SU *ESPOSA*"
+          },
+          {
+            "en": "vida",
+            "texto": "EN VIDA"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Vio los huesos de su esposa en vida."
+    },
+    {
+      "emocion": 0.45,
+      "escena": {
+        "estilo": "maquina",
+        "kicker": "8 de noviembre de 1895",
+        "palabras": [
+          {
+            "en": "Wurzburgo",
+            "texto": "WÜRZBURG"
+          },
+          {
+            "en": "Alemania",
+            "texto": "*ALEMANIA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Un día como hoy, en mil ochocientos noventa y cinco. Wurzburgo, Alemania.",
+      "sub": "Un día como hoy, en 1895. Würzburg, Alemania."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el físico",
+        "foto": {
+          "credito": "Fundación Nobel / Wikimedia Commons",
+          "epigrafe": "Wilhelm Röntgen",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:WilhelmR%C3%B6ntgen.JPG",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/WilhelmR%C3%B6ntgen.JPG"
+        },
+        "palabras": [
+          {
+            "en": "Röntgen",
+            "texto": "*RÖNTGEN*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El físico Wilhelm Röntgen probaba un tubo de vidrio, tapado con cartón negro."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "un brillo verde",
+        "foto": {
+          "credito": "D-Kuru / Wikimedia Commons",
+          "epigrafe": "Un tubo como el de Röntgen",
+          "licencia": "CC BY-SA 3.0 AT",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Crookes_tube-in_use-lateral_view-2_prPNr%C2%B009.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Crookes_tube-in_use-lateral_view-2_prPNr%C2%B009.jpg"
+        },
+        "lupa": {
+          "en": "brillar",
+          "x": 0.72,
+          "y": 0.38,
+          "z": 0.25
+        },
+        "palabras": [
+          {
+            "en": "brillar",
+            "texto": "*BRILLA*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "zoom"
+      },
+      "pausa": 0.5,
+      "say": "De golpe, una pantalla a un metro empezó a brillar. Algo atravesaba el cartón."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "kicker": "X = lo desconocido",
+        "palabras": [
+          {
+            "en": "rayos",
+            "texto": "RAYOS"
+          },
+          {
+            "en": "equis",
+            "texto": "*X*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "No sabía qué era. Por eso lo llamó rayos equis: lo desconocido.",
+      "sub": "No sabía qué era. Por eso lo llamó rayos X: lo desconocido."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "22 de diciembre de 1895",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Anna Bertha Röntgen",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Anna_Betha_R%C3%B6ntgen.jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Anna_Betha_R%C3%B6ntgen.jpg"
+        },
+        "palabras": [
+          {
+            "en": "quince",
+            "texto": "*15 MINUTOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "El veintidós de diciembre le pidió a su esposa, Anna Bertha, que dejara la mano quieta quince minutos.",
+      "sub": "El 22 de diciembre le pidió a su esposa, Anna Bertha, que dejara la mano quieta 15 minutos."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "destello": true,
+        "etiqueta": "la primera radiografía",
+        "foto": {
+          "credito": "Wilhelm Röntgen / Wikimedia Commons",
+          "epigrafe": "Hand mit Ringen, 1895",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg"
+        },
+        "marca": {
+          "en": "anillo",
+          "forma": "circulo",
+          "h": 0.2,
+          "texto": "el anillo",
+          "w": 0.26,
+          "x": 0.18,
+          "y": 0.15
+        },
+        "palabras": [
+          {
+            "en": "huesos",
+            "texto": "*SUS HUESOS*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "golpe",
+      "pausa": 0.7,
+      "say": "Ahí estaban sus huesos. Y su anillo, flotando."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "autor": "Anna Bertha Röntgen (según se cuenta)",
+        "texto": "Vi mi *muerte*.",
+        "tipo": "cita"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "Dicen que, al verla, ella dijo: «Vi mi muerte»."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "en": "mil",
+        "etiqueta": "el primer Nobel de Física",
+        "numero": 1901,
+        "palabra": "SIN PATENTE",
+        "tipo": "cifra"
+      },
+      "pausa": 0.6,
+      "say": "En mil novecientos uno ganó el primer Nobel de Física. Y no patentó su invento: quería que fuera de todos.",
+      "sub": "En 1901 ganó el primer Nobel de Física. Y no patentó su invento: quería que fuera de todos."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "anio": 1895,
+          "dia": 8,
+          "mes": 11,
+          "tipo": "calendario"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Día",
+            "texto": "DÍA DE LA"
+          },
+          {
+            "en": "Radiología",
+            "texto": "*RADIOLOGÍA*"
+          }
+        ]
+      },
+      "pausa": 0.6,
+      "say": "Hoy es el Día de la Radiología. ¿Te acordás de tu primera radiografía? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": 27,
+    "descripcion": "El 8 de noviembre de 1895, en Würzburg (Alemania), el físico Wilhelm Röntgen trabajaba con un tubo tapado con cartón negro cuando una pantalla a un metro empezó a brillar: unos rayos invisibles atravesaban el cartón. Como no sabía qué eran, los llamó rayos X. Trabajó semanas en secreto y el 22 de diciembre radiografió la mano de su esposa, Anna Bertha, con 15 minutos de exposición: se ven los huesos y el anillo. Según se cuenta, ella dijo «vi mi muerte». En 1901 Röntgen recibió el primer Premio Nobel de Física; no patentó su descubrimiento y donó el dinero del premio a la Universidad de Würzburg. Cada 8 de noviembre es el Día Internacional de la Radiología. Fotos: Wikimedia Commons (dominio público; tubo de Crookes por D-Kuru, CC BY-SA 3.0 AT).",
+    "hashtags": [
+      "Historia",
+      "Ciencia",
+      "RayosX",
+      "Röntgen"
+    ],
+    "titulo": "La primera radiografía fue la mano de su esposa #shorts"
+  },
+  "subtitulos": true,
+  "textura": "pelicula",
+  "titulo": "Rayos X: la mano de la señora Röntgen",
+  "voz": {
+    "pronunciar": {
+      "Bertha": "Berta",
+      "Röntgen": "Réntguen",
+      "Wilhelm": "Vílhelm"
+    }
+  }
+}
