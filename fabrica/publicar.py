@@ -66,7 +66,21 @@ def metadatos(servicio, pub):
     return None
 
 
+def url_final(url):
+    """Los links de descarga de un release de GitHub redirigen a otro host; Buffer no sigue la redirección."""
+    if "github.com" not in url:
+        return url
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.geturl()
+    except Exception as e:  # noqa: BLE001
+        print(f"aviso: no pude resolver la URL final ({e}); uso la original", flush=True)
+        return url
+
+
 def publicar(url, pub, cuando=None, solo=None):
+    url = url_final(url)
     texto = pub.get("descripcion_completa") or pub.get("descripcion", "")
     resultados = {}
     for c in canales():
@@ -81,6 +95,7 @@ def publicar(url, pub, cuando=None, solo=None):
             base.update(mode="shareNow")
         meta = metadatos(s, pub)
         intentos = [dict(base, metadata=meta), base] if meta else [base]
+        errores = []
         for inp in intentos:
             try:
                 r = gql(MUT, {"input": inp})["createPost"]
@@ -89,7 +104,9 @@ def publicar(url, pub, cuando=None, solo=None):
             if r.get("post"):
                 resultados[s] = {"ok": True, "id": r["post"]["id"], "cuando": r["post"].get("dueAt")}
                 break
-            resultados[s] = {"ok": False, "error": r.get("message")}
+            # se guardan los errores de todos los intentos: el del intento con metadatos es el que importa
+            errores.append(("con metadatos: " if inp.get("metadata") else "sin metadatos: ") + str(r.get("message")))
+            resultados[s] = {"ok": False, "error": " | ".join(errores)}
         print(f"{s:10s} {c['name']}: {resultados[s]}", flush=True)
     return resultados
 
