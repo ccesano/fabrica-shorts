@@ -1,0 +1,254 @@
+{
+ "ambiente": "ciudad",
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/G%C3%BCnter_Schabowski",
+  "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+  "https://www.aerztezeitung.de/Politik/Schabowskis-Pressekonferenz-am-Abend-des-9-November-1989-373780.html",
+  "https://www.latercera.com/la-tercera-pm/noticia/muere-riccardo-ehrman-el-periodista-italiano-que-hizo-caer-el-muro-de-berlin-con-una-pregunta/NPSM5A5UEJD5BG3L7Y5CTEDQ6M/",
+  "https://orte-der-einheit.de/en/bornholmer-strasse",
+  "https://www.semana.com/mundo/articulo/el-error-mas-feliz-historia/109546-3"
+ ],
+ "lineas": [
+  {
+   "emocion": 0.75,
+   "escena": {
+    "palabras": [
+     {
+      "en": "error",
+      "texto": "UN *ERROR*"
+     },
+     {
+      "en": "tiró",
+      "texto": "TIRÓ"
+     },
+     {
+      "en": "muro",
+      "texto": "UN MURO"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "Un error en una conferencia tiró un muro."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "en": "veintiocho",
+    "etiqueta": "Berlín, partida en dos",
+    "numero": 28,
+    "sufijo": " años",
+    "tipo": "cifra"
+   },
+   "pausa": 0.5,
+   "say": "Un día como hoy, en mil novecientos ochenta y nueve, Berlín llevaba veintiocho años partida en dos.",
+   "sub": "Un día como hoy, en 1989, Berlín llevaba 28 años partida en dos."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "el vocero",
+    "foto": {
+     "credito": "Bundesarchiv, Bild 183-1982-0504-421 / Wikimedia Commons",
+     "epigrafe": "Günter Schabowski",
+     "licencia": "CC BY-SA 3.0 de",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1982-0504-421,_G%C3%BCnter_Schabowski.jpg",
+     "recorte": true,
+     "tipo": "foto",
+     "tratamiento": "byn",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Bundesarchiv_Bild_183-1982-0504-421%2C_G%C3%BCnter_Schabowski.jpg"
+    },
+    "palabras": [
+     {
+      "en": "Schabowski",
+      "texto": "*SCHABOWSKI*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Esa tarde, Günter Schabowski, vocero del gobierno de Alemania del Este, daba una conferencia en vivo."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "etiqueta": "sus notas de ese día",
+    "foto": {
+     "credito": "Günter Schabowski / Haus der Geschichte / Wikimedia Commons",
+     "epigrafe": "9 de noviembre de 1989",
+     "licencia": "CC BY-SA 3.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Schabowski-notizzettel.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Schabowski-notizzettel.jpg"
+    },
+    "lupa": {
+     "en": "viajar",
+     "x": 0.45,
+     "y": 0.6,
+     "z": 0.3
+    },
+    "palabras": [
+     {
+      "en": "viajar",
+      "texto": "*VIAJAR*"
+     }
+    ],
+    "tipo": "foto",
+    "transicion": "izquierda"
+   },
+   "pausa": 0.5,
+   "say": "Casi al final, leyó una novedad: los del Este iban a poder viajar sin requisitos."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "18:53, en vivo",
+    "objeto": {
+     "texto": "¿DESDE CUÁNDO?",
+     "tipo": "tele"
+    },
+    "palabras": [
+     {
+      "en": "desde cuándo",
+      "texto": "*¿DESDE CUÁNDO?*"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "pausa": 1,
+   "say": "Un periodista preguntó: ¿desde cuándo?"
+  },
+  {
+   "emocion": 0.8,
+   "escena": {
+    "autor": "Günter Schabowski",
+    "texto": "Según sé… *de inmediato*. Sin demora.",
+    "tipo": "cita"
+   },
+   "pausa": 1.2,
+   "say": "Y él contestó: «Según sé, de inmediato. Sin demora.»",
+   "sub": "Y él contestó: «Según sé... de inmediato. Sin demora.»"
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "etiqueta": "lo que decía el plan",
+    "objeto": {
+     "anio": 1989,
+     "dia": 10,
+     "mes": "NOVIEMBRE",
+     "tipo": "calendario"
+    },
+    "palabras": [
+     {
+      "en": "era para",
+      "texto": "ERA PARA"
+     },
+     {
+      "en": "siguiente",
+      "texto": "*MAÑANA*"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "Pero no era así: el anuncio era para el día siguiente, y con trámite de visa."
+  },
+  {
+   "emocion": 0.7,
+   "escena": {
+    "etiqueta": "esa noche",
+    "foto": {
+     "credito": "Sue Ream / Wikimedia Commons",
+     "epigrafe": "Puerta de Brandeburgo, noviembre de 1989",
+     "licencia": "CC BY 3.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:BerlinWall-BrandenburgGate.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/BerlinWall-BrandenburgGate.jpg"
+    },
+    "palabras": [
+     {
+      "en": "muro",
+      "texto": "*AL MURO*"
+     }
+    ],
+    "tipo": "foto",
+    "transicion": "zoom"
+   },
+   "musica": "subida",
+   "pausa": 0.5,
+   "say": "Millones lo vieron por televisión. Esa noche, miles fueron al muro."
+  },
+  {
+   "emocion": 0.88,
+   "escena": {
+    "destello": true,
+    "en": "Veinte mil",
+    "etiqueta": "Bornholmer Straße, 23:30",
+    "numero": 20000,
+    "palabra": "PERSONAS",
+    "tipo": "cifra"
+   },
+   "pausa": 0.6,
+   "say": "En el paso de Bornholmer, a las once y media, abrieron la barrera. Veinte mil cruzaron en menos de una hora.",
+   "sub": "En el paso de Bornholmer, a las 23:30, abrieron la barrera. 20.000 cruzaron en menos de una hora."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "cta": "¿Dónde estabas vos?",
+    "objeto": {
+     "colores": [
+      "#C8102E",
+      "#F4F1EA"
+     ],
+     "lugar": "Alemania, 1989",
+     "texto": "Berlín",
+     "tipo": "postal"
+    },
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "en": "frase",
+      "texto": "UNA FRASE"
+     },
+     {
+      "en": "historia",
+      "texto": "*CAMBIÓ TODO*"
+     }
+    ]
+   },
+   "pausa": 0.8,
+   "say": "Una frase cambió la historia. ¿Vos te acordás dónde estabas? Contalo en los comentarios."
+  }
+ ],
+ "musica": {
+  "animo": "tension"
+ },
+ "paleta": "banda",
+ "publicar": {
+  "categoria_youtube": "27",
+  "descripcion": "El 9 de noviembre de 1989, Berlín llevaba 28 años partida por un muro. Esa tarde, Günter Schabowski, vocero del gobierno de Alemania del Este, daba una conferencia de prensa transmitida en vivo. Casi al final, a las 18:53, leyó una nueva norma: los ciudadanos del Este iban a poder viajar al exterior sin requisitos. Un periodista preguntó desde cuándo regía, y Schabowski, que no había estado en las reuniones donde se discutió, contestó: «Según sé, de inmediato, sin demora». En realidad, el anuncio estaba previsto para el día siguiente y con trámite de visa. Millones lo vieron por televisión y esa noche miles fueron a los pasos fronterizos. A las 23:30, en el paso de Bornholmer Straße, el oficial Harald Jäger ordenó abrir la barrera: unas 20.000 personas cruzaron en menos de una hora. Fotos: Wikimedia Commons (Bundesarchiv, CC BY-SA 3.0 de; notas de Schabowski, CC BY-SA 3.0; Sue Ream, CC BY 3.0).",
+  "hashtags": [
+   "historia",
+   "murodeberlin",
+   "unDiaComoHoy",
+   "historiasreales"
+  ],
+  "titulo": "El Muro de Berlín cayó por un error #shorts"
+ },
+ "subtitulos": true,
+ "titulo": "El Muro de Berlín cayó por un error en una conferencia",
+ "voz": {
+  "pronunciar": {
+   "Bornholmer": "Bórnjolmer",
+   "Günter": "Gúnter",
+   "Schabowski": "Shabóvski"
+  }
+ }
+}
