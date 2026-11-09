@@ -1,0 +1,263 @@
+{
+ "ambiente": "lluvia",
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/1966_theft_of_the_Jules_Rimet_Trophy",
+  "https://nationalfootballmuseum.com/news/thank-you-pickles-50-years-since-a-dog-saved-the-world-cup/",
+  "https://en.wikipedia.org/wiki/1983_theft_of_the_Jules_Rimet_Trophy",
+  "https://www.teletica.com/noticias/mundial-rusia-2018-la-increible-historia-del-argentino-que-le-robo-la-copa-del-mundo-a-brasil_196426"
+ ],
+ "lineas": [
+  {
+   "emocion": 0.7,
+   "escena": {
+    "palabras": [
+     {
+      "en": "Robaron",
+      "texto": "ROBARON"
+     },
+     {
+      "en": "Copa",
+      "texto": "LA *COPA*"
+     },
+     {
+      "en": "dos veces",
+      "texto": "DOS VECES"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "Robaron la Copa del Mundo dos veces."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "la copa original",
+    "foto": {
+     "credito": "Revista Estadio / Wikimedia Commons",
+     "epigrafe": "Ghiggia con la Copa, 1950",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ghiggia_con_la_Copa_Jules_Rimet,_Estadio,_1950-07-29_(376).jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ghiggia_con_la_Copa_Jules_Rimet%2C_Estadio%2C_1950-07-29_%28376%29.jpg"
+    },
+    "palabras": [
+     {
+      "en": "Jules Rimet",
+      "texto": "*JULES RIMET*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "La Jules Rimet. La misma que levantó Uruguay en el Maracaná."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "estilo": "maquina",
+    "kicker": "20 de marzo de 1966",
+    "palabras": [
+     {
+      "en": "Londres",
+      "texto": "LONDRES"
+     },
+     {
+      "en": "desapareció",
+      "texto": "*DESAPARECIÓ*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.5,
+   "say": "Londres, mil novecientos sesenta y seis. La exhibían en una muestra de estampillas, y desapareció.",
+   "sub": "Londres, 1966. La exhibían en una muestra de estampillas, y desapareció."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "en": "ciento cincuenta",
+    "etiqueta": "el rescate",
+    "numero": 150000,
+    "prefijo": "£",
+    "tipo": "cifra"
+   },
+   "pausa": 0.5,
+   "say": "Los ladrones pedían ciento cincuenta mil libras de rescate.",
+   "sub": "Los ladrones pedían 150.000 libras de rescate."
+  },
+  {
+   "emocion": 0.8,
+   "escena": {
+    "etiqueta": "el héroe",
+    "foto": {
+     "credito": "Mpilcher84 / Wikimedia Commons",
+     "epigrafe": "Beulah Hill, Londres",
+     "licencia": "CC BY-SA 4.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:PicklesSignBeulahHill.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/PicklesSignBeulahHill.jpg"
+    },
+    "marca": {
+     "en": "Pickles",
+     "forma": "circulo",
+     "h": 0.3,
+     "texto": "Pickles",
+     "w": 0.4,
+     "x": 0.3,
+     "y": 0.28
+    },
+    "palabras": [
+     {
+      "en": "Pickles",
+      "texto": "*PICKLES*"
+     }
+    ],
+    "tipo": "foto",
+    "transicion": "zoom"
+   },
+   "musica": "subida",
+   "pausa": 0.6,
+   "say": "Una semana después, un perro llamado Pickles olfateó un paquete envuelto en diario. Era la copa."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "etiqueta": "Brasil, 1970",
+    "foto": {
+     "credito": "Correios do Brasil / Wikimedia Commons",
+     "epigrafe": "Estampilla de 1970",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Selo_da_Copa_de_1970_3_cruzeiros.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Selo_da_Copa_de_1970_3_cruzeiros.jpg"
+    },
+    "palabras": [
+     {
+      "en": "para siempre",
+      "texto": "*PARA SIEMPRE*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "En mil novecientos setenta, Brasil ganó su tercer Mundial y se la quedó para siempre.",
+   "sub": "En 1970, Brasil ganó su tercer Mundial y se la quedó para siempre."
+  },
+  {
+   "emocion": 0.7,
+   "escena": {
+    "etiqueta": "Río de Janeiro",
+    "objeto": {
+     "anio": 1983,
+     "dia": 19,
+     "mes": "DICIEMBRE",
+     "tipo": "calendario"
+    },
+    "palabras": [
+     {
+      "en": "robaron",
+      "texto": "*OTRA VEZ*"
+     }
+    ],
+    "tipo": "collage",
+    "transicion": "rasgado"
+   },
+   "pausa": 0.5,
+   "say": "Hasta que en diciembre de mil novecientos ochenta y tres, la robaron de la sede de la CBF, en Río.",
+   "sub": "Hasta que en diciembre de 1983, la robaron de la sede de la CBF, en Río."
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "kicker": "la vitrina",
+    "palabras": [
+     {
+      "en": "blindado",
+      "tachar_en": "madera",
+      "texto": "BLINDADA"
+     },
+     {
+      "en": "atrás",
+      "texto": "ATRÁS:"
+     },
+     {
+      "en": "madera",
+      "texto": "*MADERA*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.5,
+   "say": "La vitrina tenía vidrio blindado. Pero la parte de atrás era de madera."
+  },
+  {
+   "emocion": 0.75,
+   "escena": {
+    "etiqueta": "el acusado",
+    "objeto": {
+     "tipo": "recorte",
+     "titular": "Condenan a un joyero argentino por la Copa",
+     "volanta": "Río de Janeiro, 1984"
+    },
+    "palabras": [
+     {
+      "en": "fundirla",
+      "texto": "¿LA *FUNDIÓ*?"
+     }
+    ],
+    "sello": "LO NEGÓ",
+    "sello_en": "negó",
+    "tipo": "collage"
+   },
+   "pausa": 0.6,
+   "say": "Condenaron a un joyero argentino, acusado de fundirla. Él siempre lo negó."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "cta": "¿Qué creés que pasó?",
+    "objeto": {
+     "tipo": "pelota"
+    },
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "en": "nunca",
+      "texto": "NUNCA"
+     },
+     {
+      "en": "apareció",
+      "texto": "*APARECIÓ*"
+     }
+    ]
+   },
+   "pausa": 0.8,
+   "say": "La copa original nunca apareció. ¿Vos qué creés que pasó? Contalo en los comentarios."
+  }
+ ],
+ "musica": {
+  "animo": "misterio"
+ },
+ "paleta": "diario",
+ "publicar": {
+  "categoria_youtube": "17",
+  "descripcion": "La Copa Jules Rimet, la misma que Uruguay levantó en el Maracaná en 1950, fue robada dos veces. El 20 de marzo de 1966, cuatro meses antes del Mundial de Inglaterra, desapareció de una muestra de estampillas en el Central Hall de Westminster, en Londres. Los ladrones pidieron 150.000 libras de rescate. Una semana después, el 27 de marzo, un perro collie llamado Pickles la encontró envuelta en papel de diario bajo un cerco en Beulah Hill, mientras paseaba con su dueño, David Corbett. En 1970 Brasil ganó su tercer Mundial y se quedó con la copa para siempre. Pero el 19 de diciembre de 1983 la robaron de la sede de la CBF en Río de Janeiro: la vitrina tenía vidrio blindado adelante, pero la parte de atrás era de madera. Por el caso fue condenado, entre otros, un joyero argentino, Juan Carlos Hernández, acusado de fundirla; él siempre lo negó. La copa original nunca apareció. Fotos: Wikimedia Commons (Ghiggia con la Copa, revista Estadio, dominio público; estampilla de Correios, dominio público; placa de Pickles por Mpilcher84, CC BY-SA 4.0).",
+  "hashtags": [
+   "futbol",
+   "mundial",
+   "copadelmundo",
+   "historiasreales"
+  ],
+  "titulo": "Robaron la Copa del Mundo dos veces #shorts"
+ },
+ "subtitulos": true,
+ "titulo": "La Copa robada dos veces"
+}
