@@ -15,6 +15,7 @@ import urllib.request
 
 API = "https://api.buffer.com"
 SERVICIOS = ("youtube", "instagram", "tiktok")
+IG_MAX = 2196
 
 
 def gql(query, variables=None):
@@ -87,7 +88,10 @@ def publicar(url, pub, cuando=None, solo=None):
         s = c["service"].lower()
         if s not in SERVICIOS or (solo and s not in solo):
             continue
-        base = {"text": texto if s != "tiktok" else (pub.get("titulo", "") + "\n\n" + texto)[:2000], "channelId": c["id"],
+        txt = texto if s != "tiktok" else (pub.get("titulo", "") + "\n\n" + texto)[:2000]
+        if s == "instagram" and len(txt) > IG_MAX:   # Instagram corta en 2196: se recorta desde el final (fuentes)
+            txt = txt[:IG_MAX - 1].rsplit("\n", 1)[0].rstrip() + "…"
+        base = {"text": txt, "channelId": c["id"],
                 "schedulingType": "automatic", "assets": [{"video": {"url": url, "metadata": {"thumbnailOffset": int(pub.get("portada_ms", 1500))}}}]}
         if cuando:
             base.update(mode="customScheduled", dueAt=cuando)
