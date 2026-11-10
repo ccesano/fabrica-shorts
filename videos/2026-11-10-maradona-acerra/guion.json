@@ -1,0 +1,261 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.ilfoglio.it/sport/2020/11/26/video/quando-maradona-porto-il-san-paolo-ad-acerra--215618",
+    "https://www.avvenire.it/agora/sport/e-maradona-diceva-mi-manda-puzone_47577",
+    "https://www.fanpage.it/napoli/luca-quarto-lex-bimbo-di-acerra-salvato-da-maradona-grazie-a-lui-ho-una-vita-normale/",
+    "https://www.bigissue.com/latest/watch-maradona-play-a-charity-match-in-a-potato-field-for-a-sick-child",
+    "https://www.elobservador.com.uy/nota/maradona-el-dia-que-el-astro-se-arriesgo-a-jugar-en-el-barro-para-salvar-la-vida-de-un-nino-202011279713",
+    "https://www.lacapital.com.ar/ovacion/el-dia-que-diego-maradona-se-rebelo-y-jugo-el-barro-ayudar-un-bebe-n10124290.html"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Maradona",
+            "texto": "MARADONA"
+          },
+          {
+            "en": "desobedeció",
+            "texto": "DESOBEDECIÓ"
+          },
+          {
+            "en": "chico",
+            "texto": "POR UN *CHICO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Maradona desobedeció a su club por un chico."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Nápoles, 1985",
+        "foto": {
+          "credito": "El Gráfico / Wikimedia Commons",
+          "epigrafe": "Maradona en el Napoli, 1985",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_passarella_may1985.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Maradona_passarella_may1985.jpg"
+        },
+        "marca": {
+          "en": "Diego",
+          "forma": "circulo",
+          "h": 0.24,
+          "texto": "Diego",
+          "w": 0.32,
+          "x": 0.12,
+          "y": 0.08
+        },
+        "palabras": [
+          {
+            "en": "medio año",
+            "texto": "*MEDIO AÑO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Nápoles, mil novecientos ochenta y cinco. Diego llevaba apenas medio año en el Nápoli.",
+      "sub": "Nápoles, 1985. Diego llevaba apenas medio año en el Napoli."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "un pueblo cerca de Nápoles",
+        "foto": {
+          "credito": "Balzacle / Wikimedia Commons",
+          "epigrafe": "Acerra, cerca de Nápoles",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Acerra_aerea.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Acerra_aerea.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Acerra",
+            "texto": "*ACERRA*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "derecha"
+      },
+      "pausa": 0.5,
+      "say": "Un compañero, Pietro Puzone, le habló de un chico de Acerra que necesitaba operarse en Francia."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "la idea",
+        "objeto": {
+          "campos": {
+            "Año": "1985",
+            "Juega": "Maradona"
+          },
+          "en": "partido",
+          "nombre": "Acerra",
+          "talon": "Por un chico",
+          "tipo": "entrada",
+          "titulo": "Partido a beneficio"
+        },
+        "palabras": [
+          {
+            "en": "beneficio",
+            "texto": "A *BENEFICIO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "La familia no podía pagarlo. Puzone propuso un partido a beneficio, con Diego en la cancha."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "kicker": "el presidente",
+        "palabras": [
+          {
+            "en": "presidente",
+            "tachar_en": "no",
+            "texto": "PERMISO"
+          },
+          {
+            "en": "seguro",
+            "texto": "SIN *SEGURO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.6,
+      "say": "Pero el presidente del club, Ferlaino, dijo que no. El seguro no cubría esos partidos."
+    },
+    {
+      "emocion": 0.75,
+      "escena": {
+        "autor": "Diego Maradona",
+        "texto": "Este juego debe jugarse *para ese niño*.",
+        "tipo": "cita"
+      },
+      "musica": "silencio",
+      "pausa": 1.2,
+      "say": "Diego contestó: «Este juego debe jugarse para ese niño»."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "arquero": "eludido",
+        "arquero_color": "#6B4A2B",
+        "corrida_en": "Diego",
+        "etiqueta": "en el barro",
+        "palabras": [
+          {
+            "en": "papas",
+            "texto": "*BARRO*"
+          }
+        ],
+        "remate_en": "goles",
+        "resultado": "gol",
+        "rival_color": "#6B4A2B",
+        "rivales": 2,
+        "sentido": "derecha",
+        "tipo": "jugada",
+        "transicion": "zoom"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Había llovido toda la semana. La cancha parecía un campo de papas. Y Diego igual hizo goles."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "destello": true,
+        "en": "veinte",
+        "etiqueta": "lo que se juntó",
+        "numero": 20,
+        "palabra": "DE LIRAS",
+        "sufijo": " millones",
+        "tipo": "cifra"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Juntaron veinte millones de liras. Alcanzó para la operación.",
+      "sub": "Juntaron 20 millones de liras. Alcanzó para la operación."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "destello": false,
+        "kicker": "Luca, ya grande",
+        "palabras": [
+          {
+            "en": "vida",
+            "texto": "UNA VIDA"
+          },
+          {
+            "en": "normal",
+            "texto": "*NORMAL*"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "arriba"
+      },
+      "pausa": 1.2,
+      "say": "Ese chico, Luca, creció. Y dijo: «Gracias a él tengo una vida normal»."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "¿Conocías esta historia?",
+        "objeto": {
+          "tipo": "pelota"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "historia",
+            "texto": "EL DIEZ"
+          },
+          {
+            "en": "Diego",
+            "texto": "EN EL *BARRO*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "¿Conocías esta historia de Diego? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "oceano",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "A comienzos de 1985, con apenas medio año en el Napoli, Diego Maradona se enteró por su compañero Pietro Puzone de un chico de Acerra, un pueblo cerca de Nápoles, que necesitaba una operación urgente en Francia que su familia no podía pagar. Puzone propuso un partido a beneficio con Diego. El presidente del club, Corrado Ferlaino, no quiso: temía una lesión y el seguro no cubría ese tipo de partidos. Según contó el periodista Carlo Liguori, Maradona respondió: «Este juego debe jugarse para ese niño». Después de una semana de lluvia, se jugó en una cancha de Acerra que la prensa comparó con un campo de papas, ante unas diez mil personas, y Diego hizo goles. Se juntaron unos 20 millones de liras, que alcanzaron para la operación. Ese chico, Luca Quarto, contó en 2020: «Gracias a él tengo una vida normal». Fuentes: Il Foglio, Avvenire, Fanpage, The Big Issue, El Observador. Fotos: Wikimedia Commons (Maradona en el Napoli, 1985, El Gráfico, dominio público; Corrado Ferlaino, 1975, dominio público; Acerra, Balzacle, dominio público).",
+    "hashtags": [
+      "maradona",
+      "napoli",
+      "futbol",
+      "historiasreales"
+    ],
+    "titulo": "Maradona desobedeció a su club por un chico #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Maradona en el barro de Acerra",
+  "voz": {
+    "pronunciar": {
+      "Ferlaino": "Ferlaíno",
+      "Puzone": "Putsóne"
+    }
+  }
+}
