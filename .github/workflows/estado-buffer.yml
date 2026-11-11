@@ -1,0 +1,19 @@
+name: Estado en Buffer
+# Muestra el estado de posts de Buffer (programado, enviado, error). Se corre a mano con los ids que devolvió /publicar.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "ids de posts de Buffer separados por espacio"
+        required: true
+permissions:
+  contents: read
+jobs:
+  estado:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          IDS: ${{ inputs.ids }}
+        run: python3 fabrica/estado_buffer.py $IDS | tee -a "$GITHUB_STEP_SUMMARY"
