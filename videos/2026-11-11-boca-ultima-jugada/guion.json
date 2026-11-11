@@ -1,0 +1,278 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.lanacion.com.ar/deportes/el-gol-agonico-de-enner-valencia-que-le-dio-el-titulo-de-la-tabla-anual-a-boca-nid07112026/",
+    "https://www.lagaceta.com.ar/nota/1161525/deportes/vale-titulo-gol-enner-valencia-ultima-jugada-hizo-campeon-boca.html",
+    "https://www.excelsior.com.mx/deportes/enner-valencia-arruina-festejo-rosario-central-y-le-da-titulo-anual-boca",
+    "https://perfil.com/deportes/locura-en-la-bombonera-boca-salio-campeon-en-la-ultima-jugada-del-torneo-aDgo60p6ZCNl",
+    "https://www.canal26.com/deportes/2026/11/08/el-gol-mas-agonico-para-salir-campeon-en-el-futbol-argentino-enner-valencia-rompio-un-record-historico-y-le-dio-el-titulo-a-boca/",
+    "https://www.vistazo.com/deportes/2026-11-09-enner-valencia-rompio-record-mundial-gol-titulo-boca-juniors-EC11310455",
+    "https://elgrafico.com.ar/articulo/1038/103814/los-goles-mas-tardios-de-la-historia-para-coronar-a-un-campeon-de-liga"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Central",
+            "texto": "CENTRAL"
+          },
+          {
+            "en": "festejaba",
+            "texto": "YA FESTEJABA"
+          },
+          {
+            "en": "Faltaban",
+            "texto": "FALTABAN"
+          },
+          {
+            "en": "segundos",
+            "texto": "*SEGUNDOS*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Central ya festejaba. Faltaban segundos."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "Última fecha · 7/11/2026",
+        "objeto": {
+          "en": "ganó",
+          "filas": [
+            [
+              "CENTRAL",
+              2
+            ],
+            [
+              "ESTUDIANTES RC",
+              0
+            ]
+          ],
+          "tipo": "marcador"
+        },
+        "palabras": [
+          {
+            "en": "dos",
+            "texto": "*2 A 0*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Sábado siete de noviembre, última fecha. Rosario Central le ganó dos a cero a Estudiantes de Río Cuarto.",
+      "sub": "Sábado 7 de noviembre, última fecha. Rosario Central le ganó 2 a 0 a Estudiantes de Río Cuarto."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "Rosario",
+        "foto": {
+          "credito": "Pablo D. Flores / Wikimedia Commons",
+          "epigrafe": "El Gigante de Arroyito",
+          "licencia": "CC BY-SA 3.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Estadio_Gigante_de_Arroyito.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Estadio_Gigante_de_Arroyito.jpg"
+        },
+        "palabras": [
+          {
+            "en": "bicampeonato",
+            "texto": "*BICAMPEÓN*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "derecha"
+      },
+      "pausa": 0.5,
+      "say": "La gente invadió la cancha del Gigante de Arroyito. Festejaban el bicampeonato."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "mientras tanto, en La Boca",
+        "foto": {
+          "credito": "Matibro / Wikimedia Commons",
+          "epigrafe": "La Bombonera",
+          "licencia": "CC BY-SA 4.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Bombonera_2.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/La_Bombonera_2.jpg"
+        },
+        "palabras": [
+          {
+            "en": "cero",
+            "texto": "*0 A 0*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "rasgado"
+      },
+      "pausa": 0.5,
+      "say": "Pero en la Bombonera, Boca empataba cero a cero con Defensa y Justicia. Necesitaba un gol.",
+      "sub": "Pero en la Bombonera, Boca empataba 0 a 0 con Defensa y Justicia. Necesitaba un gol."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "tiempo de descuento",
+        "objeto": {
+          "minuto": 95,
+          "tipo": "reloj"
+        },
+        "palabras": [
+          {
+            "en": "última",
+            "texto": "ÚLTIMA"
+          },
+          {
+            "en": "jugada",
+            "texto": "*JUGADA*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.4,
+      "say": "Minuto noventa y cinco. Quinto minuto de descuento. La última jugada.",
+      "sub": "Minuto 95. Quinto minuto de descuento. La última jugada."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "arquero": "eludido",
+        "arquero_color": "#E8C21A",
+        "corrida_en": "Centro",
+        "etiqueta": "el centro de la izquierda",
+        "palabras": [
+          {
+            "en": "Valencia",
+            "texto": "*VALENCIA*"
+          }
+        ],
+        "remate_en": "empuja",
+        "resultado": "gol",
+        "rival_color": "#1E7B3A",
+        "rivales": 2,
+        "sentido": "derecha",
+        "tipo": "jugada",
+        "transicion": "zoom"
+      },
+      "pausa": 0.3,
+      "say": "Centro de Lautaro Blanco. El arquero no la retiene, Di Lollo la peina y Enner Valencia la empuja."
+    },
+    {
+      "emocion": 0.9,
+      "escena": {
+        "estilo": "impacto",
+        "palabras": [
+          {
+            "en": "Gol",
+            "texto": "GOL"
+          },
+          {
+            "en": "Boca",
+            "texto": "BOCA"
+          },
+          {
+            "en": "campeón",
+            "texto": "*CAMPEÓN*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.8,
+      "say": "¡Gol! Boca campeón de la Tabla Anual."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "destello": false,
+        "kicker": "en Rosario",
+        "palabras": [
+          {
+            "en": "Rosario",
+            "tachar_en": "perdió",
+            "texto": "BICAMPEÓN"
+          },
+          {
+            "en": "punto",
+            "texto": "POR *1 PUNTO*"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "arriba"
+      },
+      "pausa": 0.6,
+      "say": "En Rosario se enteraron por el celular. Central perdió el título por un punto."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "en": "tardío",
+        "etiqueta": "el gol más tardío",
+        "numero": 95,
+        "palabra": "NUEVO RÉCORD",
+        "sufijo": "'",
+        "tipo": "cifra"
+      },
+      "pausa": 0.6,
+      "say": "Fue el gol más tardío en dar un título en la Argentina. El récord era de Maxi Moralez, minuto ochenta y tres.",
+      "sub": "Fue el gol más tardío en dar un título en la Argentina. El récord era de Maxi Moralez, minuto 83."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "¿Dónde lo viviste vos?",
+        "objeto": {
+          "minuto": 95,
+          "tipo": "reloj"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Dónde",
+            "texto": "EN LA"
+          },
+          {
+            "en": "viviste",
+            "texto": "*ÚLTIMA*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "¿Dónde lo viviste vos? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "tension"
+  },
+  "paleta": "bombonera",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Sábado 7 de noviembre de 2026, última fecha. Rosario Central le ganó 2 a 0 a Estudiantes de Río Cuarto y sus hinchas invadieron la cancha del Gigante de Arroyito para festejar el bicampeonato de la Tabla Anual. Pero en la Bombonera, Boca empataba 0 a 0 con Defensa y Justicia y necesitaba un gol. En el minuto 95, en la última jugada, llegó un centro de Lautaro Blanco, el arquero Matías Borgogno no la retuvo, Lautaro Di Lollo la peinó y Enner Valencia la empujó. Boca terminó con 63 puntos y Central con 62. Según El Gráfico y Canal 26, es el gol más tardío en definir un campeonato en el fútbol argentino: el récord era de Maxi Moralez (Vélez, minuto 83, Clausura 2009). Fuentes: La Nación, La Gaceta, Perfil, Excélsior, Canal 26, Vistazo, El Gráfico. Fotos: Wikimedia Commons (Estadio Gigante de Arroyito, Pablo D. Flores, CC BY-SA 3.0; La Bombonera, Matibro, CC BY-SA 4.0).",
+    "hashtags": [
+      "boca",
+      "rosariocentral",
+      "futbolargentino",
+      "ennervalencia"
+    ],
+    "titulo": "Central ya festejaba… y faltaban segundos #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Boca campeón en la última jugada",
+  "voz": {
+    "pronunciar": {
+      "Di Lollo": "Di Lolo"
+    }
+  }
+}
