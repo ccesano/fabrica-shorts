@@ -1,0 +1,283 @@
+{
+  "ambiente": "lluvia",
+  "fuentes": [
+    "https://www.history.com/news/world-war-i-armistice-last-american-death",
+    "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918",
+    "https://en.wikipedia.org/wiki/Henry_Gunther",
+    "https://time.com/5444257/last-american-wwi-henry-gunther/"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Firmaron",
+            "texto": "FIRMARON"
+          },
+          {
+            "en": "paz",
+            "texto": "LA *PAZ*"
+          },
+          {
+            "en": "siguieron",
+            "texto": "Y SIGUIERON"
+          },
+          {
+            "en": "matando",
+            "texto": "*MATANDO*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Firmaron la paz y siguieron matando."
+    },
+    {
+      "emocion": 0.45,
+      "escena": {
+        "estilo": "maquina",
+        "kicker": "Francia",
+        "palabras": [
+          {
+            "en": "Once",
+            "texto": "11 DE NOVIEMBRE"
+          },
+          {
+            "en": "dieciocho",
+            "texto": "DE 1918"
+          },
+          {
+            "en": "Cinco",
+            "texto": "*5 DE LA MAÑANA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Once de noviembre de mil novecientos dieciocho. Cinco de la mañana.",
+      "sub": "11 de noviembre de 1918. 5 de la mañana."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "bosque de Compiègne",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "El vagón del armisticio, 1918",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Armisticetrain.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Armisticetrain.jpg"
+        },
+        "marca": {
+          "en": "vagón",
+          "forma": "flecha",
+          "h": 0.3,
+          "texto": "el vagón",
+          "w": 0.6,
+          "x": 0.2,
+          "y": 0.05
+        },
+        "palabras": [
+          {
+            "en": "armisticio",
+            "texto": "*ARMISTICIO*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "derecha"
+      },
+      "pausa": 0.5,
+      "say": "En un vagón de tren, en un bosque al norte de París, Alemania firma el armisticio."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "fin de la Primera Guerra",
+        "objeto": {
+          "en": "fin",
+          "tipo": "recorte",
+          "titular": "Armisticio: el fuego cesa a las 11",
+          "volanta": "Noviembre de 1918"
+        },
+        "palabras": [
+          {
+            "en": "recién",
+            "texto": "A LAS *11*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "Es el fin de la Primera Guerra. Pero el fuego para recién a las once: hora once, día once, mes once.",
+      "sub": "Es el fin de la Primera Guerra. Pero el fuego para recién a las 11: hora 11, día 11, mes 11."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "kicker": "seis horas más",
+        "palabras": [
+          {
+            "en": "seis",
+            "texto": "6 HORAS"
+          },
+          {
+            "en": "frente",
+            "tachar_en": "atacando",
+            "texto": "*PAZ*"
+          },
+          {
+            "en": "seguir",
+            "texto": "SEGUIR"
+          },
+          {
+            "en": "atacando",
+            "texto": "ATACANDO"
+          }
+        ],
+        "tipo": "golpe",
+        "transicion": "rasgado"
+      },
+      "pausa": 0.6,
+      "say": "Faltaban seis horas. Y en el frente, muchos jefes ordenaron seguir atacando."
+    },
+    {
+      "emocion": 0.7,
+      "escena": {
+        "destello": false,
+        "en": "murieron",
+        "etiqueta": "el último día",
+        "numero": 2738,
+        "palabra": "MUERTOS",
+        "tipo": "cifra"
+      },
+      "musica": "silencio",
+      "pausa": 0.7,
+      "say": "Ese último día murieron dos mil setecientos treinta y ocho soldados.",
+      "sub": "Ese último día murieron 2.738 soldados."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "Henry Gunther",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Henry Gunther",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:HenryGunther.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "sepia",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/HenryGunther.jpg"
+        },
+        "palabras": [
+          {
+            "en": "veintitrés",
+            "texto": "*23 AÑOS*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "zoom"
+      },
+      "pausa": 0.5,
+      "say": "Uno fue Henry Gunther, de Baltimore, Estados Unidos. Tenía veintitrés años.",
+      "sub": "Uno fue Henry Gunther, de Baltimore, Estados Unidos. Tenía 23 años."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "etiqueta": "un minuto antes",
+        "objeto": {
+          "hora": "10:59",
+          "tipo": "reloj"
+        },
+        "palabras": [
+          {
+            "en": "diez",
+            "texto": "*10:59*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "A las diez y cincuenta y nueve cargó contra una ametralladora alemana. Los alemanes trataron de frenarlo.",
+      "sub": "A las 10:59 cargó contra una ametralladora alemana. Los alemanes trataron de frenarlo."
+    },
+    {
+      "emocion": 0.9,
+      "escena": {
+        "destello": true,
+        "palabras": [
+          {
+            "en": "minuto",
+            "texto": "UN MINUTO"
+          },
+          {
+            "en": "después",
+            "texto": "*DESPUÉS*"
+          },
+          {
+            "en": "terminó",
+            "texto": "LA PAZ"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 1,
+      "say": "Lo mataron. Un minuto después, terminó la guerra."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "cta": "¿Lo sabías?",
+        "objeto": {
+          "hora": "11:00",
+          "tipo": "reloj"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "Sabías",
+            "texto": "LA HORA"
+          },
+          {
+            "en": "guerra",
+            "texto": "*ONCE*"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "¿Sabías que la guerra terminó a una hora fija? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "misterio"
+  },
+  "paleta": "banda",
+  "publicar": {
+    "categoria_youtube": "27",
+    "descripcion": "El 11 de noviembre de 1918, poco después de las 5 de la mañana, Alemania firmó el armisticio con los aliados en un vagón de tren en el bosque de Compiègne, al norte de París. Era el fin de la Primera Guerra Mundial, pero el alto el fuego empezaba recién a las 11: la hora once del día once del mes once. En esas seis horas, muchos jefes siguieron ordenando ataques. Ese último día murieron al menos 2.738 soldados. Uno de los últimos fue el estadounidense Henry Gunther, de 23 años, de Baltimore: a las 10:59 cargó contra una ametralladora alemana mientras los alemanes intentaban frenarlo. Murió un minuto antes del fin de la guerra. Fuentes: History.com, Time, Wikipedia (Armisticio del 11 de noviembre de 1918; Henry Gunther). Fotos: Wikimedia Commons (vagón del armisticio, 1918, dominio público; Henry Gunther, dominio público).",
+    "hashtags": [
+      "historia",
+      "primeraguerramundial",
+      "11denoviembre",
+      "historiasreales"
+    ],
+    "titulo": "Firmaron la paz y siguieron matando #shorts"
+  },
+  "subtitulos": true,
+  "textura": "pelicula",
+  "titulo": "La guerra terminó a las 11 y siguieron peleando",
+  "voz": {
+    "pronunciar": {
+      "Baltimore": "Báltimor",
+      "Gunther": "Gánter"
+    }
+  }
+}
