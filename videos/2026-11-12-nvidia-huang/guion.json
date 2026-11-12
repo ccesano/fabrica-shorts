@@ -1,0 +1,508 @@
+{
+ "ambiente": "ciudad",
+ "fuentes": [
+  "https://www.aljazeera.com/news/2026/11/12/ai-titan-jensen-huang-out-as-nvidia-ceo",
+  "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/",
+  "https://finance.yahoo.com/markets/article/nvidias-jensen-huang-admits-to-affair-after-allegations-of-romance-with-chinese-spy-report-205122263.html",
+  "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity",
+  "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402",
+  "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+  "https://www.tipranks.com/news/the-fly/megaspeed-investigated-by-u-s-officials-over-ties-to-china-ny-times-reports-thefly"
+ ],
+ "largo": true,
+ "lineas": [
+  {
+   "emocion": 0.7,
+   "escena": {
+    "estilo": "maquina",
+    "kicker": "12/11/2026",
+    "palabras": [
+     "RENUNCIÓ",
+     "EL REY DE",
+     "*LOS CHIPS*"
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "Renunció el rey de los chips.",
+   "sub": "Renunció el rey de los chips."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "Jensen Huang, 63 años",
+    "foto": {
+     "credito": "Anderseidesvik / Wikimedia Commons",
+     "epigrafe": "Jensen Huang, abril de 2026",
+     "licencia": "CC BY-SA 4.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jensen_Huang_Stanford_2026-04-30_010_(cropped).jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Jensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg"
+    },
+    "palabras": [
+     {
+      "en": "treinta y tres",
+      "texto": "33 AÑOS"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Jensen Huang fundó Nvidia en mil novecientos noventa y tres. La manejó treinta y tres años.",
+   "sub": "Jensen Huang fundó Nvidia en 1993. La manejó 33 años."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "El cerebro de la IA",
+    "foto": {
+     "credito": "Phiarc / Wikimedia Commons",
+     "epigrafe": "Un chip de Nvidia",
+     "licencia": "CC BY-SA 4.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:NVidia_GK107-860-A2.jpg",
+     "profundidad": false,
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/NVidia_GK107-860-A2.jpg"
+    },
+    "palabras": [
+     {
+      "en": "chips",
+      "texto": "*CHIPS*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Gran parte de la inteligencia artificial del mundo funciona con sus chips.",
+   "sub": "Gran parte de la inteligencia artificial del mundo funciona con sus chips."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "decimales": 1,
+    "en": "antes",
+    "etiqueta": "Lo que valía Nvidia",
+    "numero": 4.2,
+    "palabra": "ANTES",
+    "prefijo": "US$ ",
+    "sufijo": " billones",
+    "tipo": "cifra"
+   },
+   "pausa": 0.5,
+   "say": "Antes de este escándalo, la empresa valía unos cuatro billones de dólares.",
+   "sub": "Antes del escándalo, valía unos US$ 4,2 billones."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "kicker": "DOMINGO 8/11/2026",
+    "palabras": [
+     {
+      "en": "mail",
+      "texto": "UN MAIL"
+     },
+     {
+      "en": "empleados",
+      "texto": "*A SUS EMPLEADOS*"
+     }
+    ],
+    "tipo": "golpe",
+    "transicion": "rasgado"
+   },
+   "musica": "silencio",
+   "pausa": 1.1,
+   "say": "Pero el domingo ocho de noviembre, mandó un mail a sus empleados.",
+   "sub": "Pero el domingo 8 de noviembre, mandó un mail a sus empleados."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "autor": "Jensen Huang, mail a sus empleados",
+    "texto": "Le fui infiel a mi esposa. *No hay excusa* para lo que hice.",
+    "tipo": "cita"
+   },
+   "pausa": 1.2,
+   "say": "«Le fui infiel a mi esposa. Mis actos la lastimaron a ella y a nuestros hijos. No hay excusa para lo que hice.»",
+   "sub": "«Le fui infiel a mi esposa. Mis actos la lastimaron a ella y a nuestros hijos. No hay excusa.»"
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "Lo humano",
+    "objeto": {
+     "tipo": "recorte",
+     "titular": "Una familia lastimada",
+     "volanta": "ANTES QUE UN NEGOCIO"
+    },
+    "palabras": [
+     {
+      "en": "respeto",
+      "texto": "RESPETO"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "musica": "subida",
+   "pausa": 0.5,
+   "say": "Antes que un tema de negocios, es una familia lastimada. Y eso merece respeto.",
+   "sub": "Antes que un tema de negocios, es una familia lastimada. Y eso merece respeto."
+  },
+  {
+   "emocion": 0.88,
+   "escena": {
+    "kicker": "LO GRAVE",
+    "palabras": [
+     {
+      "en": "con quién",
+      "texto": "*CON QUIÉN*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.8,
+   "say": "Pero lo que lo volvió un escándalo mundial fue otra cosa: con quién.",
+   "sub": "Pero lo que lo volvió un escándalo mundial fue otra cosa: con quién."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "etiqueta": "Quién es",
+    "objeto": {
+     "filas": [
+      [
+       "·",
+       "Ex directiva de Megaspeed"
+      ],
+      [
+       "·",
+       "Empresa de Singapur"
+      ],
+      [
+       "·",
+       "Cliente de Nvidia"
+      ]
+     ],
+     "tipo": "planilla",
+     "titulo": "Alice Huang",
+     "volanta": "LA OTRA PERSONA"
+    },
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "Ella es Alice Huang, ex directiva de Megaspeed, una empresa de Singapur que compra chips de Nvidia.",
+   "sub": "Ella es Alice Huang, ex directiva de Megaspeed, una empresa de Singapur que compra chips de Nvidia."
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "kicker": "FINES DE OCTUBRE 2026",
+    "palabras": [
+     "EL NEW YORK",
+     "*TIMES*",
+     "PUBLICÓ"
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.5,
+   "say": "A fines de octubre, el New York Times publicó algo grave.",
+   "sub": "A fines de octubre, el New York Times publicó algo grave."
+  },
+  {
+   "emocion": 0.75,
+   "escena": {
+    "desde": {
+     "lat": 1.35,
+     "lon": 103.82,
+     "nombre": "Singapur"
+    },
+    "etiqueta": "lo que se sospecha",
+    "hasta": {
+     "lat": 39.9,
+     "lon": 116.4,
+     "nombre": "China"
+    },
+    "resaltar": [
+     "China"
+    ],
+    "ruta_en": "información",
+    "tipo": "mapa",
+    "vehiculo": "avion"
+   },
+   "pausa": 0.5,
+   "say": "Que la inteligencia de Estados Unidos cree que ella podría haber pasado información a China.",
+   "sub": "Que la inteligencia de EE.UU. cree que ella podría haber pasado información a China."
+  },
+  {
+   "emocion": 0.7,
+   "escena": {
+    "kicker": "AL 12/11/2026",
+    "palabras": [
+     {
+      "en": "sospecha",
+      "texto": "SOSPECHA"
+     },
+     {
+      "en": "probado",
+      "texto": "*NO PROBADO*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.8,
+   "say": "Atención: al doce de noviembre de dos mil veintiséis, eso es una sospecha. No está probado.",
+   "sub": "Atención: al 12/11/2026, eso es una sospecha. No está probado."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "Lo que se investiga",
+    "items": [
+     "Megaspeed (Singapur)",
+     "¿Chips a China?",
+     "Desde octubre de 2025"
+    ],
+    "remate": "SIN CONDENA",
+    "tipo": "lista"
+   },
+   "pausa": 0.5,
+   "say": "Y según la prensa, Estados Unidos ya investigaba si Megaspeed ayudaba a empresas chinas a esquivar el bloqueo de chips.",
+   "sub": "Según la prensa, EE.UU. ya investigaba si Megaspeed ayudaba a empresas chinas a esquivar el bloqueo de chips."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "Lo que dice la empresa",
+    "foto": {
+     "credito": "Will Buckner / Wikimedia Commons",
+     "epigrafe": "Sede de Nvidia, Santa Clara",
+     "licencia": "CC BY 2.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Nvidia_sign.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Nvidia_sign.jpg"
+    },
+    "palabras": [
+     {
+      "en": "por ahora",
+      "texto": "POR AHORA"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Nvidia dice que, por ahora, no tiene razones para creer que se filtraron secretos.",
+   "sub": "Nvidia dice que, por ahora, no tiene razones para creer que se filtraron secretos."
+  },
+  {
+   "emocion": 0.7,
+   "escena": {
+    "etiqueta": "Miércoles 11/11/2026",
+    "objeto": {
+     "texto": "OTRA RELACIÓN",
+     "tipo": "tele"
+    },
+    "palabras": [
+     {
+      "en": "dependía",
+      "texto": "SU JEFE"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "Y el miércoles once, el New York Times publicó otra relación: con una vicepresidenta de Nvidia que dependía de él.",
+   "sub": "El miércoles 11, el New York Times publicó otra relación: con una vicepresidenta de Nvidia que dependía de él."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "etiqueta": "Las reglas",
+    "objeto": {
+     "filas": [
+      [
+       "✗",
+       "Conflicto de intereses"
+      ],
+      [
+       "✗",
+       "Pierde la confianza"
+      ]
+     ],
+     "tipo": "planilla",
+     "titulo": "Jefe y subordinada",
+     "volanta": "EN UNA GRAN EMPRESA"
+    },
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "En una gran empresa, que un jefe tenga una pareja que depende de él es un problema serio.",
+   "sub": "En una gran empresa, que un jefe tenga una pareja que depende de él es un problema serio."
+  },
+  {
+   "emocion": 0.8,
+   "escena": {
+    "en": "trescientos",
+    "etiqueta": "Valor perdido desde el viernes",
+    "numero": 300,
+    "palabra": "MÁS DE",
+    "prefijo": "US$ ",
+    "sufijo": " mil millones",
+    "tipo": "cifra"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "Desde el viernes, las acciones se desplomaron: Nvidia perdió más de trescientos mil millones de dólares.",
+   "sub": "Desde el viernes, las acciones se desplomaron: perdió más de US$ 300.000 millones."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "La plata",
+    "objeto": {
+     "tipo": "billetes",
+     "valor": "100"
+    },
+    "palabras": [
+     {
+      "en": "confianza",
+      "texto": "*CONFIANZA*"
+     }
+    ],
+    "tipo": "collage"
+   },
+   "pausa": 0.5,
+   "say": "¿Por qué tanto? Porque los inversores no compran solo chips. Compran confianza en quien maneja.",
+   "sub": "¿Por qué tanto? Los inversores no compran solo chips. Compran confianza en quien maneja."
+  },
+  {
+   "emocion": 0.8,
+   "escena": {
+    "estilo": "normal",
+    "kicker": "CEO DE NVIDIA",
+    "palabras": [
+     {
+      "en": "renuncia",
+      "tachar_en": "hoy",
+      "texto": "JENSEN HUANG"
+     },
+     {
+      "en": "Colette",
+      "texto": "*COLETTE KRESS*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.5,
+   "say": "El miércoles, el directorio aceptó su renuncia. Desde hoy, la jefa interina es Colette Kress.",
+   "sub": "El miércoles, el directorio aceptó su renuncia. Desde hoy, la jefa interina es Colette Kress."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "Colette Kress, CEO interina",
+    "foto": {
+     "credito": "SiliconANGLE theCUBE / Wikimedia Commons",
+     "licencia": "CC BY 3.0",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Colette_Kress.png",
+     "recorte": true,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Colette_Kress.png"
+    },
+    "palabras": [
+     {
+      "en": "FBI",
+      "texto": "FBI"
+     },
+     {
+      "en": "Congreso",
+      "texto": "CONGRESO"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "También es la directora financiera. Y además investigan el FBI y el Congreso de Estados Unidos.",
+   "sub": "También es la directora financiera. Y además investigan el FBI y el Congreso de EE.UU."
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "etiqueta": "La pelea por la IA",
+    "foto": {
+     "credito": "Pronoia / Wikimedia Commons",
+     "epigrafe": "Presentación de Nvidia, enero de 2025",
+     "licencia": "CC0 (dominio público)",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jensen_Huang_-_Nvidia_Keynote_-_CES_2025_Las_Vegas_(1).jpg",
+     "profundidad": false,
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "color",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jensen_Huang_-_Nvidia_Keynote_-_CES_2025_Las_Vegas_%281%29.jpg"
+    },
+    "palabras": [
+     {
+      "en": "China",
+      "texto": "EE.UU. VS. CHINA"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "¿Por qué importa? Nvidia está en el centro de la pelea entre Estados Unidos y China por la inteligencia artificial.",
+   "sub": "¿Por qué importa? Nvidia está en el centro de la pelea entre EE.UU. y China por la inteligencia artificial."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "cta": "Al 12/11/2026 la historia sigue abierta. Contalo en los comentarios.",
+    "tipo": "cierre",
+    "titulo": [
+     "¿HIZO BIEN EN",
+     "*RENUNCIAR*?"
+    ]
+   },
+   "pausa": 0.5,
+   "say": "Al doce de noviembre, esta historia sigue abierta. ¿Vos qué pensás: hizo bien en renunciar? Contalo en los comentarios.",
+   "sub": "Al 12/11/2026, esta historia sigue abierta. ¿Hizo bien en renunciar? Contalo en los comentarios."
+  }
+ ],
+ "musica": {
+  "animo": "tension",
+  "volumen": 0.4
+ },
+ "paleta": "diario",
+ "publicar": {
+  "categoria_youtube": 25,
+  "descripcion": "Jensen Huang fundó Nvidia en 1993 y la dirigió 33 años. El 12/11/2026 renunció después de admitir una infidelidad. Te contamos lo humano, la plata y por qué importa.\n\nInformación al 12/11/2026. La sospecha de espionaje NO está probada: la investigan el FBI, el Congreso de EE.UU. y la propia empresa. La historia sigue en desarrollo.",
+  "hashtags": [
+   "Nvidia",
+   "JensenHuang",
+   "InteligenciaArtificial",
+   "Noticias"
+  ],
+  "titulo": "Renunció el CEO de Nvidia: qué pasó y por qué importa #shorts"
+ },
+ "subtitulos": true,
+ "titulo": "Renunció el CEO de Nvidia: qué pasó (al 12/11/2026)",
+ "voz": {
+  "pronunciar": {
+   "Alice": "Alis",
+   "Colette": "Colét",
+   "FBI": "efe, be, i",
+   "Huang": "Juang",
+   "Jensen": "Yénsen",
+   "Kress": "Kres",
+   "Megaspeed": "Mégaspid",
+   "New York Times": "Niu York Taims",
+   "Nvidia": "Envidia"
+  }
+ }
+}
