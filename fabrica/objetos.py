@@ -109,13 +109,30 @@ def vinilo(titulo="", uid="v"):
     return Obj(svg, "prop", 320, 320)
 
 
+def _pantalla(texto):
+    """Texto de la pantalla de la tele: hasta 2 renglones, achicando la letra para que entre entero (antes se cortaba a 12)."""
+    palabras, mejor = texto.upper().split(), None
+    for i in range(1, max(2, len(palabras) + 1)):
+        rs = [" ".join(palabras[:i]), " ".join(palabras[i:])]
+        rs = [r for r in rs if r]
+        if mejor is None or max(map(len, rs)) < max(map(len, mejor)):
+            mejor = rs
+    if len(texto) <= 11:   # si entra en un renglón, uno solo
+        mejor = [texto.upper()]
+    mejor = mejor or [""]
+    size = int(min(30, 228 / max(1, max(map(len, mejor)) * 0.72)))
+    y0 = 214 - (len(mejor) - 1) * size * 0.6
+    renglones = "".join(f'<tspan x="174" y="{y0 + i * size * 1.15:.0f}">{e(r)}</tspan>' for i, r in enumerate(mejor))
+    return f'<text text-anchor="middle" font-family="Archivo Black" font-size="{size}" fill="#F6F3EC">{renglones}</text>'
+
+
 def tele(texto="", uid="t"):
     """Televisor de tubo con una placa de texto en pantalla."""
     svg = ('<svg viewBox="0 0 420 380" width="420" height="380" aria-hidden="true">'
            '<line x1="170" y1="70" x2="110" y2="6" stroke="#1E1B18" stroke-width="6"/><line x1="250" y1="70" x2="320" y2="10" stroke="#1E1B18" stroke-width="6"/>'
            '<rect x="8" y="64" width="404" height="290" rx="34" fill="#FFFFFF"/><rect x="20" y="76" width="380" height="266" rx="26" fill="#8B6B47" stroke="#1E1B18" stroke-width="6"/>'
            '<rect x="44" y="100" width="260" height="200" rx="30" fill="var(--acc2)" stroke="#1E1B18" stroke-width="6"/>'
-           f'<text x="174" y="214" text-anchor="middle" font-family="Archivo Black" font-size="30" fill="#F6F3EC">{e(texto.upper()[:12])}</text>'
+           f'{_pantalla(texto)}'
            '<circle cx="352" cy="140" r="18" fill="#F3C33B" stroke="#1E1B18" stroke-width="5"/><circle cx="352" cy="200" r="18" fill="#F3C33B" stroke="#1E1B18" stroke-width="5"/>'
            '<rect x="70" y="342" width="40" height="26" fill="#1E1B18"/><rect x="310" y="342" width="40" height="26" fill="#1E1B18"/></svg>')
     return Obj(svg, "prop", 420, 380)
