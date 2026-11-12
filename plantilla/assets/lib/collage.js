@@ -34,6 +34,7 @@
   }
 
   var ease = {
+    inOutSine: function (x) { return -(Math.cos(Math.PI * x) - 1) / 2; },
     outCubic: function (k) { return 1 - Math.pow(1 - clamp01(k), 3); },
     inCubic: function (k) { var c = clamp01(k); return c * c * c; },
     inOutCubic: function (k) {
@@ -395,6 +396,17 @@
     };
   }
 
+  // Profundidad por capas: el fondo se aleja y se corre para un lado; la figura se acerca y se corre para el otro.
+  function mountPar(el) {
+    var fig = el.getAttribute("data-capa") === "figura";
+    return function (t) {
+      var p = ease.inOutSine(prog(t, 0.2, 6.5));
+      el.style.transform = fig
+        ? "translate(" + px(18 * p) + "," + px(-6 * p) + ") scale(" + (1.02 + 0.08 * p).toFixed(4) + ")"
+        : "translate(" + px(-16 * p) + ",0) scale(" + (1.08 + 0.02 * p).toFixed(4) + ")";
+    };
+  }
+
   // Destello blanco de un golpe fuerte.
   function mountFlash(el) {
     var t0 = num(el, "data-t", 0);
@@ -458,6 +470,7 @@
     each(stage, ".cg-type", function (el) { parts.push(mountType(el, exitAt)); });
     each(stage, ".cg-flash", function (el) { parts.push(mountFlash(el)); });
     each(stage, ".cg-bar", function (el) { parts.push(mountBar(el)); });
+    each(stage, ".cg-par", function (el) { parts.push(mountPar(el)); });
     each(stage, ".cg-film", function (el) { parts.push(mountFilm(el, seed)); });
     var rip = stage.querySelector(".cg-rip");
     var foco = (stage.getAttribute("data-foco") || "").split(",").map(parseFloat);

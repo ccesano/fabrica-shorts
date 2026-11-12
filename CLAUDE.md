@@ -156,6 +156,10 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
   entre el diseño y el texto) y más abajo queda el usuario y el título de cada app y a partir de y≈850 deja ~170 px libres a la derecha (botones de
   TikTok, Reels y Shorts). Si se agrega una escena o un objeto nuevo, respetar esas zonas.
 - **Marca**: cada video lleva "@lodelhongo" chico, vertical, en el borde izquierdo (`"marca"` en el guion para cambiarlo).
+- **Subtítulos karaoke**: la palabra que se está diciendo se ilumina (tiempos repartidos por sílabas; sale solo).
+- **Fotos con profundidad**: en las fotos con marco donde hay una figura clara (persona, objeto), la fábrica separa la
+  figura del fondo y los mueve a distinta velocidad. Sale solo; se nota más con fondos con detalle (tribunas, calles).
+  Para dejar una foto plana: `"profundidad": false` en el objeto `foto`.
 
 ### Objetos (`"objeto": {"tipo": …}`)
 
