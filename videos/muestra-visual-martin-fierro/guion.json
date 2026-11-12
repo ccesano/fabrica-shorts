@@ -1,0 +1,259 @@
+{
+ "ambiente": "ninguno",
+ "fuentes": [
+  "https://www.lanacion.com.ar/economia/campo/el-martin-fierro-un-best-seller-de-las-pulperias-que-se-convirtio-en-objeto-de-estudio-nid23112024/",
+  "https://www.infobae.com/historia/2023/11/10/jose-hernandez-de-un-asma-que-lo-obligo-a-criarse-en-el-campo-a-ser-el-padre-del-martin-fierro/",
+  "https://www.canal26.com/historia/2026/10/03/en-1872-jose-hernandez-se-oculto-en-la-habitacion-de-un-hotel-porteno-alli-termino-de-escribir-el-libro-que-cambio-la-historia-argentina/",
+  "https://en.wikipedia.org/wiki/Jos%C3%A9_Hern%C3%A1ndez_(writer)",
+  "https://en.wikipedia.org/wiki/Mart%C3%ADn_Fierro",
+  "https://www.cervantesvirtual.com/obra-visor/la-vuelta-de-martin-fierro--0/html/ff29e6a8-82b1-11df-acc7-002185ce6064_2.html"
+ ],
+ "lineas": [
+  {
+   "emocion": 0.7,
+   "escena": {
+    "palabras": [
+     {
+      "en": "Martín Fierro",
+      "texto": "EL MARTÍN FIERRO"
+     },
+     {
+      "en": "nació",
+      "texto": "NACIÓ EN"
+     },
+     {
+      "en": "hotel",
+      "texto": "UN *HOTEL*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "musica": "golpe",
+   "pausa": 0.5,
+   "say": "El Martín Fierro nació en un hotel."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "etiqueta": "10 de noviembre",
+    "foto": {
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "epigrafe": "José Hernández, 1872",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Hern%C3%A1ndez_restored.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "byn",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jos%C3%A9_Hern%C3%A1ndez_restored.jpg"
+    },
+    "palabras": [
+     {
+      "en": "Hernández",
+      "texto": "*HERNÁNDEZ*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Hoy es el Día de la Tradición, porque nació José Hernández, en mil ochocientos treinta y cuatro.",
+   "sub": "Hoy es el Día de la Tradición, porque nació José Hernández, en 1834."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "estilo": "maquina",
+    "kicker": "1870",
+    "palabras": [
+     {
+      "en": "federal",
+      "texto": "FEDERAL"
+     },
+     {
+      "en": "exilio",
+      "texto": "*EXILIADO*"
+     }
+    ],
+    "tipo": "golpe"
+   },
+   "pausa": 0.5,
+   "say": "Había peleado del lado federal. Perdieron, y tuvo que irse al exilio."
+  },
+  {
+   "emocion": 0.5,
+   "escena": {
+    "desde": {
+     "lat": -29.7,
+     "lon": -53,
+     "nombre": "Brasil"
+    },
+    "etiqueta": "la vuelta",
+    "hasta": {
+     "lat": -34.61,
+     "lon": -58.37,
+     "nombre": "Buenos Aires"
+    },
+    "palabras": [
+     {
+      "en": "setenta y dos",
+      "texto": "*1872*"
+     }
+    ],
+    "resaltar": [
+     "Brasil"
+    ],
+    "ruta_en": "volvió",
+    "tipo": "mapa",
+    "vehiculo": "barco"
+   },
+   "pausa": 0.5,
+   "say": "Se refugió en Brasil. Y en mil ochocientos setenta y dos volvió a Buenos Aires.",
+   "sub": "Se refugió en Brasil. Y en 1872 volvió a Buenos Aires."
+  },
+  {
+   "emocion": 0.6,
+   "escena": {
+    "etiqueta": "a metros de la Plaza",
+    "foto": {
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "epigrafe": "Calle Bolívar, a una cuadra de la Plaza, c. 1870",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Edificios_calle_bolivar_en_bs_as_c_1870.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Edificios_calle_bolivar_en_bs_as_c_1870.jpg"
+    },
+    "palabras": [
+     {
+      "en": "a metros",
+      "texto": "*A METROS*"
+     }
+    ],
+    "tipo": "foto",
+    "transicion": "zoom"
+   },
+   "pausa": 0.6,
+   "say": "Se instaló en el Gran Hotel Argentino, a metros de la Plaza de Mayo. Ahí escribió gran parte del poema."
+  },
+  {
+   "emocion": 0.7,
+   "escena": {
+    "autor": "José Hernández, 1872",
+    "texto": "Mi pobre Martín Fierro me ha ayudado algunos momentos a alejar el *fastidio* de la vida del hotel.",
+    "tipo": "cita"
+   },
+   "musica": "silencio",
+   "pausa": 1.2,
+   "say": "Y escribió: «Mi pobre Martín Fierro me ha ayudado algunos momentos a alejar el fastidio de la vida del hotel»."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "etiqueta": "El gaucho Martín Fierro",
+    "foto": {
+     "credito": "Wikimedia Commons",
+     "epigrafe": "Una edición de 1894",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Martin_fierro_1894.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Martin_fierro_1894.jpg"
+    },
+    "lupa": {
+     "en": "librito",
+     "x": 0.5,
+     "y": 0.14,
+     "z": 0.25
+    },
+    "palabras": [
+     {
+      "en": "papel barato",
+      "texto": "*PAPEL BARATO*"
+     }
+    ],
+    "tipo": "foto",
+    "transicion": "rasgado"
+   },
+   "pausa": 0.5,
+   "say": "Salió a fines de mil ochocientos setenta y dos, en un librito de papel barato.",
+   "sub": "Salió a fines de 1872, en un librito de papel barato."
+  },
+  {
+   "emocion": 0.65,
+   "escena": {
+    "etiqueta": "en las pulperías",
+    "foto": {
+     "credito": "C. Junior / Wikimedia Commons",
+     "epigrafe": "Una pulpería de Buenos Aires, fines del siglo XIX",
+     "licencia": "dominio público",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Pulper%C3%ADa_en_el_Bajo_de_la_Recoleta.jpg",
+     "recorte": false,
+     "tipo": "foto",
+     "tratamiento": "sepia",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Pulper%C3%ADa_en_el_Bajo_de_la_Recoleta.jpg"
+    },
+    "palabras": [
+     {
+      "en": "voz alta",
+      "texto": "*EN VOZ ALTA*"
+     }
+    ],
+    "tipo": "foto"
+   },
+   "pausa": 0.5,
+   "say": "Se vendía en las pulperías. Y en los fogones, alguien lo leía en voz alta para los que no sabían leer."
+  },
+  {
+   "emocion": 0.85,
+   "escena": {
+    "en": "cuarenta y ocho",
+    "etiqueta": "en seis años",
+    "numero": 48000,
+    "palabra": "EJEMPLARES",
+    "tipo": "cifra"
+   },
+   "musica": "golpe",
+   "pausa": 0.6,
+   "say": "En seis años tuvo once ediciones y cuarenta y ocho mil ejemplares.",
+   "sub": "En seis años tuvo once ediciones y 48.000 ejemplares."
+  },
+  {
+   "emocion": 0.55,
+   "escena": {
+    "cta": "¿Te acordás de algún verso?",
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "en": "leíste",
+      "texto": "NACIÓ EN"
+     },
+     {
+      "en": "escuela",
+      "texto": "UN *HOTEL*"
+     }
+    ]
+   },
+   "pausa": 0.8,
+   "say": "¿Lo leíste en la escuela? ¿Te acordás de algún verso? Contalo en los comentarios."
+  }
+ ],
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "paleta": "bosque",
+ "publicar": {
+  "categoria_youtube": "27",
+  "descripcion": "Cada 10 de noviembre es el Día de la Tradición en la Argentina, por el nacimiento de José Hernández en 1834. Hernández había peleado del lado federal en la rebelión de López Jordán; tras la derrota se exilió en Brasil y en 1872 volvió a Buenos Aires. Se instaló en el Gran Hotel Argentino, en la calle 25 de Mayo, a metros de la Plaza de Mayo, y ahí escribió gran parte de «El gaucho Martín Fierro». En la carta que acompañó la primera edición contó: «Mi pobre Martín Fierro me ha ayudado algunos momentos a alejar el fastidio de la vida del hotel». El poema salió a fines de 1872 en un librito de papel barato, se vendió en las pulperías y en los fogones se leía en voz alta para quienes no sabían leer. En 1879, en el prólogo de «La vuelta de Martín Fierro», Hernández contó que en seis años había tenido once ediciones y 48.000 ejemplares. Fuentes: La Nación, Infobae, Canal 26, prólogo de «La vuelta de Martín Fierro» (Biblioteca Virtual Cervantes). Fotos: Wikimedia Commons (José Hernández, 1872; calle Bolívar, Buenos Aires, c. 1870; tapa de una edición de 1894; pulpería en el Bajo de la Recoleta, C. Junior; todas de dominio público).",
+  "hashtags": [
+   "martinfierro",
+   "diadelatradicion",
+   "historiaargentina",
+   "historiasreales"
+  ],
+  "titulo": "MUESTRA visual (no publicar)"
+ },
+ "subtitulos": true,
+ "textura": "pelicula",
+ "titulo": "MUESTRA visual (karaoke + profundidad) — Martín Fierro (no publicar)"
+}

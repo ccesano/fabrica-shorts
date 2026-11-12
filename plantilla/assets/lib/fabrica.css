@@ -118,3 +118,9 @@
 .cg-kin.box.centro { padding: 0; background: none; }
 .cg-kin.box.centro .kt { padding: 6px 26px 0; background: var(--acc); }
 .cg-bar { position: absolute; left: -3%; width: 106%; border-radius: 8px; transform-origin: 0 50%; opacity: 0; }
+/* karaoke: la palabra que se está diciendo */
+.cap .w { display: inline-block; margin: 0 0.07em; }
+.cap .w.on { color: var(--cap-acc, #F3C33B); transform: scale(1.08); }
+/* foto con profundidad: figura y fondo en capas dentro del marco */
+.o-photo .par, .par { position: relative; overflow: hidden; }
+.par .cg-par { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 70%; }

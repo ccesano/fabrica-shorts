@@ -124,14 +124,29 @@ CAPTIONS_HTML = """<!doctype html>
         (function () {
           var el = document.getElementById("cap-text");
           var rows = window.CAPTIONS || [];
+          var actual = null, spans = [];
           function render(t) {
             var row = null;
             for (var i = rows.length - 1; i >= 0; i -= 1) {
               if (t >= rows[i][0]) { row = t < rows[i][1] ? rows[i] : null; break; }
             }
-            if (!row) { el.textContent = ""; el.style.opacity = "0"; return; }
+            if (!row) { el.textContent = ""; el.style.opacity = "0"; actual = null; return; }
             var k = Math.min(1, Math.max(0, (t - row[0]) / 0.09));
-            el.textContent = row[2];
+            if (actual !== row) {   // karaoke: una palabra por span; se ilumina la que se está diciendo
+              el.textContent = "";
+              spans = (row[3] || [[row[2], row[0], row[1]]]).map(function (w, i) {
+                if (i) el.appendChild(document.createTextNode(" "));
+                var s = document.createElement("span");
+                s.className = "w"; s.textContent = w[0]; el.appendChild(s);
+                return s;
+              });
+              actual = row;
+            }
+            var ws = row[3] || [];
+            spans.forEach(function (s, i) {
+              var on = ws[i] && t >= ws[i][1] && t < ws[i][2];
+              s.className = on ? "w on" : "w";
+            });
             el.style.opacity = "1";
             el.style.transform = "scale(" + (1.1 - 0.1 * k).toFixed(4) + ")";
           }

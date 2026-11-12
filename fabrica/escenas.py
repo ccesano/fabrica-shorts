@@ -648,25 +648,34 @@ def armar(guion, timings, slug):
     return escenas, fin, sfx, subtitulos(lineas, tls), nombre_pal
 
 
+def _peso(w):
+    """Duración relativa de una palabra al decirla: sílabas (grupos de vocales) + la pausa de la puntuación."""
+    silabas = max(1, len(re.findall(r"[aeiouáéíóúü]+", w.lower())))
+    if re.search(r"\d", w):
+        silabas += 2 * len(re.findall(r"\d", w))   # una cifra se lee como varias palabras
+    return silabas + (1.2 if re.search(r"[.?!…]$", w) else 0.6 if re.search(r"[,;:]$", w) else 0)
+
+
 def subtitulos(lineas, tls):
-    """Filas [inicio, fin, texto] de 1-3 palabras, repartidas a lo largo de cada línea según su largo."""
+    """Filas [inicio, fin, texto, palabras] de 1-3 palabras; palabras = [[palabra, inicio, fin], …] para el karaoke
+    (la palabra que se está diciendo se ilumina). Los tiempos salen de repartir cada línea por sílabas."""
     rows = []
     for ln, tl in zip(lineas, tls):
         words = limpio(ln.get("sub") or ln["say"]).replace("«", "").replace("»", "").split()
-        chunks, cur = [], []
-        for w in words:
-            cur.append(w)
-            if re.search(r"[,.?!:;…]$", w) or len(cur) == 3 or len(" ".join(cur)) >= 15:
-                chunks.append(cur)
-                cur = []
-        if cur:
-            chunks.append(cur)
-        total = sum(len(" ".join(c)) + 2 for c in chunks)
-        t, acc = tl["t0"], 0
-        span = tl["t1"] - tl["t0"]
-        for c in chunks:
+        if not words:
+            continue
+        pesos = [_peso(w) for w in words]
+        total, span = sum(pesos), tl["t1"] - tl["t0"]
+        tiempos, acc = [], 0
+        for w, p in zip(words, pesos):
             a = tl["t0"] + span * acc / total
-            acc += len(" ".join(c)) + 2
-            b = tl["t0"] + span * acc / total
-            rows.append([round(a, 3), round(b + 0.05, 3), " ".join(c).rstrip(".,;:").upper()])
+            acc += p
+            tiempos.append([w, round(a, 3), round(tl["t0"] + span * acc / total, 3)])
+        cur = []
+        for i, (w, a, b) in enumerate(tiempos):
+            cur.append([w, a, b])
+            if re.search(r"[,.?!:;…]$", w) or len(cur) == 3 or len(" ".join(x[0] for x in cur)) >= 15 or i == len(tiempos) - 1:
+                pal = [[x[0].rstrip(".,;:").upper(), x[1], x[2]] for x in cur]
+                rows.append([cur[0][1], round(cur[-1][2] + 0.05, 3), " ".join(x[0] for x in pal), pal])
+                cur = []
     return rows

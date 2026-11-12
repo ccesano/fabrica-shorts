@@ -107,6 +107,31 @@ def _recortar(img):
     return Image.alpha_composite(out, figura)
 
 
+def _capas(img, destino, n):
+    """Profundidad por capas para fotos con marco: separa la figura (IS-Net) del fondo y rellena el hueco que deja,
+    para que en el video la figura y el fondo se muevan a distinta velocidad. None si no hay una figura clara."""
+    m = np.asarray(_mascara(img), dtype=np.float32) / 255
+    area = float((m > 0.5).mean())
+    if not 0.05 < area < 0.7:
+        return None
+    alfa = np.clip((m - 0.35) / 0.3, 0, 1)
+    fig = img.convert("RGBA")
+    fig.putalpha(Image.fromarray((alfa * 255).astype("uint8"), "L").filter(ImageFilter.GaussianBlur(1.2)))
+    # hueco: la máscara un poco agrandada; se rellena con el promedio borroso del fondo de alrededor
+    hueco = Image.fromarray(((m > 0.25) * 255).astype("uint8"), "L").filter(ImageFilter.MaxFilter(15))
+    h = np.asarray(hueco, dtype=np.float32)[..., None] / 255
+    a = np.asarray(img, dtype=np.float32)
+    r = max(8, max(img.size) // 28)
+    def borroso(x):
+        return np.asarray(Image.fromarray(np.clip(x, 0, 255).astype("uint8")).filter(ImageFilter.GaussianBlur(r)), dtype=np.float32)
+    peso = borroso(np.repeat((1 - h) * 255, 3, axis=2)) / 255
+    relleno = borroso(a * (1 - h)) / np.maximum(peso, 1e-3)
+    fondo = Image.fromarray(np.clip(a * (1 - h) + relleno * h, 0, 255).astype("uint8"), "RGB")
+    fondo.save(destino / f"img{n:02d}-fondo.jpg", quality=88)
+    fig.save(destino / f"img{n:02d}-figura.png", optimize=True)
+    return {"fondo": f"assets/img/img{n:02d}-fondo.jpg", "figura": f"assets/img/img{n:02d}-figura.png"}
+
+
 def preparar(spec, carpeta_video, assets, n):
     """Deja la imagen lista en assets/img y devuelve el spec con src local, tamaño y crédito."""
     spec = dict(spec)
@@ -133,6 +158,14 @@ def preparar(spec, carpeta_video, assets, n):
         nombre = f"img{n:02d}.jpg"
         img.save(destino / nombre, quality=90)
         spec["marco"] = True
+        if spec.pop("profundidad", True):
+            try:
+                capas = _capas(img, destino, n)
+            except Exception as ex:   # sin modelo o sin memoria: la foto queda plana
+                print(f"  (sin profundidad para la foto {n}: {ex})")
+                capas = None
+            if capas:
+                spec["capas"] = capas
     spec["src"] = f"assets/img/{nombre}"
     spec["ancho"], spec["alto"] = img.size
     return spec

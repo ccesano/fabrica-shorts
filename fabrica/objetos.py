@@ -163,14 +163,21 @@ def postal(texto="Saludos desde", lugar="", colores=None):
     return Obj(f'<div class="pic">{deco}</div><div class="say">{e(texto)}<b>{e(lugar)}</b></div>', "doc", 760, 470)
 
 
-def foto(src, epigrafe="", ancho=800, alto=600, marco=False, caja=(600, 680), **_):
-    """Foto ya preparada por imagenes.py: con marco blanco (tipo polaroid) o recortada (sticker)."""
+def foto(src, epigrafe="", ancho=800, alto=600, marco=False, caja=(600, 680), capas=None, **_):
+    """Foto ya preparada por imagenes.py: con marco blanco (tipo polaroid) o recortada (sticker).
+    Con capas (figura + fondo) la foto tiene profundidad: cada capa se mueve a su velocidad."""
     z = min(caja[0] / ancho, caja[1] / alto)
     w, h = int(ancho * z), int(alto * z)
     if marco:
         cap = f'<div class="cap2">{e(epigrafe)}</div>' if epigrafe else ""
         pie = 64 if epigrafe else 18
-        return Obj(f'<img src="{e(src)}" alt="" style="width: {w}px; height: {h}px" />{cap}', "doc", w + 36, h + 18 + pie)
+        if capas:
+            img = (f'<div class="par" style="width: {w}px; height: {h}px">'
+                   f'<img class="cg-par" data-capa="fondo" src="{e(capas["fondo"])}" alt="" />'
+                   f'<img class="cg-par" data-capa="figura" src="{e(capas["figura"])}" alt="" /></div>')
+        else:
+            img = f'<img src="{e(src)}" alt="" style="width: {w}px; height: {h}px" />'
+        return Obj(f'{img}{cap}', "doc", w + 36, h + 18 + pie)
     return Obj(f'<img src="{e(src)}" alt="" style="display: block; width: {w}px; height: {h}px" />', "prop", w, h)
 
 
