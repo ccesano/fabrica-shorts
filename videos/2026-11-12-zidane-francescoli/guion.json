@@ -1,0 +1,288 @@
+{
+  "ambiente": "cancha",
+  "fuentes": [
+    "https://www.goal.com/fr/news/quand-zidane-a-dormi-avec-le-maillot-de-francescoli/blta70f6f249d47f713",
+    "https://lapaginamillonaria.com/riverplate/Zidane-otra-vez-rendido-ante-Francescoli-Era-mas-que-mi-idolo-20220623-0008.html",
+    "https://en.wikipedia.org/wiki/Enzo_Francescoli",
+    "https://en.wikipedia.org/wiki/Enzo_Zidane",
+    "https://en.wikipedia.org/wiki/1996_Intercontinental_Cup"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "Zidane",
+            "texto": "ZIDANE"
+          },
+          {
+            "en": "durmió",
+            "texto": "DURMIÓ CON"
+          },
+          {
+            "en": "camiseta",
+            "texto": "LA *CAMISETA*"
+          },
+          {
+            "en": "ídolo",
+            "texto": "DE SU ÍDOLO"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Zidane durmió con la camiseta de su ídolo."
+    },
+    {
+      "emocion": 0.45,
+      "escena": {
+        "etiqueta": "Marsella · 1989-90",
+        "objeto": {
+          "campos": {
+            "Sector": "Arriba, tras el arco",
+            "Temporada": "1989-90"
+          },
+          "nombre": "OLYMPIQUE DE MARSEILLE",
+          "talon": "OM",
+          "tipo": "entrada",
+          "titulo": "STADE VÉLODROME"
+        },
+        "palabras": [
+          {
+            "en": "pibe",
+            "texto": "UN *PIBE*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.5,
+      "say": "Marsella, temporada ochenta y nueve, noventa. Zidane es un pibe y va a ver al Olympique.",
+      "sub": "Marsella, temporada 1989-90. Zidane es un pibe y va a ver al Olympique."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "el Príncipe uruguayo",
+        "foto": {
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "epigrafe": "Enzo Francescoli, River, 1985",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Francescoli_river_85.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Francescoli_river_85.jpg"
+        },
+        "marca": {
+          "en": "Enzo",
+          "forma": "circulo",
+          "h": 0.22,
+          "texto": "Enzo",
+          "w": 0.34,
+          "x": 0.45,
+          "y": 0.02
+        },
+        "palabras": [
+          {
+            "en": "Francescoli",
+            "texto": "FRANCESCOLI"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.5,
+      "say": "Se sienta arriba, detrás de un arco, y mira a uno solo: Enzo Francescoli, el uruguayo."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "sus controles",
+        "objeto": {
+          "tipo": "pelota"
+        },
+        "palabras": [
+          {
+            "en": "estudiaba",
+            "texto": "LO *COPIABA*"
+          }
+        ],
+        "tipo": "collage",
+        "transicion": "izquierda"
+      },
+      "pausa": 0.6,
+      "say": "No lo miraba: lo estudiaba. Practicaba cómo paraba la pelota, hasta parecerse a él."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "autor": "Zinedine Zidane, L'Équipe (2022)",
+        "texto": "Era más que mi ídolo. Yo era *fanático* de él.",
+        "tipo": "cita"
+      },
+      "pausa": 1.2,
+      "say": "Era más que mi ídolo. Yo era fanático de él."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "su primer hijo",
+        "objeto": {
+          "anio": 1995,
+          "dia": 24,
+          "mes": "MARZO",
+          "tipo": "calendario"
+        },
+        "palabras": [
+          {
+            "en": "Enzo",
+            "texto": "*ENZO*"
+          }
+        ],
+        "tipo": "collage"
+      },
+      "pausa": 0.6,
+      "say": "En mil novecientos noventa y cinco nació su primer hijo. Le puso Enzo.",
+      "sub": "En 1995 nació su primer hijo. Le puso Enzo."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "kicker": "Tokio · 1996",
+        "partes": [
+          {
+            "objeto": {
+              "base": "#FBFAF5",
+              "color": "#151515",
+              "estilo": "rayas",
+              "letra": "#151515",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "Juventus",
+              "texto": "JUVENTUS"
+            }
+          },
+          {
+            "objeto": {
+              "base": "#FBFAF5",
+              "color": "#D2402E",
+              "estilo": "banda",
+              "letra": "#151515",
+              "tipo": "camiseta"
+            },
+            "palabra": {
+              "en": "River",
+              "texto": "*RIVER*"
+            }
+          }
+        ],
+        "tipo": "dupla"
+      },
+      "pausa": 0.5,
+      "say": "Un año después, en Tokio, se cruzaron en una final: la Juventus de Zidane contra el River de Francescoli."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "etiqueta": "el pedido",
+        "foto": {
+          "credito": "power axle / Wikimedia Commons",
+          "epigrafe": "Zinedine Zidane, 2015",
+          "licencia": "CC BY 2.0",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Zinedine_Zidane_2015_(cropped).jpg",
+          "recorte": true,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Zinedine_Zidane_2015_%28cropped%29.jpg"
+        },
+        "palabras": [
+          {
+            "en": "dio",
+            "texto": "SE LA *DIO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "pausa": 0.6,
+      "say": "Zidane le pidió la camiseta. River perdió uno a cero, y Francescoli se la dio igual.",
+      "sub": "Zidane le pidió la camiseta. River perdió 1 a 0, y Francescoli se la dio igual."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "destello": true,
+        "kicker": "Turín",
+        "palabras": [
+          {
+            "en": "durmió",
+            "texto": "DURMIÓ"
+          },
+          {
+            "en": "ella",
+            "texto": "CON ELLA"
+          },
+          {
+            "en": "puesta",
+            "texto": "*PUESTA*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "subida",
+      "pausa": 0.7,
+      "say": "La lavó en Turín y durmió con ella puesta. Su esposa pensó que estaba loco."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "base": "#FBFAF5",
+          "color": "#D2402E",
+          "estilo": "banda",
+          "letra": "#151515",
+          "nombre": "FRANCESCOLI",
+          "tipo": "camiseta"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "tuviste",
+            "texto": "¿TUVISTE"
+          },
+          {
+            "en": "ídolo",
+            "texto": "UN *ÍDOLO*"
+          },
+          {
+            "en": "así",
+            "texto": "ASÍ?"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy Francescoli cumple sesenta y cinco años. ¿Vos tuviste un ídolo así? Contalo en los comentarios.",
+      "sub": "Hoy Francescoli cumple 65 años. ¿Vos tuviste un ídolo así? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "paleta": "atardecer",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Enzo Francescoli nació el 12 de noviembre de 1961 en Montevideo. En la temporada 1989-90 jugó en el Olympique de Marsella, y un joven Zinedine Zidane iba al estadio Vélodrome a verlo: según contó a L'Équipe en 2022, se sentaba arriba, detrás de un arco, estudiaba sus controles y practicaba hasta parecerse a él. «Era más que mi ídolo, era fanático de él». A su primer hijo, nacido en 1995, le puso Enzo en su honor. En la final de la Copa Intercontinental de 1996, en Tokio, la Juventus de Zidane le ganó 1 a 0 al River de Francescoli; Zidane le había pedido la camiseta y Francescoli se la dio igual. Zidane contó que la lavó en Turín y durmió con ella puesta, y que su esposa pensó que estaba loco. Fuentes: L'Équipe vía Goal, La Página Millonaria, Wikipedia. Fotos: Wikimedia Commons (Francescoli en River, 1985, dominio público; Zinedine Zidane 2015, power axle, CC BY 2.0).",
+    "hashtags": [
+      "Francescoli",
+      "Zidane",
+      "River",
+      "futbol",
+      "historiasreales"
+    ],
+    "titulo": "Zidane durmió con la camiseta de su ídolo #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Zidane durmió con la camiseta de Francescoli"
+}

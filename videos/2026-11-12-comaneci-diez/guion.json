@@ -1,0 +1,268 @@
+{
+  "ambiente": "ninguno",
+  "fuentes": [
+    "https://www.history.com/this-day-in-history/july-18/nadia-comaneci-first-perfect-10-gymnastics-montreal-olympics",
+    "https://en.wikipedia.org/wiki/Perfect_10_(gymnastics)",
+    "https://en.wikipedia.org/wiki/Gymnastics_at_the_1976_Summer_Olympics_%E2%80%93_Women%27s_uneven_bars",
+    "https://en.wikipedia.org/wiki/Nadia_Com%C4%83neci"
+  ],
+  "lineas": [
+    {
+      "emocion": 0.7,
+      "escena": {
+        "palabras": [
+          {
+            "en": "diez",
+            "texto": "SACÓ UN *10*"
+          },
+          {
+            "en": "tablero",
+            "texto": "EL TABLERO"
+          },
+          {
+            "en": "uno",
+            "texto": "MARCÓ *1*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.5,
+      "say": "Sacó un diez y el tablero marcó uno."
+    },
+    {
+      "emocion": 0.45,
+      "escena": {
+        "desde": {
+          "lat": 46.25,
+          "lon": 26.76,
+          "nombre": "Rumania"
+        },
+        "etiqueta": "Montreal 1976",
+        "hasta": {
+          "lat": 45.5,
+          "lon": -73.57,
+          "nombre": "Montreal"
+        },
+        "palabras": [
+          {
+            "en": "catorce",
+            "texto": "14 AÑOS"
+          }
+        ],
+        "resaltar": [
+          "Romania",
+          "Canadá"
+        ],
+        "ruta_en": "Llega",
+        "tipo": "mapa",
+        "vehiculo": "avion"
+      },
+      "pausa": 0.5,
+      "say": "Juegos Olímpicos de Montreal, mil novecientos setenta y seis. Llega una rumana de catorce años.",
+      "sub": "Juegos Olímpicos de Montreal, 1976. Llega una rumana de 14 años."
+    },
+    {
+      "emocion": 0.5,
+      "escena": {
+        "etiqueta": "18 de julio de 1976",
+        "foto": {
+          "credito": "Comité Olímpico y Deportivo Rumano / Wikimedia Commons",
+          "epigrafe": "Comăneci en las barras, Montreal 1976",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Nadia_Com%C4%83neci_Montreal1976d.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "byn",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Nadia_Com%C4%83neci_Montreal1976d.jpg"
+        },
+        "palabras": [
+          {
+            "en": "Nadia",
+            "texto": "*NADIA*"
+          }
+        ],
+        "tipo": "foto",
+        "transicion": "arriba"
+      },
+      "pausa": 0.5,
+      "say": "Dieciocho de julio. Sube a las barras asimétricas: Nadia Comaneci.",
+      "sub": "18 de julio. Sube a las barras asimétricas: Nadia Comăneci."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "palabras": [
+          {
+            "en": "comete",
+            "texto": "NI UN"
+          },
+          {
+            "en": "solo",
+            "texto": "SOLO"
+          },
+          {
+            "en": "error",
+            "texto": "*ERROR*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "pausa": 0.5,
+      "say": "Hace su rutina y no comete un solo error."
+    },
+    {
+      "emocion": 0.6,
+      "escena": {
+        "decimales": 2,
+        "en": "diez",
+        "etiqueta": "gimnasia olímpica",
+        "numero": 10,
+        "palabra": "NADIE",
+        "tipo": "cifra"
+      },
+      "pausa": 0.5,
+      "say": "Hasta ese día, nadie había sacado un diez en la gimnasia olímpica.",
+      "sub": "Hasta ese día, nadie había sacado un 10 en la gimnasia olímpica."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "etiqueta": "el tablero oficial",
+        "objeto": {
+          "texto": "_ . _ _",
+          "tipo": "tele"
+        },
+        "palabras": [
+          {
+            "en": "tres",
+            "texto": "3 *CIFRAS*"
+          }
+        ],
+        "tipo": "collage",
+        "transicion": "zoom"
+      },
+      "pausa": 0.6,
+      "say": "Y el tablero tenía lugar para tres cifras. Les habían dicho que el diez era imposible.",
+      "sub": "Y el tablero tenía lugar para 3 cifras. Les habían dicho que el 10 era imposible."
+    },
+    {
+      "emocion": 0.8,
+      "escena": {
+        "kicker": "el tablero",
+        "palabras": [
+          {
+            "en": "diez",
+            "tachar_en": "entraba",
+            "texto": "10.00"
+          },
+          {
+            "en": "uno",
+            "texto": "*1.00*"
+          }
+        ],
+        "tipo": "golpe"
+      },
+      "musica": "golpe",
+      "pausa": 0.6,
+      "say": "Su diez no entraba. Y apareció esto: uno coma cero cero.",
+      "sub": "Su 10 no entraba. Y apareció esto: 1,00."
+    },
+    {
+      "emocion": 0.85,
+      "escena": {
+        "etiqueta": "Montreal 1976",
+        "foto": {
+          "credito": "Comité Olímpico y Deportivo Rumano / Wikimedia Commons",
+          "epigrafe": "Nadia Comăneci, Montreal 1976",
+          "licencia": "dominio público",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Nadia_Com%C4%83neci_Montreal1976c.jpg",
+          "recorte": false,
+          "tipo": "foto",
+          "tratamiento": "color",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Nadia_Com%C4%83neci_Montreal1976c.jpg"
+        },
+        "lupa": {
+          "en": "perfecto",
+          "x": 0.38,
+          "y": 0.88,
+          "z": 0.3
+        },
+        "palabras": [
+          {
+            "en": "perfecto",
+            "texto": "*PERFECTO*"
+          }
+        ],
+        "tipo": "foto"
+      },
+      "musica": "subida",
+      "pausa": 0.6,
+      "say": "Era un diez perfecto. El primero de la historia olímpica.",
+      "sub": "Era un 10 perfecto. El primero de la historia olímpica."
+    },
+    {
+      "emocion": 0.65,
+      "escena": {
+        "etiqueta": "en Montreal",
+        "items": [
+          {
+            "en": "siete",
+            "texto": "7 DIECES"
+          },
+          {
+            "en": "tres",
+            "texto": "3 DE ORO"
+          }
+        ],
+        "remate": "con 14 años",
+        "tipo": "lista"
+      },
+      "pausa": 0.6,
+      "say": "En esos Juegos sacó siete dieces y ganó tres medallas de oro.",
+      "sub": "En esos Juegos sacó 7 dieces y ganó 3 medallas de oro."
+    },
+    {
+      "emocion": 0.55,
+      "escena": {
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "texto": "1.00",
+          "tipo": "tele"
+        },
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "en": "viste",
+            "texto": "¿LA VISTE"
+          },
+          {
+            "en": "televisión",
+            "texto": "POR *TELE*?"
+          }
+        ]
+      },
+      "pausa": 0.8,
+      "say": "Hoy Nadia cumple sesenta y cinco años. ¿Vos la viste por televisión? Contalo en los comentarios.",
+      "sub": "Hoy Nadia cumple 65 años. ¿Vos la viste por televisión? Contalo en los comentarios."
+    }
+  ],
+  "musica": {
+    "animo": "epico"
+  },
+  "paleta": "neon",
+  "publicar": {
+    "categoria_youtube": "17",
+    "descripcion": "Nadia Comăneci nació el 12 de noviembre de 1961 en Rumania. El 18 de julio de 1976, en los Juegos Olímpicos de Montreal y con 14 años, hizo su rutina en las barras asimétricas y se convirtió en la primera gimnasta en sacar un 10 en unos Juegos. Los tableros solo tenían tres cifras —a Omega le habían dicho que un 10 era imposible— y mostraron 1.00. En esos Juegos sacó siete dieces y ganó tres medallas de oro. Fuentes: History.com, Wikipedia. Fotos: Wikimedia Commons (Comité Olímpico y Deportivo Rumano, dominio público).",
+    "hashtags": [
+      "Comaneci",
+      "Montreal1976",
+      "olimpiadas",
+      "gimnasia",
+      "historiasreales"
+    ],
+    "titulo": "Sacó un 10 y el tablero marcó 1 #shorts"
+  },
+  "subtitulos": true,
+  "titulo": "Comaneci: el 10 que el tablero no sabía mostrar"
+}
