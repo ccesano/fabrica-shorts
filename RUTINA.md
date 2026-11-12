@@ -120,6 +120,7 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
   (≈ 4 MB; el límite de assets es 15 MB), subirla a la Mesa con `Artifact` (`asset: true`, `url` de la Mesa) y guardar
   `ver: "/_blob/<id>"` y `ver_id: "<id>"`. La Mesa reproduce `ver`; el link de abajo es para descargar en calidad completa.
   Si hay un issue con etiqueta `falla` posterior al commit: `estado: "falla"` y explicar el error en el resumen.
+  Si queda `listo` y tiene `auto: true`, seguir en la misma pasada con la regla de abajo (no esperar a la próxima revisión).
 - **`publicacion pedida`** → comentar en el issue `/publicar` (si `cuando` es "ahora") o `/publicar AAAA-MM-DD HH:MM`;
   esperar la respuesta del flujo *Publicar* (✅ Enviado a Buffer) y poner `estado: "programado"` (o `"publicado"` si
   fue "ahora"). Marcar el tema del banco como `hecho`.
