@@ -154,8 +154,11 @@ Categoría de YouTube en `publicar.categoria_youtube`: 17 deportes, 24 entreteni
 - Textos en pantalla cortos: `etiqueta` ≤ 32 caracteres, `palabras` ≤ 16 caracteres por renglón.
 - **Zona segura** (ya resuelta en `escenas.py`): el contenido termina antes de y≈1280; los subtítulos van en y≈1430 (con aire
   entre el diseño y el texto) y más abajo queda el usuario y el título de cada app y a partir de y≈850 deja ~170 px libres a la derecha (botones de
-  TikTok, Reels y Shorts). Si se agrega una escena o un objeto nuevo, respetar esas zonas.
-- **Marca**: cada video lleva "@lodelhongo" chico, vertical, en el borde izquierdo (`"marca"` en el guion para cambiarlo).
+  TikTok, Reels y Shorts). **Además, nada importante a menos de ~100 px de los costados** (x 100–980): en los celulares
+  más alargados que 9:16 las apps agrandan el video hasta llenar la pantalla y recortan ~97 px de cada lado.
+  Si se agrega una escena o un objeto nuevo, respetar esas zonas.
+- **Marca**: cada video lleva "@lodelhongo" chico, centrado, justo arriba de los subtítulos (y≈1352) (`"marca"` en el guion
+  para cambiarlo). Antes iba vertical en el borde izquierdo y en esos celulares quedaba afuera.
 - **Subtítulos karaoke**: la palabra que se está diciendo se ilumina (tiempos repartidos por sílabas; sale solo).
 - **Fotos con profundidad**: en las fotos con marco donde hay una figura clara (persona, objeto), la fábrica separa la
   figura del fondo y los mueve a distinta velocidad. Sale solo; se nota más con fondos con detalle (tribunas, calles).

@@ -26,7 +26,7 @@
 .cg-stage.solid .cg-count .cg-num { color: var(--acc); }
 
 /* ── Cita ── */
-.quote { position: absolute; left: 70px; width: 940px; font-family: "Newsreader"; font-style: normal; font-weight: 600; line-height: 1.12; color: var(--ink); font-variation-settings: "opsz" 48; }
+.quote { position: absolute; left: 110px; width: 860px; font-family: "Newsreader"; font-style: normal; font-weight: 600; line-height: 1.12; color: var(--ink); font-variation-settings: "opsz" 48; }
 .quote .cg-fade { position: relative; display: inline-block; margin-right: 0.24em; }
 .quote .em { color: var(--acc2); }
 .cg-stage.solid .quote { color: #F6F3EC; }
@@ -90,9 +90,7 @@
 .cap .hl { color: var(--cap-acc, #F3C33B); }
 
 /* marca del canal, vertical sobre el borde izquierdo (zona libre en TikTok, Reels y Shorts) */
-.marca { position: absolute; left: 24px; top: 760px; transform-origin: left top; transform: rotate(-90deg); white-space: nowrap;
-  font-family: "Archivo Black"; font-size: 30px; letter-spacing: 0.04em; color: #FFFFFF; opacity: 0.85;
-  -webkit-text-stroke: 6px #111111; paint-order: stroke fill; }
+.marca { position: absolute; left: 0; right: 0; top: 1352px; text-align: center; white-space: nowrap; font-family: "Archivo Black"; font-size: 28px; color: #FFFFFF; opacity: .8; -webkit-text-stroke: 6px rgba(17,17,17,.85); paint-order: stroke fill; }
 
 /* ── Efectos (rama muestra-efectos) ── */
 @font-face { font-family: "Permanent Marker"; src: url("assets/fonts/permanent-marker-latin-400-normal.woff2") format("woff2"); }
