@@ -41,8 +41,11 @@ Si pide varios videos juntos, proponer todos los guiones en el mismo mensaje (un
 
 ## Rutina automática
 
-Hay tres tareas programadas: una propone temas para el día siguiente (19:00), otra arma los guiones del día (listos a las 5:00) y otra revisa la Mesa 3 veces por día, 8:40, 12:40 y 16:40 (fabricar lo aprobado,
-traer los videos, programar lo que Carlos pidió publicar). Cómo funcionan y los campos extra de la Mesa: `RUTINA.md`.
+Hay tres tareas programadas: una propone temas para el día siguiente (19:00), otra arma los guiones del día (5:00) y otra
+revisa la Mesa a las 8:40, 12:40, 16:40 y 18:40 (traer los videos, programar publicaciones). **Desde el 12/11/2026 la
+rutina está en modo automático** (temas → guion → video → publicación sin aprobación de Carlos, salvo temas sensibles):
+el interruptor, las excepciones y cómo frena Carlos están al principio de `RUTINA.md`. Los pedidos que Carlos haga desde
+el chat siguen pasando por él antes de fabricarse.
 Si Carlos pide un video desde el chat, se sigue el flujo de arriba, pero al cargarlo en la Mesa se agregan `categoria`
 y `guion` (el JSON completo) para que la rutina pueda fabricarlo cuando lo apruebe.
 

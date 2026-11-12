@@ -5,8 +5,21 @@ historia, inventos, gente común, casos reales). Todo pasa por la *Mesa de guion
 (https://claude.ai/artifact/BhPC4PrHy9mLcGiBbWBair) con la herramienta `ArtifactData`; las reglas del guion y del
 formato están en `CLAUDE.md` y se cumplen igual que en el chat.
 
-**Nunca** se fabrica algo que Carlos no aprobó en la Mesa (`estado: "aprobado"`), y **nunca** se publica algo que no
-pidió publicar (`estado: "publicacion pedida"`). Si algo falla o es dudoso, se deja como está y se avisa.
+## MODO: automático
+
+> Interruptor. Valores: `automático` o `manual`. Lo cambia Claude cuando Carlos lo pide ("volvé al modo manual").
+
+- **automático** (desde el 12/11/2026, a pedido de Carlos): los temas, los guiones, la fabricación y la publicación salen
+  solos. Carlos ya no aprueba ni pide publicar; mira cuando quiere y frena si algo no le gusta. Excepciones que **siempre**
+  esperan su aprobación (quedan en `borrador` y se le avisa): temas `sensible`, crímenes o violencia, muertes de los
+  últimos 12 meses, tragedias con víctimas, menores de edad, o acusaciones contra personas vivas.
+- **manual**: nunca se fabrica algo que Carlos no aprobó en la Mesa (`estado: "aprobado"`) y nunca se publica algo que no
+  pidió publicar (`estado: "publicacion pedida"`).
+
+En los dos modos: si algo falla o es dudoso, se deja como está y se avisa; y nunca se inventan datos.
+
+**Cómo frena Carlos un video automático:** editando cualquier cosa del guion en la Mesa (pasa a `con cambios` y no se
+publica hasta que lo apruebe), escribiendo algo en la nota general, o borrando el post en Buffer antes de la hora.
 
 ## Documento de cada guion en la Mesa (colección `guiones`, id = slug)
 
@@ -20,6 +33,8 @@ publicar, nota_general`):
 - `fabricado`: link al commit · `issue`: número del issue de revisión.
 - `video`: `{"url": ".../releases/download/video-<slug>/<slug>.mp4", "hoja": ".../hoja.jpg"}`.
 - `publicar_pedido`: `{"cuando": "AAAA-MM-DD HH:MM" | "ahora", "pedido_en"}` (lo escribe la página).
+- `auto`: true si lo aprobó la rutina (modo automático) · `publicar_auto`: `"AAAA-MM-DD HH:MM"` (hoy 19:00 fútbol,
+  22:00 general) · `verificado`: resumen del chequeo de datos independiente.
 
 Estados: `borrador` → (Carlos corrige: `con cambios`) → `aprobado` (botón de Carlos) → `fabricando` → `listo`
 (video en la Mesa) → `publicacion pedida` (botón de Carlos) → `programado` / `publicado`. Si falla: `falla`.
@@ -66,11 +81,24 @@ Si Carlos edita un guion ya fabricado, vuelve a `con cambios` y hay que aprobarl
 5. Validar sin render: `.venv/bin/python fabrica/make_short.py <ruta>/guion.json --sin-render --motor kokoro`
    (si no hay `.venv`: `bash setup.sh sin-voz`). Con fotos de Commons bloqueadas desde la sesión, alcanza con
    `validar()` de `make_short.py`. **No pushear el guion** (el push dispara la fábrica).
-6. Cargar cada guion en la Mesa (`ArtifactData set guiones/<slug>`) con todos los campos, `estado: "borrador"`,
-   `categoria`, `guion` (el JSON completo) y `tema`. En el banco, al tema usado ponerle `guion: <slug>`.
-7. Terminar con un resumen corto para el aviso al celular: los dos títulos y "revisalos en la Mesa".
+6. **Chequeo de datos independiente** (los dos modos, obligatorio en automático): un agente aparte (herramienta Agent,
+   general-purpose) que **no** escribió el guion recibe solo el `guion.json` y sus `fuentes`, y verifica con búsqueda web
+   cada afirmación de `say`, `sub` y los textos en pantalla (nombres, fechas, cifras, citas textuales, créditos y licencias
+   de las fotos). Devuelve la lista de lo que no pudo confirmar. Lo no confirmado se corrige o se saca; si es el corazón
+   de la historia, se cambia de tema. Guardar el resumen en `verificado`. (Si la sesión no tiene Agent, hacer una segunda
+   pasada propia releyendo cada fuente.)
+7. Cargar cada guion en la Mesa (`ArtifactData set guiones/<slug>`) con todos los campos, `categoria`, `guion` (el JSON
+   completo) y `tema`. En el banco, al tema usado ponerle `guion: <slug>`.
+   - **Modo manual**, o tema de las excepciones del modo automático → `estado: "borrador"`.
+   - **Modo automático** → `estado: "aprobado"`, `auto: true`, `publicar_auto: "<hoy> 19:00"` (fútbol) o
+     `"<hoy> 22:00"` (general), y fabricar ya: escribir `videos/<slug>/guion.json` de los dos, **un solo commit y un
+     solo push a `main`** ("video: <título 1> + <título 2>"; el flujo *Fabricar* toma todos los guiones de la subida) y
+     poner `estado: "fabricando"` y `fabricado` con el link del commit.
+8. Terminar con un resumen corto para el aviso al celular. Manual: los dos títulos y "revisalos en la Mesa".
+   Automático: los dos títulos con su hora ("hoy 19:00 / 22:00, se fabrican ahora; si querés frenar alguno, editalo en
+   la Mesa antes de las 12:40"), y cuál quedó esperando su aprobación y por qué.
 
-## B. Revisión de la Mesa (3 veces por día: 8:40, 12:40 y 16:40; si no hay nada pendiente, termina enseguida)
+## B. Revisión de la Mesa (8:40, 12:40, 16:40 y 18:40; si no hay nada pendiente, termina enseguida)
 
 Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su estado:
 
@@ -95,6 +123,12 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
 - **`publicacion pedida`** → comentar en el issue `/publicar` (si `cuando` es "ahora") o `/publicar AAAA-MM-DD HH:MM`;
   esperar la respuesta del flujo *Publicar* (✅ Enviado a Buffer) y poner `estado: "programado"` (o `"publicado"` si
   fue "ahora"). Marcar el tema del banco como `hecho`.
+- **`listo` con `auto: true`** (solo en modo automático y solo en las revisiones de las 12:40 en adelante, para que
+  Carlos tenga la mañana para mirarlo) → programar solo si: el `informe.json` del release dice `"ok": true`, el doc
+  sigue en `listo` y `nota_general` está vacía. Comentar en el issue `/publicar <publicar_auto>` (si esa hora ya pasó:
+  `/publicar` ahora… solo si son menos de las 23:00; si no, el día siguiente a la misma hora), esperar
+  "✅ Enviado a Buffer", poner `estado: "programado"` y marcar el tema del banco como `hecho`. Si el informe no dice ok,
+  no publicar: `estado: "falla"` y avisar.
 - **`programado`** con fecha ya pasada → `estado: "publicado"`.
 
 Si no hubo nada que hacer, terminar sin aviso. Si hubo cambios, resumen corto: qué se fabricó, qué video está listo
