@@ -132,7 +132,12 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
   no publicar: `estado: "falla"` y avisar.
 - Si el flujo *Publicar* responde **"❌ No se pudo publicar"** (Buffer no aceptó o no pudo bajar el video aun después de
   reintentar): `estado: "falla"`, aviso al celular con el motivo, y no reintentar sola más de una vez por revisión.
-- **`programado`** con fecha ya pasada → `estado: "publicado"`.
+- **`programado`** con fecha ya pasada → confirmar en Buffer antes de marcarlo: correr el flujo *Estado en Buffer*
+  (`gh api -X POST repos/ccesano/fabrica-shorts/actions/workflows/estado-buffer.yml/dispatches -f ref=main -f 'inputs[ids]=<ids>'`,
+  los ids están en el comentario "✅ Enviado a Buffer" del issue) y leer el log. Si los tres dicen `sent`: `estado: "publicado"`.
+  Si alguno dice `error`: volver a poner la etiqueta `revision` en el issue, comentar `/publicar` (sale ya, solo esa red si
+  es una: `/publicar youtube`) y avisar al celular. (Desde el 13/11 los programados usan un link fijo en la rama `publicos`;
+  antes el link del release vencía en ~1 h y fallaban los programados con más anticipación.)
 
 Si no hubo nada que hacer, terminar sin aviso. Si hubo cambios, resumen corto: qué se fabricó, qué video está listo
 para ver en la Mesa, qué quedó programado, qué falló.

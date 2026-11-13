@@ -5,7 +5,7 @@ on:
     types: [created]
 
 permissions:
-  contents: read
+  contents: write   # para dejar el video programado en la rama `publicos` (link fijo que no vence)
   issues: write
 
 jobs:
@@ -58,7 +58,27 @@ jobs:
         run: |
           s=${{ steps.pedido.outputs.slug }}; tag=video-$s
           gh release download "$tag" -p "$s.mp4" -p publicacion.json -D pub --clobber
-          if [ "${{ github.event.repository.private }}" = "false" ]; then
+          if [ "${{ github.event.repository.private }}" = "false" ] && [ -n "${{ steps.pedido.outputs.cuando }}" ]; then
+            # Programado: el link de descarga del release redirige a una URL firmada que vence en ~1 h, y Buffer
+            # baja el video recién a la hora de publicar (así fallaron los posts programados con horas de anticipación).
+            # Se deja una copia en la rama `publicos` y se usa raw.githubusercontent.com: link fijo, sin redirección.
+            # La rama guarda solo los videos de los últimos 4 días (se rehace en cada publicación).
+            git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            rm -rf /tmp/pub && mkdir -p /tmp/pub
+            if git fetch -q --depth 1 origin publicos 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/pub; fi
+            lim=$(date -u -d '4 days ago' +%Y-%m-%d)
+            for f in /tmp/pub/*.mp4; do [ -e "$f" ] || continue; d=$(basename "$f" | cut -c1-10); [[ "$d" < "$lim" ]] && rm -f "$f"; done
+            cp "pub/$s.mp4" "/tmp/pub/$s.mp4"
+            export GIT_INDEX_FILE=/tmp/pub-index   # índice aparte: no toca el checkout de main
+            git --work-tree=/tmp/pub add -A .
+            c=$(git commit-tree "$(git write-tree)" -m "videos programados en Buffer")
+            unset GIT_INDEX_FILE
+            git push -q -f origin "$c:refs/heads/publicos"
+            url="https://raw.githubusercontent.com/${{ github.repository }}/publicos/$s.mp4"
+            for i in $(seq 1 12); do curl -sfI "$url" >/dev/null && break; sleep 5; done
+            curl -sfI "$url" >/dev/null || { echo "::error::El video no quedó accesible en $url"; exit 1; }
+            echo "url=$url" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.repository.private }}" = "false" ]; then
             echo "url=https://github.com/${{ github.repository }}/releases/download/$tag/$s.mp4" >> "$GITHUB_OUTPUT"
           elif [ -n "$CLOUDINARY_URL" ]; then
             # CLOUDINARY_URL = cloudinary://API_KEY:API_SECRET@CLOUD_NAME
