@@ -130,6 +130,8 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
   `/publicar` ahora… solo si son menos de las 23:00; si no, el día siguiente a la misma hora), esperar
   "✅ Enviado a Buffer", poner `estado: "programado"` y marcar el tema del banco como `hecho`. Si el informe no dice ok,
   no publicar: `estado: "falla"` y avisar.
+- Si el flujo *Publicar* responde **"❌ No se pudo publicar"** (Buffer no aceptó o no pudo bajar el video aun después de
+  reintentar): `estado: "falla"`, aviso al celular con el motivo, y no reintentar sola más de una vez por revisión.
 - **`programado`** con fecha ya pasada → `estado: "publicado"`.
 
 Si no hubo nada que hacer, terminar sin aviso. Si hubo cambios, resumen corto: qué se fabricó, qué video está listo

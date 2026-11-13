@@ -9,6 +9,7 @@ Solo usa la biblioteca estándar de Python.
 """
 import argparse
 import json
+import time
 import os
 import sys
 import urllib.request
@@ -80,7 +81,34 @@ def url_final(url):
         return url
 
 
+def estado(pid):
+    """Estado real del post en Buffer (programado, enviando, enviado, error) y el mensaje de error si lo hay.
+    createPost puede responder bien y el post quedar en "error" segundos después (ej. si no pudo bajar el video)."""
+    for q in ('query($id: PostId!) { post(input: {id: $id}) { status error { message } } }',
+              'query($id: String!) { post(input: {id: $id}) { status error { message } } }'):
+        try:
+            p = gql(q, {"id": pid})["post"]
+            return p.get("status"), (p.get("error") or {}).get("message")
+        except Exception as e:  # noqa: BLE001
+            ultimo = e
+    print(f"aviso: no pude leer el estado del post {pid} ({ultimo})", flush=True)
+    return None, None
+
+
+def confirmar(pid, espera=25):
+    """Espera hasta `espera` s a que Buffer valide el post. Devuelve None si quedó bien, o el error."""
+    fin = time.time() + espera
+    while True:
+        st, err = estado(pid)
+        if st == "error":
+            return err or "Buffer marcó el post con error"
+        if st in ("sent", "sending") or time.time() >= fin:
+            return None
+        time.sleep(5)
+
+
 def publicar(url, pub, cuando=None, solo=None):
+    original = url
     url = url_final(url)
     texto = pub.get("descripcion_completa") or pub.get("descripcion", "")
     resultados = {}
@@ -101,10 +129,22 @@ def publicar(url, pub, cuando=None, solo=None):
         intentos = [dict(base, metadata=meta), base] if meta else [base]
         errores = []
         for inp in intentos:
-            try:
-                r = gql(MUT, {"input": inp})["createPost"]
-            except RuntimeError as e:
-                r = {"message": str(e)}
+            for vuelta in range(3):   # si Buffer no pudo bajar el video, se reintenta con una URL recién resuelta
+                try:
+                    r = gql(MUT, {"input": inp})["createPost"]
+                except RuntimeError as e:
+                    r = {"message": str(e)}
+                if not r.get("post"):
+                    break
+                err = confirmar(r["post"]["id"])
+                if not err:
+                    break
+                print(f"{s:10s} intento {vuelta + 1}: Buffer marcó error ({err}); reintento en 20 s", flush=True)
+                errores.append(f"post {r['post']['id']} con error: {err}")
+                r = {"message": err}
+                time.sleep(20)
+                url = url_final(original)
+                inp = dict(inp, assets=[{"video": dict(inp["assets"][0]["video"], url=url)}])
             if r.get("post"):
                 resultados[s] = {"ok": True, "id": r["post"]["id"], "cuando": r["post"].get("dueAt")}
                 break
