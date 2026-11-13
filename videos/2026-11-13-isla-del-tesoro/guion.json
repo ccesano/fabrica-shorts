@@ -1,0 +1,266 @@
+{
+  "titulo": "La isla del tesoro nació de un mapa para entretener a un chico",
+  "paleta": "bosque",
+  "musica": {
+    "animo": "misterio"
+  },
+  "ambiente": "lluvia",
+  "textura": "pelicula",
+  "subtitulos": true,
+  "voz": {
+    "pronunciar": {
+      "Braemar": "Brimar",
+      "Lloyd": "Loid",
+      "Young Folks": "Iang Fouks",
+      "George North": "Yorch Norz",
+      "Stevenson": "Stívenson",
+      "Edimburgo": "Edimburgo"
+    }
+  },
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Treasure_Island",
+    "https://en.wikipedia.org/wiki/Lloyd_Osbourne",
+    "https://www.robert-louis-stevenson.org/timeline",
+    "https://crouchrarebooks.com/?p=99248",
+    "https://www.futilitycloset.com/2017/07/20/lost-treasure/",
+    "https://www.gutenberg.org/files/15547/15547-h/15547-h.htm",
+    "https://commons.wikimedia.org/wiki/File:Treasure-island-map.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "La isla del tesoro empezó con un dibujo.",
+      "emocion": 0.65,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "palabras": [
+          {
+            "texto": "LA ISLA",
+            "en": "isla"
+          },
+          {
+            "texto": "DEL TESORO",
+            "en": "tesoro"
+          },
+          {
+            "texto": "EMPEZÓ CON",
+            "en": "empezó"
+          },
+          {
+            "texto": "UN *DIBUJO*",
+            "en": "dibujo"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Escocia, agosto de mil ochocientos ochenta y uno. Un día de lluvia en Braemar.",
+      "sub": "Escocia, agosto de 1881. Un día de lluvia en Braemar.",
+      "emocion": 0.45,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "estilo": "maquina",
+        "kicker": "Escocia",
+        "palabras": [
+          {
+            "texto": "AGOSTO, 1881",
+            "en": "agosto"
+          },
+          {
+            "texto": "BRAEMAR",
+            "en": "Braemar"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Robert Louis Stevenson está de vacaciones con su familia y con su hijastro Lloyd, de trece años.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "Robert Louis Stevenson",
+        "transicion": "derecha",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg",
+          "credito": "Henry Walter Barnett / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia",
+          "recorte": true,
+          "epigrafe": "Stevenson, 1893"
+        },
+        "palabras": [
+          {
+            "texto": "LLOYD, 13",
+            "en": "trece"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Para pasar el rato, Stevenson dibuja con él el mapa de una isla inventada. Le pone nombre: La isla del tesoro.",
+      "emocion": 0.6,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "el mapa",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Treasure-island-map.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Treasure-island-map.jpg",
+          "credito": "Robert Louis Stevenson (1.ª edición, 1883) / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia",
+          "recorte": false,
+          "profundidad": false,
+          "epigrafe": "Mapa de La isla del tesoro"
+        },
+        "marca": {
+          "forma": "flecha",
+          "x": 0.29,
+          "y": 0.48,
+          "w": 0.15,
+          "h": 0.1,
+          "texto": "el tesoro",
+          "en": "tesoro"
+        }
+      }
+    },
+    {
+      "say": "El mapa fue casi todo el argumento.",
+      "emocion": 0.6,
+      "pausa": 1.2,
+      "escena": {
+        "tipo": "cita",
+        "texto": "El mapa fue *casi todo* el argumento.",
+        "autor": "Robert Louis Stevenson, «Mi primer libro» (1894)"
+      }
+    },
+    {
+      "say": "En pocas semanas ya salía por capítulos en una revista para chicos, Young Folks.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "Londres · 1881",
+        "objeto": {
+          "tipo": "recorte",
+          "volanta": "YOUNG FOLKS",
+          "titular": "Treasure Island"
+        },
+        "palabras": [
+          {
+            "texto": "POR *CAPÍTULOS*",
+            "en": "capítulos"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Y no la firmaba él: el autor era un tal Capitán George North.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "el seudónimo",
+        "palabras": [
+          {
+            "texto": "CAPITÁN",
+            "en": "Capitán"
+          },
+          {
+            "texto": "*GEORGE NORTH*",
+            "en": "George North"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Pero el mapa original se perdió: la editorial dijo que nunca lo recibió.",
+      "emocion": 0.75,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "transicion": "rasgado",
+        "palabras": [
+          {
+            "texto": "EL MAPA",
+            "en": "mapa"
+          },
+          {
+            "texto": "SE *PERDIÓ*",
+            "en": "perdió"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Tuvo que dibujarlo de nuevo, mirando lo que había escrito. Lo hizo en la oficina de su padre.",
+      "emocion": 0.85,
+      "pausa": 0.6,
+      "musica": "subida",
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "el segundo mapa",
+        "objeto": {
+          "tipo": "postal",
+          "texto": "Treasure Island",
+          "lugar": "Edimburgo",
+          "colores": [
+            "#3E5C3A",
+            "#C9B27C"
+          ]
+        },
+        "palabras": [
+          {
+            "texto": "DE *NUEVO*",
+            "en": "nuevo"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Stevenson nació un día como hoy, hace ciento setenta y seis años. ¿Vos leíste La isla del tesoro? Contalo en los comentarios.",
+      "sub": "Stevenson nació un día como hoy, hace 176 años. ¿Vos leíste La isla del tesoro? Contalo en los comentarios.",
+      "emocion": 0.55,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "¿LA",
+            "en": "leíste"
+          },
+          {
+            "texto": "*LEÍSTE*?",
+            "en": "tesoro"
+          }
+        ],
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "calendario",
+          "dia": 13,
+          "mes": "NOVIEMBRE",
+          "anio": 1850
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "La isla del tesoro empezó con un dibujo #shorts",
+    "descripcion": "Robert Louis Stevenson nació el 13 de noviembre de 1850 en Edimburgo. En agosto de 1881, en unas vacaciones en Braemar (Escocia), dibujó en un día de lluvia el mapa de una isla imaginaria con su hijastro Lloyd Osbourne, de 13 años, y le puso «Treasure Island». «El mapa fue casi todo el argumento», escribió en su ensayo «Mi primer libro» (1894). La novela salió por entregas en la revista infantil Young Folks desde el 1 de octubre de 1881, firmada con el seudónimo Capitán George North. El mapa original se perdió: la editorial Cassell dijo que nunca lo había recibido, y Stevenson tuvo que dibujarlo de nuevo a partir del texto, en la oficina de su padre. El libro salió el 14 de noviembre de 1883 y fue su primer gran éxito. Fuentes: Wikipedia, robert-louis-stevenson.org, Crouch Rare Books, Futility Closet, The Life of Robert Louis Stevenson for Boys and Girls (Project Gutenberg). Imágenes: Wikimedia Commons (retrato de Henry Walter Barnett, 1893, y mapa de la edición de 1883, dominio público).",
+    "hashtags": [
+      "Stevenson",
+      "LaIslaDelTesoro",
+      "libros",
+      "historia",
+      "historiasreales"
+    ],
+    "categoria_youtube": "27"
+  }
+}

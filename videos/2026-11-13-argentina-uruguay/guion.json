@@ -1,0 +1,274 @@
+{
+  "titulo": "Argentina-Uruguay, el partido más jugado del mundo",
+  "paleta": "oceano",
+  "musica": {
+    "animo": "epico"
+  },
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "fuentes": [
+    "https://guinnessworldrecords.com/world-records/458391-most-frequently-disputed-international-football-fixture",
+    "https://en.wikipedia.org/wiki/Argentina%E2%80%93Uruguay_football_rivalry",
+    "https://en.wikipedia.org/wiki/1902_Uruguay_v_Argentina_football_match",
+    "https://www.airedesantafe.com.ar/deportes/la-historia-del-primer-argentina-uruguay-el-encuentro-que-dio-nacimiento-seleccion",
+    "https://billiken.lat/personas/cesareo-onzari-el-autor-del-primer-gol-olimpico-del-mundo-es-argentino/",
+    "https://www.montevideo.com.uy/Deportes/Eliminatorias-Uruguay-con-caracter-y-gran-juego-vencio-2-0-a-Argentina-en-La-Bombonera-uc871385",
+    "https://www.tiempoar.com.ar/ta_article/la-seleccion-argentina-cierra-la-fecha-fifa-con-los-amistosos-contra-uruguay-y-costa-rica/"
+  ],
+  "lineas": [
+    {
+      "say": "Ningún partido entre países se jugó tanto.",
+      "emocion": 0.88,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "estilo": "impacto",
+        "destello": false,
+        "palabras": [
+          {
+            "texto": "NINGÚN PARTIDO",
+            "en": "Ningún partido"
+          },
+          {
+            "texto": "ENTRE PAÍSES",
+            "en": "entre países"
+          },
+          {
+            "texto": "SE JUGÓ *TANTO*",
+            "en": "tanto"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Argentina contra Uruguay. Según Guinness, hasta dos mil diecinueve ya eran ciento noventa y cuatro partidos.",
+      "sub": "Argentina contra Uruguay. Según Guinness, hasta 2019 ya eran 194 partidos.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "cifra",
+        "numero": 194,
+        "en": "ciento noventa",
+        "etiqueta": "partidos hasta 2019",
+        "palabra": "RÉCORD GUINNESS",
+        "transicion": "zoom"
+      }
+    },
+    {
+      "say": "El primero oficial fue en mil novecientos dos. Argentina cruzó el río para jugar en Montevideo.",
+      "sub": "El primero oficial fue en 1902. Argentina cruzó el río para jugar en Montevideo.",
+      "emocion": 0.45,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "mapa",
+        "desde": {
+          "nombre": "Buenos Aires",
+          "lat": -34.6,
+          "lon": -58.38
+        },
+        "hasta": {
+          "nombre": "Montevideo",
+          "lat": -34.9,
+          "lon": -56.16
+        },
+        "resaltar": [
+          "Argentina",
+          "Uruguay"
+        ],
+        "vehiculo": "barco",
+        "ruta_en": "cruzó",
+        "etiqueta": "20 de julio de 1902",
+        "palabras": [
+          {
+            "texto": "EL PRIMERO",
+            "en": "primero"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Era la primera vez que los dos jugaban como selección. Argentina, de celeste.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "la primera selección",
+        "transicion": "derecha",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Argentina_1902.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Argentina_1902.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia",
+          "recorte": false,
+          "epigrafe": "Selección argentina, 1902"
+        },
+        "palabras": [
+          {
+            "texto": "DE *CELESTE*",
+            "en": "celeste"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Ganó Argentina seis a cero. Y dos de esos goles los hicieron los uruguayos, en contra.",
+      "sub": "Ganó Argentina 6 a 0. Y dos de esos goles los hicieron los uruguayos, en contra.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "Paso del Molino",
+        "objeto": {
+          "tipo": "marcador",
+          "filas": [
+            [
+              "URUGUAY",
+              0
+            ],
+            [
+              "ARGENTINA",
+              6
+            ]
+          ]
+        },
+        "palabras": [
+          {
+            "texto": "DOS *EN CONTRA*",
+            "en": "en contra"
+          }
+        ]
+      }
+    },
+    {
+      "say": "En el veinticuatro, Onzari le hizo un gol de córner. Como Uruguay era campeón olímpico, lo llamaron gol olímpico.",
+      "sub": "En el 24, Onzari le hizo un gol de córner. Como Uruguay era campeón olímpico, lo llamaron gol olímpico.",
+      "emocion": 0.7,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "Cesáreo Onzari",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Cesareo_onzari_huracan.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Cesareo_onzari_huracan.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "byn",
+          "recorte": true,
+          "epigrafe": "Cesáreo Onzari"
+        },
+        "palabras": [
+          {
+            "texto": "GOL *OLÍMPICO*",
+            "en": "gol olímpico"
+          }
+        ],
+        "transicion": "rasgado"
+      }
+    },
+    {
+      "say": "Después Uruguay ganó dos finales: los Olímpicos del veintiocho y el primer Mundial, en el treinta.",
+      "sub": "Después Uruguay ganó dos finales: los Olímpicos del 28 y el primer Mundial, en el 30.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "lista",
+        "etiqueta": "dos finales celestes",
+        "items": [
+          {
+            "texto": "1928 · Ámsterdam: 2-1",
+            "en": "Olímpicos"
+          },
+          {
+            "texto": "1930 · Mundial: 4-2",
+            "en": "Mundial"
+          }
+        ]
+      }
+    },
+    {
+      "say": "La última vez que se vieron en la Bombonera, en dos mil veintitrés, ganó Uruguay dos a cero.",
+      "sub": "La última vez que se vieron en la Bombonera, en 2023, ganó Uruguay 2 a 0.",
+      "emocion": 0.65,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "La Bombonera",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/La_Bombonera_-_Buenos_Aires_-_Argentina.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:La_Bombonera_-_Buenos_Aires_-_Argentina.jpg",
+          "credito": "Diego Delso / Wikimedia Commons",
+          "licencia": "CC BY-SA 3.0",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "La Bombonera"
+        },
+        "palabras": [
+          {
+            "texto": "URUGUAY 2-0",
+            "en": "dos a cero"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Esta noche vuelven a esa cancha. A las ocho, otro capítulo.",
+      "emocion": 0.85,
+      "pausa": 0.6,
+      "musica": "subida",
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "hoy · Bombonera",
+        "destello": true,
+        "objeto": {
+          "tipo": "reloj",
+          "hora": "20:00"
+        },
+        "palabras": [
+          {
+            "texto": "*OTRO* CAPÍTULO",
+            "en": "otro capítulo"
+          }
+        ]
+      }
+    },
+    {
+      "say": "¿Cuál fue el Argentina Uruguay que más te marcó? Contalo en los comentarios.",
+      "emocion": 0.55,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "¿CUÁL",
+            "en": "Cuál"
+          },
+          {
+            "texto": "TE *MARCÓ*?",
+            "en": "marcó"
+          }
+        ],
+        "cta": "Contalo en los comentarios.",
+        "objeto": {
+          "tipo": "pelota"
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "Argentina-Uruguay: el partido más jugado del mundo #shorts",
+    "descripcion": "Argentina y Uruguay protagonizan el partido internacional más disputado de la historia: según Guinness World Records, hasta el 18 de noviembre de 2019 se habían enfrentado 194 veces. El primer partido oficial fue el 20 de julio de 1902 en la cancha del Albion, en Paso del Molino (Montevideo): ganó Argentina 6 a 0, con dos goles en contra de jugadores uruguayos, y fue el primer partido de ambas selecciones. Uruguay ganó las finales de los Juegos Olímpicos de Ámsterdam 1928 (2-1, en el desempate) y del Mundial 1930 (4-2). El 2 de octubre de 1924, Cesáreo Onzari le hizo a Uruguay un gol directo de córner, bautizado «gol olímpico» porque Uruguay era el campeón olímpico. El 16 de noviembre de 2023, en la Bombonera, Uruguay ganó 2 a 0. Este viernes 13 de noviembre, a las 20, vuelven a jugar en la Bombonera. Fuentes: Guinness World Records, Wikipedia, Aire de Santa Fe, Billiken, Montevideo Portal, Tiempo Argentino. Fotos: Wikimedia Commons (Argentina 1902 y Cesáreo Onzari, dominio público; La Bombonera, Diego Delso, CC BY-SA 3.0).",
+    "hashtags": [
+      "Argentina",
+      "Uruguay",
+      "clasicodelriodelaplata",
+      "futbol",
+      "historiasreales"
+    ],
+    "categoria_youtube": "17"
+  }
+}
