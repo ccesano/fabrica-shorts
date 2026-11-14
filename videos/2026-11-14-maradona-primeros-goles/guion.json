@@ -1,0 +1,261 @@
+{
+  "titulo": "Los primeros goles de Maradona: hace 50 años y sin una sola filmación",
+  "paleta": "diario",
+  "musica": {
+    "animo": "nostalgico"
+  },
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "voz": {
+    "pronunciar": {
+      "Lucangioli": "Lucanyóli"
+    }
+  },
+  "fuentes": [
+    "https://www.lacapitalmdp.com/lo-primeros-gritos-sagrados/",
+    "https://www.lacapitalmdp.com/el-hallazgo-que-cambia-la-imagen-de-un-gol-historico-de-maradona/",
+    "https://www.lacapitalmdp.com/a-40-anos-de-los-primeros-goles-de-diego/",
+    "https://elgrafico.com.ar/articulo/diego-eterno/46430/diego-maradona-y-sus-primeras-conquistas-a-49-anios-de-los-goles-fantasma-en-un-estadio-desaparecido",
+    "https://commons.wikimedia.org/wiki/File:Maradona_argentinos_v_quilmes_1977.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Nadie filmó los primeros goles de Diego.",
+      "emocion": 0.7,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "palabras": [
+          {
+            "texto": "NADIE FILMÓ",
+            "en": "Nadie filmó"
+          },
+          {
+            "texto": "LOS PRIMEROS",
+            "en": "primeros"
+          },
+          {
+            "texto": "GOLES DE *DIEGO*",
+            "en": "Diego"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Mar del Plata, catorce de noviembre de mil novecientos setenta y seis. Hoy hace cincuenta años.",
+      "sub": "Mar del Plata, 14 de noviembre de 1976. Hoy hace 50 años.",
+      "emocion": 0.45,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "estilo": "maquina",
+        "kicker": "hace 50 años",
+        "palabras": [
+          {
+            "texto": "MAR DEL PLATA",
+            "en": "Mar del Plata"
+          },
+          {
+            "texto": "14/11/1976",
+            "en": "catorce"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Argentinos Juniors jugaba contra San Lorenzo de Mar del Plata, en el estadio General San Martín.",
+      "emocion": 0.45,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "Estadio General San Martín",
+        "objeto": {
+          "tipo": "entrada",
+          "titulo": "Argentinos Jrs. vs. San Lorenzo",
+          "nombre": "Mar del Plata",
+          "campos": {
+            "Fecha": "14/11/1976",
+            "Estadio": "Gral. San Martín"
+          }
+        },
+        "palabras": [
+          {
+            "texto": "*ARGENTINOS*",
+            "en": "Argentinos"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Diego tenía dieciséis años recién cumplidos. Era su quinto partido en Primera.",
+      "sub": "Diego tenía 16 años recién cumplidos. Era su quinto partido en Primera.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "transicion": "izquierda",
+        "etiqueta": "16 años",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Maradona_argentinos_v_quilmes_1977.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_argentinos_v_quilmes_1977.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "Diego en Argentinos, 1977"
+        },
+        "marca": {
+          "forma": "circulo",
+          "x": 0.25,
+          "y": 0.2,
+          "w": 0.24,
+          "h": 0.32,
+          "texto": "Diego",
+          "en": "Diego"
+        },
+        "palabras": [
+          {
+            "texto": "*QUINTO* PARTIDO",
+            "en": "quinto"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Arrancó en el banco. Entró en el segundo tiempo, con la quince en la espalda.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "segundo tiempo",
+        "objeto": {
+          "tipo": "camiseta",
+          "base": "#D7262E",
+          "color": "#FFFFFF",
+          "estilo": "lisa",
+          "numero": "15",
+          "en": "quince"
+        },
+        "palabras": [
+          {
+            "texto": "LA *15*",
+            "en": "quince"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Casi al final, eludió a tres rivales, tocó con un compañero y la cruzó de zurda.",
+      "emocion": 0.8,
+      "pausa": 0.5,
+      "musica": "subida",
+      "escena": {
+        "tipo": "jugada",
+        "etiqueta": "el primero",
+        "corrida_en": "eludió",
+        "remate_en": "cruzó",
+        "sentido": "derecha",
+        "rivales": 3,
+        "arquero": "parado",
+        "resultado": "gol",
+        "palabras": [
+          {
+            "texto": "*GOL*",
+            "en": "zurda"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Tres minutos después, hizo el segundo. Argentinos ganó cinco a dos.",
+      "sub": "Tres minutos después, hizo el segundo. Argentinos ganó 5 a 2.",
+      "emocion": 0.75,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "resultado final",
+        "objeto": {
+          "tipo": "marcador",
+          "filas": [
+            [
+              "ARGENTINOS",
+              5
+            ],
+            [
+              "SAN LORENZO",
+              2
+            ]
+          ],
+          "en": "cinco"
+        },
+        "palabras": [
+          {
+            "texto": "*5 A 2*",
+            "en": "cinco a dos"
+          }
+        ]
+      }
+    },
+    {
+      "say": "El arquero era Rubén Lucangioli. Después diría: «Esos goles me los hizo Maradona, el mejor jugador del mundo».",
+      "emocion": 0.7,
+      "pausa": 1.2,
+      "musica": "silencio",
+      "escena": {
+        "tipo": "cita",
+        "texto": "Esos goles me los hizo *Maradona*, el mejor jugador del mundo.",
+        "autor": "Rubén Lucangioli, arquero"
+      }
+    },
+    {
+      "say": "Había mil trescientas treinta y cinco personas. Sus goles no quedaron filmados.",
+      "sub": "Había 1335 personas. Sus goles no quedaron filmados.",
+      "emocion": 0.6,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "cifra",
+        "transicion": "rasgado",
+        "numero": 1335,
+        "en": "mil trescientas",
+        "etiqueta": "espectadores",
+        "palabra": "SIN FILMACIÓN"
+      }
+    },
+    {
+      "say": "Y esa cancha ya no existe. ¿Vos sabías dónde hizo Diego sus primeros goles? Contalo en los comentarios.",
+      "emocion": 0.55,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "EL PRIMER GRITO",
+            "en": "cancha"
+          },
+          {
+            "texto": "DEL *DIEZ*",
+            "en": "Diego"
+          }
+        ],
+        "cta": "¿Lo sabías? Contalo abajo",
+        "objeto": {
+          "tipo": "pelota"
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "Los primeros goles de Maradona no los filmó nadie #shorts",
+    "descripcion": "El 14 de noviembre de 1976, en el estadio General San Martín de Mar del Plata, Diego Maradona hizo sus primeros dos goles oficiales. Tenía 16 años recién cumplidos y jugaba su quinto partido en Primera con Argentinos Juniors. Arrancó en el banco, entró en el segundo tiempo con la 15 y, sobre el final, le hizo dos goles al arquero Rubén Lucangioli: el primero eludiendo a tres rivales y definiendo de zurda, y el segundo tres minutos después. Argentinos ganó 5 a 2 a San Lorenzo de Mar del Plata ante 1.335 espectadores. No hay registro fílmico de esos goles: solo las fotos de Ismael Daoud y Néstor Alfonso, de La Capital. El estadio ya no existe. Fuentes: La Capital de Mar del Plata, El Gráfico. Foto: Diego en Argentinos Juniors, 1977 (Wikimedia Commons, dominio público; no es del partido de Mar del Plata).",
+    "hashtags": [
+      "maradona",
+      "argentinosjuniors",
+      "mardelplata",
+      "futbol",
+      "historiasreales"
+    ],
+    "categoria_youtube": "17"
+  }
+}

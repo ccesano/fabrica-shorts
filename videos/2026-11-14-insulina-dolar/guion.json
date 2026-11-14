@@ -1,0 +1,261 @@
+{
+  "titulo": "Vendieron la patente de la insulina por un dólar",
+  "paleta": "atardecer",
+  "musica": {
+    "animo": "alegre"
+  },
+  "ambiente": "ninguno",
+  "textura": "pelicula",
+  "subtitulos": true,
+  "voz": {
+    "pronunciar": {
+      "Collip": "Cólip"
+    }
+  },
+  "fuentes": [
+    "https://nobelprize.org/the-miracle-discovery-that-reversed-the-diabetes-death-sentence",
+    "https://thecanadianencyclopedia.ca/article/the-discovery-of-insulin/",
+    "https://ca.news.yahoo.com/fact-check-claim-scientist-sold-130000852.html",
+    "https://www.nobelprize.org/prizes/medicine/1923/banting/biographical/",
+    "https://www.phcc.gov.qa/media/campaigns/world-diabetes-day",
+    "https://commons.wikimedia.org/wiki/File:Photograph_of_F.G._Banting_and_C.H._Best_with_a_dog_on_the_roof_of_the_Medical_Building_(12309019434).jpg",
+    "https://commons.wikimedia.org/wiki/File:Assignment_to_the_Governors_of_the_University_of_Toronto_(12308738613).jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Vendieron su gran invento por un dólar.",
+      "emocion": 0.75,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "palabras": [
+          {
+            "texto": "VENDIERON",
+            "en": "Vendieron"
+          },
+          {
+            "texto": "SU INVENTO",
+            "en": "invento"
+          },
+          {
+            "texto": "POR *UN DÓLAR*",
+            "en": "dólar"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Hace un siglo, para muchos, la diabetes era una condena a muerte.",
+      "emocion": 0.55,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "hace un siglo",
+        "palabras": [
+          {
+            "texto": "LA DIABETES",
+            "en": "diabetes"
+          },
+          {
+            "texto": "UNA *CONDENA*",
+            "en": "condena"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Toronto, mil novecientos veintiuno. El médico Frederick Banting y su ayudante, el estudiante Charles Best.",
+      "sub": "Toronto, 1921. El médico Frederick Banting y su ayudante, el estudiante Charles Best.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "Toronto, 1921",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Photograph_of_F.G._Banting_and_C.H._Best_with_a_dog_on_the_roof_of_the_Medical_Building_%2812309019434%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Photograph_of_F.G._Banting_and_C.H._Best_with_a_dog_on_the_roof_of_the_Medical_Building_(12309019434).jpg",
+          "credito": "Thomas Fisher Rare Book Library, Universidad de Toronto",
+          "licencia": "CC BY 2.0",
+          "tratamiento": "sepia",
+          "recorte": false,
+          "epigrafe": "Best y Banting, Universidad de Toronto"
+        },
+        "palabras": [
+          {
+            "texto": "*BANTING*",
+            "en": "Banting"
+          },
+          {
+            "texto": "Y BEST",
+            "en": "Best"
+          }
+        ]
+      }
+    },
+    {
+      "say": "En enero de mil novecientos veintidós la probaron en un paciente. Primero falló. Doce días después, funcionó.",
+      "sub": "En enero de 1922 la probaron en un paciente. Primero falló. Doce días después, funcionó.",
+      "emocion": 0.65,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "transicion": "zoom",
+        "etiqueta": "la primera prueba",
+        "objeto": {
+          "tipo": "calendario",
+          "dia": 23,
+          "mes": 1,
+          "anio": 1922,
+          "en": "Doce días"
+        },
+        "palabras": [
+          {
+            "texto": "*FUNCIONÓ*",
+            "en": "funcionó"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Con esa patente podían hacerse millonarios. Pero no.",
+      "emocion": 0.65,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "la patente",
+        "palabras": [
+          {
+            "texto": "MILLONARIOS",
+            "en": "millonarios",
+            "tachar_en": "no"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Banting, Best y el bioquímico James Collip le cedieron la patente a la Universidad de Toronto.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "la cesión de la patente",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Assignment_to_the_Governors_of_the_University_of_Toronto_%2812308738613%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Assignment_to_the_Governors_of_the_University_of_Toronto_(12308738613).jpg",
+          "credito": "Thomas Fisher Rare Book Library, Universidad de Toronto",
+          "licencia": "CC BY 2.0",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "La cesión de la patente, 1923",
+          "profundidad": false
+        },
+        "lupa": {
+          "x": 0.37,
+          "y": 0.33,
+          "z": 0.25,
+          "en": "Collip"
+        },
+        "palabras": [
+          {
+            "texto": "*UNIVERSIDAD*",
+            "en": "Universidad"
+          }
+        ]
+      }
+    },
+    {
+      "say": "¿El precio? Un dólar.",
+      "emocion": 0.88,
+      "pausa": 0.8,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "cifra",
+        "numero": 1,
+        "prefijo": "$",
+        "en": "Un dólar",
+        "palabra": "LA PATENTE",
+        "destello": true
+      }
+    },
+    {
+      "say": "En mil novecientos veintitrés, Banting ganó el Premio Nobel. Y le dio la mitad del dinero a Best.",
+      "sub": "En 1923, Banting ganó el Premio Nobel. Y le dio la mitad del dinero a Best.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "1923",
+        "palabras": [
+          {
+            "texto": "EL *NOBEL*",
+            "en": "Nobel"
+          },
+          {
+            "texto": "MITAD PARA BEST",
+            "en": "mitad"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Banting nació un catorce de noviembre. Por eso hoy es el Día Mundial de la Diabetes.",
+      "emocion": 0.55,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "etiqueta": "Día Mundial de la Diabetes",
+        "objeto": {
+          "tipo": "calendario",
+          "dia": 14,
+          "mes": 11,
+          "anio": 1891,
+          "en": "catorce"
+        },
+        "palabras": [
+          {
+            "texto": "*14 DE NOVIEMBRE*",
+            "en": "catorce de noviembre"
+          }
+        ]
+      }
+    },
+    {
+      "say": "¿Conocés a alguien que viva gracias a la insulina? Contalo en los comentarios.",
+      "emocion": 0.5,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "UN INVENTO",
+            "en": "insulina"
+          },
+          {
+            "texto": "DE *UN DÓLAR*",
+            "en": "insulina"
+          }
+        ],
+        "cta": "Contalo en los comentarios",
+        "objeto": {
+          "tipo": "billetes",
+          "valor": "1"
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "Vendieron la patente de la insulina por un dólar #shorts",
+    "descripcion": "En 1921, en la Universidad de Toronto, el joven médico Frederick Banting y su ayudante, el estudiante Charles Best, empezaron los experimentos que llevaron a la insulina. En enero de 1922 la probaron en un paciente del Hospital General de Toronto: la primera inyección falló y la segunda, doce días después, funcionó. Banting, Best y el bioquímico James Collip le cedieron la patente a la Universidad de Toronto por un dólar (la cesión se firmó en diciembre de 1922 y se registró en enero de 1923). Ese año, Banting y John Macleod ganaron el Premio Nobel de Medicina; Banting repartió su premio con Best, y Macleod con Collip. Banting nació el 14 de noviembre de 1891: por eso ese día es el Día Mundial de la Diabetes. Ojo: la frase «la insulina no me pertenece, pertenece al mundo» que circula en redes no está documentada. Fuentes: NobelPrize.org, The Canadian Encyclopedia, Lead Stories/Yahoo (chequeo), Corporación de Salud Primaria de Qatar. Imágenes: Thomas Fisher Rare Book Library, Universidad de Toronto (CC BY 2.0), vía Wikimedia Commons.",
+    "hashtags": [
+      "insulina",
+      "diabetes",
+      "historia",
+      "inventos",
+      "historiasreales"
+    ],
+    "categoria_youtube": "27"
+  }
+}
