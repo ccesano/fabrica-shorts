@@ -199,6 +199,9 @@ Cualquiera acepta `"en"` para aparecer en un momento de la narración. Si hace f
 
 - `fabrica/make_short.py` — orquesta todo; `--motor kokoro|chatterbox|grabada`, `--borrador`, `--sin-render`.
 - `fabrica/voz.py` (+ `motor_chatterbox.py`) — voz por línea, control con Whisper y re-generación si no se entiende; caché en `.cache/voz`.
+  Motor: **Chatterbox Multilingual V3 con el pack latinoamericano** (`t3_es_mx_latam` + `s3gen_v3`), instalado desde GitHub
+  fijado a un commit (Chatterbox dejó de mantenerse en 08/2026). Lo eligió Carlos el 15/11/2026 en una prueba a ciegas contra
+  la versión anterior y la V3 general. Tarda ~1 min por línea en GitHub (el doble que antes).
 - `fabrica/escenas.py` / `objetos.py` / `proyecto.py` — escenas → proyecto HyperFrames (`plantilla/`).
 - `fabrica/imagenes.py` — descarga, sepia/byn, recorte de fondo (IS-Net) y créditos de las fotos.
 - `fabrica/audio.py` — música original (instrumentos de lemo-opuscar), ambiente, efectos y mezcla a −14 LUFS.
