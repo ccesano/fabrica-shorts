@@ -1,0 +1,69 @@
+name: Prueba de voz
+# Compara la voz actual (Chatterbox 0.1.7) con Chatterbox Multilingual V3 (general y pack latinoamericano). Solo corre en la rama prueba-voz.
+on:
+  push:
+    branches: [prueba-voz]
+    paths: ["pruebas/voz/**", ".github/workflows/prueba-voz.yml"]
+permissions:
+  contents: read
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Caché de entornos
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .venv
+            .venv-voz
+            ~/.local/share/uv
+            ~/.npm
+          key: entornos-v1-${{ runner.os }}-${{ hashFiles('setup.sh') }}
+          restore-keys: entornos-v1-${{ runner.os }}-
+      - name: Caché de modelos
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            vendor
+            modelos
+            ~/.cache/huggingface
+          key: pesados-v1-${{ hashFiles('setup.sh') }}
+          restore-keys: pesados-v1-
+      - name: Instalar (como la fábrica) y descifrar la muestra
+        run: bash setup.sh 2>&1 | tail -20
+        env:
+          VOZ_CLAVE: ${{ secrets.VOZ_CLAVE }}
+      - name: Preparar frases
+        run: .venv/bin/python pruebas/voz/preparar.py
+      - name: Voz actual (Chatterbox 0.1.7)
+        run: .venv-voz/bin/python pruebas/voz/generar.py actual voz-actual
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
+      - name: Instalar Chatterbox V3 (desde GitHub)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv venv -q -p 3.11 .venv-v3
+          VIRTUAL_ENV=.venv-v3 uv pip install -q --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cpu \
+            "torch==2.6.0" "torchaudio==2.6.0" "chatterbox-tts @ git+https://github.com/resemble-ai/chatterbox@master" "setuptools<81"
+      - name: Voz V3 general
+        run: .venv-v3/bin/python pruebas/voz/generar.py v3 voz-v3
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
+      - name: Voz V3 latinoamericana
+        continue-on-error: true
+        run: .venv-v3/bin/python pruebas/voz/generar.py latam voz-latam
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
+      - name: Mezclar y ponerle letras al azar
+        if: always()
+        run: bash pruebas/voz/mezclar.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prueba-voz
+          path: salida-voz/
