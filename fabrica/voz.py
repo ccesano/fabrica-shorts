@@ -140,6 +140,8 @@ def _leer(path):
 
 def _clave(motor, ref, ln, intento, texto=None):
     h = hashlib.sha1()
+    if motor == "chatterbox":   # cambiar de modelo invalida la caché: no se mezclan voces de dos motores en un video
+        motor = "chatterbox-v3-latam"
     h.update(f"{motor}|{texto or ln['say']}|{ln.get('emocion', 0.5)}|{ln.get('velocidad', 1)}|{intento}".encode())
     if ref and Path(ref).exists():
         h.update(Path(ref).read_bytes()[:200000])

@@ -1,0 +1,40 @@
+name: Prueba voz V3 en la fábrica
+on:
+  push:
+    branches: [voz-v3]
+permissions:
+  contents: read
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .venv
+            .venv-voz
+            ~/.local/share/uv
+            ~/.npm
+          key: entornos-v1-${{ runner.os }}-${{ hashFiles('setup.sh') }}
+          restore-keys: entornos-v1-${{ runner.os }}-
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            vendor
+            modelos
+            ~/.cache/huggingface
+          key: pesados-v1-${{ hashFiles('setup.sh') }}
+          restore-keys: pesados-v1-
+      - name: Instalar
+        run: bash setup.sh 2>&1 | tail -25
+        env:
+          VOZ_CLAVE: ${{ secrets.VOZ_CLAVE }}
+      - name: Armar un video existente con la voz nueva (sin render)
+        run: .venv/bin/python fabrica/make_short.py videos/maradona-despedida/guion.json --sin-render --motor chatterbox 2>&1 | grep -E "chatterbox|voz|⚠|Error|Traceback|escenas|chequeo|Listo" | head -60
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: "1"
