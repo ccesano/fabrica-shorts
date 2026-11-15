@@ -1,0 +1,120 @@
+{
+  "titulo": "Chilavert, el arquero que hizo tres goles en un partido",
+  "paleta": "oceano",
+  "musica": {"animo": "epico"},
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "fuentes": [
+    "https://www.guinnessworldrecords.com/world-records/73511-most-goals-scored-by-a-goalkeeper-in-one-game",
+    "https://www.planetfootball.com/nostalgia/jose-luis-chilavert-hat-trick-penalties-velez-sarsfield-ferril-paraguay",
+    "https://billiken.lat/personas/jose-luis-chilavert-el-arquero-que-hacia-goles-de-tiro-libre-y-penal/",
+    "https://fourfourtwo.com/features/jose-luis-chilavert-velez-sarsfield-v-river-1996",
+    "https://trivela.com.br/america-do-sul/argentina/ha-20-anos-chilavert-marcava-do-meio-campo-o-gol-mais-espetacular-de-sua-carreira/",
+    "https://www.lanacion.com.ar/deportes/chilavert-tuvo-su-fiesta-a-lo-grande-nid654347",
+    "https://commons.wikimedia.org/wiki/File:Fillol_chilavert.jpg",
+    "https://commons.wikimedia.org/wiki/File:Chilavert_pateando_tiro_libre_v_banfield.jpg",
+    "https://commons.wikimedia.org/wiki/File:Estadio_Jos%C3%A9_Amalfitani_2024.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Un arquero hizo tres goles en un partido.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "UN ARQUERO", "en": "arquero"},
+        {"texto": "HIZO *TRES*", "en": "tres"},
+        {"texto": "GOLES", "en": "goles"}]}
+    },
+    {
+      "say": "Se llamaba José Luis Chilavert. Paraguayo, y uno de los grandes ídolos de Vélez.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "arriba", "etiqueta": "José Luis Chilavert",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Fillol_chilavert.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Fillol_chilavert.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "Fillol y Chilavert (a la derecha), 1988"},
+        "marca": {"forma": "flecha", "x": 0.52, "y": 0.01, "w": 0.24, "h": 0.22, "texto": "Chilavert", "en": "Chilavert"},
+        "palabras": [{"texto": "*PARAGUAYO*", "en": "Paraguayo"}]}
+    },
+    {
+      "say": "Y no solo atajaba. Hacía goles de tiro libre y de penal.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "tiro libre",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Chilavert_pateando_tiro_libre_v_banfield.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Chilavert_pateando_tiro_libre_v_banfield.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "Chilavert patea un tiro libre, 1987"},
+        "palabras": [{"texto": "*GOLES*", "en": "goles"}]}
+    },
+    {
+      "say": "En su carrera hizo más de sesenta goles.",
+      "sub": "En su carrera hizo más de 60 goles.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "cifra", "numero": 60, "prefijo": "+", "en": "sesenta", "etiqueta": "goles de un arquero", "palabra": "EN SU CARRERA"}
+    },
+    {
+      "say": "En mil novecientos noventa y seis, contra River, la clavó de tiro libre desde unos sesenta metros.",
+      "sub": "En 1996, contra River, la clavó de tiro libre desde unos 60 metros.",
+      "emocion": 0.75, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "jugada", "etiqueta": "Vélez - River, 1996", "corrida_en": "River", "remate_en": "clavó",
+        "sentido": "derecha", "rivales": 0, "arquero": "parado", "resultado": "gol",
+        "palabras": [{"texto": "*60 METROS*", "en": "sesenta metros"}]}
+    },
+    {
+      "say": "Pero lo más increíble pasó el veintiocho de noviembre de mil novecientos noventa y nueve, contra Ferro.",
+      "sub": "Pero lo más increíble pasó el 28 de noviembre de 1999, contra Ferro.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "derecha", "etiqueta": "Vélez - Ferro",
+        "objeto": {"tipo": "calendario", "dia": "28", "mes": "NOV", "anio": "1999", "en": "veintiocho"},
+        "palabras": [{"texto": "*FERRO*", "en": "Ferro"}]}
+    },
+    {
+      "say": "Chilavert hizo tres goles. Los tres, de penal.",
+      "emocion": 0.9, "pausa": 0.6, "musica": "golpe",
+      "escena": {"tipo": "golpe", "estilo": "impacto", "palabras": [
+        {"texto": "TRES GOLES", "en": "tres goles"},
+        {"texto": "*DE PENAL*", "en": "de penal"}]}
+    },
+    {
+      "say": "Vélez ganó seis a uno. Es el récord Guinness de goles de un arquero en un partido.",
+      "sub": "Vélez ganó 6 a 1. Es el récord Guinness de goles de un arquero en un partido.",
+      "emocion": 0.7, "pausa": 0.6,
+      "escena": {"tipo": "collage", "etiqueta": "resultado final",
+        "objeto": {"tipo": "marcador", "filas": [["VÉLEZ", 6], ["FERRO", 1]], "en": "seis"},
+        "sello": "RÉCORD", "sello_en": "récord"}
+    },
+    {
+      "say": "Un día como hoy, en dos mil cuatro, se despidió en el Amalfitani ante más de dieciocho mil personas.",
+      "sub": "Un día como hoy, en 2004, se despidió en el Amalfitani ante más de 18.000 personas.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "15 de noviembre de 2004",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Estadio_Jos%C3%A9_Amalfitani_2024.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Estadio_Jos%C3%A9_Amalfitani_2024.jpg",
+          "credito": "Gonzabar77 / Wikimedia Commons",
+          "licencia": "CC0",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "El Amalfitani, hoy"},
+        "palabras": [{"texto": "*18.000*", "en": "dieciocho mil"}]}
+    },
+    {
+      "say": "Y esa noche también hizo un gol, de penal. ¿Vos lo viste jugar? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "EL ARQUERO", "en": "noche"}, {"texto": "*GOLEADOR*", "en": "gol"}],
+        "cta": "¿Lo viste jugar? Contalo abajo",
+        "objeto": {"tipo": "camiseta", "base": "#FFFFFF", "color": "#1F4E9C", "estilo": "lisa", "nombre": "CHILAVERT", "numero": "1"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "El arquero que hizo tres goles en un partido #shorts",
+    "descripcion": "José Luis Chilavert, arquero paraguayo e ídolo de Vélez Sarsfield, hizo más de 60 goles en su carrera, de tiro libre y de penal. En 1996 le hizo a River un gol de tiro libre desde unos 60 metros. El 28 de noviembre de 1999, en el triunfo de Vélez 6 a 1 sobre Ferro Carril Oeste, hizo tres goles, los tres de penal: es el récord Guinness de más goles de un arquero en un partido. El 15 de noviembre de 2004 se despidió en el estadio José Amalfitani ante más de 18.000 personas, en un partido entre el Vélez campeón del mundo y un equipo de estrellas, y también hizo un gol de penal. Fuentes: Guinness World Records, La Nación, FourFourTwo, Planet Football, Billiken, Trivela. Fotos: Wikimedia Commons (Fillol y Chilavert, 1988, y Chilavert pateando un tiro libre, 1987: dominio público; estadio José Amalfitani 2024: Gonzabar77, CC0).",
+    "hashtags": ["chilavert", "velez", "arquero", "futbol", "historiasreales"],
+    "categoria_youtube": "17"
+  }
+}

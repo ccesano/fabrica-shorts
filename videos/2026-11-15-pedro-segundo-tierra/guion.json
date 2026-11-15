@@ -1,0 +1,112 @@
+{
+  "titulo": "El último emperador de América guardó tierra para su ataúd",
+  "paleta": "bosque",
+  "musica": {"animo": "nostalgico"},
+  "ambiente": "lluvia",
+  "textura": "pelicula",
+  "subtitulos": true,
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Pedro_II_of_Brazil",
+    "https://en.wikipedia.org/wiki/Exile_and_death_of_Pedro_II_of_Brazil",
+    "https://www.al.sp.gov.br/noticia/?id=271537",
+    "https://www.dci.com.br/dci-mais/cinema-e-tv/proclamacao-da-republica-o-que-aconteceu-com-dom-pedro-ii/",
+    "https://en.wikipedia.org/wiki/Burial_places_of_members_of_the_Brazilian_imperial_family",
+    "https://commons.wikimedia.org/wiki/File:Pedro_II_of_Brazil_-_Brady-Handy.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pjournal-pedro2.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Guardaba tierra para su propio ataúd.",
+      "emocion": 0.65, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "GUARDABA", "en": "Guardaba"},
+        {"texto": "*TIERRA*", "en": "tierra"},
+        {"texto": "PARA SU ATAÚD", "en": "ataúd"}]}
+    },
+    {
+      "say": "Brasil, quince de noviembre de mil ochocientos ochenta y nueve. Hoy hace ciento treinta y siete años.",
+      "sub": "Brasil, 15 de noviembre de 1889. Hoy hace 137 años.",
+      "emocion": 0.45, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "Río de Janeiro",
+        "objeto": {"tipo": "calendario", "dia": "15", "mes": "NOV", "anio": "1889", "en": "quince"},
+        "palabras": [{"texto": "*137 AÑOS*", "en": "ciento treinta"}]}
+    },
+    {
+      "say": "Brasil tenía emperador: Pedro Segundo. Llevaba cincuenta y ocho años en el trono.",
+      "sub": "Brasil tenía emperador: Pedro II. Llevaba 58 años en el trono.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "el emperador",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Pedro_II_of_Brazil_-_Brady-Handy.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pedro_II_of_Brazil_-_Brady-Handy.jpg",
+          "credito": "Mathew Brady / Levin Handy, Biblioteca del Congreso de EE. UU.",
+          "licencia": "dominio público",
+          "tratamiento": "sepia", "recorte": false,
+          "epigrafe": "Pedro II, 1876"},
+        "palabras": [{"texto": "*58 AÑOS*", "en": "cincuenta y ocho"}]}
+    },
+    {
+      "say": "Ese día, un golpe militar terminó con el imperio y proclamó la república.",
+      "emocion": 0.7, "pausa": 0.5,
+      "escena": {"tipo": "golpe", "transicion": "rasgado", "kicker": "golpe militar", "palabras": [
+        {"texto": "IMPERIO", "en": "imperio", "tachar_en": "proclamó"},
+        {"texto": "*REPÚBLICA*", "en": "república"}]}
+    },
+    {
+      "say": "Al emperador le dieron veinticuatro horas para irse del país.",
+      "sub": "Al emperador le dieron 24 horas para irse del país.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "la orden",
+        "objeto": {"tipo": "reloj", "hora": "15:00", "en": "veinticuatro"},
+        "palabras": [{"texto": "*24 HORAS*", "en": "veinticuatro horas"}]}
+    },
+    {
+      "say": "Lo embarcaron de madrugada, con su familia, rumbo a Europa.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "mapa", "etiqueta": "el exilio",
+        "desde": {"nombre": "Río de Janeiro", "lat": -22.9, "lon": -43.17},
+        "hasta": {"nombre": "Lisboa", "lat": 38.72, "lon": -9.14},
+        "vehiculo": "barco", "ruta_en": "rumbo",
+        "palabras": [{"texto": "*EXILIO*", "en": "Europa"}]}
+    },
+    {
+      "say": "Nunca volvió. Murió en París dos años después.",
+      "emocion": 0.6, "pausa": 0.6,
+      "escena": {"tipo": "foto", "etiqueta": "París, 1891",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Pjournal-pedro2.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Pjournal-pedro2.jpg",
+          "credito": "Le Petit Journal, 1891 / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "Su funeral en París, Le Petit Journal"},
+        "palabras": [{"texto": "*PARÍS*", "en": "París"}]}
+    },
+    {
+      "say": "En su cuarto encontraron un paquete sellado, con una nota escrita por él.",
+      "emocion": 0.6, "pausa": 1.1,
+      "escena": {"tipo": "collage", "etiqueta": "un paquete sellado",
+        "objeto": {"tipo": "postal", "texto": "Terra do meu país", "lugar": "París, 1891", "colores": ["#2E7D32", "#F2C14E"], "en": "nota"},
+        "palabras": [{"texto": "*UNA NOTA*", "en": "nota"}]}
+    },
+    {
+      "say": "«Es tierra de mi país. Deseo que la pongan en mi ataúd si muero lejos de mi patria».",
+      "emocion": 0.75, "pausa": 1.2, "musica": "silencio",
+      "escena": {"tipo": "cita", "texto": "Es *tierra de mi país*. Deseo que la pongan en mi ataúd si muero lejos de mi patria.", "autor": "Pedro II (traducción)"}
+    },
+    {
+      "say": "Era tierra de todas las provincias de Brasil. ¿Vos conocías esta historia? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "TIERRA", "en": "tierra"}, {"texto": "DE *BRASIL*", "en": "Brasil"}],
+        "cta": "¿La conocías? Contalo abajo",
+        "objeto": {"tipo": "calendario", "dia": "5", "mes": "DIC", "anio": "1891"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "El emperador que guardaba tierra para su ataúd #shorts",
+    "descripcion": "El 15 de noviembre de 1889 un golpe militar proclamó la república en Brasil y terminó con el imperio de Pedro II, que llevaba 58 años en el trono (era emperador desde 1831, cuando tenía cinco años). Le dieron 24 horas para irse y el 17 de noviembre fue embarcado de madrugada con su familia rumbo a Europa. Nunca volvió: murió en París el 5 de diciembre de 1891. En su cuarto encontraron un paquete sellado con tierra de todas las provincias de Brasil y una nota escrita por él: «Es tierra de mi país; deseo que la pongan en mi ataúd si muero lejos de mi patria» (traducción). Sus restos volvieron a Brasil en 1921. Fuentes: Wikipedia («Pedro II of Brazil», «Exile and death of Pedro II of Brazil»), Assembleia Legislativa de São Paulo, DCI. Imágenes: retrato de Pedro II por Mathew Brady / Levin Handy, 1876 (Biblioteca del Congreso de EE. UU., dominio público); tapa de Le Petit Journal sobre su funeral, 1891 (dominio público), vía Wikimedia Commons.",
+    "hashtags": ["pedrosegundo", "brasil", "historia", "emperador", "historiasreales"],
+    "categoria_youtube": "27"
+  }
+}
