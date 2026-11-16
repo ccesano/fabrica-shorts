@@ -1,0 +1,111 @@
+{
+  "titulo": "El apellido de Saramago se lo puso un empleado del registro",
+  "paleta": "diario",
+  "musica": {"animo": "misterio"},
+  "ambiente": "ninguno",
+  "subtitulos": true,
+  "voz": {"pronunciar": {"Azinhaga": "Asiñaga"}},
+  "fuentes": [
+    "https://www.josesaramago.org/en/biography/",
+    "https://www.encyclopedia.com/arts/culture-magazines/saramago-autobiographical-statement",
+    "https://mitra-nature.uevora.pt/Especies-e-habitats/Plantas/Herbaceas/(letra)/r",
+    "https://www.lanacion.com.ar/sociedad/consagran-la-obra-de-saramago-nid113486/",
+    "https://commons.wikimedia.org/wiki/File:Igreja_Matriz_da_Azinhaga_-_Portugal_(5987521054).jpg",
+    "https://commons.wikimedia.org/wiki/File:Raphanus_raphanistrum_kz06.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Su apellido se lo puso un empleado.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "SU APELLIDO", "en": "apellido"},
+        {"texto": "SE LO PUSO", "en": "puso"},
+        {"texto": "UN *EMPLEADO*", "en": "empleado"}]}
+    },
+    {
+      "say": "Portugal, mil novecientos veintidós. En Azinhaga, un pueblito del campo, nace un chico.",
+      "sub": "Portugal, 1922. En Azinhaga, un pueblito del campo, nace un chico.",
+      "emocion": 0.45, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "Azinhaga, Portugal",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Igreja_Matriz_da_Azinhaga_-_Portugal_%285987521054%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Igreja_Matriz_da_Azinhaga_-_Portugal_(5987521054).jpg",
+          "credito": "Vitor Oliveira / Wikimedia Commons",
+          "licencia": "CC BY-SA 2.0",
+          "tratamiento": "sepia", "recorte": false,
+          "epigrafe": "La iglesia de Azinhaga"},
+        "palabras": [{"texto": "*1922*", "en": "mil novecientos"}]}
+    },
+    {
+      "say": "Su papá se llamaba José de Sousa. El chico iba a llamarse igual.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "arriba", "etiqueta": "el registro civil",
+        "objeto": {"tipo": "planilla", "volanta": "Registro civil", "titulo": "Nacimiento", "filas": [[1, "Padre: José de Sousa"], [2, "Hijo: José de Sousa"]], "en": "papá"},
+        "palabras": [{"texto": "*JOSÉ DE SOUSA*", "en": "Sousa"}]}
+    },
+    {
+      "say": "Pero el empleado del registro, por su cuenta, le agregó el apodo de la familia en el pueblo: Saramago.",
+      "emocion": 0.7, "pausa": 0.6, "musica": "subida",
+      "escena": {"tipo": "golpe", "estilo": "maquina", "kicker": "el apodo de la familia", "palabras": [
+        {"texto": "JOSÉ DE SOUSA", "en": "registro"},
+        {"texto": "*SARAMAGO*", "en": "Saramago"}]}
+    },
+    {
+      "say": "El saramago es una hierba silvestre. En tiempos difíciles, los pobres comían sus hojas.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "izquierda", "etiqueta": "el saramago",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Raphanus_raphanistrum_kz06.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Raphanus_raphanistrum_kz06.jpg",
+          "credito": "Krzysztof Ziarnek (Kenraiz) / Wikimedia Commons",
+          "licencia": "CC BY-SA 4.0",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "Saramago (Raphanus raphanistrum)"},
+        "palabras": [{"texto": "*HIERBA*", "en": "hierba"}]}
+    },
+    {
+      "say": "Nació el dieciséis de noviembre. Pero en los papeles dice dieciocho.",
+      "sub": "Nació el 16 de noviembre. Pero en los papeles dice 18.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "golpe", "transicion": "corte", "palabras": [
+        {"texto": "16 DE NOVIEMBRE", "en": "dieciséis", "tachar_en": "papeles"},
+        {"texto": "*18*", "en": "dieciocho"}]}
+    },
+    {
+      "say": "Así la familia no pagó la multa por anotarlo tarde.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "en los papeles",
+        "objeto": {"tipo": "calendario", "dia": "18", "mes": "NOV", "anio": "1922", "en": "familia"},
+        "sello": "SIN MULTA", "sello_en": "multa"}
+    },
+    {
+      "say": "Él no sabía nada. Se enteró de su apellido a los siete años, cuando tuvo que llevar un documento a la escuela.",
+      "sub": "Él no sabía nada. Se enteró de su apellido a los 7 años, cuando tuvo que llevar un documento a la escuela.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "cifra", "numero": 7, "en": "siete", "sufijo": " AÑOS", "etiqueta": "cuando se enteró", "palabra": "EN LA ESCUELA"}
+    },
+    {
+      "say": "Setenta y seis años después, ese apellido ganó el Premio Nobel de Literatura.",
+      "sub": "76 años después, ese apellido ganó el Premio Nobel de Literatura.",
+      "emocion": 0.8, "pausa": 0.6, "musica": "golpe",
+      "escena": {"tipo": "collage", "etiqueta": "1998",
+        "objeto": {"tipo": "recorte", "volanta": "Octubre de 1998", "titular": "Nobel de Literatura para José Saramago", "en": "Nobel"},
+        "palabras": [{"texto": "*NOBEL*", "en": "Nobel"}]}
+    },
+    {
+      "say": "Hoy cumpliría ciento cuatro años. ¿Vos leíste algo de él? Contalo en los comentarios.",
+      "sub": "Hoy cumpliría 104 años. ¿Vos leíste algo de él? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "JOSÉ", "en": "cumpliría"}, {"texto": "*SARAMAGO*", "en": "años"}],
+        "cta": "¿Leíste algo de él? Contalo abajo",
+        "objeto": {"tipo": "postal", "texto": "Azinhaga", "lugar": "Portugal", "colores": ["#006600", "#FF0000"]}}
+    }
+  ],
+  "publicar": {
+    "titulo": "El apellido de Saramago se lo puso un empleado #shorts",
+    "descripcion": "José Saramago nació el 16 de noviembre de 1922 en Azinhaga, un pueblo del Ribatejo, en Portugal. Su padre se llamaba José de Sousa y él iba a llamarse igual, pero el empleado del registro civil, por su cuenta, le agregó «Saramago», el apodo con el que conocían a la familia de su padre en el pueblo. El saramago es una hierba silvestre cuyas hojas comían los pobres en tiempos difíciles. En sus documentos figura que nació el 18: así la familia evitó la multa por anotarlo fuera de plazo. Se enteró de su nombre completo a los siete años, cuando tuvo que presentar un documento en la escuela primaria. En 1998 ganó el Premio Nobel de Literatura. Fuentes: Fundação José Saramago, nota autobiográfica de Saramago (Encyclopedia.com), Universidade de Évora, La Nación. Fotos: iglesia de Azinhaga, Vitor Oliveira (CC BY-SA 2.0); saramago (Raphanus raphanistrum), Krzysztof Ziarnek (CC BY-SA 4.0), vía Wikimedia Commons.",
+    "hashtags": ["saramago", "portugal", "literatura", "nobel", "historiasreales"],
+    "categoria_youtube": "27"
+  }
+}

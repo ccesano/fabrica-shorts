@@ -1,0 +1,108 @@
+{
+  "titulo": "El debut de Messi en Barcelona fue una derrota",
+  "paleta": "atardecer",
+  "musica": {"animo": "alegre"},
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "fuentes": [
+    "https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/3785391/20-anos-del-debut-de-leo-messi-con-el-fc-barcelona",
+    "https://www.fcbarcelona.com/en/football/first-team/news/4169478/21-years-since-leo-messi-debuted-for-fc-barcelona/featured",
+    "https://www.goal.com/es/noticias/a-20-anos-del-dia-que-cambio-la-historia-del-futbol-el-debut-de-messi-con-el-fc-barcelona/blt8a740bb9da1b1447",
+    "https://www.nbcsports.com/soccer/news/messi-made-his-barcelona-debut-15-years-ago",
+    "https://www.planetfootball.com/quick-reads/where-are-they-now-barcelonas-xi-on-lionel-messis-debut-v-porto",
+    "https://www.uefa.com/uefachampionsleague/news/0250-0c50f100f076-ecb0d9d85bb1-1000--2003-04-porto-pull-off-biggest-surprise",
+    "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Drag%C3%A3o_(8468978586).jpg"
+  ],
+  "lineas": [
+    {
+      "say": "El debut de Messi fue una derrota.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "EL DEBUT", "en": "debut"},
+        {"texto": "DE *MESSI*", "en": "Messi"},
+        {"texto": "FUE UNA DERROTA", "en": "derrota"}]}
+    },
+    {
+      "say": "Dieciséis de noviembre de dos mil tres. Hoy hace veintitrés años.",
+      "sub": "16 de noviembre de 2003. Hoy hace 23 años.",
+      "emocion": 0.45, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "Oporto, Portugal",
+        "objeto": {"tipo": "calendario", "dia": "16", "mes": "NOV", "anio": "2003", "en": "Dieciséis"},
+        "palabras": [{"texto": "*23 AÑOS*", "en": "veintitrés"}]}
+    },
+    {
+      "say": "El Porto estrenaba su estadio nuevo, el Do Dragón, con un amistoso contra el Barcelona.",
+      "sub": "El Porto estrenaba su estadio nuevo, el Do Dragão, con un amistoso contra el Barcelona.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "zoom", "etiqueta": "Estádio do Dragão",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Est%C3%A1dio_do_Drag%C3%A3o_%288468978586%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Drag%C3%A3o_(8468978586).jpg",
+          "credito": "Edgar Jiménez / Wikimedia Commons",
+          "licencia": "CC BY-SA 2.0",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "El Dragão, años después"},
+        "lupa": {"x": 0.5, "y": 0.62, "z": 0.3, "en": "amistoso"},
+        "palabras": [{"texto": "*ESTRENO*", "en": "estrenaba"}]}
+    },
+    {
+      "say": "En el banco del Porto, un técnico que acababa de ganar la Copa UEFA: José Mourinho.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "derecha", "etiqueta": "el técnico del Porto",
+        "objeto": {"tipo": "recorte", "volanta": "Temporada 2003", "titular": "El Porto de Mourinho gana la Copa UEFA", "en": "Copa"},
+        "palabras": [{"texto": "*MOURINHO*", "en": "Mourinho"}]}
+    },
+    {
+      "say": "Y en el Barcelona, un pibe argentino de dieciséis años y ciento cuarenta y cinco días.",
+      "sub": "Y en el Barcelona, un pibe argentino de 16 años y 145 días.",
+      "emocion": 0.6, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "cifra", "numero": 16, "en": "dieciséis", "etiqueta": "años y 145 días", "palabra": "UN PIBE ARGENTINO"}
+    },
+    {
+      "say": "Entró en el segundo tiempo, con la catorce, en lugar de Fernando Navarro.",
+      "sub": "Entró en el segundo tiempo, con la 14, en lugar de Fernando Navarro.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "izquierda", "etiqueta": "segundo tiempo",
+        "objeto": {"tipo": "camiseta", "base": "#A50044", "color": "#004D98", "estilo": "rayas", "nombre": "MESSI", "numero": "14", "en": "catorce"},
+        "palabras": [{"texto": "*LA 14*", "en": "catorce"}]}
+    },
+    {
+      "say": "Jugó menos de veinte minutos. Tuvo dos chances de gol.",
+      "sub": "Jugó menos de 20 minutos. Tuvo dos chances de gol.",
+      "emocion": 0.65, "pausa": 0.5,
+      "escena": {"tipo": "golpe", "kicker": "menos de 20 minutos", "palabras": [
+        {"texto": "DOS", "en": "dos"},
+        {"texto": "*CHANCES*", "en": "chances"}]}
+    },
+    {
+      "say": "No hizo el gol, y el Barcelona perdió dos a cero.",
+      "sub": "No hizo el gol, y el Barcelona perdió 2 a 0.",
+      "emocion": 0.6, "pausa": 0.6,
+      "escena": {"tipo": "collage", "etiqueta": "resultado final",
+        "objeto": {"tipo": "marcador", "filas": [["PORTO", 2], ["BARCELONA", 0]], "en": "perdió"},
+        "sello": "AMISTOSO", "sello_en": "cero"}
+    },
+    {
+      "say": "Y ese Porto, seis meses después, fue campeón de Europa.",
+      "emocion": 0.8, "pausa": 0.6, "musica": "golpe",
+      "escena": {"tipo": "golpe", "destello": true, "kicker": "seis meses después", "palabras": [
+        {"texto": "*CAMPEÓN*", "en": "campeón"},
+        {"texto": "DE EUROPA", "en": "Europa"}]}
+    },
+    {
+      "say": "Al pibe de la catorce no le fue nada mal. ¿Cuándo lo viste por primera vez? Contalo en los comentarios.",
+      "sub": "Al pibe de la 14 no le fue nada mal. ¿Cuándo lo viste por primera vez? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "EL PRIMER", "en": "pibe"}, {"texto": "*PASO*", "en": "mal"}],
+        "cta": "¿Cuándo lo viste por primera vez?",
+        "objeto": {"tipo": "pelota"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "El debut de Messi en Barcelona fue una derrota #shorts",
+    "descripcion": "El 16 de noviembre de 2003, con 16 años y 145 días y la camiseta 14, Lionel Messi debutó en el primer equipo del Barcelona de Frank Rijkaard. Fue un amistoso para inaugurar el Estádio do Dragão, ante el Porto de José Mourinho, que ese año había ganado la Copa UEFA. Entró en el segundo tiempo en lugar de Fernando Navarro, jugó menos de 20 minutos y tuvo dos chances de gol. El Barcelona perdió 2 a 0. Seis meses después, ese Porto fue campeón de Europa. Fuentes: FC Barcelona, Goal, NBC Sports, Planet Football, UEFA. Foto: Estádio do Dragão, Edgar Jiménez (CC BY-SA 2.0), vía Wikimedia Commons.",
+    "hashtags": ["messi", "barcelona", "porto", "futbol", "historiasreales"],
+    "categoria_youtube": "17"
+  }
+}
