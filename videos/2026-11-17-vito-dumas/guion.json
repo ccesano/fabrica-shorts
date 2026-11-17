@@ -1,0 +1,116 @@
+{
+  "titulo": "Vito Dumas dio la vuelta al mundo solo, en plena guerra",
+  "paleta": "oceano",
+  "musica": {"animo": "epico"},
+  "ambiente": "lluvia",
+  "textura": "pelicula",
+  "subtitulos": true,
+  "voz": {"pronunciar": {"Lehg": "Leg"}},
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Lehg_II",
+    "https://www.losandes.com.ar/vito-dumas-el-marino-argentino",
+    "https://www.losandes.com.ar/opinion/vito-dumas-el-navegante-solitario",
+    "https://www.boatnews.com/story/42882/vito-dumas-a-pioneer-of-the-solo-round-the-world-sailing-race",
+    "https://www.yachtingmonthly.com/cruising/cruising-life/vito-dumas-ace-of-spades-86777",
+    "https://www.boatingnz.co.nz/2020/09/vito-dumas",
+    "https://www.argentina.gob.ar/node/170093",
+    "https://commons.wikimedia.org/wiki/File:Vito_Dumas_-_El_Gr%C3%A1fico_1278.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lehg_II.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Dio la vuelta al mundo solo, en plena guerra.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "LA VUELTA", "en": "vuelta"},
+        {"texto": "AL MUNDO *SOLO*", "en": "solo"},
+        {"texto": "EN PLENA GUERRA", "en": "guerra"}]}
+    },
+    {
+      "say": "Buenos Aires, junio de mil novecientos cuarenta y dos. Vito Dumas sale a navegar solo.",
+      "sub": "Buenos Aires, junio de 1942. Vito Dumas sale a navegar solo.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "el navegante",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Vito_Dumas_-_El_Gr%C3%A1fico_1278.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Vito_Dumas_-_El_Gr%C3%A1fico_1278.jpg",
+          "credito": "El Gráfico / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "Tapa de El Gráfico, 1944"},
+        "palabras": [{"texto": "*VITO DUMAS*", "en": "Vito"}]}
+    },
+    {
+      "say": "Su velero, el Lehg dos, medía nueve metros y medio. No llevaba radio, para que no lo creyeran un espía.",
+      "sub": "Su velero, el Lehg II, medía 9,5 metros. No llevaba radio, para que no lo creyeran un espía.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "arriba", "etiqueta": "el Lehg II",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Lehg_II.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Lehg_II.jpg",
+          "credito": "AldanaN / Wikimedia Commons",
+          "licencia": "CC BY-SA 4.0",
+          "tratamiento": "color", "recorte": false,
+          "epigrafe": "El Lehg II, hoy en Tigre"},
+        "lupa": {"x": 0.6, "y": 0.45, "z": 0.3, "en": "Lehg"},
+        "palabras": [{"texto": "*SIN RADIO*", "en": "radio"}]}
+    },
+    {
+      "say": "Primero cruzó el Atlántico, hasta Ciudad del Cabo.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "mapa", "etiqueta": "primera etapa",
+        "desde": {"nombre": "Buenos Aires", "lat": -34.6, "lon": -58.38},
+        "hasta": {"nombre": "Ciudad del Cabo", "lat": -33.92, "lon": 18.42},
+        "resaltar": ["Argentina", "Sudáfrica"],
+        "vehiculo": "barco", "ruta_en": "cruzó",
+        "palabras": [{"texto": "*ATLÁNTICO*", "en": "Atlántico"}]}
+    },
+    {
+      "say": "En el camino se lastimó las manos. Se le infectó el brazo y llegó a perder el conocimiento.",
+      "emocion": 0.7, "pausa": 0.5,
+      "escena": {"tipo": "golpe", "transicion": "corte", "kicker": "solo en el mar", "palabras": [
+        {"texto": "EL BRAZO", "en": "brazo"},
+        {"texto": "*INFECTADO*", "en": "infectó"}]}
+    },
+    {
+      "say": "Después, Nueva Zelanda y Chile, por la ruta que los marinos llamaban imposible.",
+      "emocion": 0.6, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "lista", "etiqueta": "la ruta imposible", "numerada": true,
+        "items": [{"texto": "Ciudad del Cabo", "en": "Después"}, {"texto": "Nueva Zelanda", "en": "Nueva"}, {"texto": "Chile", "en": "Chile"}, {"texto": "Cabo de Hornos", "en": "imposible"}]}
+    },
+    {
+      "say": "Y al final, el Cabo de Hornos, al que llaman la tumba de los marinos.",
+      "emocion": 0.88, "pausa": 0.7, "musica": "golpe",
+      "escena": {"tipo": "golpe", "estilo": "impacto", "kicker": "Cabo de Hornos", "palabras": [
+        {"texto": "*LA TUMBA*", "en": "tumba"},
+        {"texto": "DE LOS MARINOS", "en": "marinos"}]}
+    },
+    {
+      "say": "Volvió en septiembre de mil novecientos cuarenta y tres, con veinte mil cuatrocientas millas navegadas.",
+      "sub": "Volvió en septiembre de 1943, con 20.420 millas navegadas.",
+      "emocion": 0.7, "pausa": 0.5,
+      "escena": {"tipo": "cifra", "numero": 20420, "en": "veinte mil", "etiqueta": "millas en solitario", "palabra": "SEPTIEMBRE 1943"}
+    },
+    {
+      "say": "Fue el primero en dar la vuelta al mundo solo pasando los tres grandes cabos.",
+      "emocion": 0.75, "pausa": 0.6,
+      "escena": {"tipo": "golpe", "kicker": "un argentino", "palabras": [
+        {"texto": "EL *PRIMERO*", "en": "primero"},
+        {"texto": "LOS TRES CABOS", "en": "cabos"}]}
+    },
+    {
+      "say": "Su velero todavía está en el Museo Naval de Tigre. ¿Lo fuiste a ver? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "SOLO", "en": "velero"}, {"texto": "*CONTRA EL MAR*", "en": "Tigre"}],
+        "cta": "¿Lo fuiste a ver?",
+        "objeto": {"tipo": "postal", "texto": "Museo Naval", "lugar": "Tigre", "colores": ["#1B4F72", "#F4D03F"]}}
+    }
+  ],
+  "publicar": {
+    "titulo": "Dio la vuelta al mundo solo, en plena guerra #shorts",
+    "descripcion": "En junio de 1942, en plena Segunda Guerra Mundial, el argentino Vito Dumas salió de Buenos Aires solo en el Lehg II, un velero de 9,5 metros, sin radio para que no lo tomaran por espía. Pasó por Ciudad del Cabo, Nueva Zelanda y Chile, siguiendo los mares del sur, y dobló el Cabo de Hornos. Volvió en septiembre de 1943 después de 20.420 millas. Fue el primero en dar la vuelta al mundo en solitario por la ruta de los tres grandes cabos. El Lehg II está en el Museo Naval de Tigre. Fuentes: Wikipedia, Los Andes, Boat News, Boating NZ, Yachting Monthly, Museo Naval de la Nación. Fotos: El Gráfico (dominio público) y AldanaN (CC BY-SA 4.0), vía Wikimedia Commons.",
+    "hashtags": ["vitodumas", "navegacion", "historiaargentina", "tigre", "historiasreales"],
+    "categoria_youtube": "27"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "titulo": "Di Stéfano jugó para tres selecciones y nunca jugó un Mundial",
+  "paleta": "banda",
+  "musica": {"animo": "nostalgico"},
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Alfredo_Di_St%C3%A9fano",
+    "https://www.clarosports.com/futbol/mundial-2026/alfredo-di-stefano-la-leyenda-de-espana-y-real-madrid-que-nacio-en-argentina-por-que-dejo-a-la-albiceleste/",
+    "https://www.losandes.com.ar/ese-crack-que-no-supimos-aprovechar",
+    "https://www.xeudeportes.mx/la-maquina-del-tiempo/1164762/alfredo-di-stefano-y-su-paso-por-tres-selecciones-diferentes",
+    "https://cooperativa.cl/noticias/deportes/al-aire-libre/opinion/los-mundiales-a-puro-pelotazo-hasta-siempre-di-stefano-y-mucho-m/2014-07-07/200403.html",
+    "https://www.tvn-2.com/tvmax/futbol-internacional/memorias-pelota-dorado-colombia-distefano_1_1186053.html",
+    "https://commons.wikimedia.org/wiki/File:Di_stefano_argentina_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Alfredo_Di_St%C3%A9fano_1962.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Tres selecciones. Ni un solo Mundial.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "TRES", "en": "Tres"},
+        {"texto": "*SELECCIONES*", "en": "selecciones"},
+        {"texto": "NI UN MUNDIAL", "en": "Mundial"}]}
+    },
+    {
+      "say": "Alfredo Di Stéfano, la Saeta Rubia. Nació en Barracas, en mil novecientos veintiséis.",
+      "sub": "Alfredo Di Stéfano, la Saeta Rubia. Nació en Barracas, en 1926.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "Barracas, 1926",
+        "objeto": {"tipo": "camiseta", "base": "#FFFFFF", "color": "#D2001F", "estilo": "banda", "nombre": "DI STÉFANO", "numero": "9", "en": "Saeta"},
+        "palabras": [{"texto": "*SAETA RUBIA*", "en": "Saeta"}]}
+    },
+    {
+      "say": "Con Argentina hizo seis goles en seis partidos, y ganó el Sudamericano del cuarenta y siete.",
+      "sub": "Con Argentina hizo 6 goles en 6 partidos, y ganó el Sudamericano del 47.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "zoom", "etiqueta": "Selección argentina",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Di_stefano_argentina_%28cropped%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Di_stefano_argentina_(cropped).jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia", "recorte": true,
+          "epigrafe": "Con Argentina, 1947"},
+        "palabras": [{"texto": "*6 GOLES*", "en": "seis goles"}],
+        "sello": "CAMPEÓN 1947"}
+    },
+    {
+      "say": "Después se fue a Millonarios, de Colombia, en la época de El Dorado.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "rasgado", "etiqueta": "1949: Bogotá",
+        "objeto": {"tipo": "postal", "texto": "Saludos desde Bogotá", "lugar": "Colombia", "colores": ["#FCD116", "#003893", "#CE1126"], "en": "Millonarios"},
+        "palabras": [{"texto": "*EL DORADO*", "en": "Dorado"}]}
+    },
+    {
+      "say": "Con Colombia jugó cuatro partidos. Pero no cuentan: la FIFA no los reconoce.",
+      "sub": "Con Colombia jugó 4 partidos. Pero no cuentan: la FIFA no los reconoce.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "cifra", "numero": 4, "en": "cuatro", "etiqueta": "partidos con Colombia", "palabra": "NO OFICIALES"}
+    },
+    {
+      "say": "En mil novecientos cincuenta y seis se hizo español. Con España jugó treinta y un partidos.",
+      "sub": "En 1956 se hizo español. Con España jugó 31 partidos.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "derecha", "etiqueta": "la tercera camiseta",
+        "objeto": {"tipo": "camiseta", "base": "#C60B1E", "color": "#FFC400", "estilo": "lisa", "nombre": "DI STÉFANO", "numero": "9", "en": "español"},
+        "palabras": [{"texto": "*31 PARTIDOS*", "en": "treinta y un"}]}
+    },
+    {
+      "say": "¿Y el Mundial? Argentina no fue ni al del cincuenta ni al del cincuenta y cuatro.",
+      "sub": "¿Y el Mundial? Argentina no fue ni al de 1950 ni al de 1954.",
+      "emocion": 0.6, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "lista", "etiqueta": "los Mundiales",
+        "items": [{"texto": "1950: Argentina no fue", "en": "cincuenta ni"}, {"texto": "1954: Argentina no fue", "en": "cincuenta y cuatro"}],
+        "remate": {"texto": "*0 MINUTOS*", "en": "cuatro"}}
+    },
+    {
+      "say": "En el cincuenta y ocho, España quedó afuera. Y en el sesenta y dos, por fin, estaba en la lista.",
+      "sub": "En el 58, España quedó afuera. Y en el 62, por fin, estaba en la lista.",
+      "emocion": 0.65, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "Selección de España",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Alfredo_Di_St%C3%A9fano_1962.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Alfredo_Di_St%C3%A9fano_1962.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "CC BY-SA 3.0 NL",
+          "tratamiento": "byn", "recorte": false,
+          "epigrafe": "Con España, 1962"},
+        "marca": {"forma": "circulo", "x": 0.3, "y": 0.08, "w": 0.4, "h": 0.3, "texto": "1962", "en": "sesenta y dos"},
+        "palabras": [{"texto": "*POR FIN*", "en": "por fin"}]}
+    },
+    {
+      "say": "Pero se lesionó justo antes, y no jugó ni un minuto.",
+      "emocion": 0.85, "pausa": 0.7, "musica": "golpe",
+      "escena": {"tipo": "golpe", "kicker": "Chile 1962", "palabras": [
+        {"texto": "EL MUNDIAL", "en": "lesionó", "tachar_en": "minuto"},
+        {"texto": "*NI UN MINUTO*", "en": "minuto"}]}
+    },
+    {
+      "say": "Uno de los más grandes de la historia, sin un minuto en un Mundial. ¿Lo viste jugar? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "LA SAETA", "en": "grandes"}, {"texto": "*SIN MUNDIAL*", "en": "Mundial"}],
+        "cta": "¿Lo viste jugar?",
+        "objeto": {"tipo": "pelota"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "Di Stéfano jugó para tres selecciones y nunca jugó un Mundial #shorts",
+    "descripcion": "Alfredo Di Stéfano, la Saeta Rubia, nacido en Barracas en 1926, hizo 6 goles en 6 partidos con Argentina y ganó el Sudamericano de 1947. En Millonarios, en la época de El Dorado, jugó 4 partidos con un combinado colombiano que la FIFA no reconoce como oficiales. Se nacionalizó español en 1956 y jugó 31 partidos con España. Argentina no fue a los Mundiales de 1950 y 1954, España no clasificó al de 1958 y en 1962, ya convocado, una lesión lo dejó sin jugar. Fuentes: Wikipedia, Claro Sports, Los Andes, Cooperativa, XEU Deportes. Fotos: autor desconocido, vía Wikimedia Commons (dominio público y CC BY-SA 3.0 NL).",
+    "hashtags": ["distefano", "seleccionargentina", "realmadrid", "futbol", "historiasreales"],
+    "categoria_youtube": "17"
+  }
+}
