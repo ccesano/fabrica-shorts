@@ -63,17 +63,27 @@ jobs:
             # baja el video recién a la hora de publicar (así fallaron los posts programados con horas de anticipación).
             # Se deja una copia en la rama `publicos` y se usa raw.githubusercontent.com: link fijo, sin redirección.
             # La rama guarda solo los videos de los últimos 4 días (se rehace en cada publicación).
+            # Si dos publicaciones corren a la vez, cada una tiene que sumar su video sin borrar el de la otra (el 16/11 el
+            # push de Saramago pisó el de Messi y Buffer no lo pudo bajar): se empuja solo si la rama sigue como se leyó
+            # (--force-with-lease) y, si cambió, se vuelve a leer y se reintenta.
             git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            rm -rf /tmp/pub && mkdir -p /tmp/pub
-            if git fetch -q --depth 1 origin publicos 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/pub; fi
-            lim=$(date -u -d '4 days ago' +%Y-%m-%d)
-            for f in /tmp/pub/*.mp4; do [ -e "$f" ] || continue; d=$(basename "$f" | cut -c1-10); [[ "$d" < "$lim" ]] && rm -f "$f"; done
-            cp "pub/$s.mp4" "/tmp/pub/$s.mp4"
-            export GIT_INDEX_FILE=/tmp/pub-index   # índice aparte: no toca el checkout de main
-            git --work-tree=/tmp/pub add -A .
-            c=$(git commit-tree "$(git write-tree)" -m "videos programados en Buffer")
-            unset GIT_INDEX_FILE
-            git push -q -f origin "$c:refs/heads/publicos"
+            ok=""
+            for intento in 1 2 3 4 5 6; do
+              rm -rf /tmp/pub && mkdir -p /tmp/pub
+              antes=$(git ls-remote origin refs/heads/publicos | cut -f1)
+              if [ -n "$antes" ]; then git fetch -q --depth 1 origin "$antes" && git archive "$antes" | tar -x -C /tmp/pub; fi
+              lim=$(date -u -d '4 days ago' +%Y-%m-%d)
+              for f in /tmp/pub/*.mp4; do [ -e "$f" ] || continue; d=$(basename "$f" | cut -c1-10); [[ "$d" < "$lim" ]] && rm -f "$f"; done
+              cp "pub/$s.mp4" "/tmp/pub/$s.mp4"
+              export GIT_INDEX_FILE=/tmp/pub-index   # índice aparte: no toca el checkout de main
+              rm -f /tmp/pub-index
+              git --work-tree=/tmp/pub add -A .
+              c=$(git commit-tree "$(git write-tree)" -m "videos programados en Buffer")
+              unset GIT_INDEX_FILE
+              if git push -q --force-with-lease="refs/heads/publicos:${antes}" origin "$c:refs/heads/publicos"; then ok=1; break; fi
+              echo "la rama publicos cambió mientras tanto (otra publicación); reintento $intento"; sleep $((RANDOM % 8 + 3))
+            done
+            [ -n "$ok" ] || { echo "::error::No pude subir el video a la rama publicos"; exit 1; }
             url="https://raw.githubusercontent.com/${{ github.repository }}/publicos/$s.mp4"
             for i in $(seq 1 12); do curl -sfI "$url" >/dev/null && break; sleep 5; done
             curl -sfI "$url" >/dev/null || { echo "::error::El video no quedó accesible en $url"; exit 1; }
