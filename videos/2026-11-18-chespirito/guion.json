@@ -1,0 +1,111 @@
+{
+  "titulo": "El apodo de Chespirito salió de Shakespeare",
+  "paleta": "atardecer",
+  "musica": {"animo": "alegre"},
+  "ambiente": "ninguno",
+  "subtitulos": true,
+  "voz": {"pronunciar": {"Shakespeare": "Chéspir", "P.": "Pe"}},
+  "fuentes": [
+    "https://www.excelsior.com.mx/funcion/por-que-le-decian-chespirito-a-roberto-gomez-bolanos/1719273",
+    "https://www.elpais.com.co/entretenimiento/roberto-gomez-bolanos-la-historia-detras-del-genio-que-fue-comparado-con-shakespeare-0804.html",
+    "https://www.unotv.com/entretenimiento/chespirito-y-la-letra-ch-programas-personajes-el-chavo-del-8-el-chapulin-colorado-chompiras/",
+    "https://www.record.com.mx/contra/sin-querer-queriendo-asi-surgio-el-nombre-de-chespirito-apodo-de-roberto-gomez-bolanos",
+    "https://www.britannica.com/biography/Chespirito",
+    "https://www.elfinanciero.com.mx/after-office/el-pequeno-cheakespeare/",
+    "https://commons.wikimedia.org/wiki/File:Roberto_G%C3%B3mez_Bola%C3%B1os_2008.jpg",
+    "https://commons.wikimedia.org/wiki/File:Shakespeare_Droeshout_1623.jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Su apodo salió de Shakespeare.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "SU APODO", "en": "apodo"},
+        {"texto": "SALIÓ DE", "en": "salió"},
+        {"texto": "*SHAKESPEARE*", "en": "Shakespeare"}]}
+    },
+    {
+      "say": "Roberto Gómez Bolaños nació en la Ciudad de México, en mil novecientos veintinueve.",
+      "sub": "Roberto Gómez Bolaños nació en la Ciudad de México, en 1929.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "Ciudad de México, 1929",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Roberto_G%C3%B3mez_Bola%C3%B1os_2008.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Roberto_G%C3%B3mez_Bola%C3%B1os_2008.jpg",
+          "credito": "Al Vazquez / Wikimedia Commons",
+          "licencia": "CC BY 3.0",
+          "tratamiento": "color", "recorte": true,
+          "epigrafe": "Roberto Gómez Bolaños, 2008"},
+        "palabras": [{"texto": "*ROBERTO*", "en": "Roberto"}]}
+    },
+    {
+      "say": "De chico soñaba con el boxeo y el fútbol. Pero era bajito, y no pudo llegar a profesional.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "derecha", "etiqueta": "el sueño del deporte",
+        "objeto": {"tipo": "pelota", "en": "fútbol"},
+        "palabras": [{"texto": "*BAJITO*", "en": "bajito"}]}
+    },
+    {
+      "say": "Empezó ingeniería y la dejó. A los veintidós años entró a una agencia de publicidad.",
+      "sub": "Empezó ingeniería y la dejó. A los 22 años entró a una agencia de publicidad.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "rasgado", "etiqueta": "primer trabajo",
+        "objeto": {"tipo": "tele", "texto": "PUBLICIDAD", "en": "publicidad"},
+        "palabras": [{"texto": "A LOS *22*", "en": "veintidós"}]}
+    },
+    {
+      "say": "Ahí descubrió que lo suyo era escribir: guiones para la radio, la tele y el cine.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "lista", "etiqueta": "guionista",
+        "items": [{"texto": "Radio", "en": "radio"}, {"texto": "Televisión", "en": "tele"}, {"texto": "Cine", "en": "cine"}],
+        "remate": {"texto": "*ESCRIBIR*", "en": "escribir"}}
+    },
+    {
+      "say": "Un director de cine, Agustín P. Delgado, leyó lo que escribía y lo comparó con Shakespeare.",
+      "emocion": 0.6, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "foto", "etiqueta": "William Shakespeare",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shakespeare_Droeshout_1623.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Shakespeare_Droeshout_1623.jpg",
+          "credito": "Martin Droeshout / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia", "recorte": false,
+          "epigrafe": "Shakespeare, grabado de 1623"},
+        "lupa": {"x": 0.5, "y": 0.35, "z": 0.3, "en": "comparó"},
+        "palabras": [{"texto": "*UN SHAKESPEARE*", "en": "comparó"}]}
+    },
+    {
+      "say": "Pero como era bajito, lo achicó: un Shakespeare chiquito.",
+      "emocion": 0.65, "pausa": 0.6,
+      "escena": {"tipo": "golpe", "kicker": "por la estatura", "palabras": [
+        {"texto": "SHAKESPEARE", "en": "achicó", "tachar_en": "chiquito"},
+        {"texto": "*CHIQUITO*", "en": "chiquito"}]}
+    },
+    {
+      "say": "Y él lo castellanizó: Chespirito.",
+      "emocion": 0.85, "pausa": 0.8, "musica": "golpe",
+      "escena": {"tipo": "golpe", "transicion": "zoom", "destello": true, "palabras": [
+        {"texto": "*CHESPIRITO*", "en": "Chespirito"}]}
+    },
+    {
+      "say": "Y sin buscarlo, la che se volvió su amuleto: el Chavo, el Chapulín Colorado, el doctor Chapatín, el Chómpiras.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "lista", "etiqueta": "la CH de la suerte",
+        "items": [{"texto": "El Chavo", "en": "Chavo"}, {"texto": "El Chapulín Colorado", "en": "Chapulín"}, {"texto": "El Dr. Chapatín", "en": "Chapatín"}, {"texto": "El Chómpiras", "en": "Chómpiras"}]}
+    },
+    {
+      "say": "Un Shakespeare chiquito que hizo reír a toda Latinoamérica. ¿Cuál era tu personaje favorito? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "UN SHAKESPEARE", "en": "Shakespeare"}, {"texto": "*CHIQUITO*", "en": "chiquito"}],
+        "cta": "¿Cuál era tu favorito?",
+        "objeto": {"tipo": "tele", "texto": "CH"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "¿Por qué le decían «Chespirito»? #shorts",
+    "descripcion": "Roberto Gómez Bolaños nació en la Ciudad de México en 1929. Era bajito y no pudo dedicarse al deporte; dejó ingeniería y a los 22 entró a la publicidad, donde descubrió que lo suyo era escribir. El director de cine Agustín P. Delgado lo comparó con Shakespeare y, por su estatura, lo achicó: un Shakespeare pequeño. Él lo castellanizó: Chespirito. Con los años, la «ch» se volvió su amuleto: el Chavo, el Chapulín Colorado, el Dr. Chapatín, el Chómpiras. Fuentes: Excélsior, El País (Cali), Uno TV, Récord. Fotos: Al Vazquez (CC BY 3.0) y Martin Droeshout (dominio público), vía Wikimedia Commons.",
+    "hashtags": ["chespirito", "elchavodel8", "robertogomezbolanos", "mexico", "historiasreales"],
+    "categoria_youtube": "24"
+  }
+}

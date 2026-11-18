@@ -1,0 +1,122 @@
+{
+  "titulo": "Alumni ganó diez campeonatos y desapareció",
+  "paleta": "diario",
+  "musica": {"animo": "misterio"},
+  "ambiente": "ninguno",
+  "textura": "pelicula",
+  "subtitulos": true,
+  "voz": {"pronunciar": {"Watson Hutton": "Uátson Játon", "Brown": "Bráun"}},
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Alumni_Athletic_Club",
+    "https://www.diariouno.com.ar/ovacion/ya-fue/el-ultimo-partido-del-gran-alumni-11252018_HyxeDWm_Am",
+    "https://en.wikipedia.org/wiki/1906_Alumni_v_South_Africa_football_match",
+    "https://rsssf.org/tabless/safa-satrip06.html",
+    "https://rsssf.org/tablesa/arg11.html",
+    "https://scotsfootballworldwide.scot/alumni",
+    "https://en.wikipedia.org/wiki/Alexander_Watson_Hutton",
+    "https://commons.wikimedia.org/wiki/File:Wattson-hutton_young.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jorge_gibson_brown_retrato.jpg",
+    "https://commons.wikimedia.org/wiki/File:Caricatura_Alumni_1906.png",
+    "https://commons.wikimedia.org/wiki/File:Alumni_Athletic_Club,_in_1910..jpg"
+  ],
+  "lineas": [
+    {
+      "say": "Ganó diez campeonatos. Y desapareció.",
+      "emocion": 0.7, "pausa": 0.5, "musica": "golpe",
+      "escena": {"tipo": "golpe", "palabras": [
+        {"texto": "DIEZ", "en": "diez"},
+        {"texto": "CAMPEONATOS", "en": "campeonatos"},
+        {"texto": "Y *DESAPARECIÓ*", "en": "desapareció"}]}
+    },
+    {
+      "say": "Empezó en un colegio inglés de Buenos Aires, fundado por el escocés Alexander Watson Hutton.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "transicion": "izquierda", "etiqueta": "el padre del fútbol argentino",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Wattson-hutton_young.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Wattson-hutton_young.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia", "recorte": true,
+          "epigrafe": "Alexander Watson Hutton"},
+        "palabras": [{"texto": "*UN ESCOCÉS*", "en": "escocés"}]}
+    },
+    {
+      "say": "Con sus alumnos armó un equipo. En mil novecientos uno, la liga prohibió los nombres de colegios.",
+      "sub": "Con sus alumnos armó un equipo. En 1901, la liga prohibió los nombres de colegios.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "collage", "etiqueta": "1901",
+        "objeto": {"tipo": "recorte", "volanta": "Asociación de fútbol", "titular": "Nada de nombres de colegios", "en": "prohibió"},
+        "palabras": [{"texto": "*PROHIBIDO*", "en": "prohibió"}]}
+    },
+    {
+      "say": "Un ex alumno propuso el nombre nuevo: Alumni.",
+      "emocion": 0.6, "pausa": 0.6, "musica": "golpe",
+      "escena": {"tipo": "golpe", "estilo": "maquina", "kicker": "Buenos Aires, 1901", "palabras": [
+        {"texto": "EL NOMBRE", "en": "nombre"},
+        {"texto": "*ALUMNI*", "en": "Alumni"}]}
+    },
+    {
+      "say": "Jorge Brown era el capitán. Y jugaban varios de sus hermanos.",
+      "emocion": 0.5, "pausa": 0.5,
+      "escena": {"tipo": "foto", "etiqueta": "los hermanos Brown",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Jorge_gibson_brown_retrato.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Jorge_gibson_brown_retrato.jpg",
+          "credito": "Autor desconocido / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "byn", "recorte": false,
+          "epigrafe": "Jorge Brown, 1906"},
+        "marca": {"forma": "flecha", "x": 0.3, "y": 0.05, "w": 0.4, "h": 0.3, "texto": "el capitán", "en": "capitán"},
+        "palabras": [{"texto": "*LOS BROWN*", "en": "hermanos"}]}
+    },
+    {
+      "say": "En mil novecientos seis le ganó uno a cero a Sudáfrica. Fue la única derrota de Sudáfrica en toda la gira.",
+      "sub": "En 1906 le ganó 1 a 0 a Sudáfrica. Fue la única derrota de Sudáfrica en toda la gira.",
+      "emocion": 0.65, "pausa": 0.5, "musica": "subida",
+      "escena": {"tipo": "foto", "transicion": "arriba", "etiqueta": "Alumni 1, Sudáfrica 0",
+        "foto": {"tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Caricatura_Alumni_1906.png",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Caricatura_Alumni_1906.png",
+          "credito": "Aurelio Jiménez (1877-1910) / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color", "recorte": false, "profundidad": false,
+          "epigrafe": "Los que derrotaron a Sudáfrica, 1906"},
+        "sello": "ÚNICA DERROTA"}
+    },
+    {
+      "say": "Entre mil novecientos y mil novecientos once ganó diez campeonatos. El último, en una final contra Porteño.",
+      "sub": "Entre 1900 y 1911 ganó 10 campeonatos. El último, en una final contra Porteño.",
+      "emocion": 0.6, "pausa": 0.5,
+      "escena": {"tipo": "cifra", "numero": 10, "en": "diez", "etiqueta": "títulos de Primera", "palabra": "1900-1911"}
+    },
+    {
+      "say": "Pero casi no traía jugadores de afuera, donaba lo de las entradas a beneficencia y ni cancha propia tenía.",
+      "emocion": 0.55, "pausa": 0.5,
+      "escena": {"tipo": "collage", "transicion": "izquierda", "etiqueta": "el espíritu amateur",
+        "objeto": {"tipo": "entrada", "titulo": "ALUMNI A.C.", "nombre": "Platea", "campos": {"destino": "beneficencia"}, "talon": "1911", "en": "entradas"},
+        "sello": "A BENEFICENCIA", "sello_en": "beneficencia",
+        "palabras": [{"texto": "*SIN CANCHA*", "en": "cancha"}]}
+    },
+    {
+      "say": "En mil novecientos trece llamaron a votar su disolución. Hacían falta quince socios. Fueron siete.",
+      "sub": "En 1913 llamaron a votar su disolución. Hacían falta 15 socios. Fueron 7.",
+      "emocion": 0.85, "pausa": 0.8, "musica": "golpe",
+      "escena": {"tipo": "cifra", "numero": 7, "en": "siete", "etiqueta": "abril de 1913", "palabra": "DE 15 SOCIOS"}
+    },
+    {
+      "say": "Así se fue el primer gran campeón del fútbol argentino. ¿Lo conocías? Contalo en los comentarios.",
+      "emocion": 0.55, "pausa": 0.8,
+      "escena": {"tipo": "cierre",
+        "titulo": [{"texto": "EL CAMPEÓN", "en": "campeón"}, {"texto": "*QUE SE FUE*", "en": "argentino"}],
+        "cta": "¿Lo conocías?",
+        "objeto": {"tipo": "camiseta", "base": "#FFFFFF", "color": "#C8102E", "estilo": "rayas", "nombre": "ALUMNI", "numero": "10"}}
+    }
+  ],
+  "publicar": {
+    "titulo": "Alumni ganó diez campeonatos y desapareció #shorts",
+    "descripcion": "Alumni, el primer gran campeón del fútbol argentino, nació en el Buenos Aires English High School del escocés Alexander Watson Hutton. En 1901 la liga prohibió los nombres de colegios y un ex alumno propuso «Alumni». Con Jorge Brown y varios de sus hermanos, en 1906 le ganó 1-0 a Sudáfrica (la única derrota de Sudáfrica en esa gira) y entre 1900 y 1911 ganó 10 campeonatos. Casi no incorporaba jugadores de afuera, donaba la recaudación y no tenía cancha propia: en 1912 no se presentó y en abril de 1913, a la asamblea para disolverlo, fueron solo 7 socios. Fuentes: Wikipedia, Diario Uno, RSSSF. Fotos e ilustración: autores desconocidos y Aurelio Jiménez, vía Wikimedia Commons (dominio público).",
+    "hashtags": ["alumni", "futbolargentino", "historiadelfutbol", "futbol", "historiasreales"],
+    "categoria_youtube": "17"
+  }
+}
