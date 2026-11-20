@@ -121,6 +121,9 @@ Leer todos los guiones (`ArtifactData list guiones`) y, para cada uno según su 
   `ver: "/_blob/<id>"` y `ver_id: "<id>"`. La Mesa reproduce `ver`; el link de abajo es para descargar en calidad completa.
   Si hay un issue con etiqueta `falla` posterior al commit: `estado: "falla"` y explicar el error en el resumen.
   Si queda `listo` y tiene `auto: true`, seguir en la misma pasada con la regla de abajo (no esperar a la próxima revisión).
+  Si lleva **más de una hora** en `fabricando` sin issue de revisión ni de falla, mirar el run de *Fabricar* de ese commit
+  (`gh api repos/ccesano/fabrica-shorts/actions/runs?head_sha=<sha>`): si terminó con `failure`, `estado: "falla"` y avisar
+  al celular con el paso que falló (el 19/11 la instalación falló y el video quedó "fabricando" todo el día sin aviso).
 - **`publicacion pedida`** → comentar en el issue `/publicar` (si `cuando` es "ahora") o `/publicar AAAA-MM-DD HH:MM`;
   esperar la respuesta del flujo *Publicar* (✅ Enviado a Buffer) y poner `estado: "programado"` (o `"publicado"` si
   fue "ahora"). Marcar el tema del banco como `hecho`.

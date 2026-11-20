@@ -12,15 +12,16 @@ paso() { printf '\n\033[1m▶ %s\033[0m\n' "$*"; }
 need() { command -v "$1" >/dev/null 2>&1; }
 need ffmpeg || { paso "ffmpeg"; (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg) || apt-get install -y -qq ffmpeg; }
 need node || { echo "✗ Falta Node.js 20+"; exit 1; }
-need uv || { paso "uv"; curl -LsSf https://astral.sh/uv/install.sh | sh; export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"; }
+need uv || { paso "uv"; curl -LsSf https://astral.sh/uv/0.13.9/install.sh | sh; export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"; }
 
 paso "Entorno principal (.venv)"
-[ -x .venv/bin/python ] || uv venv -q -p 3.12 .venv
+# si la caché trajo un entorno roto (19/11: el enlace a Python quedó colgado y uv 0.13 se negó a pisarlo), se rehace
+.venv/bin/python -c "" 2>/dev/null || { rm -rf .venv; uv venv -q -p 3.12 .venv; }
 VIRTUAL_ENV=.venv uv pip install -q numpy scipy soundfile soxr kokoro-onnx sherpa-onnx num2words pillow onnxruntime
 
 if [ "${1:-}" != "sin-voz" ]; then
   paso "Entorno de voz clonada (.venv-voz, Chatterbox)"
-  [ -x .venv-voz/bin/python ] || uv venv -q -p 3.11 .venv-voz
+  .venv-voz/bin/python -c "" 2>/dev/null || { rm -rf .venv-voz; uv venv -q -p 3.11 .venv-voz; }
   # Chatterbox Multilingual V3 (con el pack latinoamericano) no está en PyPI: se instala desde GitHub, fijado a este commit.
   CHATTERBOX="chatterbox-tts @ git+https://github.com/resemble-ai/chatterbox@ab55923c27757c90cfcc407baa57dc25a7d25217"
   if ! .venv-voz/bin/python -c "from chatterbox.mtl_tts import MULTILINGUAL_T3_MODELS" 2>/dev/null; then
