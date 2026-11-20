@@ -1,0 +1,317 @@
+{
+ "titulo": "Boca, el único bicampeón seguido de la Sudamericana",
+ "paleta": "bombonera",
+ "musica": {
+  "animo": "tension"
+ },
+ "ambiente": "cancha",
+ "subtitulos": true,
+ "voz": {
+  "pronunciar": {
+   "Abbondanzieri": "Abondansieri",
+   "Mineiro": "Minéiro"
+  }
+ },
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/2004_Copa_Sudamericana_finals",
+  "https://en.wikipedia.org/wiki/2005_Copa_Sudamericana_finals",
+  "https://www.lacapitalmdp.com/boca-va-por-su-tercer-titulo-en-la-copa-sudamericana/",
+  "https://eleconomista.com.ar/deportes/cuantas-veces-gano-boca-copa-sudamericana-n99086",
+  "https://cooperativa.cl/noticias/deportes/futbol/copa-sudamericana/en-agonica-definicion-boca-juniors-se-consagro-bicampeon-de-la/2005-12-19/004223.html",
+  "https://www.abc.com.py/deportes/futbol/internacional/2022/09/24/a-7-dias-de-la-final-el-bicampeonato-de-boca-juniors-un-record-aun-vigente/",
+  "https://gol.conmebol.com/sudamericana/en/news/boca-and-story-seeking-another-chapter-chasing-third-gran-conquista",
+  "https://www.portafolio.co/tendencias/sociales/conmebol-confirmo-la-hora-de-la-final-de-la-copa-sudamericana-entre-atletico-mineiro-y-boca-juniors-en-barranquilla-505529",
+  "https://commons.wikimedia.org/wiki/File:Boca_Juniors_vs._Pumas.jpg",
+  "https://commons.wikimedia.org/wiki/File:Roberto_Abbondanzieri_(cropped).jpg"
+ ],
+ "lineas": [
+  {
+   "say": "Nadie más lo hizo dos años seguidos.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "NADIE MÁS",
+      "en": "Nadie"
+     },
+     {
+      "texto": "LO HIZO",
+      "en": "hizo"
+     },
+     {
+      "texto": "DOS AÑOS",
+      "en": "dos"
+     },
+     {
+      "texto": "*SEGUIDOS*",
+      "en": "seguidos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Ganar la Copa Sudamericana dos veces al hilo. Solo Boca: en dos mil cuatro y en dos mil cinco.",
+   "sub": "Ganar la Copa Sudamericana dos veces al hilo. Solo Boca: en 2004 y en 2005.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "zoom",
+    "etiqueta": "Copa Sudamericana",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#103F8F",
+     "color": "#F2C230",
+     "estilo": "banda",
+     "nombre": "BOCA",
+     "numero": "2",
+     "letra": "#F2C230"
+    },
+    "palabras": [
+     {
+      "texto": "*2004*",
+      "en": "cuatro"
+     },
+     {
+      "texto": "*2005*",
+      "en": "cinco"
+     }
+    ]
+   }
+  },
+  {
+   "say": "La primera arrancó torcida: en la altura de La Paz, perdió uno a cero con Bolívar.",
+   "sub": "La primera arrancó torcida: en la altura de La Paz, perdió 1 a 0 con Bolívar.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "mapa",
+    "etiqueta": "final de ida, 2004",
+    "desde": {
+     "nombre": "Buenos Aires",
+     "lat": -34.6,
+     "lon": -58.38
+    },
+    "hasta": {
+     "nombre": "La Paz",
+     "lat": -16.5,
+     "lon": -68.15
+    },
+    "resaltar": [
+     "Bolivia"
+    ],
+    "vehiculo": "avion",
+    "ruta_en": "altura",
+    "palabras": [
+     {
+      "texto": "*1 A 0*",
+      "en": "cero"
+     }
+    ]
+   }
+  },
+  {
+   "say": "A la vuelta, en la Bombonera, Palermo empató de cabeza y Tevez metió el segundo.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "transicion": "derecha",
+    "etiqueta": "17 de diciembre de 2004",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "BOCA",
+       2
+      ],
+      [
+       "BOLÍVAR",
+       0
+      ]
+     ],
+     "en": "Bombonera"
+    },
+    "palabras": [
+     {
+      "texto": "PALERMO",
+      "en": "Palermo"
+     },
+     {
+      "texto": "*TEVEZ*",
+      "en": "Tevez"
+     }
+    ],
+    "sello": "CAMPEÓN",
+    "sello_en": "segundo"
+   }
+  },
+  {
+   "say": "Un año después, la final fue con Pumas, de México.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "rasgado",
+    "kicker": "diciembre de 2005",
+    "palabras": [
+     {
+      "texto": "UN AÑO",
+      "en": "año"
+     },
+     {
+      "texto": "DESPUÉS",
+      "en": "después"
+     },
+     {
+      "texto": "*PUMAS*",
+      "en": "Pumas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Uno a uno allá, uno a uno en la Bombonera. Todo se definía por penales.",
+   "sub": "1 a 1 allá, 1 a 1 en la Bombonera. Todo se definía por penales.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "la Bombonera, 2005",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Boca_Juniors_vs._Pumas.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Boca_Juniors_vs._Pumas.jpg",
+     "credito": "nica* / Wikimedia Commons",
+     "licencia": "CC BY-SA 2.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Hinchas de Boca en la final con Pumas, 2005"
+    },
+    "palabras": [
+     {
+      "texto": "*PENALES*",
+      "en": "penales"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y apareció el Pato Abbondanzieri. El arquero atajó dos penales.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el arquero de Boca",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Roberto_Abbondanzieri_%28cropped%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Roberto_Abbondanzieri_(cropped).jpg",
+     "credito": "Prensa TV Pública / Wikimedia Commons",
+     "licencia": "CC BY 2.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Roberto Abbondanzieri, en 2014"
+    },
+    "lupa": {
+     "x": 0.5,
+     "y": 0.3,
+     "z": 0.3,
+     "en": "atajó"
+    },
+    "palabras": [
+     {
+      "texto": "*ATAJÓ DOS*",
+      "en": "atajó"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Después pateó el último. Y lo metió. Boca, bicampeón.",
+   "emocion": 0.9,
+   "pausa": 0.8,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "destello": true,
+    "kicker": "el último penal",
+    "palabras": [
+     {
+      "texto": "LO PATEÓ",
+      "en": "pateó"
+     },
+     {
+      "texto": "Y LO METIÓ",
+      "en": "metió"
+     },
+     {
+      "texto": "*BICAMPEÓN*",
+      "en": "bicampeón"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Este sábado, en Barranquilla, Boca juega otra final, contra Atlético Mineiro. Va por la tercera.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "izquierda",
+    "etiqueta": "final en Barranquilla",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 21,
+     "mes": "NOVIEMBRE",
+     "anio": 2026
+    },
+    "palabras": [
+     {
+      "texto": "*LA TERCERA*",
+      "en": "tercera"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Un arquero que ganó una copa pateando. ¿Vos te acordás? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "EL ARQUERO",
+      "en": "arquero"
+     },
+     {
+      "texto": "*PATEÓ*",
+      "en": "pateando"
+     }
+    ],
+    "cta": "¿Vos te acordás?",
+    "objeto": {
+     "tipo": "pelota"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Boca, el único que ganó la Sudamericana dos años seguidos #shorts",
+  "descripcion": "Boca ganó la Copa Sudamericana en 2004 y en 2005, y sigue siendo el único bicampeón consecutivo del torneo. En 2004 perdió 1-0 con Bolívar en La Paz y lo dio vuelta en la Bombonera con goles de Palermo y Tevez. En 2005, contra Pumas, empató 1-1 en México y 1-1 en la Bombonera: en los penales, el Pato Abbondanzieri atajó dos y pateó el último. Este sábado 21 de noviembre, en Barranquilla, Boca juega la final contra Atlético Mineiro y va por la tercera. Fuentes: La Capital (Mar del Plata), El Economista, Cooperativa, Wikipedia. Fotos: nica* (CC BY-SA 2.0) y Prensa TV Pública (CC BY 2.0), vía Wikimedia Commons.",
+  "hashtags": [
+   "boca",
+   "sudamericana",
+   "abbondanzieri",
+   "futbol",
+   "historiasreales"
+  ],
+  "categoria_youtube": "17"
+ }
+}

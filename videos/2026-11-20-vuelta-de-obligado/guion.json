@@ -1,0 +1,266 @@
+{
+ "titulo": "Cerraron el Paraná con cadenas: la Vuelta de Obligado",
+ "paleta": "oceano",
+ "musica": {
+  "animo": "tension"
+ },
+ "ambiente": "ninguno",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.argentina.gob.ar/noticias/el-combate-de-la-vuelta-de-obligado",
+  "https://en.wikipedia.org/wiki/Battle_of_Vuelta_de_Obligado",
+  "https://billiken.lat/para-tus-tareas/batalla-de-la-vuelta-de-obligado-como-se-desarrollo-el-combate/",
+  "https://www.perfil.com/noticias/actualidad/20-de-noviembre-por-que-se-conmemora-el-dia-de-la-soberania-nacional.phtml",
+  "https://www.canal26.com/historia/el-testamento-de-san-martin-el-regalo-impensado-a-rosas-y-su-deseo-de-descansar-en-buenos-aires--363305",
+  "https://billiken.lat/para-tus-tareas/sabias-que-san-martin-le-regalo-su-sable-corvo-a-rosas/",
+  "https://commons.wikimedia.org/wiki/File:Museo_del_Bicentenario_-_Fragmento_de_las_cadenas_de_Vuelta_de_Obligado.jpg",
+  "https://commons.wikimedia.org/wiki/File:Testamento_de_San_Mart%C3%ADn.jpg",
+  "https://www.infobae.com/historia/2018/08/17/el-derrotero-de-una-reliquia-historica/",
+  "https://en.wikipedia.org/wiki/Arana%E2%80%93Southern_Treaty",
+  "https://en.wikipedia.org/wiki/Arana%E2%80%93Lepredour_Treaty"
+ ],
+ "lineas": [
+  {
+   "say": "Cerraron el río Paraná con cadenas.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "CERRARON",
+      "en": "Cerraron"
+     },
+     {
+      "texto": "EL PARANÁ",
+      "en": "Paraná"
+     },
+     {
+      "texto": "CON *CADENAS*",
+      "en": "cadenas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Mil ochocientos cuarenta y cinco. Barcos de guerra ingleses y franceses escoltan mercantes Paraná arriba, sin permiso.",
+   "sub": "1845. Barcos de guerra ingleses y franceses escoltan mercantes Paraná arriba, sin permiso.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "mapa",
+    "transicion": "zoom",
+    "etiqueta": "noviembre de 1845",
+    "desde": {
+     "nombre": "Montevideo",
+     "lat": -34.9,
+     "lon": -56.16
+    },
+    "hasta": {
+     "nombre": "Vuelta de Obligado",
+     "lat": -33.59,
+     "lon": -59.81
+    },
+    "vehiculo": "barco",
+    "ruta_en": "escoltan",
+    "palabras": [
+     {
+      "texto": "*SIN PERMISO*",
+      "en": "permiso"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En la Vuelta de Obligado, el río se angosta a setecientos metros.",
+   "sub": "En la Vuelta de Obligado, el río se angosta a 700 metros.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "numero": 700,
+    "sufijo": " m",
+    "en": "setecientos",
+    "etiqueta": "de costa a costa",
+    "palabra": "NADA MÁS"
+   }
+  },
+  {
+   "say": "Ahí Mansilla tendió tres cadenas sobre veinticuatro lanchones. Y cuatro baterías con treinta cañones.",
+   "sub": "Ahí Mansilla tendió 3 cadenas sobre 24 lanchones. Y 4 baterías con 30 cañones.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "lista",
+    "transicion": "izquierda",
+    "etiqueta": "la defensa de Mansilla",
+    "items": [
+     {
+      "texto": "3 cadenas",
+      "en": "tres"
+     },
+     {
+      "texto": "24 lanchones",
+      "en": "veinticuatro"
+     },
+     {
+      "texto": "4 baterías",
+      "en": "cuatro"
+     },
+     {
+      "texto": "30 cañones",
+      "en": "treinta"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Estos son eslabones de verdad, de aquellas cadenas.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Museo del Bicentenario",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Museo_del_Bicentenario_-_Fragmento_de_las_cadenas_de_Vuelta_de_Obligado.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_del_Bicentenario_-_Fragmento_de_las_cadenas_de_Vuelta_de_Obligado.jpg",
+     "credito": "Museo del Bicentenario / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "profundidad": false,
+     "epigrafe": "Eslabones originales de las cadenas de Obligado"
+    },
+    "marca": {
+     "forma": "flecha",
+     "x": 0.38,
+     "y": 0.1,
+     "w": 0.24,
+     "h": 0.8,
+     "texto": "originales",
+     "en": "verdad"
+    }
+   }
+  },
+  {
+   "say": "El veinte de noviembre, los barcos cortaron las cadenas y pasaron. Fue una derrota.",
+   "sub": "El 20 de noviembre, los barcos cortaron las cadenas y pasaron. Fue una derrota.",
+   "emocion": 0.8,
+   "pausa": 0.8,
+   "musica": "silencio",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "20 de noviembre de 1845",
+    "palabras": [
+     {
+      "texto": "LAS CADENAS",
+      "en": "cadenas",
+      "tachar_en": "pasaron"
+     },
+     {
+      "texto": "*DERROTA*",
+      "en": "derrota"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pero río arriba casi no vendieron. Años después, Inglaterra y Francia reconocieron el Paraná como argentino.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "rasgado",
+    "kicker": "años después",
+    "palabras": [
+     {
+      "texto": "EL PARANÁ",
+      "en": "Paraná"
+     },
+     {
+      "texto": "*ARGENTINO*",
+      "en": "argentino"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Antes de Obligado, en su testamento, San Martín ya le había dejado su sable a Rosas.",
+   "emocion": 0.6,
+   "pausa": 1.0,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el sable corvo",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Testamento_de_San_Mart%C3%ADn.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Testamento_de_San_Mart%C3%ADn.jpg",
+     "credito": "José de San Martín / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "profundidad": false,
+     "epigrafe": "Testamento de San Martín, París, 1844"
+    },
+    "palabras": [
+     {
+      "texto": "*SU SABLE*",
+      "en": "sable"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Al ver la firmeza con que ha sostenido el honor de la República contra las injustas pretensiones de los extranjeros.",
+   "emocion": 0.75,
+   "pausa": 1.1,
+   "escena": {
+    "tipo": "cita",
+    "transicion": "corte",
+    "texto": "Al ver la firmeza con que ha sostenido el honor de la República contra las *injustas pretensiones* de los extranjeros…",
+    "autor": "José de San Martín, testamento de 1844"
+   }
+  },
+  {
+   "say": "Por eso hoy es el Día de la Soberanía Nacional. ¿Lo sabías? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "DÍA DE LA",
+      "en": "Día"
+     },
+     {
+      "texto": "*SOBERANÍA*",
+      "en": "Soberanía"
+     }
+    ],
+    "cta": "¿Lo sabías?",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 20,
+     "mes": "NOVIEMBRE",
+     "anio": 1845
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Cerraron el Paraná con cadenas: la Vuelta de Obligado #shorts",
+  "descripcion": "El 20 de noviembre de 1845, una flota de guerra inglesa y francesa subió por el Paraná escoltando barcos mercantes. En la Vuelta de Obligado, donde el río mide unos 700 metros, el general Lucio N. Mansilla tendió tres cadenas sobre 24 lanchones y armó cuatro baterías con 30 cañones. La flota cortó las cadenas y pasó: fue una derrota militar. Pero el viaje comercial casi no vendió y con los tratados de 1849 (Gran Bretaña) y 1850 (Francia) se reconoció la navegación del Paraná como interior de la Confederación Argentina. Antes del combate, en su testamento de enero de 1844, San Martín ya le había legado su sable corvo a Rosas \"al ver la firmeza con que ha sostenido el honor de la República contra las injustas pretensiones de los extranjeros\". Hoy es el Día de la Soberanía Nacional. Fuentes: argentina.gob.ar (Instituto Argentino de Historia Militar), Billiken, Perfil, Canal 26, Wikipedia. Imágenes: testamento de San Martín (dominio público) y Museo del Bicentenario (CC BY-SA 3.0), vía Wikimedia Commons.",
+  "hashtags": [
+   "vueltadeobligado",
+   "soberanianacional",
+   "historiaargentina",
+   "sanmartin",
+   "historiasreales"
+  ],
+  "categoria_youtube": "27"
+ }
+}
