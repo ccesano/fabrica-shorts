@@ -1,0 +1,261 @@
+{
+ "titulo": "Plantó una guitarra de árboles por amor",
+ "paleta": "bosque",
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "ambiente": "ninguno",
+ "subtitulos": true,
+ "fuentes": [
+  "https://batimes.com.ar/news/culture/giant-guitar-of-trees-serves-as-tribute-to-eternal-love.phtml",
+  "https://atlasobscura.com/places/guitar-forest",
+  "https://news.mongabay.com/2014/04/nasa-photographs-the-amazing-guitar-forest/",
+  "https://mymodernmet.com/es/guitarra-arboles-cordoba-argentino/",
+  "https://www.cronista.com/clase/break/la-historia-de-la-estancia-la-guitarra-una-de-las-demostraciones-de-amor-mas-grandes-de-argentina",
+  "https://commons.wikimedia.org/wiki/File:Argentina_Forest_(ASTER).jpg",
+  "https://science.nasa.gov/photojournal/argentina-forest"
+ ],
+ "lineas": [
+  {
+   "say": "Plantó siete mil árboles por amor.",
+   "sub": "Plantó 7.000 árboles por amor.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "PLANTÓ",
+      "en": "Plantó"
+     },
+     {
+      "texto": "7.000",
+      "en": "siete"
+     },
+     {
+      "texto": "ÁRBOLES",
+      "en": "árboles"
+     },
+     {
+      "texto": "POR *AMOR*",
+      "en": "amor"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pedro Martín Ureta tenía un campo en el sur de Córdoba, cerca de General Levalle.",
+   "emocion": 0.45,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "sur de Córdoba",
+    "objeto": {
+     "tipo": "postal",
+     "texto": "Saludos desde el campo",
+     "lugar": "General Levalle, Córdoba",
+     "colores": [
+      "#6B8E3D",
+      "#E8D9A8"
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "*PEDRO*",
+      "en": "Pedro"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Un día, desde un avión, su esposa Graciela vio un campo con forma de balde.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "desde el avión",
+    "palabras": [
+     {
+      "texto": "UN CAMPO",
+      "en": "campo"
+     },
+     {
+      "texto": "CON FORMA",
+      "en": "forma"
+     },
+     {
+      "texto": "DE *BALDE*",
+      "en": "balde"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y le propuso a Pedro hacer uno con forma de guitarra.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "la idea de Graciela",
+    "objeto": {
+     "tipo": "vinilo",
+     "titulo": "Graciela"
+    },
+    "palabras": [
+     {
+      "texto": "UNA",
+      "en": "uno"
+     },
+     {
+      "texto": "*GUITARRA*",
+      "en": "guitarra"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pero en mil novecientos setenta y siete, Graciela murió de un aneurisma. Tenía veinticinco años.",
+   "sub": "Pero en 1977, Graciela murió de un aneurisma. Tenía 25 años.",
+   "emocion": 0.75,
+   "pausa": 1.0,
+   "musica": "silencio",
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "corte",
+    "kicker": "1977",
+    "palabras": [
+     {
+      "texto": "TENÍA",
+      "en": "Tenía"
+     },
+     {
+      "texto": "*25 AÑOS*",
+      "en": "veinticinco"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pedro y sus cuatro hijos plantaron unos siete mil árboles.",
+   "sub": "Pedro y sus 4 hijos plantaron unos 7.000 árboles.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "cifra",
+    "numero": 7000,
+    "en": "siete",
+    "etiqueta": "con sus 4 hijos",
+    "palabra": "ÁRBOLES"
+   }
+  },
+  {
+   "say": "Cipreses para el cuerpo de la guitarra. Eucaliptos para las seis cuerdas.",
+   "sub": "Cipreses para el cuerpo de la guitarra. Eucaliptos para las 6 cuerdas.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "cómo la armó",
+    "items": [
+     {
+      "texto": "Cipreses: el cuerpo",
+      "en": "Cipreses"
+     },
+     {
+      "texto": "Eucaliptos: 6 cuerdas",
+      "en": "Eucaliptos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Mide cerca de un kilómetro. Y se ve desde un satélite de la NASA.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "zoom",
+    "etiqueta": "visto desde el espacio",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Argentina_Forest_%28ASTER%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Argentina_Forest_(ASTER).jpg",
+     "credito": "NASA/GSFC/METI/ERSDAC/JAROS y U.S./Japan ASTER Science Team",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "profundidad": false,
+     "epigrafe": "Satélite Terra (ASTER), 2007"
+    },
+    "lupa": {
+     "x": 0.73,
+     "y": 0.24,
+     "z": 0.3,
+     "en": "satélite"
+    }
+   }
+  },
+  {
+   "say": "Pero él nunca la vio desde el aire. Le tenía miedo a volar.",
+   "emocion": 0.88,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "impacto",
+    "palabras": [
+     {
+      "texto": "NUNCA",
+      "en": "nunca"
+     },
+     {
+      "texto": "LA *VIO*",
+      "en": "vio"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pedro murió en dos mil diecinueve. La guitarra sigue ahí. ¿La conocías? Contalo en los comentarios.",
+   "sub": "Pedro murió en 2019. La guitarra sigue ahí. ¿La conocías? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "LA GUITARRA",
+      "en": "guitarra"
+     },
+     {
+      "texto": "*SIGUE AHÍ*",
+      "en": "sigue"
+     }
+    ],
+    "cta": "¿La conocías?",
+    "objeto": {
+     "tipo": "postal",
+     "texto": "Para Graciela",
+     "lugar": "Córdoba",
+     "colores": [
+      "#2F5D34",
+      "#8BB174"
+     ]
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Plantó una guitarra de 7.000 árboles por amor #shorts",
+  "descripcion": "Pedro Martín Ureta tenía un campo cerca de General Levalle, en el sur de Córdoba. Su esposa, Graciela Yraizoz, vio desde un avión un campo con forma de balde y le propuso hacer uno con forma de guitarra. En 1977 Graciela murió de un aneurisma, a los 25 años. Pedro y sus cuatro hijos plantaron unos 7.000 árboles: cipreses para el cuerpo y eucaliptos para las seis cuerdas. La guitarra mide cerca de un kilómetro y la fotografió el satélite Terra de la NASA. Pedro le tenía miedo a volar y nunca la vio desde el aire. Murió en 2019. Fuentes: Buenos Aires Times, Atlas Obscura, Mongabay, My Modern Met, El Cronista. Imagen: NASA/GSFC/METI/ERSDAC/JAROS y U.S./Japan ASTER Science Team (dominio público), vía Wikimedia Commons.",
+  "hashtags": [
+   "guitarradearboles",
+   "cordoba",
+   "historiasdeamor",
+   "historiasreales",
+   "argentina"
+  ],
+  "categoria_youtube": "24"
+ }
+}

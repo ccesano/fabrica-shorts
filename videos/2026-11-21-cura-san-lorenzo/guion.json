@@ -1,0 +1,273 @@
+{
+ "titulo": "El cura que le abrió el patio a San Lorenzo",
+ "paleta": "diario",
+ "musica": {
+  "animo": "alegre"
+ },
+ "ambiente": "ciudad",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/Lorenzo_Massa",
+  "https://en.wikipedia.org/wiki/San_Lorenzo_de_Almagro",
+  "https://442.perfil.com/noticias/futbol/lorenzo-massa-el-sacerdote-que-hizo-posible-la-fundacion-de-san-lorenzo.phtml",
+  "https://www.minutouno.com/san-lorenzo-el-mas-apodos-n6994",
+  "https://emisorasunidas.com/deportes/2025/04/21/muere-papa-francisco-el-socio-88-mil-235-de-san-lorenzo/",
+  "https://www.lanacion.com.ar/deportes/futbol/murio-el-papa-francisco-la-particular-coincidencia-entre-su-carnet-de-socio-de-san-lorenzo-de-nid21042025/",
+  "https://commons.wikimedia.org/wiki/File:Lorenzo_Massa.jpg",
+  "https://commons.wikimedia.org/wiki/File:Buenos_Aires_-_Tranv%C3%ADa_179_en_1903.jpg",
+  "https://commons.wikimedia.org/wiki/File:San_lorenzo_father_massa.jpg",
+  "https://www.tiempoar.com.ar/ta_article/san-lorenzo-favorito-de-francisco/amp/",
+  "https://www.ellitoral.com/edicion-online/ciclon-boedo-leyenda-historia_0_Mq9thhdFgk.amp.html"
+ ],
+ "lineas": [
+  {
+   "say": "Un grande nació en el patio de una iglesia.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "UN GRANDE",
+      "en": "grande"
+     },
+     {
+      "texto": "NACIÓ EN",
+      "en": "nació"
+     },
+     {
+      "texto": "EL PATIO DE",
+      "en": "patio"
+     },
+     {
+      "texto": "UNA *IGLESIA*",
+      "en": "iglesia"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Buenos Aires, mil novecientos ocho. Barrio de Almagro.",
+   "sub": "Buenos Aires, 1908. Barrio de Almagro.",
+   "emocion": 0.45,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "maquina",
+    "kicker": "Buenos Aires",
+    "palabras": [
+     {
+      "texto": "1908",
+      "en": "ocho"
+     },
+     {
+      "texto": "*ALMAGRO*",
+      "en": "Almagro"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Unos pibes jugaban a la pelota en la calle, entre los tranvías.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "las calles de entonces",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Buenos_Aires_-_Tranv%C3%ADa_179_en_1903.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_-_Tranv%C3%ADa_179_en_1903.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Tranvía en Buenos Aires, 1903"
+    },
+    "palabras": [
+     {
+      "texto": "*TRANVÍAS*",
+      "en": "tranvías"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El cura del oratorio San Antonio, Lorenzo Massa, vio el peligro.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "el padre Lorenzo Massa",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Lorenzo_Massa.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Lorenzo_Massa.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": true,
+     "epigrafe": "Lorenzo Massa, sacerdote salesiano"
+    },
+    "palabras": [
+     {
+      "texto": "*EL CURA*",
+      "en": "cura"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y les abrió el patio de la iglesia. Con una condición: ir a misa los domingos.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "el patio del oratorio",
+    "objeto": {
+     "tipo": "pelota"
+    },
+    "palabras": [
+     {
+      "texto": "EL PATIO",
+      "en": "patio"
+     }
+    ],
+    "sello": "MISA LOS DOMINGOS",
+    "sello_en": "misa"
+   }
+  },
+  {
+   "say": "El equipo se llamaba Los Forzosos de Almagro. Al cura no le gustó.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "el primer nombre",
+    "palabras": [
+     {
+      "texto": "FORZOSOS",
+      "en": "Forzosos",
+      "tachar_en": "gustó"
+     },
+     {
+      "texto": "DE ALMAGRO",
+      "en": "Almagro"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Cuentan que quisieron ponerle el nombre del cura. Y él no aceptó.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "izquierda",
+    "kicker": "cuentan que…",
+    "palabras": [
+     {
+      "texto": "ÉL NO",
+      "en": "no"
+     },
+     {
+      "texto": "*ACEPTÓ*",
+      "en": "aceptó"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El club nació el primero de abril de mil novecientos ocho. Y se quedó con un nombre: San Lorenzo, por el santo y por la batalla.",
+   "sub": "El club nació el 1 de abril de 1908. Y se quedó con un nombre: San Lorenzo, por el santo y por la batalla.",
+   "emocion": 0.75,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "fundación",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 1,
+     "mes": "ABRIL",
+     "anio": 1908,
+     "en": "primero"
+    },
+    "palabras": [
+     {
+      "texto": "*SAN LORENZO*",
+      "en": "Lorenzo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Por las sotanas negras de los curas, a sus hinchas les dicen Cuervos.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "uno de los primeros equipos",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/San_lorenzo_father_massa.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:San_lorenzo_father_massa.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Uno de los primeros equipos, con el padre Massa"
+    },
+    "palabras": [
+     {
+      "texto": "*CUERVOS*",
+      "en": "Cuervos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hasta el papa Francisco fue socio. ¿Sos cuervo? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "DEL PATIO",
+      "en": "Hasta"
+     },
+     {
+      "texto": "A LA *HISTORIA*",
+      "en": "socio"
+     }
+    ],
+    "cta": "¿Sos cuervo?",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#1B2F7A",
+     "color": "#C8102E",
+     "estilo": "rayas",
+     "nombre": "CASLA",
+     "numero": "08",
+     "letra": "#FFFFFF"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "El cura que le abrió el patio a San Lorenzo #shorts",
+  "descripcion": "En 1908, en Almagro, unos chicos jugaban a la pelota en la calle, entre los tranvías. El padre Lorenzo Massa, sacerdote salesiano a cargo del Oratorio San Antonio, les ofreció el patio de la iglesia con una condición: ir a misa los domingos. El equipo se llamaba Los Forzosos de Almagro; según la versión más difundida, propusieron llamarlo San Lorenzo en homenaje al cura, que no aceptó ser homenajeado, y el nombre quedó por San Lorenzo mártir y por la batalla de San Lorenzo. El club se fundó el 1 de abril de 1908 (algunas fuentes dicen que el nombre definitivo llegó en 1909). Por las sotanas de los curas a sus hinchas les dicen Cuervos, y el papa Francisco fue socio del club. Fuentes: Wikipedia, 442 (Perfil), Minuto Uno, La Nación. Imágenes: Wikimedia Commons (dominio público).",
+  "hashtags": [
+   "sanlorenzo",
+   "cuervos",
+   "futbolargentino",
+   "historiadelfutbol",
+   "historiasreales"
+  ],
+  "categoria_youtube": "17"
+ }
+}
