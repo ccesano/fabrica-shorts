@@ -1,0 +1,277 @@
+{
+ "titulo": "Disney frenó Toy Story porque Woody era insoportable",
+ "paleta": "atardecer",
+ "musica": {
+  "animo": "tension"
+ },
+ "ambiente": "ninguno",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.yahoo.com/video/toy-story-looking-back-at-the-black-friday-incident-that-nearly-killed-the-film-and-pixar-143908172.html",
+  "https://www.cbr.com/movie-legends-revealed-did-disney-nearly-cancel-toy-story-entirely/",
+  "https://d23.com/toy-story-turns-30-a-look-back-at-the-groundbreaking-film-with-pixars-pete-docter-andrew-stanton-and-jonas-rivera/",
+  "https://guinnessworldrecords.com/world-records/774361-first-pixar-film",
+  "https://www.oscars.org/collection-highlights/toy-story",
+  "https://www.thenewdaily.com.au/entertainment/movies/2021/11/22/on-this-day-toy-story-released-in-cinemas-26-years-ago",
+  "https://commons.wikimedia.org/wiki/File:Pixar_animation_studios1.png",
+  "https://commons.wikimedia.org/wiki/File:John_Lasseter,_Jim_Breslin,_1996_(crop).jpg"
+ ],
+ "lineas": [
+  {
+   "say": "Disney frenó Toy Story a mitad de camino.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "DISNEY",
+      "en": "Disney"
+     },
+     {
+      "texto": "FRENÓ",
+      "en": "frenó"
+     },
+     {
+      "texto": "*TOY STORY*",
+      "en": "Story"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Diecinueve de noviembre de mil novecientos noventa y tres. Oficinas de Disney, en California.",
+   "sub": "19 de noviembre de 1993. Oficinas de Disney, en California.",
+   "emocion": 0.45,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "maquina",
+    "kicker": "Burbank, California",
+    "palabras": [
+     {
+      "texto": "19/11/1993",
+      "en": "tres"
+     },
+     {
+      "texto": "*DISNEY*",
+      "en": "Oficinas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Los de Pixar mostraron media película. La primera hecha toda por computadora.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "los de Pixar",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pixar_animation_studios1.png",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Pixar_animation_studios1.png",
+     "credito": "P.gobin / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Entrada de Pixar, Emeryville (2007)"
+    },
+    "palabras": [
+     {
+      "texto": "*POR COMPUTADORA*",
+      "en": "computadora"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pero el vaquero Woody era un jefe tirano. Hasta tiraba a Buzz por la ventana, a propósito.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "el primer Woody",
+    "objeto": {
+     "tipo": "tele",
+     "texto": "WOODY"
+    },
+    "palabras": [
+     {
+      "texto": "*TIRANO*",
+      "en": "tirano"
+     },
+     {
+      "texto": "¡VENTANA!",
+      "en": "ventana"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Disney paró la producción en seco. Les dieron dos semanas para arreglarla.",
+   "emocion": 0.85,
+   "pausa": 0.7,
+   "musica": "silencio",
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "corte",
+    "palabras": [
+     {
+      "texto": "*PARADA*",
+      "en": "paró"
+     },
+     {
+      "texto": "2 SEMANAS",
+      "en": "semanas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Reescribieron todo: Woody pasó a ser simpático, un juguete con miedo a que lo reemplacen.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "transicion": "zoom",
+    "etiqueta": "el guion nuevo",
+    "objeto": {
+     "tipo": "planilla",
+     "volanta": "GUION",
+     "titulo": "TOY STORY",
+     "filas": [
+      [
+       "1",
+       "Woody: tirano"
+      ],
+      [
+       "2",
+       "Woody: simpático"
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "*MIEDO*",
+      "en": "miedo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Se estrenó el veintidós de noviembre de mil novecientos noventa y cinco.",
+   "sub": "Se estrenó el 22 de noviembre de 1995.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "el estreno",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 22,
+     "mes": "NOVIEMBRE",
+     "anio": 1995,
+     "en": "veintidós"
+    },
+    "palabras": [
+     {
+      "texto": "*ESTRENO*",
+      "en": "estrenó"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y fue la película más taquillera del año en Estados Unidos.",
+   "emocion": 0.88,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "destello": true,
+    "palabras": [
+     {
+      "texto": "LA MÁS",
+      "en": "más"
+     },
+     {
+      "texto": "*TAQUILLERA*",
+      "en": "taquillera"
+     },
+     {
+      "texto": "DEL AÑO",
+      "en": "año"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Su director, John Lasseter, recibió un Óscar especial.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el director",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/John_Lasseter%2C_Jim_Breslin%2C_1996_%28crop%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:John_Lasseter,_Jim_Breslin,_1996_(crop).jpg",
+     "credito": "Jim Breslin / Wikimedia Commons (CC BY 2.0)",
+     "licencia": "CC BY 2.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "John Lasseter en 1996"
+    },
+    "palabras": [
+     {
+      "texto": "*ÓSCAR*",
+      "en": "Óscar"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y pensar que casi no existe. ¿La viste en el cine? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "CASI NO",
+      "en": "casi"
+     },
+     {
+      "texto": "*EXISTE*",
+      "en": "existe"
+     }
+    ],
+    "cta": "¿La viste en el cine?",
+    "objeto": {
+     "tipo": "entrada",
+     "titulo": "CINE",
+     "nombre": "TOY STORY",
+     "campos": {
+      "AÑO": "1995"
+     },
+     "talon": "PLATEA"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Disney frenó Toy Story porque Woody era insoportable #shorts",
+  "descripcion": "El 19 de noviembre de 1993, el día que en Pixar llaman «Black Friday», el equipo de John Lasseter mostró en Disney la primera mitad de Toy Story, la primera película hecha toda por computadora. En esa versión Woody era un jefe tirano y antipático, y hasta tiraba a Buzz por la ventana a propósito. Disney paró la producción y les dieron dos semanas para arreglarla. Reescribieron el guion: Woody pasó a ser simpático, un juguete con miedo a ser reemplazado, y en febrero de 1994 la película volvió a tener luz verde. Se estrenó el 22 de noviembre de 1995, fue la más taquillera del año en Estados Unidos y Lasseter recibió un Óscar especial. Fuentes: Yahoo Movies, CBR, D23, Guinness World Records, Academia de Hollywood. Imágenes: Wikimedia Commons (P.gobin, dominio público; Jim Breslin, CC BY 2.0).",
+  "hashtags": [
+   "toystory",
+   "pixar",
+   "cine",
+   "historiasreales",
+   "curiosidades"
+  ],
+  "categoria_youtube": "24"
+ }
+}

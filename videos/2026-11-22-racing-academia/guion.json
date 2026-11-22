@@ -1,0 +1,275 @@
+{
+ "titulo": "Por qué a Racing le dicen la Academia",
+ "paleta": "oceano",
+ "musica": {
+  "animo": "epico"
+ },
+ "ambiente": "cancha",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "fuentes": [
+  "https://billiken.lat/interesante/la-academia-cual-es-el-origen-del-apodo-de-racing-club/",
+  "https://billiken.lat/saber-mas/por-que-a-racing-le-dicen-la-academia/",
+  "https://en.wikipedia.org/wiki/History_of_Racing_Club_de_Avellaneda",
+  "https://www.rionegro.com.ar/a-cien-anos-del-primer-titulo-de-racing-cuando-el-futbol-se-hizo-criollo-IPRN_1395723/",
+  "https://www.minutouno.com/el-nacimiento-la-academia-n6340",
+  "https://commons.wikimedia.org/wiki/File:Racing_equipo_1913.jpg",
+  "https://commons.wikimedia.org/wiki/File:Racing_equipo_v_river_1915.jpg",
+  "https://commons.wikimedia.org/wiki/File:Ohaco_1915.jpg"
+ ],
+ "lineas": [
+  {
+   "say": "Racing salió campeón siete veces seguidas.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "RACING",
+      "en": "Racing"
+     },
+     {
+      "texto": "CAMPEÓN",
+      "en": "campeón"
+     },
+     {
+      "texto": "*7 VECES*",
+      "en": "siete"
+     },
+     {
+      "texto": "SEGUIDAS",
+      "en": "seguidas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hasta mil novecientos trece, el fútbol argentino tenía acento inglés.",
+   "sub": "Hasta 1913, el fútbol argentino tenía acento inglés.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "hasta 1913",
+    "palabras": [
+     {
+      "texto": "ACENTO",
+      "en": "acento"
+     },
+     {
+      "texto": "*INGLÉS*",
+      "en": "inglés",
+      "tachar_en": "inglés"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Ese año, Racing ganó su primer campeonato. Con un equipo todo criollo.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "rasgado",
+    "etiqueta": "Racing, 1913",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Racing_equipo_1913.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Racing_equipo_1913.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Racing en 1913"
+    },
+    "palabras": [
+     {
+      "texto": "*CRIOLLO*",
+      "en": "criollo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Jugaban distinto: gambeta, picardía y lujo.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "etiqueta": "un estilo distinto",
+    "items": [
+     {
+      "texto": "GAMBETA",
+      "en": "gambeta"
+     },
+     {
+      "texto": "PICARDÍA",
+      "en": "picardía"
+     },
+     {
+      "texto": "LUJO",
+      "en": "lujo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Primero de agosto de mil novecientos quince. Racing le ganó tres a cero a River.",
+   "sub": "1 de agosto de 1915. Racing le ganó 3 a 0 a River.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "1 de agosto de 1915",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "RACING",
+       3
+      ],
+      [
+       "RIVER",
+       0
+      ]
+     ],
+     "en": "ganó"
+    },
+    "palabras": [
+     {
+      "texto": "3 A 0",
+      "en": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Cuentan que diez mil hinchas despidieron al equipo gritando: ¡Academia! ¡Academia!",
+   "sub": "Cuentan que 10.000 hinchas despidieron al equipo gritando: ¡Academia! ¡Academia!",
+   "emocion": 0.88,
+   "pausa": 0.7,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "impacto",
+    "kicker": "cuentan que…",
+    "palabras": [
+     {
+      "texto": "¡ACADEMIA!",
+      "en": "Academia"
+     },
+     {
+      "texto": "*¡ACADEMIA!*",
+      "en": "¡Academia!"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Porque ese equipo les enseñaba a jugar a todos sus rivales.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "el equipo de aquella tarde",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Racing_equipo_v_river_1915.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Racing_equipo_v_river_1915.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Racing antes de jugar con River, 1/8/1915"
+    },
+    "palabras": [
+     {
+      "texto": "*ENSEÑABA*",
+      "en": "enseñaba"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Uno de sus goleadores era Alberto Ohaco.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el goleador",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ohaco_1915.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Ohaco_1915.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": true,
+     "epigrafe": "Alberto Ohaco, 1915"
+    },
+    "palabras": [
+     {
+      "texto": "*OHACO*",
+      "en": "Ohaco"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Siete títulos seguidos, de mil novecientos trece a mil novecientos diecinueve. Un récord argentino.",
+   "sub": "Siete títulos seguidos, de 1913 a 1919. Un récord argentino.",
+   "emocion": 0.8,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "cifra",
+    "numero": 7,
+    "etiqueta": "campeonatos seguidos",
+    "palabra": "1913 – 1919",
+    "en": "Siete"
+   }
+  },
+  {
+   "say": "Más de cien años después, le siguen diciendo la Academia. ¿Sos de Racing? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "LA",
+      "en": "siguen"
+     },
+     {
+      "texto": "*ACADEMIA*",
+      "en": "Academia"
+     }
+    ],
+    "cta": "¿Sos de Racing?",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#FFFFFF",
+     "color": "#6CACE4",
+     "estilo": "rayas",
+     "nombre": "RACING",
+     "numero": "7",
+     "letra": "#1B2F7A"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Por qué a Racing le dicen la Academia #shorts",
+  "descripcion": "En 1913 Racing Club ganó su primer campeonato de Primera con un equipo de jugadores criollos, en un fútbol argentino que hasta entonces había dominado el estilo británico. Jugaba distinto, con gambeta y picardía. Según la historia más difundida, el 1 de agosto de 1915, tras un 3 a 0 a River Plate, unos diez mil hinchas despidieron al equipo al grito de «¡Academia!», porque les enseñaba a jugar a sus rivales. Racing ganó siete campeonatos seguidos, de 1913 a 1919, un récord del fútbol argentino. Fuentes: Billiken, Diario Río Negro (CIHF), Minuto Uno, Wikipedia. Imágenes: Wikimedia Commons (dominio público).",
+  "hashtags": [
+   "racing",
+   "laacademia",
+   "futbolargentino",
+   "historiadelfutbol",
+   "historiasreales"
+  ],
+  "categoria_youtube": "17"
+ }
+}
