@@ -1,0 +1,292 @@
+{
+ "titulo": "Scotta rompió el récord de Erico y terminó en la comisaría",
+ "paleta": "diario",
+ "musica": {
+  "animo": "alegre"
+ },
+ "ambiente": "cancha",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.infobae.com/deportes/2025/11/23/a-50-anos-del-historico-record-del-gringo-scotta-supero-la-marca-de-erico-en-la-bombonera-pero-termino-en-una-comisaria/",
+  "https://ciudadano.news/deportes/hector-scotta-record-60-goles-detencion-erico-n112237",
+  "https://www.ellitoral.com/deportes/40-anos-record-gringo-scotta_0_CFMmA6Nrfr.html",
+  "https://www.lacapitalmdp.com/el-record-de-scotta-y-aldosivi-entre-sus-victimas-favoritas/",
+  "https://billiken.lat/personas/scotta-futbolista-argentino-mas-goles-en-un-ano-hector/",
+  "https://en.wikipedia.org/wiki/H%C3%A9ctor_Scotta",
+  "https://en.wikipedia.org/wiki/Arsenio_Erico",
+  "https://commons.wikimedia.org/wiki/File:Scotta_erico_1975.jpg",
+  "https://commons.wikimedia.org/wiki/File:Scotta_(San_Lorenzo)_y_Erico_-_El_Gr%C3%A1fico_2929.jpg"
+ ],
+ "lineas": [
+  {
+   "say": "Sesenta goles en un año. Nadie lo igualó.",
+   "sub": "60 goles en un año. Nadie lo igualó.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "*60* GOLES",
+      "en": "Sesenta"
+     },
+     {
+      "texto": "EN UN AÑO",
+      "en": "año"
+     },
+     {
+      "texto": "NADIE",
+      "en": "Nadie"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Héctor Scotta, el Gringo, de San Lorenzo. Mil novecientos setenta y cinco.",
+   "sub": "Héctor Scotta, «el Gringo», de San Lorenzo. 1975.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "derecha",
+    "etiqueta": "el Gringo",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hector_scotta_el_grafico.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Hector_scotta_el_grafico.jpg",
+     "credito": "Norberto Speranza / El Gráfico / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": true,
+     "epigrafe": "Héctor Scotta, 1974"
+    },
+    "palabras": [
+     {
+      "texto": "*SCOTTA*",
+      "en": "Scotta"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El récord era del paraguayo Arsenio Erico: cuarenta y siete goles, en mil novecientos treinta y siete.",
+   "sub": "El récord era del paraguayo Arsenio Erico: 47 goles, en 1937.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "el récord de 1937",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Arsenio_Erico_1934.jpeg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Arsenio_Erico_1934.jpeg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Arsenio Erico, Independiente, 1934"
+    },
+    "palabras": [
+     {
+      "texto": "*ERICO*",
+      "en": "Erico"
+     }
+    ],
+    "sello": "47"
+   }
+  },
+  {
+   "say": "Veintitrés de noviembre de mil novecientos setenta y cinco. Bombonera: San Lorenzo cinco, Boca tres.",
+   "sub": "23 de noviembre de 1975. Bombonera: San Lorenzo 5, Boca 3.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "hace 51 años, como hoy",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 23,
+     "mes": "NOVIEMBRE",
+     "anio": 1975
+    },
+    "objeto2": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "BOCA",
+       3
+      ],
+      [
+       "SAN LORENZO",
+       5
+      ]
+     ],
+     "en": "cinco"
+    },
+    "palabras": [
+     {
+      "texto": "*BOMBONERA*",
+      "en": "Bombonera"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Scotta llegaba con cuarenta y seis. De tiro libre, al minuto y medio, lo empató.",
+   "sub": "Scotta llegaba con 46. De tiro libre, al minuto y medio, lo empató.",
+   "emocion": 0.65,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "numero": 47,
+    "etiqueta": "goles en 1975",
+    "palabra": "EMPATE",
+    "en": "empató"
+   }
+  },
+  {
+   "say": "A los treinta y cuatro minutos, de zurda y desde casi treinta metros, hizo el cuarenta y ocho.",
+   "sub": "A los 34 minutos, de zurda y desde casi 30 metros, hizo el 48.",
+   "emocion": 0.85,
+   "pausa": 0.7,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "jugada",
+    "etiqueta": "el gol 48",
+    "corrida_en": "zurda",
+    "remate_en": "metros",
+    "sentido": "izquierda",
+    "rivales": 1,
+    "arquero": "parado",
+    "resultado": "gol",
+    "arquero_color": "#F2C230",
+    "rival_color": "#1E3F8A",
+    "palabras": [
+     {
+      "texto": "*48*",
+      "en": "cuarenta y ocho"
+     }
+    ],
+    "sello": "¡RÉCORD!",
+    "destello": false
+   }
+  },
+  {
+   "say": "Esa tarde lo llevaron a Morón, a la casa de Erico, para una nota de El Gráfico.",
+   "sub": "Esa tarde lo llevaron a Morón, a la casa de Erico, para una nota de El Gráfico.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "derecha",
+    "etiqueta": "El Gráfico, 26/11/1975",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Scotta_%28San_Lorenzo%29_y_Erico_-_El_Gr%C3%A1fico_2929.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Scotta_(San_Lorenzo)_y_Erico_-_El_Gr%C3%A1fico_2929.jpg",
+     "credito": "El Gráfico / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Tapa de El Gráfico n.º 2929",
+     "profundidad": false
+    },
+    "lupa": {
+     "x": 0.14,
+     "y": 0.75,
+     "z": 0.3,
+     "en": "nota"
+    }
+   }
+  },
+  {
+   "say": "Salieron a sacarse fotos a una plaza, cerca de una comisaría. Y terminaron los dos demorados.",
+   "sub": "Salieron a sacarse fotos a una plaza, cerca de una comisaría. Y terminaron los dos demorados.",
+   "emocion": 0.7,
+   "pausa": 1.1,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Erico y Scotta, ese día",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Scotta_erico_1975.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Scotta_erico_1975.jpg",
+     "credito": "Cartier / El Gráfico / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "Scotta y Erico, 1975"
+    },
+    "palabras": [
+     {
+      "texto": "*DEMORADOS*",
+      "en": "demorados"
+     }
+    ],
+    "marca": {
+     "forma": "circulo",
+     "x": 0.52,
+     "y": 0.08,
+     "w": 0.44,
+     "h": 0.42,
+     "texto": "Erico",
+     "en": "dos"
+    }
+   }
+  },
+  {
+   "say": "Existía una disposición que no dejaba sacar fotos en las inmediaciones de las comisarías.",
+   "sub": "«Existía una disposición que no dejaba sacar fotos en las inmediaciones de las comisarías».",
+   "emocion": 0.55,
+   "pausa": 1.2,
+   "escena": {
+    "tipo": "cita",
+    "texto": "Existía una disposición que no dejaba *sacar fotos* en las inmediaciones de las comisarías.",
+    "autor": "Héctor Scotta"
+   }
+  },
+  {
+   "say": "Terminó el año con sesenta goles. ¿Lo viste jugar al Gringo? Contalo en los comentarios.",
+   "sub": "Terminó el año con 60 goles. ¿Lo viste jugar al Gringo? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "*60*",
+      "en": "sesenta"
+     },
+     {
+      "texto": "GOLES",
+      "en": "goles"
+     }
+    ],
+    "cta": "¿Lo viste jugar?",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#1E3F8A",
+     "color": "#C8102E",
+     "estilo": "rayas",
+     "nombre": "SCOTTA",
+     "numero": "9",
+     "letra": "#FFFFFF"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Rompió el récord de goles y terminó en la comisaría #shorts",
+  "descripcion": "El 23 de noviembre de 1975, en la Bombonera, Héctor «el Gringo» Scotta hizo dos goles en el 5 a 3 de San Lorenzo a Boca y superó el récord de goles en un año del fútbol argentino, los 47 del paraguayo Arsenio Erico en 1937. Esa misma tarde lo llevaron a Morón, a la casa de Erico, para una nota de El Gráfico; salieron a una plaza a sacarse fotos y terminaron los dos demorados en una comisaría. Scotta cerró 1975 con 60 goles (32 en el Metropolitano y 28 en el Nacional). Fuentes: Infobae, Ciudadano News, El Litoral (Télam), La Capital, Billiken. Imágenes: Wikimedia Commons (El Gráfico y Norberto Speranza, dominio público).",
+  "hashtags": [
+   "#SanLorenzo",
+   "#Scotta",
+   "#futbolargentino",
+   "#historia",
+   "#shorts"
+  ],
+  "categoria_youtube": 17
+ }
+}

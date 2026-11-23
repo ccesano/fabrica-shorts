@@ -1,0 +1,278 @@
+{
+ "titulo": "Manuel de Falla, el gran músico de España que murió en Córdoba",
+ "paleta": "bosque",
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "ambiente": "ninguno",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/Manuel_de_Falla",
+  "https://interlude.hk/on-this-day-14-november-manuel-de-falla-died/",
+  "https://www.buscabiografias.com/temas/falla-atlantida-sin-terminar/",
+  "https://en.wikipedia.org/wiki/Alta_Gracia",
+  "https://commons.wikimedia.org/wiki/File:Manuel_de_Falla_en_Alta_Gracia.jpg",
+  "https://commons.wikimedia.org/wiki/File:Museo_Manuel_de_Falla.jpg"
+ ],
+ "lineas": [
+  {
+   "say": "El gran músico de España murió en Córdoba.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "Alta Gracia, 1946",
+    "palabras": [
+     {
+      "texto": "EL GRAN MÚSICO",
+      "en": "músico"
+     },
+     {
+      "texto": "DE ESPAÑA",
+      "en": "España"
+     },
+     {
+      "texto": "*EN CÓRDOBA*",
+      "en": "Córdoba"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hace ciento cincuenta años, un día como hoy, nacía en Cádiz Manuel de Falla.",
+   "sub": "Hace 150 años, un día como hoy, nacía en Cádiz Manuel de Falla.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "23/11/1876, Cádiz",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Manuel_de_Falla.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Manuel_de_Falla.jpg",
+     "credito": "Alfonso Ciarán / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Manuel de Falla, 1914"
+    },
+    "palabras": [
+     {
+      "texto": "*FALLA*",
+      "en": "Falla"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Escribió El amor brujo, Noches en los jardines de España y El sombrero de tres picos.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "lista",
+    "transicion": "izquierda",
+    "etiqueta": "sus obras más famosas",
+    "items": [
+     {
+      "texto": "El amor brujo",
+      "en": "amor"
+     },
+     {
+      "texto": "Noches en los jardines de España",
+      "en": "Noches"
+     },
+     {
+      "texto": "El sombrero de tres picos",
+      "en": "sombrero"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En mil novecientos treinta y nueve cruzó el océano para dirigir unos conciertos en Buenos Aires.",
+   "sub": "En 1939 cruzó el océano para dirigir unos conciertos en Buenos Aires.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "mapa",
+    "etiqueta": "octubre de 1939",
+    "desde": {
+     "nombre": "Barcelona",
+     "lat": 41.39,
+     "lon": 2.17
+    },
+    "hasta": {
+     "nombre": "Buenos Aires",
+     "lat": -34.6,
+     "lon": -58.38
+    },
+    "resaltar": [
+     "Argentina"
+    ],
+    "vehiculo": "barco",
+    "ruta_en": "cruzó",
+    "palabras": [
+     {
+      "texto": "*1939*",
+      "en": "nueve"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Iba por unos meses. Se quedó para siempre.",
+   "emocion": 0.65,
+   "pausa": 0.7,
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "UNOS MESES",
+      "en": "meses",
+      "tachar_en": "quedó"
+     },
+     {
+      "texto": "*PARA SIEMPRE*",
+      "en": "siempre"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Buscando el aire de las sierras, se instaló en Alta Gracia, en un chalet llamado Los Espinillos.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "izquierda",
+    "etiqueta": "Alta Gracia, 1944",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Manuel_de_Falla_en_Alta_Gracia.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Manuel_de_Falla_en_Alta_Gracia.jpg",
+     "credito": "Juan Vicente Lecuna / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": true,
+     "epigrafe": "Falla en Alta Gracia, 1944"
+    },
+    "palabras": [
+     {
+      "texto": "LOS",
+      "en": "Los"
+     },
+     {
+      "texto": "*ESPINILLOS*",
+      "en": "Espinillos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Ahí siguió con Atlántida, la obra de su vida: le dedicó casi veinte años.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "numero": 20,
+    "prefijo": "casi ",
+    "etiqueta": "años de trabajo",
+    "palabra": "ATLÁNTIDA",
+    "en": "veinte"
+   }
+  },
+  {
+   "say": "Murió el catorce de noviembre de mil novecientos cuarenta y seis, nueve días antes de cumplir setenta años.",
+   "sub": "Murió el 14 de noviembre de 1946, nueve días antes de cumplir 70 años.",
+   "emocion": 0.8,
+   "pausa": 1.0,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "Alta Gracia, Córdoba",
+    "objeto": {
+     "tipo": "calendario",
+     "dia": 14,
+     "mes": "NOVIEMBRE",
+     "anio": 1946
+    },
+    "palabras": [
+     {
+      "texto": "*SIN TERMINAR*",
+      "en": "setenta"
+     }
+    ],
+    "sello": "ATLÁNTIDA",
+    "sello_en": "años"
+   }
+  },
+  {
+   "say": "Sus restos volvieron a Cádiz. Pero la casa de las sierras sigue ahí: hoy es un museo.",
+   "emocion": 0.55,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Museo Manuel de Falla",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Museo_Manuel_de_Falla.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Museo_Manuel_de_Falla.jpg",
+     "credito": "Marianadelarua / Wikimedia Commons",
+     "licencia": "CC BY-SA 4.0",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Los Espinillos, Alta Gracia"
+    },
+    "palabras": [
+     {
+      "texto": "*MUSEO*",
+      "en": "museo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Fuiste alguna vez a esa casa de Alta Gracia? Contalo en los comentarios.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "FALLA",
+      "en": "casa"
+     },
+     {
+      "texto": "*EN CÓRDOBA*",
+      "en": "Alta Gracia"
+     }
+    ],
+    "cta": "¿Fuiste alguna vez?",
+    "objeto": {
+     "tipo": "postal",
+     "texto": "Saludos desde las sierras",
+     "lugar": "Alta Gracia",
+     "colores": [
+      "#2E6B3A",
+      "#E8D7A8"
+     ]
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "El gran músico de España murió en Córdoba #shorts",
+  "descripcion": "Manuel de Falla nació en Cádiz el 23 de noviembre de 1876, hace 150 años. Autor de El amor brujo, Noches en los jardines de España y El sombrero de tres picos, en 1939 viajó a la Argentina para dirigir conciertos en Buenos Aires y ya no volvió. Se instaló en las sierras de Córdoba y vivió sus últimos años en Alta Gracia, en el chalet Los Espinillos, mientras seguía con Atlántida, la obra a la que le dedicó casi veinte años. Murió allí el 14 de noviembre de 1946, nueve días antes de cumplir 70; la obra la completó después Ernesto Halffter. Sus restos fueron llevados a la catedral de Cádiz en 1947, y su casa de Alta Gracia hoy es un museo. Fuentes: Wikipedia, Interlude, Buscabiografías. Imágenes: Wikimedia Commons (dominio público; Marianadelarua, CC BY-SA 4.0).",
+  "hashtags": [
+   "#ManueldeFalla",
+   "#AltaGracia",
+   "#Córdoba",
+   "#historia",
+   "#música",
+   "#shorts"
+  ],
+  "categoria_youtube": 10
+ }
+}
