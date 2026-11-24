@@ -1,0 +1,279 @@
+{
+  "titulo": "Estudiantes y Palmeiras: la revancha de 1968",
+  "paleta": "banda",
+  "musica": {
+    "animo": "epico"
+  },
+  "ambiente": "cancha",
+  "subtitulos": true,
+  "fuentes": [
+    "https://rsssf.org/sacups/copa68.html",
+    "https://www.estadiocentenario.com.uy/en/news/article/tiebreaker-for-the-1968-copa-libertadores-final-estudiantes-de-la-plata-vs-palmeiras",
+    "https://tribunadejundiai.com.br/mais/esportes/palmeiras-tem-chance-de-revanche-no-mesmo-local-apos-58-anos/",
+    "https://442.perfil.com/noticias/futbol/el-recuerdo-de-la-bruja-veron-a-52-anos-de-la-primera-copa-libertadores-de-estudiantes.phtml",
+    "https://www.dgabc.com.br/Noticia/4366193/palmeiras-x-estudiantes-conmebol-define-horario-da-final-da-libertadores-veja-detalhes",
+    "https://www.cronica.com.ar/depo/copalibertadores/la-conmebol-confirmo-que-la-final-de-la-copa-libertadores-2026-sera-en-el-estadio-centenario-de-montevideo/",
+    "https://en.wikipedia.org/wiki/1968_Copa_Libertadores_finals"
+  ],
+  "lineas": [
+    {
+      "say": "Misma final, mismo rival, mismo estadio.",
+      "sub": "Misma final, mismo rival, mismo estadio.",
+      "emocion": 0.7,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "palabras": [
+          {
+            "texto": "MISMA FINAL",
+            "en": "final"
+          },
+          {
+            "texto": "MISMO RIVAL",
+            "en": "rival"
+          },
+          {
+            "texto": "MISMO *ESTADIO*",
+            "en": "estadio"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Este sábado, Estudiantes y Palmeiras definen la Libertadores en el Centenario de Montevideo.",
+      "sub": "Este sábado, Estudiantes y Palmeiras definen la Libertadores en el Centenario de Montevideo.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "transicion": "arriba",
+        "etiqueta": "sábado 28, 17 h",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Estadio_Centenario_%28vista_a%C3%A9rea%29.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario_(vista_a%C3%A9rea).jpg",
+          "credito": "Marcelo Campi / Wikimedia Commons",
+          "licencia": "CC BY-SA 2.0",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "Estadio Centenario, Montevideo"
+        },
+        "palabras": [
+          {
+            "texto": "*CENTENARIO*",
+            "en": "Centenario"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Pero ya se cruzaron en una final. En mayo de mil novecientos sesenta y ocho.",
+      "sub": "Pero ya se cruzaron en una final. En mayo de 1968.",
+      "emocion": 0.55,
+      "pausa": 0.5,
+      "musica": "subida",
+      "escena": {
+        "tipo": "collage",
+        "transicion": "rasgado",
+        "etiqueta": "hace 58 años",
+        "objeto": {
+          "tipo": "calendario",
+          "dia": 2,
+          "mes": "MAYO",
+          "anio": 1968
+        },
+        "palabras": [
+          {
+            "texto": "*1968*",
+            "en": "sesenta y ocho"
+          }
+        ]
+      }
+    },
+    {
+      "say": "En la ida, en La Plata, Palmeiras ganaba uno a cero. Verón y Flores lo dieron vuelta: dos a uno.",
+      "sub": "En la ida, en La Plata, Palmeiras ganaba 1 a 0. Verón y Flores lo dieron vuelta: 2 a 1.",
+      "emocion": 0.65,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "la ida, en La Plata",
+        "palabras": [
+          {
+            "texto": "PALMEIRAS",
+            "en": "Palmeiras"
+          },
+          {
+            "texto": "GANA 1 A 0",
+            "en": "ganaba",
+            "tachar_en": "vuelta"
+          },
+          {
+            "texto": "*2 A 1*",
+            "en": "dos a uno"
+          }
+        ]
+      }
+    },
+    {
+      "say": "En San Pablo ganó Palmeiras, tres a uno. No contaba la diferencia de gol: desempate.",
+      "sub": "En San Pablo ganó Palmeiras, 3 a 1. No contaba la diferencia de gol: desempate.",
+      "emocion": 0.55,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "collage",
+        "transicion": "izquierda",
+        "etiqueta": "la vuelta, en el Pacaembú",
+        "objeto": {
+          "tipo": "marcador",
+          "filas": [
+            [
+              "PALMEIRAS",
+              3
+            ],
+            [
+              "ESTUDIANTES",
+              1
+            ]
+          ]
+        },
+        "palabras": [
+          {
+            "texto": "*DESEMPATE*",
+            "en": "desempate"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Dieciséis de mayo, en el Centenario. A los trece, Ribaudo hizo el primero.",
+      "sub": "16 de mayo, en el Centenario. A los 13', Ribaudo hizo el primero.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "golpe",
+        "estilo": "maquina",
+        "palabras": [
+          {
+            "texto": "16 DE MAYO",
+            "en": "Dieciséis"
+          },
+          {
+            "texto": "CENTENARIO",
+            "en": "Centenario"
+          },
+          {
+            "texto": "*RIBAUDO 13'*",
+            "en": "Ribaudo"
+          }
+        ]
+      }
+    },
+    {
+      "say": "A los ochenta y dos, tras un pelotazo largo del Tato Medina, la Bruja Verón metió el dos a cero.",
+      "sub": "A los 82, tras un pelotazo largo del Tato Medina, la Bruja Verón metió el 2 a 0.",
+      "emocion": 0.85,
+      "pausa": 1.1,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "jugada",
+        "etiqueta": "el 2 a 0",
+        "corrida_en": "pelotazo",
+        "remate_en": "metió",
+        "sentido": "derecha",
+        "rivales": 1,
+        "arquero": "parado",
+        "resultado": "gol",
+        "arquero_color": "#1B6B3A",
+        "rival_color": "#1B6B3A",
+        "palabras": [
+          {
+            "texto": "*VERÓN*",
+            "en": "Verón"
+          }
+        ],
+        "sello": "82'"
+      }
+    },
+    {
+      "say": "Fue un gol inolvidable, no sólo por lo lindo, sino porque nos permitió liquidar el partido y hacer historia.",
+      "sub": "«Fue un gol inolvidable no sólo por lo lindo sino porque nos permitió liquidar el partido y hacer historia».",
+      "emocion": 0.6,
+      "pausa": 1.2,
+      "escena": {
+        "tipo": "cita",
+        "texto": "Fue un gol inolvidable no sólo por lo lindo sino porque nos permitió liquidar el partido y *hacer historia*.",
+        "autor": "Juan Ramón Verón"
+      }
+    },
+    {
+      "say": "Fue su primera Libertadores. Después vinieron la del sesenta y nueve y la del setenta.",
+      "sub": "Fue su primera Libertadores. Después vinieron la del 69 y la del 70.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "transicion": "zoom",
+        "etiqueta": "campeón de América 1968",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Equipo_de_Estudiantes_1968.JPG",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Equipo_de_Estudiantes_1968.JPG",
+          "credito": "Ricardo Soler / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "sepia",
+          "recorte": false,
+          "epigrafe": "Estudiantes, campeón de América 1968"
+        },
+        "palabras": [
+          {
+            "texto": "LA *PRIMERA*",
+            "en": "primera"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Cincuenta y ocho años después, vuelven ahí. ¿Quién gana el sábado? Contalo en los comentarios.",
+      "sub": "58 años después, vuelven ahí. ¿Quién gana el sábado? Contalo en los comentarios.",
+      "emocion": 0.55,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "*58* AÑOS",
+            "en": "Cincuenta"
+          },
+          {
+            "texto": "DESPUÉS",
+            "en": "después"
+          }
+        ],
+        "cta": "¿Quién gana el sábado?",
+        "objeto": {
+          "tipo": "camiseta",
+          "base": "#FFFFFF",
+          "color": "#C8102E",
+          "estilo": "rayas",
+          "nombre": "VERÓN",
+          "numero": "11",
+          "letra": "#1E1B18"
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "Misma final, mismo rival, mismo estadio: 58 años después #shorts",
+    "descripcion": "El sábado 28 de noviembre de 2026 Estudiantes de La Plata y Palmeiras juegan la final de la Copa Libertadores en el Estadio Centenario de Montevideo. Ya se habían cruzado en la final de 1968: en la ida, el 2 de mayo en La Plata, Palmeiras ganaba con gol de Servilio y Estudiantes lo dio vuelta con goles de Juan Ramón Verón (83') y Flores (87'); en la vuelta, el 7 de mayo en el Pacaembú, ganó Palmeiras 3 a 1. Como no contaba la diferencia de gol hubo desempate el 16 de mayo en el Centenario: 2 a 0 con goles de Felipe Ribaudo (13') y Verón (82'). Fue la primera Libertadores de Estudiantes, que después ganó también las de 1969 y 1970. La cita de Verón es de una entrevista con 442 (Perfil, 2020). Fuentes: RSSSF, Estadio Centenario, Tribuna de Jundiaí, 442 Perfil, DGABC, Crónica. Imágenes: Wikimedia Commons (Marcelo Campi, CC BY-SA 2.0; Ricardo Soler, dominio público).",
+    "hashtags": [
+      "#Estudiantes",
+      "#Palmeiras",
+      "#Libertadores",
+      "#futbolargentino",
+      "#shorts"
+    ],
+    "categoria_youtube": 17
+  }
+}

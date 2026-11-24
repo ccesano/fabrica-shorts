@@ -1,0 +1,282 @@
+{
+  "titulo": "Lucy: la abuela de la humanidad tiene nombre de canción de los Beatles",
+  "paleta": "atardecer",
+  "musica": {
+    "animo": "misterio"
+  },
+  "ambiente": "ninguno",
+  "subtitulos": true,
+  "voz": {
+    "pronunciar": {
+      "Johanson": "Yóhanson",
+      "Gray": "Grei",
+      "Lucy": "Lusi",
+      "Beatles": "Bítels",
+      "Lucy in the Sky with Diamonds": "Lusi in de skai wid dáimonds",
+      "Dinkinesh": "Dinkinesh"
+    }
+  },
+  "fuentes": [
+    "https://iho.asu.edu/node/15",
+    "https://news.asu.edu/20241121-science-and-technology-lucys-lasting-legacy-donald-johanson-reflects-discovery-lifetime",
+    "https://www.history.com/this-day-in-history/november-24/lucy-fossil-discovered",
+    "https://www.livescience.com/archaeology/human-evolution/science-history-iconic-lucy-fossil-discovered-transforming-our-understanding-of-human-evolution-nov-24-1974",
+    "https://www.britannica.com/topic/Lucy-fossil"
+  ],
+  "lineas": [
+    {
+      "say": "Tiene tres millones de años y nombre beatle.",
+      "sub": "Tiene 3 millones de años y nombre beatle.",
+      "emocion": 0.75,
+      "pausa": 0.5,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "palabras": [
+          {
+            "texto": "3 MILLONES",
+            "en": "tres"
+          },
+          {
+            "texto": "DE AÑOS",
+            "en": "años"
+          },
+          {
+            "texto": "NOMBRE *BEATLE*",
+            "en": "beatle"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Hace cincuenta y dos años, como hoy, un científico de Cleveland buscaba fósiles en Hadar, Etiopía.",
+      "sub": "Hace 52 años, como hoy, un científico de Cleveland buscaba fósiles en Hadar, Etiopía.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "mapa",
+        "etiqueta": "24 de noviembre de 1974",
+        "desde": {
+          "nombre": "Cleveland",
+          "lat": 41.5,
+          "lon": -81.7
+        },
+        "hasta": {
+          "nombre": "Hadar",
+          "lat": 11.1,
+          "lon": 40.6
+        },
+        "resaltar": [
+          "Ethiopia"
+        ],
+        "vehiculo": "avion",
+        "ruta_en": "buscaba",
+        "palabras": [
+          {
+            "texto": "*ETIOPÍA*",
+            "en": "Etiopía"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Se llamaba Donald Johanson. Iba con Tom Gray, un estudiante.",
+      "sub": "Se llamaba Donald Johanson. Iba con Tom Gray, un estudiante.",
+      "emocion": 0.5,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "transicion": "zoom",
+        "etiqueta": "el que la encontró",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Donald_Johanson%2C_2009.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Donald_Johanson,_2009.jpg",
+          "credito": "Julesasu / Wikimedia Commons",
+          "licencia": "dominio público",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "Donald Johanson, 2009"
+        },
+        "palabras": [
+          {
+            "texto": "*JOHANSON*",
+            "en": "Johanson"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Era mediodía, hacía un calor tremendo y ya volvían a la camioneta.",
+      "sub": "Era mediodía, hacía un calor tremendo y ya volvían a la camioneta.",
+      "emocion": 0.55,
+      "pausa": 0.5,
+      "musica": "subida",
+      "escena": {
+        "tipo": "golpe",
+        "kicker": "Hadar, mediodía",
+        "palabras": [
+          {
+            "texto": "*CALOR*",
+            "en": "calor"
+          },
+          {
+            "texto": "YA VOLVÍAN",
+            "en": "volvían"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Y Johanson vio en el suelo un pedacito de codo.",
+      "sub": "Y Johanson vio en el suelo un pedacito de codo.",
+      "emocion": 0.88,
+      "pausa": 0.8,
+      "musica": "golpe",
+      "escena": {
+        "tipo": "golpe",
+        "estilo": "impacto",
+        "transicion": "corte",
+        "palabras": [
+          {
+            "texto": "UN PEDACITO",
+            "en": "pedacito"
+          },
+          {
+            "texto": "DE *CODO*",
+            "en": "codo"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Era el cuarenta por ciento de un esqueleto. Por la cadera, supieron que caminaba erguida.",
+      "sub": "Era el 40 % de un esqueleto. Por la cadera, supieron que caminaba erguida.",
+      "emocion": 0.6,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "foto",
+        "etiqueta": "el 40 % de un esqueleto",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg",
+          "credito": "120 / Wikimedia Commons",
+          "licencia": "CC BY 2.5",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "Lucy (AL 288-1), réplica",
+          "profundidad": false
+        },
+        "marca": {
+          "forma": "circulo",
+          "x": 0.4,
+          "y": 0.46,
+          "w": 0.5,
+          "h": 0.28,
+          "texto": "la cadera",
+          "en": "cadera"
+        }
+      }
+    },
+    {
+      "say": "Esa noche, en el campamento, sonaba una y otra vez Lucy in the Sky with Diamonds, de los Beatles.",
+      "sub": "Esa noche, en el campamento, sonaba una y otra vez «Lucy in the Sky with Diamonds», de los Beatles.",
+      "emocion": 0.6,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "collage",
+        "transicion": "derecha",
+        "etiqueta": "esa noche, en el campamento",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "Lucy in the Sky with Diamonds"
+        },
+        "palabras": [
+          {
+            "texto": "*LUCY*",
+            "en": "Beatles"
+          }
+        ]
+      }
+    },
+    {
+      "say": "Y así la bautizaron: Lucy. Vivió hace unos tres millones doscientos mil años.",
+      "sub": "Y así la bautizaron: Lucy. Vivió hace unos 3,2 millones de años.",
+      "emocion": 0.65,
+      "pausa": 0.5,
+      "escena": {
+        "tipo": "cifra",
+        "numero": 3.2,
+        "decimales": 1,
+        "sufijo": " M",
+        "etiqueta": "millones de años",
+        "palabra": "LUCY",
+        "en": "Vivió"
+      }
+    },
+    {
+      "say": "En Etiopía la llaman Dinkinesh: sos maravillosa. Su casa es el Museo Nacional, en Adís Abeba.",
+      "sub": "En Etiopía la llaman Dinkinesh: «sos maravillosa». Su casa es el Museo Nacional, en Adís Abeba.",
+      "emocion": 0.6,
+      "pausa": 0.6,
+      "escena": {
+        "tipo": "foto",
+        "transicion": "arriba",
+        "etiqueta": "Museo Nacional de Etiopía",
+        "foto": {
+          "tipo": "foto",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Lucy_%28Australopithecus%29_National_Museum_of_Ethiopia.jpg",
+          "pagina": "https://commons.wikimedia.org/wiki/File:Lucy_(Australopithecus)_National_Museum_of_Ethiopia.jpg",
+          "credito": "Radosław Botev / Wikimedia Commons",
+          "licencia": "CC BY 3.0 pl",
+          "tratamiento": "color",
+          "recorte": false,
+          "epigrafe": "Museo Nacional de Etiopía"
+        },
+        "palabras": [
+          {
+            "texto": "*DINKINESH*",
+            "en": "Dinkinesh"
+          }
+        ]
+      }
+    },
+    {
+      "say": "La abuela más famosa del mundo. ¿Sabías de dónde venía su nombre? Contalo en los comentarios.",
+      "sub": "La abuela más famosa del mundo. ¿Sabías de dónde venía su nombre? Contalo en los comentarios.",
+      "emocion": 0.55,
+      "pausa": 0.8,
+      "escena": {
+        "tipo": "cierre",
+        "titulo": [
+          {
+            "texto": "LA *ABUELA*",
+            "en": "abuela"
+          },
+          {
+            "texto": "MÁS FAMOSA",
+            "en": "famosa"
+          }
+        ],
+        "cta": "¿Sabías lo del nombre?",
+        "objeto": {
+          "tipo": "vinilo",
+          "titulo": "Lucy"
+        }
+      }
+    }
+  ],
+  "publicar": {
+    "titulo": "El esqueleto más famoso del mundo tiene nombre de canción de los Beatles #shorts",
+    "descripcion": "El 24 de noviembre de 1974, en Hadar (región de Afar, Etiopía), el paleoantropólogo Donald Johanson y el estudiante Tom Gray volvían a la camioneta al mediodía cuando Johanson vio un fragmento de codo en el suelo. Era el comienzo de Lucy (AL 288-1), un Australopithecus afarensis de unos 3,2 millones de años: cerca del 40 % de un esqueleto, que mostró que nuestros antepasados ya caminaban erguidos. Esa noche, en el campamento, sonaba una y otra vez «Lucy in the Sky with Diamonds» de los Beatles, y de ahí salió su nombre. En Etiopía la llaman Dinkinesh («sos maravillosa») y su casa es el Museo Nacional de Etiopía, en Adís Abeba. Fuentes: Institute of Human Origins (ASU), ASU News, History.com, Live Science, Britannica. Imágenes: Wikimedia Commons (Julesasu, dominio público; usuario 120, CC BY 2.5; Radosław Botev, CC BY 3.0 pl).",
+    "hashtags": [
+      "#Lucy",
+      "#historia",
+      "#ciencia",
+      "#Beatles",
+      "#shorts"
+    ],
+    "categoria_youtube": 27
+  }
+}
