@@ -1,0 +1,267 @@
+{
+ "titulo": "La frase de Diego que todos escuchamos cortada",
+ "paleta": "oceano",
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "ambiente": "ninguno",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.minutouno.com/sociedad/maradona/la-tv-argentina-cumple-70-anos-10-momentos-inolvidables-diego-n5300085",
+  "https://www.ciudad.com.ar/espectaculos/83751/el-dia-que-pipo-mancera-presento-un-tal-diego-armando-maradona",
+  "https://www.diariodecuyo.com.ar/noticias/se-acabo-el-mito-del-sueno-de-maradona-cuando-era-chico-626239.html",
+  "https://inside.fifa.com/es/tournaments/mens/worldcup/1986mexico/news/diego-cumple-sus-suenos-2780049",
+  "https://www.c5n.com/sociedad/los-juegos-evita-el-torneo-que-integro-los-ninos-al-deporte-la-aparicion-diego-maradona-la-creacion-del-club-sacachispas-n208892",
+  "https://www.lanacion.com.ar/lifestyle/dos-cebollitas-critican-la-serie-sueno-bendito-y-rememoran-sus-anos-junto-a-maradona-nid29102021/"
+ ],
+ "lineas": [
+  {
+   "say": "Su frase más famosa estaba cortada.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "SU FRASE",
+      "en": "frase"
+     },
+     {
+      "texto": "MÁS FAMOSA",
+      "en": "famosa"
+     },
+     {
+      "texto": "*CORTADA*",
+      "en": "cortada"
+     }
+    ]
+   }
+  },
+  {
+   "say": "A principios de los setenta, un pibe de los Cebollitas habló para la tele.",
+   "sub": "A principios de los 70, un pibe de los Cebollitas habló para la tele.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "los Cebollitas",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Maradona_1970.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_1970.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "Diego en los Cebollitas"
+    },
+    "palabras": [
+     {
+      "texto": "*LA TELE*",
+      "en": "tele"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Se llamaba Diego Armando Maradona. Y le preguntaron por sus sueños.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "zoom",
+    "kicker": "Diego Armando Maradona",
+    "palabras": [
+     {
+      "texto": "SUS",
+      "en": "preguntaron"
+     },
+     {
+      "texto": "*SUEÑOS*",
+      "en": "sueños"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Mis sueños son dos. Mi primer sueño es jugar en el Mundial.",
+   "sub": "«Mis sueños son dos. Mi primer sueño es jugar en el Mundial».",
+   "emocion": 0.6,
+   "pausa": 1.2,
+   "musica": "silencio",
+   "escena": {
+    "tipo": "cita",
+    "texto": "Mis sueños son dos. Mi primer sueño es jugar en el *Mundial*.",
+    "autor": "Diego, de chico"
+   }
+  },
+  {
+   "say": "Durante años, el video circuló cortado. Y todos entendimos: salir campeón del mundo. Pero no.",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "y el segundo…",
+    "palabras": [
+     {
+      "texto": "SALIR",
+      "en": "salir"
+     },
+     {
+      "texto": "*CAMPEÓN*",
+      "en": "campeón"
+     },
+     {
+      "texto": "DEL MUNDO",
+      "en": "mundo",
+      "tachar_en": "no"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En el video completo, el segundo sueño era salir campeón de octava.",
+   "emocion": 0.88,
+   "pausa": 0.6,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "impacto",
+    "transicion": "rasgado",
+    "kicker": "el video completo",
+    "palabras": [
+     {
+      "texto": "CAMPEÓN",
+      "en": "campeón"
+     },
+     {
+      "texto": "DE *OCTAVA*",
+      "en": "octava"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hablaba de los Cebollitas, sus compañeros de Argentinos Juniors, que dirigía Francis Cornejo.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Argentinos Juniors",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Maradona_cebollita.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_cebollita.jpg",
+     "credito": "Gerardo Prego / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "Los Cebollitas, 1973"
+    },
+    "palabras": [
+     {
+      "texto": "*CEBOLLITAS*",
+      "en": "Cebollitas"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Con ellos ganó los Juegos Evita de mil novecientos setenta y cuatro.",
+   "sub": "Con ellos ganó los Juegos Evita de 1974.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "izquierda",
+    "etiqueta": "Juegos Evita",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Maradona_torneos_evita.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Maradona_torneos_evita.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Diego en los Juegos Evita, 1973"
+    },
+    "palabras": [
+     {
+      "texto": "JUEGOS *EVITA*",
+      "en": "Evita"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y el primer sueño también lo cumplió: en México ochenta y seis fue campeón del mundo.",
+   "sub": "Y el primer sueño también lo cumplió: en México 86 fue campeón del mundo.",
+   "emocion": 0.85,
+   "pausa": 0.6,
+   "musica": "subida",
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "México 86",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Maradona-Mundial_86_con_la_copa.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Maradona-Mundial_86_con_la_copa.JPG",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "México, 29/6/1986"
+    },
+    "palabras": [
+     {
+      "texto": "*CAMPEÓN*",
+      "en": "campeón"
+     }
+    ]
+   }
+  },
+  {
+   "say": "A seis años de su partida, ¿vos conocías el video completo? Contalo en los comentarios.",
+   "sub": "A 6 años de su partida, ¿vos conocías el video completo? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "LOS DOS",
+      "en": "seis"
+     },
+     {
+      "texto": "*SUEÑOS*",
+      "en": "conocías"
+     }
+    ],
+    "cta": "¿Conocías el video completo?",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#FFFFFF",
+     "color": "#C8102E",
+     "estilo": "banda",
+     "nombre": "DIEGO",
+     "numero": "10",
+     "letra": "#1E1B18"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "La frase más famosa de Maradona niño estaba cortada #shorts",
+  "descripcion": "A principios de los años setenta, jugando en Los Cebollitas, Diego Maradona habló para la televisión: «Mis sueños son dos. Mi primer sueño es jugar en el Mundial, y el segundo es salir campeón». Durante años circuló esa versión, que todos entendimos como salir campeón del mundo. Pero en el video completo sigue: «…salir campeón de octava y lo que siga en el campeonato este», con su equipo de chicos de Argentinos Juniors que dirigía Francis Cornejo. Con Los Cebollitas ganó los Juegos Evita de 1974, y el primer sueño lo cumplió en México 1986. Hoy, 25 de noviembre, se cumplen seis años de su partida. Fuentes: Minuto Uno, Ciudad Magazine, Diario de Cuyo, FIFA, C5N, La Nación. Imágenes: Wikimedia Commons (dominio público; Gerardo Prego).",
+  "hashtags": [
+   "#Maradona",
+   "#Diego",
+   "#Cebollitas",
+   "#futbol",
+   "#shorts"
+  ],
+  "categoria_youtube": 17
+ }
+}

@@ -1,0 +1,276 @@
+{
+ "titulo": "Collodi mató a Pinocho y los lectores lo obligaron a revivirlo",
+ "paleta": "diario",
+ "musica": {
+  "animo": "tension"
+ },
+ "ambiente": "ninguno",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "voz": {
+  "pronunciar": {
+   "Collodi": "Colódi",
+   "Lorenzini": "Lorenchini"
+  }
+ },
+ "fuentes": [
+  "https://www.britannica.com/topic/The-Adventures-of-Pinocchio",
+  "https://lithub.com/is-the-original-pinocchio-actually-about-lying-and-very-long-noses/",
+  "https://www.unionesarda.it/cultura/accaddeoggi-7-luglio-1881-pubblicato-per-la-prima-volta-le-avventure-di-pinocchio-bewdq830",
+  "https://www.focus.it/cultura/curiosita/pinocchio-storia-del-burattino-bambino",
+  "https://www.tecnicadellascuola.it/pinocchio-dal-grillo-parlante-alla-fata-turchina-il-burattino-compie-142-anni",
+  "https://en.wikipedia.org/wiki/Giornale_per_i_bambini",
+  "https://standardebooks.org/ebooks/carlo-collodi/the-adventures-of-pinocchio/text/chapter-15"
+ ],
+ "lineas": [
+  {
+   "say": "En el final original, Pinocho moría ahorcado.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "el final original",
+    "palabras": [
+     {
+      "texto": "PINOCHO",
+      "en": "Pinocho"
+     },
+     {
+      "texto": "*MORÍA*",
+      "en": "moría"
+     },
+     {
+      "texto": "AHORCADO",
+      "en": "ahorcado"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Italia, siete de julio de mil ochocientos ochenta y uno.",
+   "sub": "Italia, 7 de julio de 1881.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "maquina",
+    "palabras": [
+     {
+      "texto": "ITALIA",
+      "en": "Italia"
+     },
+     {
+      "texto": "7 DE JULIO",
+      "en": "julio"
+     },
+     {
+      "texto": "*1881*",
+      "en": "ochenta"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Una revista para chicos publica la primera entrega de La historia de un títere.",
+   "sub": "Una revista para chicos publica la primera entrega de «La historia de un títere».",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "etiqueta": "Giornale per i bambini",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Giornaleperibambini.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Giornaleperibambini.jpg",
+     "credito": "Giornale per i bambini / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Giornale per i bambini, 14/7/1881 (2.º número)",
+     "profundidad": false
+    },
+    "palabras": [
+     {
+      "texto": "*UN TÍTERE*",
+      "en": "títere"
+     }
+    ],
+    "marca": {
+     "forma": "subrayado",
+     "x": 0.08,
+     "y": 0.02,
+     "w": 0.84,
+     "h": 0.13,
+     "texto": "para chicos",
+     "en": "chicos"
+    }
+   }
+  },
+  {
+   "say": "La escribía Carlo Lorenzini, que firmaba Collodi. Y no le tenía mucha fe.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "izquierda",
+    "etiqueta": "el autor",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Carlo_Collodi.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Carlo_Collodi.jpg",
+     "credito": "Autor desconocido (grabado sobre foto de Montabone) / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Carlo Lorenzini, «Collodi»"
+    },
+    "palabras": [
+     {
+      "texto": "*COLLODI*",
+      "en": "Collodi"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Te mando esta chiquilinada. Hacé lo que quieras. Pero si la publicás, pagámela bien, así me dan ganas de seguirla.",
+   "sub": "«Te mando esta chiquilinada. Hacé lo que quieras. Pero si la publicás, pagámela bien, así me dan ganas de seguirla».",
+   "emocion": 0.55,
+   "pausa": 1.2,
+   "musica": "silencio",
+   "escena": {
+    "tipo": "cita",
+    "texto": "Te mando esta *chiquilinada*. Hacé lo que quieras. Pero si la publicás, pagámela bien, así me dan ganas de seguirla.",
+    "autor": "Collodi, al mandar el primer capítulo"
+   }
+  },
+  {
+   "say": "En octubre, dos asesinos lo colgaron de una rama de la Gran Encina.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "rasgado",
+    "etiqueta": "capítulo 15",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Enrico_Mazzanti_-_the_hanged_Pinocchio_%281883%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Enrico_Mazzanti_-_the_hanged_Pinocchio_(1883).jpg",
+     "credito": "Enrico Mazzanti / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Ilustración de Enrico Mazzanti, 1883",
+     "profundidad": false
+    },
+    "palabras": [
+     {
+      "texto": "LA GRAN *ENCINA*",
+      "en": "Encina"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Estiró las piernas, dio una gran sacudida y quedó ahí, como entumecido.",
+   "sub": "«Estiró las piernas, dio una gran sacudida y quedó ahí, como entumecido».",
+   "emocion": 0.65,
+   "pausa": 1.2,
+   "escena": {
+    "tipo": "cita",
+    "texto": "Estiró las piernas, dio una gran sacudida y quedó ahí, *como entumecido*.",
+    "autor": "Collodi, capítulo XV (1881)"
+   }
+  },
+  {
+   "say": "Ahí terminaba la historia. Pero los lectores protestaron tanto que la revista lo convenció de seguir.",
+   "emocion": 0.8,
+   "pausa": 0.6,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "palabras": [
+     {
+      "texto": "FIN",
+      "en": "terminaba",
+      "tachar_en": "protestaron"
+     },
+     {
+      "texto": "*LOS LECTORES*",
+      "en": "lectores"
+     },
+     {
+      "texto": "PROTESTARON",
+      "en": "protestaron"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Casi cuatro meses después, Pinocho volvió. Y en mil ochocientos ochenta y tres salió el libro.",
+   "sub": "Casi cuatro meses después, Pinocho volvió. Y en 1883 salió el libro.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "la primera edición",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pinocchio_by_Collodi%2C_first_edition_Paggi_1883.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Pinocchio_by_Collodi,_first_edition_Paggi_1883.jpg",
+     "credito": "Felice Paggi editor / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Florencia, Felice Paggi, 1883",
+     "profundidad": false
+    },
+    "palabras": [
+     {
+      "texto": "*VOLVIÓ*",
+      "en": "volvió"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y al final se hizo un chico de verdad. ¿Vos sabías que casi muere? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "CASI",
+      "en": "casi"
+     },
+     {
+      "texto": "NO *VUELVE*",
+      "en": "muere"
+     }
+    ],
+    "cta": "¿Sabías que casi muere?",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "Giornale per i bambini, 1881",
+     "titular": "LA STORIA DI UN BURATTINO"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "En el final original, Pinocho moría ahorcado #shorts",
+  "descripcion": "El 7 de julio de 1881, el Giornale per i bambini, un semanario italiano para chicos dirigido por Ferdinando Martini, publicó la primera entrega de «La historia de un títere», de Carlo Lorenzini, que firmaba Collodi. Al mandar el comienzo, Collodi escribió: «Te mando esta chiquilinada. Hacé lo que quieras, pero si la publicás, pagámela bien, así me dan ganas de seguirla». En la entrega del 27 de octubre de 1881 (capítulo 15), dos asesinos —el Zorro y el Gato disfrazados— colgaban a Pinocho de la Gran Encina, y ahí terminaba la historia. Los lectores protestaron tanto que la revista convenció a Collodi de seguir: casi cuatro meses después Pinocho volvió y en 1883 salió el libro «Le avventure di Pinocchio», con ilustraciones de Enrico Mazzanti. Fuentes: Britannica, Lit Hub (Penguin Classics), L'Unione Sarda, Focus, La Tecnica della Scuola, Wikipedia. Imágenes: Wikimedia Commons (dominio público; Enrico Mazzanti).",
+  "hashtags": [
+   "#Pinocho",
+   "#Collodi",
+   "#historia",
+   "#libros",
+   "#shorts"
+  ],
+  "categoria_youtube": 24
+ }
+}
