@@ -1,0 +1,273 @@
+{
+ "titulo": "Stábile: debutó en un Mundial y fue el goleador",
+ "paleta": "atardecer",
+ "musica": {
+  "animo": "epico"
+ },
+ "ambiente": "cancha",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "fuentes": [
+  "https://inside.fifa.com/es/tournaments/mens/worldcup/1930uruguay/news/el-argentino-stabile-hace-historia-2904524",
+  "https://www.canal26.com/historia/2026/06/11/el-capitan-de-argentina-que-dejo-un-mundial-por-rendir-un-examen-la-increible-historia-de-manuel-nolo-ferreira/",
+  "https://espndeportes.espn.com/futbol/mundial/nota/_/id/4074456/stabile-el-maximo-goleador-de-uruguay-1930",
+  "https://www.thesoccerworldcups.com/games/1930_argentina_mexico.php",
+  "https://en.wikipedia.org/wiki/Guillermo_St%C3%A1bile"
+ ],
+ "lineas": [
+  {
+   "say": "Debutó en un Mundial y fue el goleador.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "Uruguay 1930",
+    "palabras": [
+     {
+      "texto": "DEBUTÓ",
+      "en": "Debutó"
+     },
+     {
+      "texto": "Y FUE EL",
+      "en": "fue"
+     },
+     {
+      "texto": "*GOLEADOR*",
+      "en": "goleador"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En el Mundial de mil novecientos treinta, el capitán argentino, Nolo Ferreira, tenía un examen en la facultad.",
+   "sub": "En el Mundial de 1930, el capitán argentino, Nolo Ferreira, tenía un examen en la facultad.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el capitán",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Nasazzi_ferreira.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Nasazzi_ferreira.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Nasazzi y Ferreira, Montevideo 1930"
+    },
+    "palabras": [
+     {
+      "texto": "NOLO *FERREIRA*",
+      "en": "Ferreira"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y en pleno Mundial dejó la concentración para ir a rendirlo.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "en pleno Mundial",
+    "palabras": [
+     {
+      "texto": "SE FUE",
+      "en": "dejó"
+     },
+     {
+      "texto": "A RENDIR",
+      "en": "rendirlo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Su lugar lo ocupó un delantero de Huracán que nunca había jugado en la Selección: Guillermo Stábile.",
+   "emocion": 0.55,
+   "pausa": 0.6,
+   "musica": "subida",
+   "escena": {
+    "tipo": "foto",
+    "transicion": "zoom",
+    "etiqueta": "el reemplazo",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Stabile_hurac_1926.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stabile_hurac_1926.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Guillermo Stábile, Huracán"
+    },
+    "palabras": [
+     {
+      "texto": "*STÁBILE*",
+      "en": "Stábile"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En su debut, contra México, hizo tres goles. Argentina ganó seis a tres.",
+   "sub": "En su debut, contra México, hizo 3 goles. Argentina ganó 6 a 3.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "etiqueta": "19 de julio de 1930",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "ARGENTINA",
+       6
+      ],
+      [
+       "MÉXICO",
+       3
+      ]
+     ]
+    },
+    "palabras": [
+     {
+      "texto": "*3 GOLES*",
+      "en": "tres goles"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Terminó el Mundial con ocho goles en cuatro partidos. Fue el goleador del torneo.",
+   "sub": "Terminó el Mundial con 8 goles en 4 partidos. Fue el goleador del torneo.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "numero": 8,
+    "etiqueta": "goleador del Mundial",
+    "palabra": "GOLES",
+    "en": "ocho"
+   }
+  },
+  {
+   "say": "En la final hizo un gol. Pero Uruguay ganó cuatro a dos.",
+   "sub": "En la final hizo un gol. Pero Uruguay ganó 4 a 2.",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "izquierda",
+    "etiqueta": "la final, en el Centenario",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Stabile_goal_v_uruguay_1930.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Stabile_goal_v_uruguay_1930.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "profundidad": false,
+     "epigrafe": "Segundo gol argentino en la final, 1930"
+    },
+    "palabras": [
+     {
+      "texto": "4 A 2",
+      "en": "cuatro a dos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y nunca más volvió a jugar para la Selección.",
+   "emocion": 0.88,
+   "pausa": 1.0,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "impacto",
+    "transicion": "corte",
+    "palabras": [
+     {
+      "texto": "NUNCA",
+      "en": "nunca"
+     },
+     {
+      "texto": "*MÁS*",
+      "en": "más"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Se fue a jugar a Italia. Años después volvió como técnico y ganó seis títulos sudamericanos.",
+   "sub": "Se fue a jugar a Italia. Años después volvió como técnico y ganó 6 títulos sudamericanos.",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "derecha",
+    "etiqueta": "de vuelta, en el banco",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Guillermo_stabile_dt.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Guillermo_stabile_dt.jpg",
+     "credito": "Autor desconocido / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "sepia",
+     "recorte": false,
+     "epigrafe": "Stábile técnico"
+    },
+    "palabras": [
+     {
+      "texto": "*TÉCNICO*",
+      "en": "técnico"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Cuatro partidos, ocho goles y chau. ¿Conocías esta historia? Contalo en los comentarios.",
+   "sub": "4 partidos, 8 goles y chau. ¿Conocías esta historia? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "4 PARTIDOS",
+      "en": "Cuatro"
+     },
+     {
+      "texto": "*8 GOLES*",
+      "en": "ocho"
+     }
+    ],
+    "cta": "Contalo en los comentarios.",
+    "objeto": {
+     "tipo": "camiseta",
+     "base": "#FFFFFF",
+     "color": "#75AADB",
+     "estilo": "rayas",
+     "nombre": "STÁBILE"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Debutó en un Mundial y fue el goleador #shorts",
+  "descripcion": "En el Mundial de Uruguay 1930, el capitán argentino Manuel «Nolo» Ferreira dejó la concentración para rendir un examen en la facultad. Para el partido contra México, el 19 de julio de 1930, entró en su lugar Guillermo Stábile, delantero de Huracán, que nunca había jugado en la Selección: hizo tres goles en el 6 a 3. Terminó el torneo con 8 goles en 4 partidos, goleador del primer Mundial, e hizo un gol en la final que Uruguay ganó 4 a 2. Nunca más jugó para la Selección: se fue al Genoa de Italia y, años después, volvió como técnico y ganó seis títulos sudamericanos. Fuentes: FIFA, Canal 26, ESPN. Imágenes: Wikimedia Commons (dominio público).",
+  "hashtags": [
+   "#Stabile",
+   "#Mundial1930",
+   "#SeleccionArgentina",
+   "#futbolargentino",
+   "#shorts"
+  ],
+  "categoria_youtube": "17"
+ }
+}

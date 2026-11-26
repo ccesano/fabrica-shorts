@@ -1,0 +1,268 @@
+{
+ "titulo": "Casablanca: «Tócala otra vez, Sam» nunca se dice",
+ "paleta": "neon",
+ "musica": {
+  "animo": "nostalgico"
+ },
+ "ambiente": "ciudad",
+ "subtitulos": true,
+ "fuentes": [
+  "https://www.history.com/this-day-in-history/november-26/casablanca-premieres-in-nyc",
+  "https://slashfilm.com/1640516/casablanca-movie-release-history",
+  "https://nofilmschool.com/play-it-again-sam",
+  "https://www.elobservador.com.uy/nota/-tocala-sam-una-frase-que-cumple-75-anos-20171124500",
+  "https://www.lanacion.com.ar/lifestyle/la-pelicula-de-hollywood-que-se-convirtio-en-el-ejemplo-mas-famoso-de-un-extrano-fenomeno-social-por-nid10092024/",
+  "https://en.wikipedia.org/wiki/Play_it_again,_Sam"
+ ],
+ "lineas": [
+  {
+   "say": "«Tócala otra vez, Sam» nunca se dice.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "Casablanca, 1942",
+    "palabras": [
+     {
+      "texto": "TÓCALA",
+      "en": "Tócala"
+     },
+     {
+      "texto": "OTRA VEZ",
+      "en": "otra vez",
+      "tachar_en": "nunca"
+     },
+     {
+      "texto": "*SAM*",
+      "en": "Sam"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hoy hace ochenta y cuatro años se estrenaba Casablanca en Nueva York.",
+   "sub": "Hoy hace 84 años se estrenaba «Casablanca» en Nueva York.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "zoom",
+    "etiqueta": "26 de noviembre de 1942",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/CasablancaPoster-Gold.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:CasablancaPoster-Gold.jpg",
+     "credito": "Warner Bros. (diseño: Bill Gold) / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "profundidad": false,
+     "epigrafe": "Afiche original, 1942"
+    },
+    "palabras": [
+     {
+      "texto": "*NUEVA YORK*",
+      "en": "Nueva York"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Iba a salir a los cines en mil novecientos cuarenta y tres.",
+   "sub": "Iba a salir a los cines en 1943.",
+   "emocion": 0.5,
+   "pausa": 0.4,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "izquierda",
+    "etiqueta": "el plan de Warner",
+    "objeto": {
+     "tipo": "entrada",
+     "titulo": "CASABLANCA",
+     "nombre": "Estreno previsto",
+     "campos": {
+      "FECHA": "JUNIO 1943"
+     }
+    },
+    "palabras": [
+     {
+      "texto": "*1943*",
+      "en": "cuarenta y tres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pero los aliados desembarcaron en el norte de África, y Warner adelantó el estreno.",
+   "emocion": 0.6,
+   "pausa": 0.6,
+   "musica": "subida",
+   "escena": {
+    "tipo": "collage",
+    "transicion": "corte",
+    "etiqueta": "noviembre de 1942",
+    "objeto": {
+     "tipo": "recorte",
+     "volanta": "8 de noviembre de 1942",
+     "titular": "DESEMBARCO ALIADO EN EL NORTE DE ÁFRICA"
+    },
+    "palabras": [
+     {
+      "texto": "*ADELANTÓ*",
+      "en": "adelantó"
+     }
+    ]
+   }
+  },
+  {
+   "say": "En el café de Rick, Ilsa le pide al pianista, Sam, que toque su canción.",
+   "emocion": 0.5,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "derecha",
+    "etiqueta": "el café de Rick",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Dooley_Wilson-Humphrey_Bogart_in_Casablanca.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Dooley_Wilson-Humphrey_Bogart_in_Casablanca.jpg",
+     "credito": "Warner Bros. / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "Dooley Wilson (Sam) y Humphrey Bogart"
+    },
+    "marca": {
+     "forma": "circulo",
+     "x": 0.24,
+     "y": 0.05,
+     "w": 0.24,
+     "h": 0.26,
+     "texto": "Sam",
+     "en": "Sam"
+    },
+    "palabras": [
+     {
+      "texto": "*SAM*",
+      "en": "Sam"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y le dice: «Tócala, Sam. Tocá As Time Goes By».",
+   "emocion": 0.7,
+   "pausa": 1.2,
+   "escena": {
+    "tipo": "cita",
+    "texto": "Tócala, Sam. Tocá *As Time Goes By*.",
+    "autor": "Ilsa (Ingrid Bergman)"
+   }
+  },
+  {
+   "say": "Nadie dice «otra vez». Ni ella, ni Rick.",
+   "emocion": 0.85,
+   "pausa": 0.8,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "transicion": "rasgado",
+    "palabras": [
+     {
+      "texto": "NADIE DICE",
+      "en": "Nadie"
+     },
+     {
+      "texto": "*OTRA VEZ*",
+      "en": "otra vez"
+     }
+    ]
+   }
+  },
+  {
+   "say": "La versión falsa se hizo famosa con Woody Allen: la usó de título en el teatro y en el cine.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "en Broadway",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Woody_Allen_-_Sam.JPG",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Woody_Allen_-_Sam.JPG",
+     "credito": "Rabinson / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "«Play It Again, Sam», en Broadway"
+    },
+    "palabras": [
+     {
+      "texto": "*WOODY ALLEN*",
+      "en": "Woody Allen"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Hoy es un ejemplo del efecto Mandela: millones recordamos algo que nunca pasó.",
+   "emocion": 0.7,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "recuerdos falsos compartidos",
+    "palabras": [
+     {
+      "texto": "EFECTO",
+      "en": "efecto"
+     },
+     {
+      "texto": "*MANDELA*",
+      "en": "Mandela"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Vos también la recordabas así? Contalo en los comentarios.",
+   "emocion": 0.55,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿LA",
+      "en": "también"
+     },
+     {
+      "texto": "*RECORDABAS*",
+      "en": "recordabas"
+     },
+     {
+      "texto": "ASÍ?",
+      "en": "así"
+     }
+    ],
+    "cta": "Contalo en los comentarios.",
+    "objeto": {
+     "tipo": "vinilo",
+     "titulo": "As Time Goes By"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "«Tócala otra vez, Sam» nunca se dice en Casablanca #shorts",
+  "descripcion": "«Casablanca» se estrenó en Nueva York el 26 de noviembre de 1942. Su salida a los cines estaba prevista para 1943, pero el 8 de noviembre de 1942 los aliados desembarcaron en el norte de África (Operación Antorcha) y Warner adelantó el estreno. En el café de Rick, Ilsa (Ingrid Bergman) le pide al pianista Sam (Dooley Wilson): «Play it once, Sam. For old times' sake» y después «Play it, Sam. Play “As Time Goes By”». Nadie dice «Play it again, Sam» («Tócala otra vez, Sam»): la versión falsa se hizo famosa con el título de la obra de Woody Allen en Broadway (1969) y su película (1972). Hoy es un ejemplo del efecto Mandela. Ganó tres Oscar: película, dirección y guion adaptado. Fuentes: History.com, SlashFilm, No Film School, El Observador, La Nación. Imágenes: Wikimedia Commons (dominio público).",
+  "hashtags": [
+   "#Casablanca",
+   "#cineclasico",
+   "#efectoMandela",
+   "#HumphreyBogart",
+   "#shorts"
+  ],
+  "categoria_youtube": "24"
+ }
+}
