@@ -1,0 +1,315 @@
+{
+ "titulo": "La primera foto de Marte se pintó a mano (Mariner 4)",
+ "paleta": "atardecer",
+ "musica": {
+  "animo": "misterio"
+ },
+ "ambiente": "ninguno",
+ "textura": "pelicula",
+ "subtitulos": true,
+ "voz": {
+  "pronunciar": {
+   "Mariner": "Márainer"
+  }
+ },
+ "fuentes": [
+  "https://www.jpl.nasa.gov/images/pia14033-first-tv-image-of-mars-hand-colored/",
+  "https://science.nasa.gov/mission/mariner-4",
+  "https://www.nasa.gov/history/55-years-ago-mariner-4-first-to-explore-mars/",
+  "https://www.smithsonianmag.com/smart-news/impatient-scientists-used-paint-numbers-technique-create-first-image-mars-180954406/",
+  "https://magazine.caltech.edu/post/mars-first-photo-jpl",
+  "https://nautil.us/how-mariner-4-rewrote-what-we-know-about-mars-1282653",
+  "https://www.scientificamerican.com/article/first-view-of-mars-was-a-paint-by-numbers/",
+  "https://www.jpl.nasa.gov/images/pia14032-first-tv-image-of-mars/"
+ ],
+ "lineas": [
+  {
+   "say": "La primera foto de Marte se pintó a mano.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "una historia real",
+    "palabras": [
+     {
+      "texto": "MARTE,",
+      "en": "Marte"
+     },
+     {
+      "texto": "PINTADO",
+      "en": "pintó"
+     },
+     {
+      "texto": "*A MANO*",
+      "en": "mano"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El veintiocho de noviembre de mil novecientos sesenta y cuatro despegó la sonda Mariner cuatro.",
+   "sub": "El 28 de noviembre de 1964 despegó la sonda Mariner 4.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "maquina",
+    "kicker": "Cabo Cañaveral",
+    "palabras": [
+     {
+      "texto": "28·11·1964",
+      "en": "veintiocho"
+     },
+     {
+      "texto": "DESPEGA",
+      "en": "despegó"
+     },
+     {
+      "texto": "*MARINER 4*",
+      "en": "Mariner"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Viajó más de siete meses y en julio de mil novecientos sesenta y cinco pasó cerca de Marte.",
+   "sub": "Viajó más de siete meses y en julio de 1965 pasó cerca de Marte.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "zoom",
+    "etiqueta": "la sonda",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Mariner_4_1304_1964novembemariner4.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mariner_4_1304_1964novembemariner4.jpg",
+     "credito": "NASA / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": true,
+     "epigrafe": "Mariner 4"
+    },
+    "palabras": [
+     {
+      "texto": "7 MESES",
+      "en": "siete"
+     },
+     {
+      "texto": "*MARTE*",
+      "en": "Marte"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Mandaba los datos tan lento que cada foto tardaba unas diez horas en llegar.",
+   "sub": "Mandaba los datos tan lento que cada foto tardaba unas 10 horas en llegar.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "cifra",
+    "transicion": "izquierda",
+    "numero": 10,
+    "en": "diez",
+    "etiqueta": "cada foto",
+    "sufijo": " h",
+    "palabra": "POR FOTO",
+    "palabra_en": "llegar"
+   }
+  },
+  {
+   "say": "En el Laboratorio de Propulsión a Chorro, en California, no aguantaron la espera.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "derecha",
+    "etiqueta": "la espera",
+    "objeto": {
+     "tipo": "tele",
+     "texto": "PROCESANDO…",
+     "en": "espera"
+    },
+    "palabras": [
+     {
+      "texto": "NO *AGUANTARON*",
+      "en": "aguantaron"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Una máquina imprimía los datos como números, en tiras de papel.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "arriba",
+    "etiqueta": "tiras de números",
+    "objeto": {
+     "tipo": "planilla",
+     "volanta": "MARINER 4",
+     "titulo": "DATOS",
+     "filas": [
+      [
+       "12",
+       "23 41 52 60"
+      ],
+      [
+       "13",
+       "22 40 55 61"
+      ],
+      [
+       "14",
+       "19 38 51 63"
+      ]
+     ],
+     "en": "números"
+    },
+    "palabras": [
+     {
+      "texto": "*NÚMEROS*",
+      "en": "números"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Las pegaron una al lado de la otra y las pintaron con tizas pastel, como un pintar por números.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "foto",
+    "transicion": "zoom",
+    "etiqueta": "pintado a mano",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/First_TV_Image_of_Mars_%28cropped%29.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:First_TV_Image_of_Mars_(cropped).jpg",
+     "credito": "NASA/JPL-Caltech/Dan Goods / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "La imagen pintada a mano, julio de 1965",
+     "profundidad": false
+    },
+    "lupa": {
+     "x": 0.5,
+     "y": 0.5,
+     "z": 0.3,
+     "en": "pastel"
+    },
+    "palabras": [
+     {
+      "texto": "*PASTEL*",
+      "en": "pastel"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Al día siguiente salió la imagen oficial. Y se parecía bastante.",
+   "emocion": 0.8,
+   "pausa": 0.6,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "foto",
+    "transicion": "rasgado",
+    "etiqueta": "la imagen oficial",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/First_close_up_image_of_another_planet_-_Mars_by_Mariner_4.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:First_close_up_image_of_another_planet_-_Mars_by_Mariner_4.jpg",
+     "credito": "NASA/JPL-Caltech / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "byn",
+     "recorte": false,
+     "epigrafe": "Primera imagen de Mariner 4, 1965",
+     "profundidad": false
+    },
+    "palabras": [
+     {
+      "texto": "SE PARECÍA",
+      "en": "parecía"
+     },
+     {
+      "texto": "*BASTANTE*",
+      "en": "bastante"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El dibujo terminó enmarcado, de regalo para el director del laboratorio.",
+   "emocion": 0.6,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "izquierda",
+    "etiqueta": "enmarcado",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mariner_4_first_image_colored.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mariner_4_first_image_colored.jpg",
+     "credito": "NASA / Wikimedia Commons",
+     "licencia": "dominio público",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "El cuadro, enmarcado"
+    },
+    "palabras": [
+     {
+      "texto": "*ENMARCADO*",
+      "en": "enmarcado"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¿Vos hubieras esperado, o también agarrabas las tizas? Contalo en los comentarios.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿ESPERABAS",
+      "en": "esperado"
+     },
+     {
+      "texto": "O *PINTABAS?*",
+      "en": "tizas"
+     }
+    ],
+    "cta": "Contalo en los comentarios.",
+    "objeto": {
+     "tipo": "postal",
+     "texto": "Saludos desde Marte",
+     "lugar": "MARTE, 1965",
+     "colores": [
+      "#C1502E",
+      "#E8A95B",
+      "#3B2A20"
+     ]
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "La primera foto de Marte se pintó a mano #shorts",
+  "descripcion": "El 28 de noviembre de 1964 despegó la sonda Mariner 4, que en julio de 1965 pasó cerca de Marte. Mandaba los datos tan lento que cada foto tardaba unas 10 horas en llegar. En el Laboratorio de Propulsión a Chorro (JPL), una máquina imprimía los datos como números en tiras de papel, y los empleados de telecomunicaciones, sin esperar la imagen procesada, las pegaron una al lado de la otra y las colorearon con pasteles, como un pintar por números. Al día siguiente salió la imagen oficial, y se parecía bastante. El dibujo se enmarcó y se le regaló al director del JPL, William Pickering. ¿Vos hubieras esperado?",
+  "hashtags": [
+   "marte",
+   "mariner4",
+   "nasa",
+   "espacio",
+   "historia",
+   "curiosidades",
+   "shorts"
+  ],
+  "categoria_youtube": "27"
+ }
+}

@@ -1,0 +1,311 @@
+{
+ "titulo": "Boca, Tokio y dos goles en seis minutos (Intercontinental 2000)",
+ "paleta": "bombonera",
+ "musica": {
+  "animo": "epico"
+ },
+ "ambiente": "cancha",
+ "subtitulos": true,
+ "fuentes": [
+  "https://en.wikipedia.org/wiki/2000_Intercontinental_Cup",
+  "https://rsssf.org/tablest/toyota00.html",
+  "https://espndeportes.espn.com/futbol/nota/_/id/16005140/boca-juniors-vs-real-madrid-copa-intercontinental-tokio-2000",
+  "https://www.elgrafico.com.ar/articulo/memoria-emotiva/19743/2000-boca-2-1-real-madrid-el-resumen"
+ ],
+ "lineas": [
+  {
+   "say": "Boca, Tokio y dos goles en seis minutos.",
+   "sub": "Boca, Tokio y dos goles en 6 minutos.",
+   "emocion": 0.75,
+   "pausa": 0.5,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "Tokio, 2000",
+    "palabras": [
+     {
+      "texto": "DOS GOLES",
+      "en": "goles"
+     },
+     {
+      "texto": "EN SEIS",
+      "en": "seis"
+     },
+     {
+      "texto": "*MINUTOS*",
+      "en": "minutos"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Veintiocho de noviembre del año dos mil. Final de la Copa Intercontinental.",
+   "sub": "28 de noviembre de 2000. Final de la Copa Intercontinental.",
+   "emocion": 0.5,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "zoom",
+    "etiqueta": "Estadio Nacional de Tokio",
+    "objeto": {
+     "tipo": "entrada",
+     "titulo": "COPA INTERCONTINENTAL",
+     "nombre": "Boca vs. Real Madrid",
+     "campos": {
+      "FECHA": "28/11/2000",
+      "CIUDAD": "TOKIO"
+     },
+     "talon": "FINAL"
+    },
+    "palabras": [
+     {
+      "texto": "LA *FINAL*",
+      "en": "Final"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Boca, campeón de América, contra el Real Madrid, campeón de Europa.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "dupla",
+    "transicion": "izquierda",
+    "kicker": "América vs. Europa",
+    "partes": [
+     {
+      "palabra": {
+       "texto": "*BOCA*",
+       "en": "Boca"
+      },
+      "objeto": {
+       "tipo": "camiseta",
+       "base": "#103F8C",
+       "color": "#F2C230",
+       "estilo": "banda",
+       "letra": "#F2C230"
+      }
+     },
+     {
+      "palabra": {
+       "texto": "REAL MADRID",
+       "en": "Real"
+      },
+      "objeto": {
+       "tipo": "camiseta",
+       "base": "#FBFAF5",
+       "color": "#FBFAF5",
+       "estilo": "lisa",
+       "letra": "#151515"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "El Madrid de Figo y de Raúl era el gran favorito.",
+   "emocion": 0.55,
+   "pausa": 0.5,
+   "escena": {
+    "tipo": "golpe",
+    "kicker": "los galácticos",
+    "palabras": [
+     {
+      "texto": "FIGO Y RAÚL",
+      "en": "Figo"
+     },
+     {
+      "texto": "EL GRAN",
+      "en": "gran"
+     },
+     {
+      "texto": "*FAVORITO*",
+      "en": "favorito",
+      "tachar_en": "última"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Apenas empezado, Delgado tiró el centro y Palermo la empujó: uno a cero.",
+   "sub": "Apenas empezado, Delgado tiró el centro y Palermo la empujó: 1 a 0.",
+   "emocion": 0.7,
+   "pausa": 0.5,
+   "musica": "subida",
+   "escena": {
+    "tipo": "jugada",
+    "transicion": "derecha",
+    "etiqueta": "el 1 a 0",
+    "corrida_en": "centro",
+    "remate_en": "empujó",
+    "sentido": "derecha",
+    "rivales": 1,
+    "arquero": "parado",
+    "resultado": "gol",
+    "arquero_color": "#2E7D4F",
+    "rival_color": "#FBFAF5",
+    "palabras": [
+     {
+      "texto": "*PALERMO*",
+      "en": "Palermo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y enseguida, con un pase de Riquelme, Palermo metió el segundo.",
+   "emocion": 0.75,
+   "pausa": 0.4,
+   "escena": {
+    "tipo": "foto",
+    "transicion": "arriba",
+    "etiqueta": "el Titán",
+    "foto": {
+     "tipo": "foto",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Mart%C3%ADn_Palermo.jpg",
+     "pagina": "https://commons.wikimedia.org/wiki/File:Mart%C3%ADn_Palermo.jpg",
+     "credito": "Chivista / Wikimedia Commons",
+     "licencia": "CC BY-SA 3.0 DE",
+     "tratamiento": "color",
+     "recorte": false,
+     "epigrafe": "Martín Palermo con Boca, 2009"
+    },
+    "marca": {
+     "forma": "circulo",
+     "x": 0.27,
+     "y": 0.1,
+     "w": 0.2,
+     "h": 0.17,
+     "texto": "Palermo",
+     "en": "Palermo"
+    },
+    "palabras": [
+     {
+      "texto": "RIQUELME",
+      "en": "Riquelme"
+     },
+     {
+      "texto": "*PALERMO*",
+      "en": "segundo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "¡Dos a cero en seis minutos!",
+   "sub": "¡2 a 0 en 6 minutos!",
+   "emocion": 0.9,
+   "pausa": 0.6,
+   "musica": "golpe",
+   "escena": {
+    "tipo": "golpe",
+    "estilo": "impacto",
+    "transicion": "corte",
+    "palabras": [
+     {
+      "texto": "*2 A 0*",
+      "en": "Dos"
+     },
+     {
+      "texto": "EN 6 MINUTOS",
+      "en": "seis"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Roberto Carlos descontó enseguida, pero Boca aguantó todo el partido. Ganó dos a uno y fue campeón del mundo.",
+   "sub": "Roberto Carlos descontó enseguida, pero Boca aguantó todo el partido. Ganó 2 a 1 y fue campeón del mundo.",
+   "emocion": 0.8,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "collage",
+    "transicion": "rasgado",
+    "etiqueta": "campeón del mundo",
+    "objeto": {
+     "tipo": "marcador",
+     "filas": [
+      [
+       "Boca",
+       2
+      ],
+      [
+       "Real Madrid",
+       1
+      ]
+     ],
+     "en": "aguantó"
+    },
+    "palabras": [
+     {
+      "texto": "*CAMPEÓN*",
+      "en": "campeón"
+     },
+     {
+      "texto": "DEL MUNDO",
+      "en": "mundo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y Carlos Bianchi, el técnico, ganó ese año la Libertadores y la Intercontinental.",
+   "emocion": 0.65,
+   "pausa": 0.6,
+   "escena": {
+    "tipo": "lista",
+    "transicion": "zoom",
+    "etiqueta": "el año de Bianchi",
+    "items": [
+     {
+      "texto": "LIBERTADORES 2000",
+      "en": "Libertadores"
+     },
+     {
+      "texto": "INTERCONTINENTAL 2000",
+      "en": "Intercontinental"
+     }
+    ],
+    "remate": "BIANCHI"
+   }
+  },
+  {
+   "say": "¿Te acordás dónde lo viste? Contalo en los comentarios.",
+   "emocion": 0.5,
+   "pausa": 0.8,
+   "escena": {
+    "tipo": "cierre",
+    "titulo": [
+     {
+      "texto": "¿DÓNDE LO",
+      "en": "dónde"
+     },
+     {
+      "texto": "*VISTE?*",
+      "en": "viste"
+     }
+    ],
+    "cta": "Contalo en los comentarios.",
+    "objeto": {
+     "tipo": "pelota"
+    }
+   }
+  }
+ ],
+ "publicar": {
+  "titulo": "Boca, Tokio y dos goles en seis minutos #shorts",
+  "descripcion": "El 28 de noviembre de 2000, en el Estadio Nacional de Tokio, Boca Juniors (campeón de la Libertadores) jugó la final de la Copa Intercontinental contra el Real Madrid de Figo, Raúl y Roberto Carlos, campeón de Europa y gran favorito. En los primeros seis minutos, Martín Palermo hizo dos goles: el primero tras un centro de Marcelo Delgado y el segundo con un pase de Juan Román Riquelme. Roberto Carlos descontó, pero el equipo de Carlos Bianchi aguantó el 2 a 1 y fue campeón del mundo, en el mismo año en que había ganado la Libertadores. ¿Te acordás dónde lo viste?",
+  "hashtags": [
+   "boca",
+   "bocajuniors",
+   "realmadrid",
+   "palermo",
+   "riquelme",
+   "intercontinental",
+   "historiadelfutbol",
+   "shorts"
+  ],
+  "categoria_youtube": "17"
+ }
+}
